@@ -1,0 +1,108 @@
+{
+  "environment": "Chromium DOM harness using actual camera toolbar/CSS/JS; fetch responses and storage simulated. Network navigation blocked by managed browser.",
+  "checks": [
+    {
+      "name": "Camera controls disabled only while checking",
+      "pass": true
+    },
+    {
+      "name": "Navigation not disabled",
+      "pass": true
+    },
+    {
+      "name": "Navigation responds during pending fetch",
+      "pass": true
+    },
+    {
+      "name": "Duplicate request suppressed",
+      "pass": true
+    },
+    {
+      "name": "Test success shown",
+      "pass": true
+    },
+    {
+      "name": "Test uses test-only endpoint",
+      "pass": true
+    },
+    {
+      "name": "Controls re-enabled",
+      "pass": true
+    },
+    {
+      "name": "Switch uses select endpoint",
+      "pass": true
+    },
+    {
+      "name": "Switch refreshes status",
+      "pass": true
+    },
+    {
+      "name": "Error code visible",
+      "pass": true
+    },
+    {
+      "name": "Working-source message visible",
+      "pass": true
+    },
+    {
+      "name": "No fake password in response UI",
+      "pass": true
+    },
+    {
+      "name": "Editor opens",
+      "pass": true
+    },
+    {
+      "name": "Saved host loaded",
+      "pass": true
+    },
+    {
+      "name": "Saved password never prefilled",
+      "pass": true
+    },
+    {
+      "name": "All editor fields labeled",
+      "pass": true
+    },
+    {
+      "name": "Save closes modal",
+      "pass": true
+    },
+    {
+      "name": "Blank password preserves server secret",
+      "pass": true
+    },
+    {
+      "name": "Save never calls camera switch",
+      "pass": true
+    },
+    {
+      "name": "Escape clears secret",
+      "pass": true
+    },
+    {
+      "name": "Logout closes editor and clears secret",
+      "pass": true
+    },
+    {
+      "name": "USB edit does not request network credentials",
+      "pass": true
+    },
+    {
+      "name": "Editor fits 390 px width",
+      "pass": true
+    },
+    {
+      "name": "No duplicate element IDs",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript exceptions",
+      "pass": true
+    }
+  ],
+  "passed": 25,
+  "total": 25,
+  "errors": []
+}

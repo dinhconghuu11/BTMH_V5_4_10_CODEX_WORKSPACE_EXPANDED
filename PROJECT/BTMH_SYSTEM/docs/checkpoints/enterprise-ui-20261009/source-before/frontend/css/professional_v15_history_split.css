@@ -1,0 +1,16 @@
+
+/* CampusFace V2.2 - unmistakable split History UI */
+#page-history{padding-top:0}
+.history-split-switch{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;margin:0 0 14px;position:sticky;top:0;z-index:18;background:rgba(11,20,25,.97);backdrop-filter:blur(12px);border:1px solid rgba(56,226,190,.16)}
+.history-split-switch button{display:flex;align-items:center;gap:12px;text-align:left;min-height:74px;padding:14px 16px;border-radius:14px;border:1px solid #2a363b;background:#11191d;color:#d7e2e6;cursor:pointer;transition:.18s ease}
+.history-split-switch button:hover{border-color:#3c7369;transform:translateY(-1px)}
+.history-split-switch button.active{background:linear-gradient(135deg,rgba(11,123,108,.34),rgba(10,34,39,.96));border-color:#18b89d;box-shadow:0 0 0 1px rgba(24,184,157,.12),0 10px 26px rgba(0,0,0,.18)}
+.history-split-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#16272a;border:1px solid #2c4a4a;color:#82e8d5;font-size:12px;font-weight:900;letter-spacing:.08em;flex:none}
+.history-split-switch button.active .history-split-icon{background:#0f8a76;color:white;border-color:#1bc5a6}
+.history-split-switch b{display:block;font-size:14px;color:#f4fbfb;margin-bottom:4px}
+.history-split-switch small{display:block;font-size:10px;color:#8da4ad;line-height:1.35;font-weight:650}
+.history-split-switch button.active small{color:#bce8df}
+#page-history .prod-history-toolbar{margin-top:0}
+#page-history .prod-history-feed-panel{border-top:2px solid rgba(33,203,171,.22)}
+#page-history #historySessionsPanel{border-top:2px solid rgba(76,141,226,.25)}
+@media(max-width:860px){.history-split-switch{grid-template-columns:1fr;position:relative}.history-split-switch button{min-height:66px}}

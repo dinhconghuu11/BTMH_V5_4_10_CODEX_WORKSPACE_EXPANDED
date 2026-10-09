@@ -1,0 +1,191 @@
+/* BTMH V3 — premium enrollment experience. Scoped to the registration page. */
+#page-register{
+  --enroll-ink:#14232a;
+  --enroll-muted:#728087;
+  --enroll-line:#e5e9e7;
+  --enroll-gold:#b78a42;
+  --enroll-gold-2:#d6b66f;
+  --enroll-emerald:#16a085;
+  --enroll-night:#071416;
+  --enroll-night-2:#0b2324;
+  position:relative;
+  isolation:isolate;
+}
+#page-register:before{
+  content:"";position:fixed;inset:62px 0 0 250px;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(circle at 82% 12%,rgba(203,169,96,.10),transparent 26%),
+    radial-gradient(circle at 18% 88%,rgba(23,160,133,.07),transparent 25%),
+    linear-gradient(180deg,#fafbf9 0%,#f5f7f5 100%);
+}
+#page-register:after{
+  content:"";position:fixed;inset:62px 0 0 250px;z-index:-1;pointer-events:none;opacity:.24;
+  background-image:linear-gradient(rgba(21,37,43,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(21,37,43,.035) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.68),transparent 75%);
+}
+#page-register .registration-phase.active{animation:btmhPhaseIn .46s cubic-bezier(.2,.8,.2,1) both}
+@keyframes btmhPhaseIn{from{opacity:0;transform:translateY(10px) scale(.995)}to{opacity:1;transform:none}}
+
+/* ---------- Profile phase ---------- */
+#page-register .enrollment-profile-card{
+  max-width:1240px!important;margin:0 auto!important;padding:0!important;overflow:hidden;
+  border:1px solid rgba(26,45,52,.08)!important;border-radius:24px!important;
+  background:rgba(255,255,255,.94)!important;box-shadow:0 24px 70px rgba(27,43,48,.09)!important;
+}
+#page-register .btmh-enroll-hero{
+  position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;
+  padding:30px 32px 26px;overflow:hidden;color:white;
+  background:linear-gradient(120deg,#0b1a1d 0%,#102b2b 58%,#18392f 100%);
+}
+#page-register .btmh-enroll-hero:before{
+  content:"";position:absolute;width:340px;height:340px;border:1px solid rgba(214,182,111,.16);border-radius:50%;right:-80px;top:-210px;
+  box-shadow:0 0 0 42px rgba(214,182,111,.025),0 0 0 84px rgba(214,182,111,.018);animation:btmhHeroOrbit 11s linear infinite;
+}
+#page-register .btmh-enroll-hero:after{
+  content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,transparent 15%,rgba(255,255,255,.035) 45%,transparent 75%);transform:translateX(-110%);animation:btmhHeroSweep 7s ease-in-out infinite;
+}
+@keyframes btmhHeroOrbit{50%{transform:translate(-18px,18px) rotate(180deg)}100%{transform:rotate(360deg)}}
+@keyframes btmhHeroSweep{0%,35%{transform:translateX(-110%)}65%,100%{transform:translateX(110%)}}
+#page-register .btmh-eyebrow{display:flex;align-items:center;gap:9px;margin-bottom:10px;color:#d7bd80;font-size:10px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
+#page-register .btmh-eyebrow:before{content:"";width:24px;height:1px;background:#d7bd80;box-shadow:0 0 12px rgba(215,189,128,.55)}
+#page-register .btmh-enroll-hero h2{margin:0;color:#fff;font-size:28px;line-height:1.15;letter-spacing:-.035em}
+#page-register .btmh-enroll-hero p{max-width:650px;margin:10px 0 0;color:rgba(235,244,241,.68);font-size:12px;line-height:1.65}
+#page-register .btmh-trust-row{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+#page-register .btmh-trust-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid rgba(255,255,255,.10);border-radius:999px;background:rgba(255,255,255,.055);backdrop-filter:blur(10px);font-size:9px;font-weight:800;color:#e8f2ef;letter-spacing:.025em;white-space:nowrap}
+#page-register .btmh-trust-chip i{width:6px;height:6px;border-radius:50%;background:#54ddb9;box-shadow:0 0 0 4px rgba(84,221,185,.09),0 0 12px rgba(84,221,185,.35)}
+
+#page-register .enrollment-stepbar{display:flex!important;align-items:center;justify-content:center;gap:13px;margin:0!important;padding:18px 28px 0}
+#page-register .enrollment-stepbar .step{display:inline-flex;align-items:center;gap:8px;color:#8c989c;font-size:10px;font-weight:800;letter-spacing:.035em;text-transform:uppercase}
+#page-register .enrollment-stepbar .step i{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;border:1px solid #dbe2df;background:#fff;color:#8c9997;font-style:normal;transition:.25s ease}
+#page-register .enrollment-stepbar .step.active{color:#2c4c46}
+#page-register .enrollment-stepbar .step.active i{background:linear-gradient(145deg,#b38742,#d9bb78)!important;border-color:#c59b50!important;color:#fff!important;box-shadow:0 5px 16px rgba(183,138,66,.25)}
+#page-register .enrollment-stepbar .step-line{width:62px;height:1px;background:linear-gradient(90deg,#d9bf83,#e5e8e6)}
+#page-register .enrollment-title{display:none!important}
+#page-register .profile-phase-grid{display:grid!important;grid-template-columns:minmax(0,1.45fr) minmax(310px,.72fr)!important;gap:18px!important;padding:22px 26px 28px!important}
+#page-register .student-form,#page-register .existing-student-box{position:relative;border:1px solid var(--enroll-line)!important;border-radius:18px!important;background:#fff!important;padding:21px!important;box-shadow:0 9px 28px rgba(24,44,49,.035)!important}
+#page-register .btmh-card-kicker{display:block;margin-bottom:4px;color:#a57d3f;font-size:9px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
+#page-register .btmh-form-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:18px;padding-bottom:15px;border-bottom:1px solid #eef1ef}
+#page-register .btmh-form-heading h3{margin:0;color:#182a31;font-size:17px;letter-spacing:-.015em}
+#page-register .btmh-form-heading p{margin:5px 0 0;color:#879399;font-size:10.5px}
+#page-register .btmh-form-heading .btmh-id-badge{padding:6px 8px;border:1px solid #e7ded0;border-radius:8px;background:#fffaf1;color:#936e36;font-size:8.5px;font-weight:850;letter-spacing:.06em;white-space:nowrap}
+#page-register .student-form .field{margin-bottom:12px}
+#page-register .student-form .field label,#page-register .existing-student-box .field label{display:block;margin-bottom:6px;color:#617078;font-size:9.5px;font-weight:800;letter-spacing:.03em}
+#page-register .student-form input,#page-register .student-form select,#page-register .existing-student-box select{
+  min-height:43px!important;border:1px solid #dfe6e3!important;border-radius:10px!important;background:#fbfcfb!important;color:#172a31!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)!important;transition:border-color .18s ease,box-shadow .18s ease,background .18s ease,transform .18s ease!important;
+}
+#page-register .student-form input:focus,#page-register .student-form select:focus,#page-register .existing-student-box select:focus{outline:none!important;border-color:#c7a45e!important;background:#fff!important;box-shadow:0 0 0 4px rgba(190,151,77,.10)!important}
+#page-register .consent{margin:3px 0 14px!important;border:1px solid #e6e9e7!important;border-radius:10px!important;background:#f8faf9!important;padding:10px 11px!important}
+#page-register .student-form>.btn.primary{position:relative;overflow:hidden;width:100%;min-height:46px;border:0!important;border-radius:11px!important;background:linear-gradient(105deg,#9f7433,#c89a4c 48%,#d4b66f)!important;color:white!important;box-shadow:0 12px 24px rgba(170,127,58,.22)!important;font-weight:850;letter-spacing:.01em;transition:transform .2s ease,box-shadow .2s ease!important}
+#page-register .student-form>.btn.primary:before{content:"";position:absolute;top:-40%;bottom:-40%;width:52px;left:-80px;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);animation:btmhButtonSheen 4.5s ease-in-out infinite}
+#page-register .student-form>.btn.primary:hover{transform:translateY(-1px);box-shadow:0 16px 28px rgba(170,127,58,.28)!important}
+@keyframes btmhButtonSheen{0%,55%{left:-90px}80%,100%{left:calc(100% + 90px)}}
+
+#page-register .existing-student-box{justify-content:flex-start!important;overflow:hidden;background:linear-gradient(165deg,#fbfcfb,#f5f8f6)!important}
+#page-register .existing-student-box:before{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(184,139,65,.16);border-radius:50%;right:-92px;top:-95px;box-shadow:0 0 0 24px rgba(184,139,65,.025),0 0 0 48px rgba(184,139,65,.018)}
+#page-register .btmh-existing-visual{position:relative;display:grid;place-items:center;height:142px;margin:1px 0 17px;border:1px solid #e3ebe7;border-radius:14px;background:radial-gradient(circle at 50% 48%,#173a38,#0a1c1e 70%);overflow:hidden}
+#page-register .btmh-existing-face{position:relative;width:73px;height:90px;border:1px solid rgba(223,196,134,.55);border-radius:45% 45% 48% 48%;box-shadow:0 0 0 9px rgba(221,190,118,.035),0 0 34px rgba(36,222,179,.12);animation:btmhFaceBreath 2.7s ease-in-out infinite}
+#page-register .btmh-existing-face:before{content:"";position:absolute;left:-24px;right:-24px;top:46%;height:1px;background:linear-gradient(90deg,transparent,#55e1bd,transparent);box-shadow:0 0 10px #44d7b3;animation:btmhMiniScan 2.25s ease-in-out infinite}
+#page-register .btmh-existing-face:after{content:"FACE ID";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:rgba(223,196,134,.76);font-size:7px;font-weight:900;letter-spacing:.18em;white-space:nowrap}
+@keyframes btmhFaceBreath{50%{box-shadow:0 0 0 13px rgba(221,190,118,.025),0 0 44px rgba(36,222,179,.2)}}
+@keyframes btmhMiniScan{0%,100%{top:18%;opacity:.3}50%{top:78%;opacity:1}}
+#page-register .btmh-existing-status{position:absolute;left:10px;bottom:9px;display:flex;gap:6px;align-items:center;color:#b6d8cf;font-size:8px;font-weight:800;letter-spacing:.05em}
+#page-register .btmh-existing-status i{width:6px;height:6px;border-radius:50%;background:#4be0b7;box-shadow:0 0 9px #4be0b7;animation:btmhStatusPulse 1.5s ease-in-out infinite}
+@keyframes btmhStatusPulse{50%{opacity:.35;transform:scale(.75)}}
+#page-register .existing-student-box h3{margin:0 0 5px!important;color:#1a2e34!important;font-size:15px!important}
+#page-register .btmh-existing-copy{margin:0 0 15px;color:#7c8a8f;font-size:10.5px;line-height:1.5}
+#page-register #startExistingFaceBtn{min-height:43px;border-color:#d6c29a!important;color:#72582d!important;background:#fffaf1!important;font-weight:800}
+#page-register #startExistingFaceBtn:not(:disabled):hover{background:#f7eedc!important;transform:translateY(-1px)}
+
+/* ---------- Face scan phase ---------- */
+#page-register .faceid-pro-shell{max-width:1360px!important;border-radius:24px!important;border:1px solid rgba(26,45,52,.09)!important;box-shadow:0 28px 80px rgba(22,41,46,.12)!important;background:#fff!important}
+#page-register .faceid-pro-topbar{min-height:66px;padding:0 22px!important;border-bottom:1px solid #e9edeb!important;background:linear-gradient(180deg,#fff,#fbfcfb)!important}
+#page-register .faceid-pro-title span{color:#a47c3e!important;letter-spacing:.14em!important}
+#page-register .faceid-pro-title b{color:#14272e!important}
+#page-register .back-link{color:#65767c!important}
+#page-register .live-badge{border:1px solid #d9e7e1!important;background:#f5fbf8!important;color:#25816e!important}
+#page-register .live-badge i{background:#35bd98!important;box-shadow:0 0 0 4px rgba(53,189,152,.11),0 0 12px rgba(53,189,152,.35);animation:btmhStatusPulse 1.65s ease-in-out infinite}
+#page-register .faceid-pro-grid{gap:16px!important;padding:16px!important;background:#f7f9f8!important}
+#page-register .faceid-pro-camera-card{border:1px solid #dfe7e4!important;border-radius:18px!important;background:#fff!important;padding:14px!important;box-shadow:0 8px 30px rgba(25,43,48,.045)!important}
+#page-register .faceid-pro-copy{padding:4px 5px 13px!important}
+#page-register .scan-pass-pill{border:1px solid #e5d6b6!important;background:#fff9ee!important;color:#936c31!important;letter-spacing:.09em!important}
+#page-register .faceid-pro-copy h2{font-size:25px!important;color:#172a31!important;letter-spacing:-.035em!important;margin-top:8px!important}
+#page-register .faceid-pro-copy p{font-size:11px!important;color:#72848a!important;line-height:1.55!important}
+#page-register .faceid-pro-camera-wrap{
+  min-height:535px!important;border-radius:17px!important;border:1px solid rgba(217,190,128,.15)!important;
+  background:radial-gradient(circle at 50% 42%,#173737 0,#0a2224 42%,#061416 100%)!important;
+  box-shadow:inset 0 0 80px rgba(0,0,0,.24),0 15px 32px rgba(10,28,30,.12)!important;
+}
+#page-register .faceid-pro-camera-wrap:before{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;border-radius:inherit;background:linear-gradient(115deg,rgba(214,182,111,.025),transparent 32%,rgba(72,229,190,.018) 64%,transparent)}
+#page-register .faceid-pro-camera-wrap:after{content:"SECURE BIOMETRIC CAPTURE";position:absolute;top:14px;right:15px;z-index:8;color:rgba(225,204,155,.58);font-size:7px;font-weight:850;letter-spacing:.16em;pointer-events:none}
+#page-register .faceid-pro-camera-wrap video{filter:brightness(.82) saturate(.86) contrast(1.07)!important}
+#page-register .faceid-shade{background:radial-gradient(ellipse 26% 38% at 50% 49%,transparent 0,transparent 67%,rgba(1,12,14,.22) 72%,rgba(1,12,14,.66) 100%)!important}
+#page-register .faceid-pro-scanner{width:clamp(270px,36%,375px)!important;filter:drop-shadow(0 14px 35px rgba(0,0,0,.2))}
+#page-register .faceid-pro-scanner .v24-face-oval{border:1px solid rgba(226,198,135,.52)!important;box-shadow:0 0 0 1px rgba(45,226,187,.08),0 0 34px rgba(41,224,185,.11),inset 0 0 26px rgba(6,23,25,.18)!important}
+#page-register .faceid-pro-scanner .v24-face-progress{opacity:.9!important;background:conic-gradient(from -90deg,#d2b36e var(--scan-angle,0deg),rgba(81,227,191,.18) 0deg,rgba(255,255,255,.055) 360deg)!important;filter:drop-shadow(0 0 8px rgba(210,179,110,.25))!important}
+#page-register .v24-scan-glow{background:linear-gradient(180deg,transparent,rgba(71,236,197,.10),transparent)!important;animation:btmhScanGlow 2.5s ease-in-out infinite!important}
+#page-register .faceid-pro-scanline{height:1px!important;background:linear-gradient(90deg,transparent,#d8bc78 30%,#67efd0 55%,#d8bc78 78%,transparent)!important;box-shadow:0 0 7px rgba(105,239,208,.65),0 0 18px rgba(210,180,111,.28)!important;animation:btmhScannerLine 2.35s cubic-bezier(.45,0,.55,1) infinite!important}
+@keyframes btmhScannerLine{0%,100%{top:18%;opacity:.35}50%{top:81%;opacity:1}}
+@keyframes btmhScanGlow{0%,100%{transform:translateY(-30%);opacity:.25}50%{transform:translateY(30%);opacity:.78}}
+#page-register .faceid-pro-halo{border-color:rgba(216,185,115,.12)!important;animation-duration:7s!important}
+#page-register .faceid-pro-center-dot{background:#d7ba76!important;box-shadow:0 0 0 4px rgba(215,186,118,.10),0 0 18px rgba(215,186,118,.5)!important}
+#page-register .faceid-v2-guide-orb:before{background:#e7ca87!important;box-shadow:0 0 0 5px rgba(218,186,112,.11),0 0 18px rgba(91,241,205,.6)!important}
+#page-register .faceid-v2-guide-orb:after{border-color:rgba(220,191,121,.65)!important}
+#page-register .faceid-lock-chip{background:rgba(3,22,24,.72)!important;border-color:rgba(255,255,255,.10)!important;backdrop-filter:blur(14px)}
+#page-register .faceid-lock-chip.locked{border-color:rgba(72,222,184,.32)!important;box-shadow:0 0 0 3px rgba(72,222,184,.035)}
+#page-register .faceid-sample-meter{border-color:rgba(218,188,120,.24)!important;background:rgba(4,27,29,.78)!important;box-shadow:0 8px 22px rgba(0,0,0,.18)!important}
+#page-register .faceid-sample-meter span{color:#d8c18b!important}
+#page-register .faceid-pro-bottom-status{bottom:15px!important;border:1px solid rgba(221,190,121,.15)!important;background:rgba(3,20,22,.78)!important;backdrop-filter:blur(14px)!important}
+#page-register .faceid-pro-wave i{background:#d7b970!important;box-shadow:0 0 7px rgba(215,185,112,.28)}
+#page-register .faceid-pro-bottom-status .instruction-icon{color:#5ce2bf!important}
+#page-register .faceid-scanner.capture-accepted{animation:btmhAccepted .42s ease both}
+@keyframes btmhAccepted{0%{filter:drop-shadow(0 14px 35px rgba(0,0,0,.2))}45%{filter:drop-shadow(0 0 22px rgba(79,235,197,.72)) brightness(1.12)}100%{filter:drop-shadow(0 14px 35px rgba(0,0,0,.2))}}
+#page-register .faceid-scanner.pass-switch{animation:btmhPassSwitch .72s cubic-bezier(.2,.8,.2,1)}
+@keyframes btmhPassSwitch{0%{transform:translate(-50%,-50%) scale(1)}45%{transform:translate(-50%,-50%) scale(1.045);filter:drop-shadow(0 0 25px rgba(215,185,112,.55))}100%{transform:translate(-50%,-50%) scale(1)}}
+
+#page-register .faceid-pro-side{gap:10px!important}
+#page-register .enroll-person-card,#page-register .faceid-pro-progress-card,#page-register .faceid-pro-steps,#page-register .faceid-pro-signals,#page-register .faceid-pro-quality,#page-register .faceid-pro-tip{border:1px solid #e1e7e4!important;border-radius:14px!important;box-shadow:0 6px 20px rgba(22,43,48,.035)!important}
+#page-register .enroll-person-card{background:linear-gradient(135deg,#142a2b,#102122)!important;border-color:#203d3c!important;color:#fff}
+#page-register .enroll-person-card .mini-avatar{background:linear-gradient(145deg,#b98c45,#ddc37f)!important;color:#fff!important;box-shadow:0 8px 18px rgba(181,137,67,.2)}
+#page-register .enroll-person-card small{color:#89aaa2!important}
+#page-register .enroll-person-card b{color:#fff!important}
+#page-register .enroll-person-card span{color:#b8cbc7!important}
+#page-register .faceid-pro-progress-card .scan-summary-track{height:7px!important;background:#eef1ef!important}
+#page-register .faceid-pro-progress-card .scan-summary-track i{background:linear-gradient(90deg,#b6873f,#d5b874 45%,#31c5a3)!important;box-shadow:0 0 11px rgba(180,137,63,.16)}
+#page-register .v23-pass-card.active{border-color:#d9c18d!important;background:#fffaf0!important}
+#page-register .v23-pass-card.done{border-color:#b9e6d8!important;background:#f5fcf9!important}
+#page-register .faceid-pro-quality>div{border-color:#ebeeec!important;background:#fafbf9!important}
+#page-register .faceid-pro-quality b{font-variant-numeric:tabular-nums}
+#page-register .faceid-pro-tip{background:#fffbf2!important;border-color:#eadfc8!important}
+#page-register .faceid-pro-tip b{color:#8c6a34!important}
+#page-register .faceid-v2-pose-strip{gap:7px!important;margin-top:10px!important}
+#page-register .faceid-v2-pose-strip .pose-chip{border-color:#e2e7e5!important;border-radius:11px!important;background:#fff!important}
+#page-register .faceid-v2-pose-strip .pose-chip.active{border-color:#d5ba7d!important;background:#fffaf0!important;box-shadow:0 0 0 3px rgba(183,139,66,.07)!important}
+#page-register .faceid-v2-pose-strip .pose-chip.active i{background:#ba8b43!important;color:#fff!important}
+#page-register .faceid-v2-pose-strip .pose-chip.done{border-color:#afe1d3!important;background:#f5fcfa!important}
+#page-register .faceid-v2-pose-strip .pose-chip.done i{background:#22b792!important}
+#page-register .faceid-success-overlay{background:radial-gradient(circle at 50% 38%,rgba(26,72,65,.94),rgba(5,25,28,.97) 68%)!important}
+#page-register .faceid-success-overlay .success-check{background:linear-gradient(145deg,#b98b43,#dec47e)!important;color:#fff!important;box-shadow:0 0 0 11px rgba(219,190,122,.08),0 12px 28px rgba(0,0,0,.18)!important;animation:btmhSuccessPop .65s cubic-bezier(.16,1,.3,1) both}
+#page-register .faceid-success-overlay.show h3,#page-register .faceid-success-overlay.show p,#page-register .faceid-success-overlay.show .success-actions{animation:btmhSuccessRise .6s .12s cubic-bezier(.16,1,.3,1) both}
+@keyframes btmhSuccessPop{from{opacity:0;transform:scale(.45) rotate(-12deg)}to{opacity:1;transform:none}}
+@keyframes btmhSuccessRise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+@media(max-width:1180px){
+  #page-register:before,#page-register:after{left:0}
+  #page-register .btmh-enroll-hero{grid-template-columns:1fr}
+  #page-register .btmh-trust-row{justify-content:flex-start}
+  #page-register .profile-phase-grid{grid-template-columns:1fr!important}
+}
+@media(max-width:760px){
+  #page-register .btmh-enroll-hero{padding:24px 20px 22px}
+  #page-register .btmh-enroll-hero h2{font-size:23px}
+  #page-register .btmh-trust-row{display:none}
+  #page-register .profile-phase-grid{padding:16px!important}
+  #page-register .field-row{grid-template-columns:1fr!important}
+  #page-register .faceid-pro-grid{padding:9px!important}
+  #page-register .faceid-pro-camera-card{padding:9px!important}
+  #page-register .faceid-pro-camera-wrap{min-height:470px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  #page-register *,#page-register *:before,#page-register *:after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
+}

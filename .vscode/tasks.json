@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "BTMH: Verify Release",
+      "type": "shell",
+      "command": "python VERIFY_RELEASE.py",
+      "options": { "cwd": "${workspaceFolder}/PROJECT/BTMH_SYSTEM" },
+      "problemMatcher": []
+    },
+    {
+      "label": "BTMH: Tests V5.4.x",
+      "type": "shell",
+      "command": "python -m pytest -q tests_v54",
+      "options": { "cwd": "${workspaceFolder}/PROJECT/BTMH_SYSTEM" },
+      "problemMatcher": []
+    },
+    {
+      "label": "BTMH: Test Native Gateway 5.4.10",
+      "type": "shell",
+      "command": "python -m pytest -q tests_v54/test_native_gateway_v5410.py",
+      "options": { "cwd": "${workspaceFolder}/PROJECT/BTMH_SYSTEM" },
+      "problemMatcher": []
+    },
+    {
+      "label": "BTMH: Start Development",
+      "type": "process",
+      "command": "cmd.exe",
+      "args": ["/d", "/c", "START_CAMPUSFACE_DEV.bat"],
+      "options": { "cwd": "${workspaceFolder}/PROJECT/BTMH_SYSTEM", "env": { "BTMH_ENV": "development" } },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "BTMH: Start Windows",
+      "type": "shell",
+      "command": "cmd.exe /c START_CAMPUSFACE.bat",
+      "options": { "cwd": "${workspaceFolder}/PROJECT/BTMH_SYSTEM", "env": { "BTMH_ENV": "production" } },
+      "problemMatcher": []
+    }
+  ]
+}

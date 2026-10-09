@@ -1,0 +1,16 @@
+/* CampusFace V2.6 - Realtime Professional History */
+#page-history .history-hr-view-tabs{position:sticky;top:190px;z-index:18;background:rgba(10,15,16,.94);backdrop-filter:blur(12px);padding:8px;border:1px solid #293436;border-radius:12px}
+#page-history #historyHrWorkspace>.hidden{display:none!important}
+#page-history .history-current-person em{display:inline-flex;margin-top:5px;padding:3px 6px;border-radius:999px;background:#12352e;border:1px solid #245c50;color:#83ddca;font-size:8px;font-style:normal;font-weight:850;letter-spacing:.04em}
+#page-history .history-current-person.is-lost{border-color:#5c4c2d;background:#1b1812}
+#page-history .history-current-person.is-lost em{background:#382d17;border-color:#65512c;color:#e6bd68}
+#page-history .history-current-person.is-lost>span{background:#332a17;border-color:#5c4b29;color:#e6bd68}
+#page-history #historyHrSummaryPanel .panel-head p{margin:4px 0 0;color:#819397;font-size:9.5px}
+#page-history #hrHistoryPresenceTime{font-size:22px;letter-spacing:-.03em}
+.v26-technical-panel{border-top:2px solid rgba(90,150,190,.28)!important}
+.v26-technical-panel .v6-audit-row.technical strong{color:#8bc7e8;background:#142a36;border:1px solid #27485a;border-radius:999px;padding:3px 6px}
+@media(max-width:860px){#page-history .history-hr-view-tabs{position:relative;top:auto}}
+
+/* V2.6 authority signal: make it obvious when IN/OUT is authoritative. */
+.history-policy-chip.warn{background:#fff7e8!important;color:#9a6700!important;border:1px solid #f2cf7d!important}
+.history-workspace-intro #historyHrAuthorityNote{display:block;margin-top:8px;color:#667085;font-size:12px;font-weight:650}

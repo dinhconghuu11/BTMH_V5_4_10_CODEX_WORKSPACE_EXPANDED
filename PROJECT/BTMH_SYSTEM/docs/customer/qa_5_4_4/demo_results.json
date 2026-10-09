@@ -1,0 +1,100 @@
+{
+  "environment": "Chromium set_content; managed browser network navigation unavailable; storage mocked",
+  "tests": [
+    {
+      "name": "Login view visible",
+      "pass": true
+    },
+    {
+      "name": "Empty login invalid",
+      "pass": true
+    },
+    {
+      "name": "Password reveal",
+      "pass": true
+    },
+    {
+      "name": "Loading feedback",
+      "pass": true
+    },
+    {
+      "name": "Demo success only",
+      "pass": true
+    },
+    {
+      "name": "Password cleared",
+      "pass": true
+    },
+    {
+      "name": "Only username saved",
+      "pass": true
+    },
+    {
+      "name": "Support opens",
+      "pass": true
+    },
+    {
+      "name": "Support closes",
+      "pass": true
+    },
+    {
+      "name": "Password mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "Owner demo completes",
+      "pass": true
+    },
+    {
+      "name": "Owner passwords cleared",
+      "pass": true
+    },
+    {
+      "name": "Reset works",
+      "pass": true
+    },
+    {
+      "name": "All inputs labeled",
+      "pass": true
+    },
+    {
+      "name": "No duplicate IDs",
+      "pass": true
+    },
+    {
+      "name": "No external assets",
+      "pass": true
+    },
+    {
+      "name": "Network connections blocked in demo CSP",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 1440",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 1280",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 768",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 390",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 320",
+      "pass": true
+    },
+    {
+      "name": "No JS errors",
+      "pass": true
+    }
+  ],
+  "passed": 23,
+  "total": 23,
+  "errors": []
+}

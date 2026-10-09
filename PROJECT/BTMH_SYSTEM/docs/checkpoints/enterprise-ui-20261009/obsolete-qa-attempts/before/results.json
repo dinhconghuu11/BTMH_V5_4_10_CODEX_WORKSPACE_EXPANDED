@@ -1,0 +1,368 @@
+{
+  "mode": "BEFORE_OBSERVATION",
+  "results": [
+    {
+      "page": "dashboard",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "students",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "history",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "ops-center",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "system",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "recognition",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-grid",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "playback",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "dashboard",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "students",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "history",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "ops-center",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "system",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "recognition",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-grid",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "playback",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "dashboard",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "students",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "history",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "ops-center",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "system",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "recognition",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-grid",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "playback",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "dashboard",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "students",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "history",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "ops-center",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "system",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "recognition",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-grid",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "playback",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "dashboard",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "students",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "history",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "ops-center",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "system",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "recognition",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-grid",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "playback",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    }
+  ],
+  "errors": [],
+  "apiRequests": 0,
+  "hardwareAcceptance": false
+}

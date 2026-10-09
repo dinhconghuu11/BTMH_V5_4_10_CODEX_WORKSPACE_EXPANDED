@@ -1,0 +1,45 @@
+/* Bảo Tín Minh Hải V3.1 — RBAC + Visitor Management + professional auth */
+:root{--btmh-gold:#d7b56d;--btmh-gold-2:#f0d79c;--btmh-ink:#0b1217;--btmh-panel:#101a20;--btmh-line:#223039;--btmh-muted:#8ea1aa;--btmh-ok:#35c99a}
+
+/* Login / bootstrap */
+.v23-auth-gate{background:
+  radial-gradient(circle at 15% 18%,rgba(215,181,109,.14),transparent 34%),
+  radial-gradient(circle at 84% 78%,rgba(26,151,128,.12),transparent 32%),
+  linear-gradient(145deg,#060a0d,#0b1318 54%,#080d11)!important;overflow:hidden}
+.v23-auth-gate:before,.v23-auth-gate:after{content:"";position:absolute;border-radius:999px;border:1px solid rgba(215,181,109,.12);animation:btmhOrbit 12s linear infinite;pointer-events:none}
+.v23-auth-gate:before{width:520px;height:520px;left:-210px;top:-210px}.v23-auth-gate:after{width:420px;height:420px;right:-180px;bottom:-180px;animation-direction:reverse;animation-duration:16s}
+@keyframes btmhOrbit{from{transform:rotate(0deg) scale(.98)}50%{transform:rotate(180deg) scale(1.04)}to{transform:rotate(360deg) scale(.98)}}
+.v23-auth-card{position:relative;width:min(470px,calc(100vw - 30px))!important;padding:30px!important;border-radius:26px!important;background:linear-gradient(155deg,rgba(16,26,32,.98),rgba(8,15,19,.98))!important;border:1px solid rgba(215,181,109,.22)!important;box-shadow:0 38px 110px rgba(0,0,0,.58),inset 0 1px 0 rgba(255,255,255,.04)!important;overflow:hidden;animation:btmhCardIn .5s cubic-bezier(.2,.8,.2,1)}
+.v23-auth-card:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,var(--btmh-gold),transparent);opacity:.9}
+@keyframes btmhCardIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.v23-auth-brand>span{width:54px!important;height:54px!important;border-radius:16px!important;background:linear-gradient(145deg,#e2c27d,#9e7735)!important;color:#14100a!important;font-size:15px!important;letter-spacing:-.04em!important;box-shadow:0 12px 34px rgba(215,181,109,.18)!important}
+.v23-auth-brand b{font-size:17px!important;color:#fff9eb!important}.v23-auth-brand small{color:#a89d86!important}
+.v23-auth-eyebrow{color:var(--btmh-gold-2)!important}.v23-auth-card input:focus{border-color:var(--btmh-gold)!important;box-shadow:0 0 0 3px rgba(215,181,109,.11)!important}
+.v23-auth-card .btn.primary{background:linear-gradient(135deg,#d6b46b,#b58b43)!important;color:#14100a!important;border-color:#e7ca8a!important;font-weight:900;box-shadow:0 12px 28px rgba(181,139,67,.18)}
+.v23-auth-foot span{background:var(--btmh-ok)!important}
+
+/* RBAC visibility */
+[data-permission].permission-locked{display:none!important}
+.btmh-current-permissions{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.btmh-current-permissions span{padding:5px 8px;border-radius:999px;background:#13242a;border:1px solid #24434a;color:#9fded0;font-size:9px;font-weight:800}
+
+/* Shared BTMH labels */
+.btmh-kicker{display:inline-flex;margin-bottom:6px;color:var(--btmh-gold);font-size:9px;font-weight:950;letter-spacing:.17em}
+
+/* Visitor management */
+.btmh-visitor-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:22px 24px!important;background:linear-gradient(135deg,#10191e,#111d22 62%,#151d1c)!important;border-color:rgba(215,181,109,.14)!important}
+.btmh-visitor-head h2{margin:0 0 5px;font-size:23px}.btmh-visitor-head p{margin:0;color:#84969f;font-size:11px;line-height:1.55;max-width:720px}.btmh-visitor-actions{display:flex;gap:8px;align-items:center}.btmh-visitor-actions select{height:38px;min-width:170px;border-radius:10px;border:1px solid #263740;background:#0d171c;color:#d9e5e8;padding:0 10px}
+.btmh-visitor-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}.btmh-visitor-kpis article{position:relative;padding:16px 18px;border:1px solid #203039;border-radius:15px;background:linear-gradient(145deg,#101a20,#0d161b);overflow:hidden}.btmh-visitor-kpis article:after{content:"";position:absolute;width:70px;height:70px;border-radius:50%;right:-30px;top:-30px;background:rgba(215,181,109,.08)}.btmh-visitor-kpis span,.btmh-visitor-kpis small{display:block;color:#748891;font-size:9px;font-weight:800}.btmh-visitor-kpis b{display:block;margin:4px 0;font-size:24px;color:#f4f8f8}
+.btmh-visitor-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}.btmh-visitor-card{border:1px solid #21323a;border-radius:17px;background:linear-gradient(145deg,#10191e,#0b1418);overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.12)}.btmh-visitor-card.active{border-color:rgba(53,201,154,.32)}.btmh-visitor-card.watchlist{border-color:rgba(239,68,68,.35)}
+.btmh-visitor-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:15px 16px 10px}.btmh-visitor-card-head b{display:block;color:#edf5f5;font-size:13px}.btmh-visitor-card-head small{display:block;margin-top:4px;color:#6f858e;font-size:9px}.btmh-visitor-status{padding:5px 8px;border-radius:999px;background:#16252b;color:#93a8b1;font-size:8px;font-weight:900;letter-spacing:.08em}.btmh-visitor-status.active{background:rgba(53,201,154,.1);border:1px solid rgba(53,201,154,.22);color:#70e1bc}
+.btmh-best-shots{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;padding:0 16px}.btmh-shot{aspect-ratio:1/1;border-radius:11px;background:#081014;border:1px solid #1c2c33;overflow:hidden;position:relative}.btmh-shot img{width:100%;height:100%;object-fit:cover;display:block}.btmh-shot span{position:absolute;left:5px;bottom:5px;padding:3px 5px;border-radius:6px;background:rgba(4,9,11,.72);color:#d8e5e7;font-size:7px;font-weight:900}.btmh-shot.empty{display:grid;place-items:center;color:#42555d;font-size:9px}
+.btmh-visitor-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:11px 16px}.btmh-visitor-meta div{padding:8px;border-radius:9px;background:#0c1519;border:1px solid #19272e}.btmh-visitor-meta span{display:block;color:#657983;font-size:8px}.btmh-visitor-meta b{display:block;margin-top:3px;color:#cbd9dc;font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.btmh-visitor-review{display:grid;grid-template-columns:120px 1fr;gap:7px;padding:0 16px 16px}.btmh-visitor-review select,.btmh-visitor-review input{height:34px;border-radius:8px;border:1px solid #23343d;background:#0a1318;color:#dce7e9;padding:0 9px;font-size:9px}.btmh-visitor-review .btn{grid-column:1/-1;height:34px}
+
+/* RBAC admin */
+.btmh-rbac-panel{margin-top:12px}.btmh-rbac-create{display:grid;grid-template-columns:1.1fr 1.1fr 1fr 1.2fr auto;gap:8px;align-items:end;padding:14px;border-radius:13px;background:#0d171c;border:1px solid #1d2c33}.btmh-rbac-create label{display:grid;gap:6px;color:#81949d;font-size:9px;font-weight:800}.btmh-rbac-create input,.btmh-rbac-create select{height:36px;border-radius:9px;border:1px solid #26363e;background:#091217;color:#e2ecee;padding:0 10px}.btmh-rbac-create .btn{height:36px;white-space:nowrap}
+.btmh-role-catalog{display:flex;gap:7px;overflow:auto;padding:12px 0}.btmh-role-pill{min-width:150px;padding:10px 11px;border:1px solid #203139;border-radius:11px;background:#0d171b}.btmh-role-pill b{display:block;color:#dce8ea;font-size:10px}.btmh-role-pill small{display:block;margin-top:4px;color:#6f838b;font-size:8px;line-height:1.4}
+.btmh-user-list{display:grid;gap:7px}.btmh-user-row{display:grid;grid-template-columns:minmax(160px,1.4fr) 150px 120px 90px auto;gap:8px;align-items:center;padding:10px 12px;border:1px solid #1f3037;border-radius:11px;background:#0d161a}.btmh-user-id b{display:block;color:#dbe8ea;font-size:10px}.btmh-user-id small{display:block;color:#6e828b;font-size:8px;margin-top:3px}.btmh-user-row select{height:33px;border-radius:8px;border:1px solid #26373f;background:#091216;color:#d8e5e7;padding:0 7px;font-size:9px}.btmh-user-active{display:flex;align-items:center;gap:6px;color:#8aa0a8;font-size:9px}.btmh-user-actions{display:flex;gap:5px;justify-content:flex-end}.btmh-user-actions button{height:31px;padding:0 9px;border-radius:8px;border:1px solid #283a42;background:#111d22;color:#b9c9cd;font-size:8px;font-weight:900;cursor:pointer}.btmh-user-actions button:hover{border-color:#60747b;color:#fff}
+
+@media(max-width:1050px){.btmh-rbac-create{grid-template-columns:1fr 1fr}.btmh-rbac-create .btn{grid-column:1/-1}.btmh-user-row{grid-template-columns:1fr 130px}.btmh-user-actions{grid-column:1/-1;justify-content:flex-start}.btmh-visitor-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.btmh-visitor-head{align-items:flex-start;flex-direction:column}.btmh-visitor-actions{width:100%}.btmh-visitor-actions select{flex:1}.btmh-visitor-kpis{grid-template-columns:1fr}.btmh-rbac-create{grid-template-columns:1fr}.btmh-user-row{grid-template-columns:1fr}.btmh-best-shots{grid-template-columns:repeat(3,1fr)}}

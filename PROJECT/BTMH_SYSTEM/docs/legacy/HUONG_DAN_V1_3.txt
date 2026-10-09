@@ -1,0 +1,11 @@
+CAMPUSFACE V1.3 - CACH CHAY
+
+1. Giai nen vao thu muc ngan, vi du C:\FACE\CampusFace-V1.3
+2. Lan dau: chay SETUP_AND_START_CAMPUSFACE_WINDOWS.bat
+3. Cac lan sau: chay START_CAMPUSFACE.bat
+4. Mo http://127.0.0.1:8100 neu trinh duyet khong tu mo.
+
+FACEID: quet 2 lan. Moi lan chi can xoay dau cham mot vong theo diem sang.
+CLASSROOM: bam Quan ly lop hoc; trang se tu bat camera/AI. Co the bam Dung/Bat dau.
+NHAN DIEN: giu nguyen pipeline V1.2.1.
+YOLO FARFACE: chi train khi co dataset, dung TRAIN_YOLO_FARFACE_WINDOWS.bat.

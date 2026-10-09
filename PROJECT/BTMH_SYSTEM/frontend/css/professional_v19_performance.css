@@ -1,0 +1,10 @@
+/* CampusFace V2.7 - low-latency office preview + event aggregation polish */
+#officePreviewCanvas{
+  position:absolute;inset:0;width:100%;height:100%;z-index:1!important;
+  display:none;background:#05070a;pointer-events:none;cursor:default!important;
+}
+#officePreviewCanvas.active{display:block}
+#officeGateCanvas{z-index:4!important}
+#officePreview.v27-hidden{display:none!important}
+.office-camera-hud span{white-space:nowrap}
+.history-episode-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 7px;border-radius:999px;background:#eef8f4;color:#087b61;font-size:10px;font-weight:800;margin-left:6px}

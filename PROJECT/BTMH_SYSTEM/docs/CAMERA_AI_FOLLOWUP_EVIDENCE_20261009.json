@@ -1,0 +1,846 @@
+{
+  "timestamp_utc": "2026-10-09T03:26:44.931017+00:00",
+  "read_only": true,
+  "registry": {
+    "status": "READ_ONLY_OK",
+    "cameras": [
+      {
+        "camera_id": 1,
+        "camera_name": "Laptop Camera",
+        "enabled": true,
+        "ai_enabled": false,
+        "zone_name": "Máy vận hành",
+        "assignment_count": 1,
+        "store_id": 1,
+        "store_name": "Cửa hàng mặc định",
+        "eligible_configuration": false,
+        "blocking_reasons": [
+          "AI_DISABLED"
+        ]
+      },
+      {
+        "camera_id": 2,
+        "camera_name": "Hikvision DS-2CD1123G0-IUF",
+        "enabled": true,
+        "ai_enabled": true,
+        "zone_name": "Hikvision LAN",
+        "assignment_count": 1,
+        "store_id": 1,
+        "store_name": "Cửa hàng mặc định",
+        "eligible_configuration": true,
+        "blocking_reasons": []
+      },
+      {
+        "camera_id": 3,
+        "camera_name": "WyreStorm CAM001",
+        "enabled": true,
+        "ai_enabled": false,
+        "zone_name": "Chưa gán phòng",
+        "assignment_count": 0,
+        "store_id": null,
+        "store_name": null,
+        "eligible_configuration": false,
+        "blocking_reasons": [
+          "AI_DISABLED",
+          "STORE_ASSIGNMENT_MISSING_OR_INVALID"
+        ]
+      },
+      {
+        "camera_id": 4,
+        "camera_name": "Camera PTZ",
+        "enabled": true,
+        "ai_enabled": false,
+        "zone_name": "Chưa gán khu vực",
+        "assignment_count": 0,
+        "store_id": null,
+        "store_name": null,
+        "eligible_configuration": false,
+        "blocking_reasons": [
+          "AI_DISABLED",
+          "STORE_ASSIGNMENT_MISSING_OR_INVALID"
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "id": 1,
+        "store_name": "Cửa hàng mặc định"
+      }
+    ],
+    "relevant_role_permissions": [
+      {
+        "role": "ADMIN",
+        "permission": "*"
+      },
+      {
+        "role": "ADMIN",
+        "permission": "camera.view"
+      },
+      {
+        "role": "EMPLOYEE",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "HR",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "MANAGER",
+        "permission": "camera.live"
+      },
+      {
+        "role": "MANAGER",
+        "permission": "camera.view"
+      },
+      {
+        "role": "MANAGER",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "OPERATOR",
+        "permission": "camera.live"
+      },
+      {
+        "role": "OPERATOR",
+        "permission": "camera.view"
+      },
+      {
+        "role": "OPERATOR",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "SECURITY",
+        "permission": "camera.live"
+      },
+      {
+        "role": "SECURITY",
+        "permission": "camera.view"
+      },
+      {
+        "role": "SECURITY",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "SUPER_ADMIN",
+        "permission": "*"
+      },
+      {
+        "role": "SUPER_ADMIN",
+        "permission": "camera.view"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "camera.configure"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "camera.live"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "camera.view"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "VIEWER",
+        "permission": "camera.live"
+      },
+      {
+        "role": "VIEWER",
+        "permission": "dashboard.view"
+      }
+    ],
+    "actor_scope": "NOT_INSPECTED: current browser account/session is not read"
+  },
+  "appearance_diagnostics": [
+    {
+      "id": 1040,
+      "camera_id": 2,
+      "daily_sequence": 25,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:12:48.834480+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1039,
+      "camera_id": 2,
+      "daily_sequence": 24,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:10:36.032857+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1038,
+      "camera_id": 2,
+      "daily_sequence": 23,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:10:07.612028+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1037,
+      "camera_id": 2,
+      "daily_sequence": 22,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:10:00.877876+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1036,
+      "camera_id": 2,
+      "daily_sequence": 21,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:09:43.178607+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1035,
+      "camera_id": 2,
+      "daily_sequence": 20,
+      "status": "SPOOF_BLOCKED",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:09:43.178607+00:00",
+      "pad_status": "BLOCKED",
+      "pad_live_score": 0.0228,
+      "pad_spoof_score": 0.9772,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 16938
+    },
+    {
+      "id": 1034,
+      "camera_id": 2,
+      "daily_sequence": 19,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:09:17.391516+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1033,
+      "camera_id": 2,
+      "daily_sequence": 18,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:09:14.894593+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1032,
+      "camera_id": 2,
+      "daily_sequence": 17,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:09:14.415787+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1031,
+      "camera_id": 2,
+      "daily_sequence": 16,
+      "status": "SPOOF_BLOCKED",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:09:10.494774+00:00",
+      "pad_status": "BLOCKED",
+      "pad_live_score": 0.7014,
+      "pad_spoof_score": 0.2986,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 5452
+    },
+    {
+      "id": 1030,
+      "camera_id": 2,
+      "daily_sequence": 15,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:09:04.453649+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1029,
+      "camera_id": 2,
+      "daily_sequence": 14,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:08:58.695842+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1028,
+      "camera_id": 2,
+      "daily_sequence": 13,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:08:54.074440+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1027,
+      "camera_id": 2,
+      "daily_sequence": 12,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:08:44.229699+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1026,
+      "camera_id": 2,
+      "daily_sequence": 11,
+      "status": "RECOGNIZED",
+      "anti_spoof_passed": 1,
+      "event_at": "2026-10-09T03:08:26.510585+00:00",
+      "pad_status": "PASS",
+      "pad_live_score": 0.982,
+      "pad_spoof_score": 0.018,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 16530
+    },
+    {
+      "id": 1025,
+      "camera_id": 2,
+      "daily_sequence": 10,
+      "status": "RECOGNIZED",
+      "anti_spoof_passed": 1,
+      "event_at": "2026-10-09T03:08:02.149821+00:00",
+      "pad_status": "PASS",
+      "pad_live_score": 0.9759,
+      "pad_spoof_score": 0.0241,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 5205
+    },
+    {
+      "id": 1024,
+      "camera_id": 1,
+      "daily_sequence": 14,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:07:19.411734+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1023,
+      "camera_id": 1,
+      "daily_sequence": 13,
+      "status": "RECOGNIZED",
+      "anti_spoof_passed": 1,
+      "event_at": "2026-10-09T03:07:07.006381+00:00",
+      "pad_status": "PASS",
+      "pad_live_score": 0.9664,
+      "pad_spoof_score": 0.0336,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 32534
+    },
+    {
+      "id": 1022,
+      "camera_id": 1,
+      "daily_sequence": 12,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:06:39.850583+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1021,
+      "camera_id": 1,
+      "daily_sequence": 11,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:06:11.983641+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1020,
+      "camera_id": 1,
+      "daily_sequence": 10,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:05:18.965246+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1019,
+      "camera_id": 1,
+      "daily_sequence": 9,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:04:44.662942+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1018,
+      "camera_id": 1,
+      "daily_sequence": 8,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:04:40.532660+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1017,
+      "camera_id": 1,
+      "daily_sequence": 7,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:04:17.016904+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1016,
+      "camera_id": 2,
+      "daily_sequence": 9,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:04:03.993589+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1015,
+      "camera_id": 1,
+      "daily_sequence": 6,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:04:03.237918+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1014,
+      "camera_id": 2,
+      "daily_sequence": 8,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:03:51.638609+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1013,
+      "camera_id": 1,
+      "daily_sequence": 5,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:03:45.335272+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1012,
+      "camera_id": 2,
+      "daily_sequence": 7,
+      "status": "SPOOF_BLOCKED",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:03:43.793967+00:00",
+      "pad_status": "BLOCKED",
+      "pad_live_score": 0.1577,
+      "pad_spoof_score": 0.8423,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 5958
+    },
+    {
+      "id": 1011,
+      "camera_id": 1,
+      "daily_sequence": 4,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:03:09.440676+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1010,
+      "camera_id": 1,
+      "daily_sequence": 3,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:03:06.606458+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1009,
+      "camera_id": 2,
+      "daily_sequence": 6,
+      "status": "SPOOF_BLOCKED",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:02:47.383939+00:00",
+      "pad_status": "BLOCKED",
+      "pad_live_score": 0.0074,
+      "pad_spoof_score": 0.9926,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 5272
+    },
+    {
+      "id": 1008,
+      "camera_id": 2,
+      "daily_sequence": 5,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:02:39.672745+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1007,
+      "camera_id": 1,
+      "daily_sequence": 2,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:02:39.257451+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1006,
+      "camera_id": 2,
+      "daily_sequence": 4,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:02:33.744952+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1005,
+      "camera_id": 2,
+      "daily_sequence": 3,
+      "status": "ANALYZING",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:02:30.859402+00:00",
+      "pad_status": null,
+      "pad_live_score": null,
+      "pad_spoof_score": null,
+      "has_snapshot_path": false,
+      "snapshot_file_exists": false,
+      "snapshot_size": null
+    },
+    {
+      "id": 1004,
+      "camera_id": 1,
+      "daily_sequence": 1,
+      "status": "RECOGNIZED",
+      "anti_spoof_passed": 1,
+      "event_at": "2026-10-09T03:02:23.121673+00:00",
+      "pad_status": "PASS",
+      "pad_live_score": 0.9333,
+      "pad_spoof_score": 0.0667,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 24005
+    },
+    {
+      "id": 1003,
+      "camera_id": 2,
+      "daily_sequence": 2,
+      "status": "RECOGNIZED",
+      "anti_spoof_passed": 1,
+      "event_at": "2026-10-09T03:00:48.685269+00:00",
+      "pad_status": "PASS",
+      "pad_live_score": 0.8125,
+      "pad_spoof_score": 0.1875,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 6333
+    },
+    {
+      "id": 1002,
+      "camera_id": 2,
+      "daily_sequence": 1,
+      "status": "SPOOF_BLOCKED",
+      "anti_spoof_passed": 0,
+      "event_at": "2026-10-09T03:00:25.908022+00:00",
+      "pad_status": "BLOCKED",
+      "pad_live_score": 0.0289,
+      "pad_spoof_score": 0.9711,
+      "has_snapshot_path": true,
+      "snapshot_file_exists": true,
+      "snapshot_size": 4274
+    }
+  ],
+  "actual_http_image_status": "NOT_INSPECTED: user confirmed placeholder is on recognition page, not direct evidence URL",
+  "runtime_fps_latency_quality": {
+    "provenance": "USER_SUPPLIED_AUTHENTICATED_HOST_METADATA",
+    "camera_id": 2,
+    "face_visible_in_live_user_confirmed": true,
+    "ai_state": "ACTIVE",
+    "ai_error_code": "",
+    "ai_successful_results_current_source": 449,
+    "source_epoch": 0,
+    "sent_at": 1791516452.1397,
+    "updated_at": 1791516452.13206,
+    "frame_width": 640,
+    "frame_height": 360,
+    "camera_seq": 1289,
+    "tracking_age_ms": 6.5,
+    "source_age_ms": 17.8,
+    "ai_performance": {
+      "actual_ai_fps": 2.8,
+      "capture_fps": 18.1,
+      "avg_ai_ms": 69,
+      "p95_ai_ms": 174.1,
+      "effective_target_fps": 7,
+      "pad": {
+        "fps": 0,
+        "completed": 0,
+        "dropped": 0,
+        "errors": 0,
+        "last_ms": 0,
+        "last_latency_ms": null,
+        "stalled": false
+      },
+      "faceid": {
+        "fps": 0,
+        "completed": 0,
+        "dropped": 0,
+        "errors": 0,
+        "last_ms": 0,
+        "last_latency_ms": null,
+        "stalled": false
+      }
+    },
+    "tracks": [],
+    "limit": "One sample before new detection/stage diagnostics; does not establish input mode, detector miss versus observation error, or post-change performance."
+  },
+  "faceid_pad_thresholds_changed": false,
+  "production_configuration_changed_by_agent": false,
+  "host_resource_measurement": {
+    "status": "NOT_OBSERVED",
+    "sandbox_attempt": "TCP/CIM access restricted; escalated read saw no port listener in tool context",
+    "production_availability_conclusion": "NONE: user confirms host website works; tool context is not a production availability test",
+    "gpu": "NOT_MEASURED"
+  },
+  "photo_pad_followup": {
+    "timestamp_utc": "2026-10-09T05:09:15.690970+00:00",
+    "read_only": true,
+    "host_sample": {
+      "origin": "USER_PROVIDED_AUTHENTICATED_METADATA_SINGLE_SAMPLE",
+      "camera_id": 2,
+      "ai_state": "ACTIVE",
+      "ai_successful_results_current_source": 45,
+      "tracking_age_ms": 19.6,
+      "source_age_ms": 32.3,
+      "ai_detection": {
+        "input_mode": "HIKVISION_SUBSTREAM",
+        "input_seq": 139,
+        "input_width": 640,
+        "input_height": 360,
+        "substream_capture_fps": 310.2,
+        "substream_age_ms": 20.5,
+        "detected_faces": 1,
+        "observed_faces": 1,
+        "observation_errors": 0,
+        "no_face_streak": 0,
+        "recovery_attempted": true
+      },
+      "ai_performance": {
+        "actual_ai_fps": 4,
+        "capture_fps": 19.7,
+        "avg_ai_ms": 91.8,
+        "p95_ai_ms": 295.6,
+        "effective_target_fps": 4,
+        "pad": {
+          "fps": 0.8,
+          "completed": 4,
+          "dropped": 1,
+          "errors": 0,
+          "last_ms": 98.5,
+          "last_latency_ms": 493.9,
+          "last_queue_wait_ms": 1.8,
+          "pending": 1,
+          "stalled": false,
+          "busy": false
+        },
+        "faceid": {
+          "fps": 0,
+          "completed": 0,
+          "dropped": 0,
+          "errors": 0,
+          "pending": 0,
+          "stalled": false,
+          "busy": false
+        },
+        "stage_times": {
+          "work_lock_wait_ms": 0.003,
+          "acquisition_ms": 0.28,
+          "preprocessing_ms": 0.374,
+          "detection_ms": 127.155,
+          "observation_ms": 1.003,
+          "tracking_ms": 0.072,
+          "verification_dispatch_ms": 50.633,
+          "sample_total_ms": 178.88,
+          "capture_to_result_ms": 241.855
+        }
+      },
+      "tracks": [
+        {
+          "recognized": false,
+          "spoof_blocked": false,
+          "status": "VERIFYING_PASSIVE",
+          "pad_status": "PENDING",
+          "verification_reason_code": "PAD_CHECKING",
+          "pad_live_score": null,
+          "pad_spoof_score": null,
+          "face_quality": {
+            "face_px": 90,
+            "score": 0.6853,
+            "sharpness": 6064.92,
+            "brightness": 57.4,
+            "contrast": 40.3
+          }
+        }
+      ],
+      "interpretation": "PAD pending, not the BLOCKED screenshot. Lane completion counters do not establish results applied to this current track. 493.9 ms is below the 2000 ms validity limit. Startup FPS metric is frozen in the pre-fix source. No accuracy inference."
+    },
+    "production_configuration_changed": false,
+    "models_thresholds_changed": false,
+    "production_photo_http_status": "NOT_INSPECTED",
+    "pad_blocked_cause": "NOT_ESTABLISHED",
+    "isolated_photo_evidence": "frontend/.qa_evidence_photos/visual-results.json"
+  }
+}

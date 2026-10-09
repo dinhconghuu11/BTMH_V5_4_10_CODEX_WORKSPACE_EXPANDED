@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="referrer" content="no-referrer">
+  <title>Đăng ký khuôn mặt | Bảo Tín Mạnh Hải</title>
+  <link rel="stylesheet" href="/static/css/btmh_mobile_enrollment.css?v=1"><script defer src="/static/js/btmh_mobile_enrollment.js?v=1"></script>
+</head>
+<body>
+  <main class="mobile-enrollment" id="mobileEnrollmentRoot">
+    <header class="mobile-enrollment-brand"><img src="/static/img/btmh_emblem.png" alt=""><div><b>Bảo Tín Mạnh Hải</b><span>Đăng ký khuôn mặt nội bộ</span></div></header>
+    <section class="mobile-enrollment-card">
+      <div class="mobile-enrollment-heading"><h1 id="mobileEnrollmentTitle">Mở lời mời đăng ký</h1><p id="mobileEnrollmentDescription">Lời mời chỉ dành cho một nhân viên và cửa hàng đã được quản trị viên xác nhận.</p></div>
+      <p id="mobileEnrollmentFeedback" class="mobile-enrollment-feedback" role="status" aria-live="polite">Đang kiểm tra lời mời…</p>
+      <div id="mobileEnrollmentIdentity" class="mobile-enrollment-identity" hidden><b id="mobileEnrollmentName"></b><span id="mobileEnrollmentCode"></span><small id="mobileEnrollmentStore"></small><small id="mobileEnrollmentExpiry"></small></div>
+      <div id="mobileEnrollmentConsent" hidden><label class="mobile-enrollment-consent"><input id="mobileConsentCheck" type="checkbox"><span>Tôi đồng ý thu mẫu khuôn mặt cho hồ sơ nhân viên được chỉ định, phục vụ kiểm soát ra vào và chấm công nội bộ.</span></label><button id="mobileConsentButton" class="mobile-button primary" type="button" disabled>Đồng ý &amp; tiếp tục</button></div>
+      <section id="mobileEnrollmentCapture" hidden>
+        <div class="mobile-enrollment-camera"><video id="mobileEnrollmentVideo" autoplay playsinline muted></video><div class="mobile-enrollment-guide" aria-hidden="true"></div><p id="mobileEnrollmentCameraEmpty">Bấm Mở camera để bắt đầu.</p></div>
+        <ol id="mobileEnrollmentPhases" class="mobile-enrollment-phases" aria-label="Hướng dẫn thu mẫu"><li>Chính diện</li><li>Nghiêng trái</li><li>Nghiêng phải</li><li>Chính diện</li><li>Xác minh</li></ol>
+        <h2 id="mobileEnrollmentGuidance" role="status" aria-live="polite" aria-atomic="true">Chờ hướng dẫn từ hệ thống</h2><p class="mobile-enrollment-hint" id="mobileEnrollmentHint">Giữ khuôn mặt đủ sáng. Di chuyển chậm theo hướng dẫn trên màn hình.</p>
+        <div class="mobile-enrollment-progress"><label for="mobileEnrollmentProgress">Mẫu được hệ thống chấp nhận <b id="mobileEnrollmentProgressLabel">Chưa ghi nhận</b></label><progress id="mobileEnrollmentProgress" max="100" value="0"></progress><p id="mobileEnrollmentPad" role="status" aria-live="polite">Chưa xác minh người thật.</p></div>
+        <div class="mobile-enrollment-actions"><button id="mobileEnrollmentStart" class="mobile-button primary" type="button">Mở camera</button><button id="mobileEnrollmentPause" class="mobile-button" type="button" hidden>Dừng camera</button><button id="mobileEnrollmentReset" class="mobile-button" type="button">Quét lại</button><button id="mobileEnrollmentSubmit" class="mobile-button primary" type="button" disabled>Gửi mẫu để chờ duyệt</button></div>
+      </section>
+      <section id="mobileEnrollmentResult" class="mobile-enrollment-result" hidden><h2 id="mobileEnrollmentResultTitle">Đã gửi mẫu</h2><p id="mobileEnrollmentResultText">Mẫu đang chờ Chủ sở hữu hoặc Quản trị viên xem xét.</p></section>
+      <div class="mobile-enrollment-bottom"><button id="mobileEnrollmentRetry" class="mobile-button" type="button" hidden>Thử lại</button><button id="mobileEnrollmentCancel" class="mobile-text-button" type="button" hidden>Dừng camera</button></div>
+    </section>
+    <footer>Không chia sẻ lời mời. Chỉ dùng địa chỉ HTTPS do quản trị viên cấp trên mạng cửa hàng. Mẫu gửi lên chưa kích hoạt FaceID; quyết định duyệt thuộc Chủ sở hữu hoặc Quản trị viên.</footer>
+  </main>
+</body>
+</html>

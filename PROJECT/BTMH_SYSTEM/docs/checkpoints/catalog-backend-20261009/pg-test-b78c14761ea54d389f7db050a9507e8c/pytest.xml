@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="10" failures="0" skipped="0" tests="10" time="1.237" timestamp="2026-10-09T15:46:17.704167+07:00" hostname="DESKTOP-D5OAHIS"><testcase classname="tests_v54.test_catalog_backend" name="test_migration_dry_run_schema_only_mapping_and_repeatability" time="0.006"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_mapping_failure_rolls_back_schema_and_does_not_merge_variants" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_store_metadata_status_dependencies_history_and_scope" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_zone_crud_ids_scope_assignment_and_reference_protection" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_audit_failure_rolls_back_camera_store_and_zone" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_camera_name_validation_and_source_free_api[]" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_camera_name_validation_and_source_free_api[rtsp://test:credential@example.test/stream]" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_camera_name_validation_and_source_free_api[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_new_routes_preserve_permission_mapping_and_scope" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_primary_auxiliary_rename_preserves_live_state_and_behavior_change_retires" time="0.002"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'psycopg'&quot;">tests_v54\test_catalog_backend.py:27: in isolated
+    import psycopg
+E   ModuleNotFoundError: No module named 'psycopg'</error></testcase></testsuite></testsuites>

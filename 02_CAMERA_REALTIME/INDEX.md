@@ -1,0 +1,17 @@
+# 02 Camera / Realtime
+Canonical files:
+- [`media_gateway_v5410.py`](../PROJECT/BTMH_SYSTEM/module_app/media_gateway_v5410.py)
+- [`media_webrtc.py`](../PROJECT/BTMH_SYSTEM/module_app/media_webrtc.py)
+- [`rtsp_native_v545.py`](../PROJECT/BTMH_SYSTEM/module_app/rtsp_native_v545.py)
+- [`camera_connection_v544.py`](../PROJECT/BTMH_SYSTEM/module_app/camera_connection_v544.py)
+- [`camera_handover_v544.py`](../PROJECT/BTMH_SYSTEM/module_app/camera_handover_v544.py)
+- [`camera_registry_v546.py`](../PROJECT/BTMH_SYSTEM/module_app/camera_registry_v546.py)
+- [`camera_registry_v547.py`](../PROJECT/BTMH_SYSTEM/module_app/camera_registry_v547.py)
+- [`capture_worker_v544.py`](../PROJECT/BTMH_SYSTEM/module_app/capture_worker_v544.py)
+- [`capture_session_v544.py`](../PROJECT/BTMH_SYSTEM/module_app/capture_session_v544.py)
+- [`camera_fleet_v4.py`](../PROJECT/BTMH_SYSTEM/module_app/camera_fleet_v4.py)
+- [`recording_runtime_v4.py`](../PROJECT/BTMH_SYSTEM/module_app/recording_runtime_v4.py)
+- [`btmh_media_v5410.js`](../PROJECT/BTMH_SYSTEM/frontend/js/btmh_media_v5410.js)
+- [`btmh_media_v5410.css`](../PROJECT/BTMH_SYSTEM/frontend/css/btmh_media_v5410.css)
+- [`ensure_mediamtx_v5410.ps1`](../PROJECT/BTMH_SYSTEM/scripts/ensure_mediamtx_v5410.ps1)
+- [`test_native_gateway_v5410.py`](../PROJECT/BTMH_SYSTEM/tests_v54/test_native_gateway_v5410.py)

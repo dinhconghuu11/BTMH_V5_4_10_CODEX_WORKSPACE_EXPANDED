@@ -1,0 +1,32 @@
+/* Catalog presentation shares the canonical brand/spacing tokens. */
+body.btmh-v550 .camera-configuration { display: grid; gap: var(--btmh-space-section); min-width: 0; }
+body.btmh-v550 .btmh-catalog-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+body.btmh-v550 .btmh-catalog-header h2 { margin: 6px 0; color: var(--btmh-v550-burgundy); font-size: 24px; }
+body.btmh-v550 .btmh-catalog-header p { margin: 0; color: var(--btmh-v550-muted); }
+body.btmh-v550 .btmh-catalog-tabs { display: flex; gap: 8px; padding: 6px; border-bottom: 1px solid var(--btmh-v550-line); }
+body.btmh-v550 .btmh-catalog-tabs button { flex: 0 1 180px; min-height: 44px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: var(--btmh-v550-muted); font: inherit; font-weight: 600; cursor: pointer; }
+body.btmh-v550 .btmh-catalog-tabs button[aria-selected="true"] { background: var(--btmh-v550-burgundy); color: white; }
+body.btmh-v550 .btmh-catalog-feedback { margin: -12px 0 0; color: var(--btmh-v550-muted); min-height: 24px; }
+body.btmh-v550 .btmh-catalog-panel { display: grid; gap: 20px; }
+body.btmh-v550 .btmh-catalog-panel h3 { margin: 0; color: var(--btmh-v550-burgundy); font-size: 20px; }
+body.btmh-v550 .btmh-catalog-search, body.btmh-v550 .btmh-catalog-filters label { display: grid; gap: 8px; font-size: 13px; font-weight: 600; min-width: 0; }
+body.btmh-v550 .btmh-catalog-search { max-width: 420px; }
+body.btmh-v550 .btmh-catalog-filters { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+body.btmh-v550 .btmh-catalog-note { margin: 0; font-size: 13px; color: var(--btmh-v550-muted); line-height: 1.7; }
+body.btmh-v550 .btmh-catalog-form { display: grid; gap: 20px; padding-top: 24px; border-top: 1px solid var(--btmh-v550-line); }
+body.btmh-v550 .btmh-catalog-form small { font-weight: 400; color: var(--btmh-v550-muted); }
+body.btmh-v550 .btmh-catalog-form .student-modal-actions { justify-content: flex-start; margin: 0; }
+body.btmh-v550 .btmh-catalog-table { width: 100%; border-collapse: collapse; }
+body.btmh-v550 .btmh-catalog-table :is(th,td) { padding: 16px; border-bottom: 1px solid var(--btmh-v550-line); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+body.btmh-v550 .btmh-catalog-table th { background: var(--btmh-v550-ivory); font-size: 13px; font-weight: 600; }
+body.btmh-v550 .btmh-catalog-table td { font-size: 14px; }
+body.btmh-v550 .btmh-catalog-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+body.btmh-v550 #catalogCameraPanel { display: grid; gap: var(--btmh-space-section); min-width: 0; }
+body.btmh-v550 .btmh-camera-filters { display: grid; gap: 16px; margin: 20px 0; }
+body.btmh-v550 .btmh-camera-filters label { display: grid; gap: 8px; font-size: 13px; font-weight: 600; }
+@media(max-width:700px) {
+  body.btmh-v550 .btmh-catalog-header { align-items: flex-start; flex-direction: column; }
+  body.btmh-v550 .btmh-catalog-filters { grid-template-columns: minmax(0,1fr); }
+  body.btmh-v550 .btmh-catalog-table { min-width: 520px; }
+  body.btmh-v550 .btmh-catalog-tabs button { flex: 1; }
+}

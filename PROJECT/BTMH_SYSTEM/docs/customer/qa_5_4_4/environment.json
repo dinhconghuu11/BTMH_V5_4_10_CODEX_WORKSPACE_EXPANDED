@@ -1,0 +1,11 @@
+{
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "opencv": "4.13.0",
+  "numpy": "2.3.5",
+  "database_tests": "isolated SQLite",
+  "rtsp_tests": "loopback H264 basic-auth TCP, actual subprocess decoder",
+  "windows_camera_hardware": "NOT TESTED",
+  "ai_pad_hardware_inference": "NOT TESTED",
+  "browser_network_e2e": "NOT TESTED; DOM harness only"
+}

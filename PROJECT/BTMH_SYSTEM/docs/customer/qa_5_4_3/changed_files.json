@@ -1,0 +1,132 @@
+[
+  {
+    "file": "README.md",
+    "change": "modified",
+    "sha256": "bc56aa0f045c36724da2417f025e742f44c51bd8b6c94c9ef8791f59458ecb97"
+  },
+  {
+    "file": "VERIFY_RELEASE.py",
+    "change": "modified",
+    "sha256": "4713d41385039ab8a1fca5957e1e2955368e7f6ccdb78705fb0a14a7d7f83da9"
+  },
+  {
+    "file": "VERSION",
+    "change": "modified",
+    "sha256": "a3b3e9d3e89df41e71e67fadaa3f6d4ff940ba4e1c43a72a43a16d743e533f89"
+  },
+  {
+    "file": "VERSION.txt",
+    "change": "modified",
+    "sha256": "a3b3e9d3e89df41e71e67fadaa3f6d4ff940ba4e1c43a72a43a16d743e533f89"
+  },
+  {
+    "file": "docs/customer/CHANGELOG_V5_4_3.md",
+    "change": "added",
+    "sha256": "74f1cedf3c4a142cceb6f1f6c6727087cc836c213b04857e961b1bff3b6c591f"
+  },
+  {
+    "file": "docs/customer/QA_REPORT.md",
+    "change": "modified",
+    "sha256": "b6eedd4e208d8539a9a2310b95bd70e8fe707b090faf71b92d9a66681ecfa509"
+  },
+  {
+    "file": "docs/customer/README_V5_4.md",
+    "change": "modified",
+    "sha256": "bc56aa0f045c36724da2417f025e742f44c51bd8b6c94c9ef8791f59458ecb97"
+  },
+  {
+    "file": "docs/customer/qa_5_4_3/BROWSER_RESULTS.json",
+    "change": "added",
+    "sha256": "d86878aa1fa8115959f81151eea1d38989b902306b2795c32ecc1091a24de40a"
+  },
+  {
+    "file": "docs/customer/qa_5_4_3/NAV_OBSERVER_BEFORE_AFTER.json",
+    "change": "added",
+    "sha256": "efed7fbff2759381e73a2255fa5e5d5c92299376a1f140b6d75d9ea730845815"
+  },
+  {
+    "file": "docs/customer/qa_5_4_3/RUNTIME_RESULTS.json",
+    "change": "added",
+    "sha256": "ed996789c69b559adad1de3a4fe383bc91713211dbf970bbfc72e82de067c232"
+  },
+  {
+    "file": "docs/customer/qa_5_4_3/input_fingerprints.json",
+    "change": "added",
+    "sha256": "ac9d3d05e1b68f2fcfb7e0ae9814e2843c0346c88982b94cf483a89510cb7034"
+  },
+  {
+    "file": "frontend/btmh_auth_v54.js",
+    "change": "modified",
+    "sha256": "6a4773cedfd45f1bf9e32f798aa7e21ccdfc6a08e7f3bec2f0704234dd3db767"
+  },
+  {
+    "file": "frontend/css/btmh_customer_bundle_v541.css",
+    "change": "modified",
+    "sha256": "8b51e460cba1a00cb33cc81a38a40e9663a5bd8521f8cc7b0b44a747ee2cdbe4"
+  },
+  {
+    "file": "frontend/css/btmh_ui_v543.css",
+    "change": "added",
+    "sha256": "80de5aae3d3210cc0d2943e5ca35fdf2b3b323e1d15e8e0caf975ae7459d227e"
+  },
+  {
+    "file": "frontend/img/gold-jewelry-v543.svg",
+    "change": "added",
+    "sha256": "ece83803db974635d07b7a9be345ba63583fed6fb651e8ce1d1d6ba4d45df9ed"
+  },
+  {
+    "file": "frontend/index.html",
+    "change": "modified",
+    "sha256": "8885b55f994714d0c9517a53bf45d589dde661b0653d9ebe786d1fa7ede636f9"
+  },
+  {
+    "file": "frontend/js/app.js",
+    "change": "modified",
+    "sha256": "5d767040cbd28c596eee4da6b4a74f0a0f8755f8e04deff4ab7c50afe0f54619"
+  },
+  {
+    "file": "frontend/js/btmh_customer_v541.js",
+    "change": "modified",
+    "sha256": "cf1247d894ef23ab48da0eca196afb4988bef122138eaf6e47431bb1fbc3d720"
+  },
+  {
+    "file": "frontend/js/btmh_runtime_v543.js",
+    "change": "added",
+    "sha256": "194ae271aad3eed3d72dd78de975ccd226e92f4f65d42f0fece0735459d70031"
+  },
+  {
+    "file": "frontend/js/btmh_v4.js",
+    "change": "modified",
+    "sha256": "485adfcc72ea4ed977b64227e1c00d4cf0d69db3eae44ed598e799633e108213"
+  },
+  {
+    "file": "module_app/camera.py",
+    "change": "modified",
+    "sha256": "5f88b0d9107e23ce195ad069c79fbf5eb7349869d30238f8a2d2818db648ee53"
+  },
+  {
+    "file": "module_app/camera_catalog_v543.py",
+    "change": "added",
+    "sha256": "137e4dbaa93a6bfbafff01132c273b238cb440540e471d97fd6404b301195d04"
+  },
+  {
+    "file": "module_app/camera_fleet_v4.py",
+    "change": "modified",
+    "sha256": "a65e95a89d20fec35181931d4d3395d76a32da274ec961411fbe4f3defdd70ed"
+  },
+  {
+    "file": "module_app/config.py",
+    "change": "modified",
+    "sha256": "b01082e0966f710628d8040c88adb3c84eeb7111b71cfa3b7a50b3071ecdfc36"
+  },
+  {
+    "file": "module_app/main.py",
+    "change": "modified",
+    "sha256": "c4c6031dc44037f7d8c1caa6f2e9efd773abff1b35c941f32ce22065480a809a"
+  },
+  {
+    "file": "tests_v54/test_realtime_v543.py",
+    "change": "added",
+    "sha256": "28def4c5246560d65c27ce58224597c29c3de129921f112d3e26023632ef4108"
+  }
+]

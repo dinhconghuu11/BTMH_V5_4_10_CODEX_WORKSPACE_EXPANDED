@@ -1,0 +1,108 @@
+/* CampusFace V13 - Performance Architecture + Operations UI
+   Purpose: professional operational density, low-motion rendering, clear system states. */
+
+.v13-performance-ui{
+  --v13-navy:#0d1830;
+  --v13-ink:#18243a;
+  --v13-muted:#6f7f96;
+  --v13-line:#dce5f1;
+  --v13-cyan:#15aab5;
+  --v13-green:#1ea971;
+  --v13-amber:#d9922d;
+  --v13-red:#dc5a67;
+}
+.v13-performance-ui *{animation-duration:.18s!important;animation-iteration-count:1!important}
+.v13-performance-ui .sidebar{padding:20px 12px 14px;gap:10px;overflow-y:auto;overscroll-behavior:contain}
+.v13-performance-ui .brand{padding:3px 8px 12px}
+.v13-performance-ui .v13-nav{display:block!important}
+.v13-nav-group{margin:4px 0 12px}
+.v13-nav-label{display:block;padding:7px 13px 5px;color:#72839f;font-size:9px;font-weight:800;letter-spacing:.14em}
+.v13-nav-group .nav-item{min-height:38px;padding:9px 12px;margin:2px 0;border-radius:10px;font-size:12.5px;gap:9px}
+.v13-nav-group .nav-icon{width:19px!important;font-size:14px;color:#8ca0c2}
+.v13-nav-group .nav-item.active .nav-icon,.v13-nav-group .nav-item:hover .nav-icon{color:#9debdc}
+.v13-nav-group .nav-item.active::before{top:8px;bottom:8px;width:3px}
+.v13-performance-ui .privacy-note{padding:10px 12px;border-radius:12px;position:sticky;bottom:0;background:rgba(15,31,62,.94);backdrop-filter:blur(10px)}
+
+.v13-topbar{min-height:72px;padding:13px 16px!important;border-radius:16px!important;margin-bottom:16px!important;background:rgba(255,255,255,.94)!important;box-shadow:0 8px 24px rgba(24,43,80,.07)!important}
+.v13-page-heading h1{font-size:1.45rem!important;letter-spacing:-.025em!important}
+.v13-page-heading p{margin-top:3px!important;font-size:11px!important}
+.v13-top-actions{gap:7px!important;flex-wrap:nowrap!important;min-width:0}
+.v13-top-status,.v13-status-chip,.v13-alert-button{height:38px;border:1px solid var(--v13-line);background:#fff;border-radius:10px;display:flex;align-items:center;gap:7px;padding:0 10px;font-size:11px;white-space:nowrap}
+.v13-top-status{max-width:230px;overflow:hidden;text-overflow:ellipsis}
+.v13-status-chip i{width:7px;height:7px;border-radius:50%;background:var(--v13-green);box-shadow:0 0 0 3px rgba(30,169,113,.12)}
+.v13-status-chip span{color:#7b899e;font-size:9px;font-weight:800;letter-spacing:.06em}
+.v13-status-chip b{font-size:10px;color:#24324a}
+.v13-status-chip.warn i{background:var(--v13-amber);box-shadow:0 0 0 3px rgba(217,146,45,.12)}
+.v13-status-chip.bad i{background:var(--v13-red);box-shadow:0 0 0 3px rgba(220,90,103,.12)}
+.v13-camera-select{height:38px;padding:0 8px!important;border-radius:10px!important}
+.v13-camera-select label{display:none!important}
+.v13-camera-select select{height:30px;min-width:126px;border:0!important;background:#f5f8fc!important;font-size:11px!important}
+.v13-alert-button{cursor:pointer;position:relative;padding:0 9px;font-weight:800;color:#26364d}
+.v13-alert-button span{width:20px;height:20px;border-radius:6px;background:#fff2e2;color:#c47a18;display:grid;place-items:center}
+.v13-alert-button b{font-variant-numeric:tabular-nums}
+.v13-performance-ui .clock{height:38px;min-height:38px;padding:0 10px;border-radius:10px;font-size:11px;box-shadow:none}
+
+.v13-command-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 22px;margin-bottom:14px;background:linear-gradient(105deg,#101c35,#15284a 62%,#153d50);color:#fff;border:0;box-shadow:0 12px 30px rgba(14,31,63,.16)}
+.v13-command-header h2{margin:4px 0 6px;font-size:22px;letter-spacing:-.025em}
+.v13-command-header p{margin:0;max-width:760px;color:#b8c8df;font-size:12px;line-height:1.55}
+.v13-eyebrow{color:#36c7bb;font-size:9px;font-weight:850;letter-spacing:.13em}
+.v13-command-actions{display:flex;gap:8px;flex-shrink:0}
+.v13-command-actions .btn{min-height:36px;padding:8px 13px;font-size:11px}
+.v13-command-actions .btn.ghost{border-color:rgba(255,255,255,.16);color:#e4efff;background:rgba(255,255,255,.06)}
+
+.v13-dashboard-main{display:grid;grid-template-columns:minmax(460px,1.5fr) minmax(290px,.85fr) minmax(250px,.72fr);gap:14px;margin-bottom:14px}
+.v13-dashboard-main>.panel{padding:16px;border-radius:16px;box-shadow:0 7px 22px rgba(22,43,78,.06);backdrop-filter:none}
+.v13-dashboard-main .panel-head{margin-bottom:11px}
+.v13-dashboard-main .panel-head h2{font-size:15px;margin-top:2px}
+.v13-live-badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#effaf5;color:#14784f;border:1px solid #cfecdf;padding:6px 8px;font-size:9px;font-weight:850;letter-spacing:.05em}
+.v13-live-badge i{width:7px;height:7px;border-radius:50%;background:#1ea971;box-shadow:0 0 0 3px rgba(30,169,113,.13)}
+.v13-live-badge.offline{background:#fff2f3;color:#b64350;border-color:#f3d3d7}
+.v13-live-badge.offline i{background:#dc5a67;box-shadow:0 0 0 3px rgba(220,90,103,.13)}
+
+.v13-dashboard-preview,.v13-monitor-video{position:relative;overflow:hidden;border-radius:13px;background:#07111f;aspect-ratio:16/9;border:1px solid #20304a}
+.v13-dashboard-preview img,.v13-monitor-video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.v13-preview-empty{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:5px;color:#93a8c6;background:radial-gradient(circle at 50% 40%,#172942,#081321 72%);z-index:2}
+.v13-preview-empty b{font-size:12px;letter-spacing:.12em}.v13-preview-empty span{font-size:10px}
+.v13-preview-hud,.v13-monitor-overlay{position:absolute;left:9px;right:9px;bottom:8px;display:flex;gap:6px;z-index:3;pointer-events:none}
+.v13-preview-hud span,.v13-monitor-overlay span{padding:5px 7px;border-radius:7px;background:rgba(4,12,24,.72);color:#d9e7f8;font-size:9px;font-weight:750;backdrop-filter:blur(5px)}
+.v13-camera-foot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:9px}
+.v13-camera-foot span{display:flex;flex-direction:column;gap:2px;padding:7px 8px;border-radius:9px;background:#f6f8fc;color:#8490a4;font-size:9px}
+.v13-camera-foot b{color:#26364d;font-size:11px;font-variant-numeric:tabular-nums}
+
+.v13-event-feed{display:grid;gap:7px;max-height:310px;overflow:auto;padding-right:2px}
+.v13-event-row{display:grid;grid-template-columns:30px minmax(0,1fr) auto;align-items:center;gap:8px;padding:8px;border:1px solid #e7edf5;border-radius:10px;background:#fbfcfe}
+.v13-event-row .icon{width:30px;height:30px;display:grid;place-items:center;border-radius:8px;background:#eef4ff;color:#4863d8;font-size:10px;font-weight:900}
+.v13-event-row.success .icon{background:#eaf8f2;color:#16845a}.v13-event-row.warn .icon{background:#fff4e3;color:#b87217}.v13-event-row.bad .icon{background:#fff0f2;color:#c74553}
+.v13-event-row b{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.v13-event-row small{display:block;margin-top:2px;color:#8995a8;font-size:9px}.v13-event-row time{font-size:9px;color:#8b98aa;white-space:nowrap}
+
+.v13-perf-state{padding:5px 8px;border-radius:999px;background:#edf9f3;color:#188158;font-size:9px;font-weight:850;letter-spacing:.05em}
+.v13-perf-state.busy,.v13-perf-state.recovering{background:#fff5e7;color:#b46d10}.v13-perf-state.high{background:#fff0f2;color:#c64351}
+.v13-perf-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.v13-perf-grid>div{padding:10px;border-radius:10px;background:#f5f8fc;border:1px solid #edf1f6}.v13-perf-grid span{display:block;color:#8190a5;font-size:9px}.v13-perf-grid b{display:block;margin-top:4px;font-size:13px;font-variant-numeric:tabular-nums}.v13-perf-grid.compact>div{padding:8px}
+.v13-perf-policy{margin-top:9px;padding:9px;border-radius:10px;background:#f0fbf9;display:flex;gap:8px;align-items:flex-start}.v13-perf-policy>i{width:8px;height:8px;border-radius:50%;background:#1ea971;margin-top:4px;box-shadow:0 0 0 3px rgba(30,169,113,.12)}.v13-perf-policy b,.v13-perf-policy span{display:block}.v13-perf-policy b{font-size:10px}.v13-perf-policy span{font-size:9px;color:#75849a;margin-top:2px;line-height:1.35}
+.v13-perf-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.v13-perf-tags span{font-size:8px;font-weight:800;color:#52627a;background:#f5f7fb;border:1px solid #e7edf5;border-radius:999px;padding:4px 6px}
+
+/* Existing dashboard blocks are retained, but flattened so operational data wins visually. */
+.v13-performance-ui .v6-health-strip{margin-top:0!important;margin-bottom:12px!important;box-shadow:none!important;border-radius:14px!important}
+.v13-performance-ui .v22-pulse-strip{margin-top:12px!important}
+.v13-performance-ui .v20-kpi-grid{margin-top:12px!important}
+.v13-performance-ui .panel,.v13-performance-ui .stat-card{backdrop-filter:none}
+
+/* Live Monitor */
+.v13-live-header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:17px 20px;margin-bottom:14px;border-radius:16px}
+.v13-live-header h2{margin:3px 0 4px;font-size:20px}.v13-live-header p{margin:0;color:var(--v13-muted);font-size:11px}.v13-live-actions{display:flex;gap:8px;align-items:center}
+.v13-monitor-layout{display:grid;grid-template-columns:minmax(600px,1.65fr) minmax(280px,.72fr);gap:14px}
+.v13-monitor-video-card{padding:16px;border-radius:16px}.v13-monitor-video{aspect-ratio:16/9;min-height:420px}.v13-camera-zone{font-size:9px;font-weight:800;color:#5f7087;background:#f2f6fb;border:1px solid #e1e8f2;border-radius:999px;padding:6px 8px}.v13-monitor-side{display:grid;gap:14px;align-content:start}.v13-monitor-side>.panel{padding:15px;border-radius:16px}
+.v13-device-monitor-list{display:grid;gap:7px;max-height:370px;overflow:auto}.v13-device-row{display:grid;grid-template-columns:9px minmax(0,1fr) auto;gap:8px;align-items:center;padding:9px;border-radius:10px;border:1px solid #e5ebf4;background:#fbfcfe}.v13-device-row>i{width:8px;height:8px;border-radius:50%;background:#a4afbd}.v13-device-row.online>i{background:#1ea971;box-shadow:0 0 0 3px rgba(30,169,113,.1)}.v13-device-row.handover>i{background:#d9922d}.v13-device-row b{display:block;font-size:10.5px}.v13-device-row small{display:block;color:#8794a6;font-size:8.5px;margin-top:2px}.v13-device-row button{border:0;background:#eef3fb;color:#4058e7;border-radius:7px;padding:5px 7px;font-size:8.5px;font-weight:800;cursor:pointer}.v13-device-row button:disabled{opacity:.45;cursor:default}.v13-monitor-note{margin:9px 0 0;color:#78869a;font-size:10px;line-height:1.45}
+
+/* State semantics shared by all pages */
+.v13-system-state{display:inline-flex;align-items:center;gap:6px}.v13-system-state::before{content:"";width:7px;height:7px;border-radius:50%;background:#9aa7b8}.v13-system-state.ok::before{background:#1ea971}.v13-system-state.warn::before{background:#d9922d}.v13-system-state.bad::before{background:#dc5a67}
+
+@media (max-width:1380px){
+  .v13-status-chip{display:none}.v13-dashboard-main{grid-template-columns:minmax(430px,1.4fr) minmax(270px,.8fr)}.v13-performance-card{grid-column:1/-1}.v13-performance-card .v13-perf-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:1100px){
+  .v13-dashboard-main,.v13-monitor-layout{grid-template-columns:1fr}.v13-monitor-video{min-height:0}.v13-performance-card{grid-column:auto}.v13-top-status{display:none}.v13-command-header{align-items:flex-start;flex-direction:column}.v13-command-actions{width:100%}
+}
+@media (max-width:760px){
+  .v13-top-actions .clock,.v13-alert-button{display:none}.v13-camera-select select{min-width:105px}.v13-dashboard-main{display:block}.v13-dashboard-main>.panel{margin-bottom:10px}.v13-camera-foot{grid-template-columns:1fr 1fr}.v13-perf-grid,.v13-performance-card .v13-perf-grid{grid-template-columns:1fr 1fr}
+}

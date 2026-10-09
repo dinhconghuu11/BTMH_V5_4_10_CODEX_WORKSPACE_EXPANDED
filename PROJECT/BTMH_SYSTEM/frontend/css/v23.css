@@ -1,0 +1,40 @@
+/* CampusFace V23 - Academic catalog + premium two-pass FaceID experience */
+.v23-academic-row{grid-template-columns:1fr 1fr}
+.student-filter-panel{grid-template-columns:repeat(5,minmax(140px,1fr)) auto auto}
+.v23-class-selector{display:grid;gap:12px;padding:16px 18px;margin-bottom:14px;border-top:3px solid #20b99b}
+.v23-class-selectors{display:grid;grid-template-columns:1.05fr 1.15fr .9fr 1.7fr;gap:10px;align-items:end}
+.v23-class-selectors .field{min-width:0}.v23-class-selectors label{font-size:11px;font-weight:850;color:#506071;text-transform:uppercase;letter-spacing:.04em}
+.v23-class-selectors select{height:43px;border-radius:10px;border:1px solid #d9e4e8;background:#fff;color:#17313a;padding:0 12px;outline:none;box-shadow:0 1px 0 rgba(18,57,66,.02)}
+.v23-class-selectors select:focus{border-color:#24b99c;box-shadow:0 0 0 3px rgba(36,185,156,.10)}
+.v23-class-actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;border-top:1px solid #edf2f3;padding-top:12px}.v23-class-actions .v20-camera-state{margin-right:auto}
+.v23-session-modal{max-width:720px}.v23-session-modal .student-modal-head small{display:block;margin-top:3px;color:#82909d;font-size:11px;font-weight:500}
+
+/* Enrollment stage: premium, low-copy, two-pass visual */
+.faceid-setup-panel{background:linear-gradient(145deg,#fff 0%,#fbfefd 52%,#f6fbfa 100%);border-color:#dce9e6}
+.faceid-camera-wrap{border-radius:24px;overflow:hidden;background:#07191c;box-shadow:0 22px 55px rgba(2,29,32,.16)}
+.faceid-camera-wrap video{filter:brightness(.48) saturate(.76) contrast(1.06)}
+.faceid-camera-wrap:has(.faceid-scanner.scanning) video{filter:brightness(.42) saturate(.72) contrast(1.08)}
+.faceid-shade{background:radial-gradient(ellipse 25% 42% at 50% 45%,rgba(5,22,25,.01) 0 64%,rgba(3,19,22,.23) 82%,rgba(3,18,21,.50) 100%)}
+.faceid-scanner{--scan-angle:0deg;width:37%;height:70%}
+.v23-scan-ring{position:absolute;inset:-2%;border-radius:48%;background:conic-gradient(from -90deg,#27d6ac 0deg,#43bfe2 var(--scan-angle),rgba(255,255,255,.14) var(--scan-angle),rgba(255,255,255,.14) 360deg);opacity:.95;filter:drop-shadow(0 0 14px rgba(39,214,172,.28));transition:opacity .25s ease}
+.v23-scan-ring::after{content:"";position:absolute;inset:5px;border-radius:48%;background:transparent;box-shadow:inset 0 0 0 999px rgba(0,0,0,0);border:5px solid rgba(7,25,28,.92)}
+.v23-scan-ring i{position:absolute;left:50%;top:-5px;width:12px;height:12px;border-radius:50%;background:#70f1cd;box-shadow:0 0 0 6px rgba(74,231,190,.10),0 0 18px rgba(74,231,190,.9);transform:translateX(-50%);animation:v23Orb 2.2s ease-in-out infinite}
+@keyframes v23Orb{0%,100%{opacity:.7;transform:translateX(-50%) scale(.82)}50%{opacity:1;transform:translateX(-50%) scale(1.15)}}
+.faceid-scanner.aligning .v23-scan-ring{opacity:.36}.faceid-scanner.pass-complete .v23-scan-ring{filter:drop-shadow(0 0 20px rgba(39,214,172,.62))}.faceid-scanner.liveness .v23-scan-ring{animation:v23RingPulse 1s ease-in-out infinite}
+@keyframes v23RingPulse{50%{opacity:.52;transform:scale(.985)}}
+.faceid-brackets i{border-color:#e8fff9;filter:drop-shadow(0 0 8px rgba(70,226,188,.45))}
+.scan-tick.covered,.faceid-scanner.pass-complete .scan-tick{background:#5ef0c4;box-shadow:0 0 10px rgba(94,240,196,.72)}
+.faceid-stage-copy{bottom:5.5%;width:min(540px,82%)}.faceid-stage-copy h2{font-size:23px;margin:8px 0 4px}.faceid-stage-copy p{font-size:12px;color:rgba(240,255,252,.82)}
+.scan-pass-pill{background:rgba(4,31,34,.58);border-color:rgba(126,245,215,.22);color:#dffff6;font-weight:800}
+.faceid-guide{padding:10px 4px 10px 6px}
+.v23-pass-overview{padding:16px;border:1px solid #dfeae8;border-radius:18px;background:#fff;box-shadow:0 10px 28px rgba(24,73,73,.055);margin-bottom:12px}
+.v23-pass-head>div{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}.v23-pass-head span{font-size:11px;font-weight:900;color:#147e70;text-transform:uppercase;letter-spacing:.06em}.v23-pass-head strong{font-size:24px;color:#112d33;letter-spacing:-.04em}.v23-pass-head small{display:block;margin-top:2px;color:#7b8c92;font-size:11px}
+.v23-pass-overview .scan-summary-track{height:7px;margin:12px 0 14px;background:#e7f0ee}.v23-pass-overview .scan-summary-track i{background:linear-gradient(90deg,#18b796,#3bbcdc)}
+.v23-pass-cards{display:grid;gap:8px}.v23-pass-card{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:10px;padding:10px 11px;border:1px solid #e6eeee;border-radius:13px;background:#fbfdfd;transition:.2s ease}.v23-pass-card>i{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:#eef4f4;color:#809095;font-style:normal;font-weight:900}.v23-pass-card b{display:block;color:#24383e;font-size:12px}.v23-pass-card span{display:block;margin-top:2px;color:#8a999e;font-size:10px}.v23-pass-card em{font-style:normal;font-size:10px;font-weight:850;color:#8a979c}.v23-pass-card.active{border-color:#87dcc8;background:#f1fbf8;box-shadow:0 7px 18px rgba(28,174,143,.08)}.v23-pass-card.active>i{background:#19b996;color:#fff}.v23-pass-card.active em{color:#138f76}.v23-pass-card.done{border-color:#cfece4;background:#f7fcfa}.v23-pass-card.done>i{background:#daf6ed;color:#149473}.v23-pass-card.done em{color:#149473}
+.v23-instruction{border-color:#dceae7;background:#f7fbfa;color:#536a6e}.v23-instruction .instruction-icon{color:#12977d;background:#e7f8f3}
+.scan-signals>div{border-color:#e1ecea;background:#fcfefe;color:#61777c}.tech-details{opacity:.7}.faceid-success-overlay{background:linear-gradient(180deg,rgba(4,25,29,.91),rgba(3,35,38,.96));backdrop-filter:blur(12px)}
+
+@media(max-width:1220px){.v23-class-selectors{grid-template-columns:1fr 1fr}.student-filter-panel{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.v23-academic-row,.v23-class-selectors{grid-template-columns:1fr}.v23-class-actions{align-items:stretch;flex-direction:column}.v23-class-actions .v20-camera-state{margin-right:0}.student-filter-panel{grid-template-columns:1fr}.faceid-scanner{width:48%;height:66%}.v23-pass-card{grid-template-columns:34px minmax(0,1fr)}}
+.v23-scan-ring{-webkit-mask:radial-gradient(ellipse at center,transparent 0,transparent calc(100% - 6px),#000 calc(100% - 5px),#000 100%);mask:radial-gradient(ellipse at center,transparent 0,transparent calc(100% - 6px),#000 calc(100% - 5px),#000 100%)}
+.v23-scan-ring::after{display:none}

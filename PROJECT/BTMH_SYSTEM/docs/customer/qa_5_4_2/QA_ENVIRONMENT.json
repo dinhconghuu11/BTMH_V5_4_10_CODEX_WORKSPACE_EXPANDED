@@ -1,0 +1,9 @@
+{
+  "fastapi": "0.128.2",
+  "pytest": "9.0.2",
+  "starlette": "0.50.0",
+  "playwright": "1.57.0",
+  "argon2-cffi": "25.1.0",
+  "python": "3.13.5",
+  "sqlite": "3.46.1"
+}

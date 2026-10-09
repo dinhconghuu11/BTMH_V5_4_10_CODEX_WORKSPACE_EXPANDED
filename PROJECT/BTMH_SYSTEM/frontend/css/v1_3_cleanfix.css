@@ -1,0 +1,52 @@
+/* CampusFace V1.3 Clean Fix
+   Loaded LAST on purpose. It removes legacy classroom visibility conflicts without
+   redesigning the application shell or the working Recognition page. */
+
+#page-classroom.page{display:none!important}
+#page-classroom.page.active{display:block!important}
+
+#page-classroom .v13-classroom-toolbar{
+  display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 20px;margin-bottom:14px
+}
+#page-classroom .v13-classroom-toolbar h2{margin:3px 0 4px;font-size:21px;color:#112f38}
+#page-classroom .v13-classroom-toolbar p{margin:0;color:#72858b;font-size:11px}
+#page-classroom .v13-clean-classroom-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.55fr);gap:14px;margin-bottom:14px}
+#page-classroom .director-overview-panel,#page-classroom .v13-clean-track-panel,#page-classroom .v13-clean-events-panel{min-width:0}
+#page-classroom .classroom-camera-wrap{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:16/9;min-height:420px;background:#071719;border-radius:16px;margin:0 18px}
+#page-classroom #classroomVideo{visibility:hidden!important;pointer-events:none!important}
+#page-classroom #classroomServicePreview{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1;background:#081316}
+#page-classroom #classroomOverlay{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
+#page-classroom #classroomEmpty{z-index:6!important}
+#page-classroom .director-overview-footer{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding:12px 18px 18px}
+#page-classroom .director-overview-footer>div{padding:10px;border:1px solid #e4ecec;border-radius:12px;background:#f8fbfa}
+#page-classroom .director-overview-footer span{display:block;color:#74878d;font-size:9px;text-transform:uppercase;font-weight:800}
+#page-classroom .director-overview-footer b{display:block;margin-top:3px;color:#11343d;font-size:17px}
+#page-classroom .v13-clean-track-panel{padding-bottom:12px}
+#page-classroom .classroom-track-list{margin:0 16px 12px;border:1px solid #e5eeec;border-radius:13px;overflow:hidden;background:#fbfdfc;max-height:520px;overflow-y:auto}
+#page-classroom .classroom-track-list .cf-track-line{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 12px;border-bottom:1px solid #e6efed}
+#page-classroom .classroom-track-list .cf-track-line:last-child{border-bottom:0}
+#page-classroom .classroom-track-list .cf-track-line span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#page-classroom .classroom-track-list .cf-track-line>b{white-space:nowrap;color:#0b8f78}
+#page-classroom .v13-clean-events-panel .table-wrap{margin:0 18px 18px;max-height:360px;overflow:auto}
+#page-classroom .director-badges{display:flex;gap:7px;flex-wrap:wrap}
+#page-classroom .director-badges>span{display:inline-flex;align-items:center;gap:6px;padding:6px 8px;border:1px solid #e3eceb;border-radius:999px;background:#f8fbfa;font-size:9.5px;font-weight:800;color:#5e7279}
+
+/* V1.3 enrollment: two natural circles, no rigid 14-step scoreboard. */
+#page-register .faceid-sample-meter{min-width:88px}
+#page-register .faceid-sample-meter strong{font-size:12px;letter-spacing:.08em}
+#page-register .faceid-v13-simple-help{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding-top:11px}
+#page-register .faceid-v13-simple-help span{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #e2ecea;border-radius:14px;background:#f8fbfa;color:#60757b;font-size:10.5px;font-weight:700}
+#page-register .faceid-v13-simple-help i{display:grid;place-items:center;width:23px;height:23px;border-radius:50%;font-style:normal;background:#dff8f2;color:#087b66;font-size:10px;font-weight:900;flex:0 0 auto}
+#page-register .faceid-pro-scanner.scanning .v24-orbit-cursor{animation:v13OrbitHint 4.4s linear infinite}
+@keyframes v13OrbitHint{
+  0%{left:50%;top:22%}25%{left:76%;top:50%}50%{left:50%;top:78%}75%{left:24%;top:50%}100%{left:50%;top:22%}
+}
+@media(prefers-reduced-motion:reduce){#page-register .faceid-pro-scanner.scanning .v24-orbit-cursor{animation:none}}
+@media(max-width:1150px){#page-classroom .v13-clean-classroom-grid{grid-template-columns:1fr}#page-classroom .director-overview-footer{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){#page-classroom .v13-classroom-toolbar{align-items:flex-start;flex-direction:column}#page-classroom .classroom-camera-wrap{min-height:260px;margin:0 10px}#page-classroom .director-overview-footer{grid-template-columns:repeat(2,1fr)}#page-register .faceid-v13-simple-help{grid-template-columns:1fr}}
+
+/* V1.3.1 classroom on/off + low-latency polish */
+#page-classroom .director-run-box>div{display:flex;flex-direction:column;gap:2px}
+#page-classroom .v131-run-hint{font-size:10px;color:#7a8d93;font-weight:600}
+#page-classroom #classroomStartBtn,#page-classroom #classroomStopBtn{min-width:116px}
+#page-classroom .camera-empty p{max-width:360px;text-align:center;line-height:1.45}

@@ -1,0 +1,33 @@
+........................................................................ [ 59%]
+..................................................                       [100%]
+=============================== warnings summary ===============================
+module_app/main.py:820
+  /mnt/data/btmh_544_work/source/BTMH_Security_V5_4_3_DEVELOPMENT_SOURCE/BTMH_SYSTEM/module_app/main.py:820: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+../../../../../../opt/pyvenv/lib/python3.13/site-packages/fastapi/applications.py:4579
+../../../../../../opt/pyvenv/lib/python3.13/site-packages/fastapi/applications.py:4579
+  /opt/pyvenv/lib/python3.13/site-packages/fastapi/applications.py:4579: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+module_app/main.py:867
+  /mnt/data/btmh_544_work/source/BTMH_Security_V5_4_3_DEVELOPMENT_SOURCE/BTMH_SYSTEM/module_app/main.py:867: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("shutdown")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+122 passed, 4 warnings in 7.76s

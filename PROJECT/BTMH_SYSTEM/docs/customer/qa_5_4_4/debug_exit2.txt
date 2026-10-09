@@ -1,0 +1,4 @@
+.....                                                                    [100%]
+5 passed in 23.28s
+AFTER_PYTEST 0 LIVE 0 THREADS [('MainThread', False, True)]
+FIRST_ATEXIT

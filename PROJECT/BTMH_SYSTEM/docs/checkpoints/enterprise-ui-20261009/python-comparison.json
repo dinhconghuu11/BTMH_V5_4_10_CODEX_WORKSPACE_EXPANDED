@@ -1,0 +1,41 @@
+{
+  "before": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "15",
+    "skipped": "0",
+    "tests": "618",
+    "time": "174.225",
+    "timestamp": "2026-10-09T14:45:06.266406+07:00",
+    "hostname": "DESKTOP-D5OAHIS"
+  },
+  "after": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "15",
+    "skipped": "0",
+    "tests": "618",
+    "time": "244.488",
+    "timestamp": "2026-10-09T15:07:59.044653+07:00",
+    "hostname": "DESKTOP-D5OAHIS"
+  },
+  "new_failures": [],
+  "resolved_baseline_failures": [],
+  "existing_failures": [
+    "tests_v54.test_camera_v544::test_connection_edit_hides_secret_and_preserves_blank",
+    "tests_v54.test_camera_v544::test_diagnostic_does_not_require_switch",
+    "tests_v54.test_camera_v544::test_failed_switch_not_persisted",
+    "tests_v54.test_camera_v544::test_select_failure_has_actionable_error_and_keeps_source",
+    "tests_v54.test_fleet_api_v550::test_aux_stream_lost_lease_never_sends_cached_frame",
+    "tests_v54.test_fleet_api_v550::test_aux_stream_releases_lease_on_disconnect_or_iterator_close[False]",
+    "tests_v54.test_fleet_api_v550::test_busy_auxiliary_lifecycle_does_not_block_event_loop",
+    "tests_v54.test_fleet_api_v550::test_fleet_status_does_not_open_auxiliary_readers",
+    "tests_v54.test_fleet_api_v550::test_primary_stream_ends_on_epoch_change_even_same_uri",
+    "tests_v54.test_mediamtx_development_runtime::test_actual_app_startup_and_gateway_api_missing[development-True]",
+    "tests_v54.test_realtime_v543::test_sources_api_owner_sees_all_registered_no_capture",
+    "tests_v54.test_rtsp_config_v545::test_corrected_registry_endpoint_reaches_decoder_without_secret_loss",
+    "tests_v54.test_rtsp_config_v545::test_test_connection_does_not_rewrite_network_or_database",
+    "tests_v54.test_true_realtime_v549::test_v549_preview_ws_ack_paces_one_frame",
+    "tests_v54.test_v541_customer_ui::test_all_private_browser_routes_are_permission_mapped"
+  ]
+}

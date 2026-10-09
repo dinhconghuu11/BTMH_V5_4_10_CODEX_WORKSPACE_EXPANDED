@@ -1,0 +1,39 @@
+body.btmh-v550 #page-recognition .entry-side-stack { grid-template-columns: minmax(0, 1fr); }
+.recent-recognition-panel { padding: 22px; }
+.recent-recognition-header { display: flex; justify-content: space-between; align-items: start; gap: 20px; margin-bottom: 12px; }
+.recent-recognition-header h2 { margin: 5px 0 9px; }
+.recent-recognition-context, .recent-recognition-note { color: var(--btmh-v550-muted); font-size: 12px; line-height: 1.65; margin: 0; }
+.recent-recognition-actions { display: flex; align-items: center; gap: 10px; }
+.recent-recognition-note { margin-bottom: 17px; min-height: 20px; }
+.recent-recognition-items { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.recent-recognition-item { min-width: 0; }
+.recent-recognition-card { display: flex; align-items: stretch; gap: 12px; width: 100%; height: 100%; min-height: 118px; text-align: left; border: 1px solid var(--btmh-v550-line); border-radius: 11px; padding: 12px; background: var(--btmh-v550-paper); color: var(--btmh-v550-ink); cursor: pointer; font: inherit; }
+.recent-recognition-card:hover { border-color: var(--btmh-v550-gold); }
+.recent-recognition-card:focus-visible { outline: 2px solid var(--btmh-v550-gold); outline-offset: 3px; }
+.recent-recognition-photo { position: relative; display: grid; place-items: center; flex: 0 0 78px; width: 78px; min-height: 90px; border-radius: 8px; overflow: hidden; background: var(--btmh-v550-soft); }
+.recent-recognition-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.recent-recognition-photo-empty { padding: 8px; color: var(--btmh-v550-muted); font-size: 10px; line-height: 1.6; text-align: center; }
+.recent-recognition-copy { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.recent-recognition-heading { display: flex; flex-wrap: wrap; gap: 5px 7px; align-items: baseline; }
+.recent-recognition-heading strong { font-size: 13px; font-weight: 650; line-height: 1.55; overflow-wrap: anywhere; }
+.recent-recognition-sequence { color: var(--btmh-v550-burgundy); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.recent-recognition-state { font-size: 11px; line-height: 1.6; font-weight: 600; }
+.recent-recognition-state.verified { color: var(--btmh-v550-success); }
+.recent-recognition-state.pending { color: var(--btmh-v550-warning); }
+.recent-recognition-state.unknown { color: var(--btmh-v550-muted); }
+.recent-recognition-state.blocked { color: var(--btmh-v550-danger); }
+.recent-recognition-copy time, .recent-recognition-location { color: var(--btmh-v550-muted); font-size: 10px; line-height: 1.55; overflow-wrap: anywhere; }
+.recent-recognition-empty { grid-column: 1 / -1; padding: 30px 18px; border: 1px dashed var(--btmh-v550-line); border-radius: 10px; text-align: center; color: var(--btmh-v550-muted); font-size: 13px; line-height: 1.6; }
+.recent-recognition-dialog[hidden], .recent-recognition-photo [hidden], .recent-recognition-heading [hidden] { display: none !important; }
+.recent-recognition-dialog { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; padding: 20px; }
+.recent-recognition-backdrop { position: absolute; inset: 0; background: #21141eb3; }
+.recent-recognition-detail-card { position: relative; width: min(540px, 100%); max-height: calc(100dvh - 40px); padding: 24px; overflow-y: auto; border-radius: 16px; background: var(--btmh-v550-paper); color: var(--btmh-v550-ink); box-shadow: 0 20px 70px #1c101f3d; }
+.recent-recognition-detail-head { display: flex; justify-content: space-between; align-items: start; gap: 15px; margin-bottom: 18px; }
+.recent-recognition-detail-head h3 { margin: 0; color: var(--btmh-v550-burgundy); font-size: 19px; line-height: 1.5; overflow-wrap: anywhere; }
+.recent-recognition-detail-head button { min-width: 40px; min-height: 40px; border: 1px solid var(--btmh-v550-line); border-radius: 8px; background: var(--btmh-v550-paper); color: var(--btmh-v550-burgundy); cursor: pointer; font-size: 22px; }
+.recent-recognition-photo.is-detail { width: 150px; height: 180px; margin: 0 auto 18px; }
+.recent-recognition-detail-field { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 14px; border-top: 1px solid var(--btmh-v550-line); padding: 10px 0; font-size: 12px; line-height: 1.6; }
+.recent-recognition-detail-field span { color: var(--btmh-v550-muted); }
+.recent-recognition-detail-field strong { overflow-wrap: anywhere; font-weight: 600; }
+@media (max-width: 1180px) { .recent-recognition-items { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .recent-recognition-items { grid-template-columns: minmax(0, 1fr); } .recent-recognition-panel { padding: 16px; } .recent-recognition-header { gap: 12px; } .recent-recognition-actions .btn { padding: 8px 10px; font-size: 12px; } .recent-recognition-detail-card { padding: 18px; } }

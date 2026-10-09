@@ -1,0 +1,4 @@
+Acquired 2026-10-09 from https://github.com/yakhyo/face-anti-spoofing/releases/download/weights/MiniFASNetV2.onnx
+SHA256: b32929adc2d9c34b9486f8c4c7bc97c1b69bc0ea9befefc380e4faae4e463907
+Primary license source: https://raw.githubusercontent.com/yakhyo/face-anti-spoofing/main/LICENSE
+Acquisition proves pinned bytes. Exact redistribution notices and obligations must still be reviewed before commercial release.

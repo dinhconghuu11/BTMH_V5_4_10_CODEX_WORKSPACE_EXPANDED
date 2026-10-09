@@ -1,0 +1,4 @@
+Acquired 2026-10-09 from https://huggingface.co/opencv/face_recognition_sface/resolve/main/face_recognition_sface_2021dec.onnx?download=true
+SHA256: 0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79
+Primary license source: https://raw.githubusercontent.com/opencv/opencv_zoo/main/models/face_recognition_sface/LICENSE
+Acquisition proves pinned bytes. Exact redistribution notices and obligations must still be reviewed before commercial release.

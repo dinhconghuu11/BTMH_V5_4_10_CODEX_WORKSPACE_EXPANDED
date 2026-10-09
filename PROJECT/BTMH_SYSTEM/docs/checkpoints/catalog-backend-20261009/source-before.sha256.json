@@ -1,0 +1,34 @@
+﻿[
+    {
+        "file":  "module_app/main.py",
+        "sha256":  "d87c5af4e52f23c242cd91e67073582ead7f4ae4d32bae8c476fd86e485cad2d"
+    },
+    {
+        "file":  "module_app/camera.py",
+        "sha256":  "2cbe66cc715bbd1e6d636cffb905e78f1e88bff7b79ff5b44ca94c68591852a9"
+    },
+    {
+        "file":  "module_app/ai_camera_runtime.py",
+        "sha256":  "02995ac1684b844523f5dd2d88bf9560c19da2ad4d913c9b31ca43b175bb2899"
+    },
+    {
+        "file":  "module_app/demo_context.py",
+        "sha256":  "c32372d7343e54bf580b2bad95b376ad9785b5e85da1de8c0a41f943fef63f88"
+    },
+    {
+        "file":  "frontend/js/btmh_camera_configuration.js",
+        "sha256":  "a30f5e3c84b8381fae3946d3e5206a27f2f8a545922aa9925653373729bcc1d6"
+    },
+    {
+        "file":  "frontend/js/btmh_catalogs.js",
+        "sha256":  "d7203ef2c404e020b3556fca3b67991b482b9d3a50c964e46629fbc078228de9"
+    },
+    {
+        "file":  "frontend/index.html",
+        "sha256":  "ab7d7ebfd8b045f6242d7dad9dcaadb3e486afc0693817d321a31f750efe2a1b"
+    },
+    {
+        "file":  "frontend/css/btmh_catalogs.css",
+        "sha256":  "dc0f1508517d1440ba6ae3bd5186ecd40d51e30de86f13d587542d8b2910bba4"
+    }
+]

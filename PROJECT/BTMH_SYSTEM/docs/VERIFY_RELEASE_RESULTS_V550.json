@@ -1,0 +1,418 @@
+{
+  "generated_at": "2026-10-09T08:57:47.116039+00:00",
+  "status": "FAIL",
+  "release_stage": "development_rc_external_acceptance_blocked",
+  "isolated_sqlite": true,
+  "checks_passed": 88,
+  "checks_failed": 2,
+  "checks": [
+    {
+      "name": "No fixed owner username",
+      "status": "PASS"
+    },
+    {
+      "name": "No obvious fixed owner password",
+      "status": "PASS"
+    },
+    {
+      "name": "No packaged owner hash",
+      "status": "PASS"
+    },
+    {
+      "name": "V5.4.10 version",
+      "status": "PASS"
+    },
+    {
+      "name": "Auth CSS",
+      "status": "PASS"
+    },
+    {
+      "name": "Auth JS",
+      "status": "PASS"
+    },
+    {
+      "name": "Customer CSS",
+      "status": "PASS"
+    },
+    {
+      "name": "Customer CSS bundle",
+      "status": "PASS"
+    },
+    {
+      "name": "Customer JS",
+      "status": "PASS"
+    },
+    {
+      "name": "Official BTMH logo",
+      "status": "PASS"
+    },
+    {
+      "name": "No public registration UI",
+      "status": "PASS"
+    },
+    {
+      "name": "No inactive OTP delivery UI",
+      "status": "PASS"
+    },
+    {
+      "name": "No visible build label",
+      "status": "PASS"
+    },
+    {
+      "name": "Customer stylesheet bundle",
+      "status": "PASS"
+    },
+    {
+      "name": "Local first-run owner",
+      "status": "PASS"
+    },
+    {
+      "name": "SMS and optional legacy MFA",
+      "status": "PASS"
+    },
+    {
+      "name": "Public registration off",
+      "status": "PASS"
+    },
+    {
+      "name": "Security middleware",
+      "status": "PASS"
+    },
+    {
+      "name": "MCP default disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy SMS/Email OTP disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "Local host default",
+      "status": "PASS"
+    },
+    {
+      "name": "CSV Request fix",
+      "status": "PASS"
+    },
+    {
+      "name": "No self-observing navigation mutation loop",
+      "status": "PASS"
+    },
+    {
+      "name": "Bounded preview runtime shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Gold login artwork shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera source catalog shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera component module_app/capture_worker_v544.py",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera component module_app/capture_session_v544.py",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera component module_app/camera_handover_v544.py",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera component module_app/camera_connection_v544.py",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera component frontend/js/camera_tools_v544.js",
+      "status": "PASS"
+    },
+    {
+      "name": "Example camera not activated",
+      "status": "PASS"
+    },
+    {
+      "name": "Native RTSP adapter shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Read-only RTSP diagnostic shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Native executable dependency retained",
+      "status": "PASS"
+    },
+    {
+      "name": "RTSP URI not passed in decoder argv",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing USB worker retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera registry persistence guard shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Realtime RTSP profile shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Latest-frame zero backlog retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Native media gateway browser transport shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Native transport is primary",
+      "status": "PASS"
+    },
+    {
+      "name": "WebRTC fallback retained",
+      "status": "PASS"
+    },
+    {
+      "name": "MediaMTX gateway manager shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "MediaMTX installer pinned",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera secret not written to gateway config",
+      "status": "PASS"
+    },
+    {
+      "name": "Recognition uses BTMHMedia",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy camera registry repair shipped",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy repair runs before camera startup",
+      "status": "PASS"
+    },
+    {
+      "name": "Camera connection read-back verified",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale fleet reader invalidated after edit",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale recorder invalidated after edit",
+      "status": "PASS"
+    },
+    {
+      "name": "Connection editor verifies saved endpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "Connection editor preflights saved endpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC /api/v1/camera/status",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC /api/v1/camera/stream.mjpg",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC /api/v1/system/diagnostics",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC /api/v1/system/self-test",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC /api/v1/history/recognition",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC /api/v1/events/{event_id}/evidence.jpg",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC camera preflight",
+      "status": "PASS"
+    },
+    {
+      "name": "RBAC connection editor",
+      "status": "PASS"
+    },
+    {
+      "name": "Python compile",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/btmh_auth_v54.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/app.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_account_profile.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_camera_configuration.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_catalogs.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_customer_v541.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_demo_reports.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_diagnostics_v550.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_management.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_media_v5410.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_media_v549.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_mobile_enrollment.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_qr_enrollment_admin.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_recent_recognition.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_recognition_slots.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_runtime_v543.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_sms_v542.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/btmh_v4.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/camera_tools_v544.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/professional_v8_hero.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/js/professional_v9_hero.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/mobile/mobile.js",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax frontend/mobile/sw.js",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy identity/enrollment pytest",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser lifecycle",
+      "status": "PASS"
+    },
+    {
+      "name": "All private browser APIs mapped",
+      "status": "FAIL"
+    },
+    {
+      "name": "V5.4 pytest",
+      "status": "FAIL"
+    }
+  ],
+  "suites": [
+    {
+      "name": "V5.4 pytest",
+      "exit_code": 1,
+      "counts": {
+        "tests": 628,
+        "failures": 15,
+        "errors": 0,
+        "skipped": 0
+      },
+      "counts_verified": true
+    },
+    {
+      "name": "Legacy identity/enrollment pytest",
+      "exit_code": 0,
+      "counts": {
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "counts_verified": true
+    },
+    {
+      "name": "Browser lifecycle",
+      "exit_code": 0,
+      "counts": {
+        "tests": 410,
+        "pass": 410,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "counts_verified": true
+    }
+  ],
+  "external_acceptance": {
+    "real_hikvision_main_small": "BLOCKED",
+    "real_mediamtx_webrtc": "BLOCKED",
+    "rendered_fps_lan_latency": "BLOCKED",
+    "five_minute_hardware_soak": "BLOCKED",
+    "real_faceid_pad_models_gpu": "BLOCKED",
+    "real_postgresql": "BLOCKED",
+    "rendered_ui_desktop_mobile_focus": "BLOCKED",
+    "windows_offline_installation": "BLOCKED",
+    "live_sms_delivery": "BLOCKED"
+  },
+  "final_easy_install_created": false
+}

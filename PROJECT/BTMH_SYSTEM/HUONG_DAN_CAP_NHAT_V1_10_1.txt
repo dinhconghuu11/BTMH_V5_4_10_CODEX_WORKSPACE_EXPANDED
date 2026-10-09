@@ -1,0 +1,30 @@
+CAMPUSFACE V1.10.1 TAB STABLE - HUONG DAN CAP NHAT
+===================================================
+
+MUC TIEU BAN VA
+- Sua loi chuyen qua lai cac tab lam trang Nhan dien de bi do / SPOOF BLOCKED sai.
+- Giu tracker FaceID on dinh khi bat/tat Quan ly lop hoc.
+- Timeout liveness khong tu ket luan gia mao neu khong co bang chung man hinh/anh phang.
+- Tieu de Tong quan "Dang ky & nhan dien khuon mat bang camera tinh" nam tren 1 hang o desktop.
+- Sua logic cai dat Windows: uu tien Python 3.12 da co tren may, dung local wheels neu co.
+
+CAP NHAT TREN MAY DANG CHAY C:\FACE\2V
+1. Nhan Ctrl+C de tat CampusFace dang chay.
+2. Sao luu thu muc C:\FACE\2V neu muon co diem quay lai.
+3. Giai nen ban V1.10.1 vao C:\FACE\2V va chon Replace/Overwrite cac file trung ten.
+   KHONG can xoa .venv, runtime, vendor, module.env hoac du lieu hien co.
+4. Mo CMD tai C:\FACE\2V.
+5. Chay:
+      START_CAMPUSFACE.bat
+6. Mo http://127.0.0.1:8100 va nhan Ctrl+F5 mot lan de xoa cache giao dien cu.
+
+NEU START_CAMPUSFACE BAO CHUA CO RUNTIME
+- Chay START_HERE_WINDOWS.bat.
+- V1.10.1 se uu tien Python 3.12 da co tren may va local vendor\wheels neu da prepare truoc do.
+
+KIEM TRA SAU KHI CAP NHAT
+- Dung truoc camera o trang Nhan dien.
+- Chuyen: Tong quan -> Sinh vien -> Lich su -> Nhan dien.
+- Khong duoc tu chuyen sang SPOOF BLOCKED chi vi doi tab.
+- Neu dua dien thoai/anh phang vao camera va bo phat hien carrier co bang chung manh, he thong van BLOCK.
+- Tieu de banner Tong quan nam tren mot dong tren man hinh desktop rong.

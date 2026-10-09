@@ -1,0 +1,24 @@
+{
+  "modified": [
+    "frontend/index.html",
+    "frontend/css/btmh_design_v550.css",
+    "frontend/css/btmh_management.css",
+    "frontend/css/btmh_recognition_console.css",
+    "frontend/js/app.js",
+    "frontend/js/btmh_camera_configuration.js",
+    "frontend/js/btmh_customer_v541.js",
+    "frontend/js/btmh_diagnostics_v550.js",
+    "frontend/js/btmh_management.js",
+    "tests_browser/camera_configuration.test.cjs",
+    "tests_browser/customer_diagnostics_ui.test.cjs",
+    "tests_browser/diagnostics_lifecycle.test.cjs",
+    "tests_browser/management_dashboard.test.cjs",
+    "tests_browser/smoke_ui_preview.py"
+  ],
+  "new": [
+    "frontend/css/btmh_catalogs.css",
+    "frontend/js/btmh_catalogs.js",
+    "tests_browser/catalogs.test.cjs",
+    "tests_browser/visual_enterprise_ui.cjs"
+  ]
+}

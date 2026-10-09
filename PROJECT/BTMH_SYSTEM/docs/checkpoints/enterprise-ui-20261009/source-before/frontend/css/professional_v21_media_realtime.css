@@ -1,0 +1,40 @@
+/* CampusFace V2.8 - WebRTC media + browser metadata overlay */
+#officeWebrtcVideo{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#05070a;
+  z-index:1;display:none;pointer-events:none;transform:translateZ(0);backface-visibility:hidden;
+}
+#officeWebrtcVideo.active{display:block}
+#officePreviewCanvas{z-index:1!important;transform:translateZ(0)}
+#officeOverlayCanvas{
+  position:absolute;inset:0;width:100%;height:100%;z-index:3!important;pointer-events:none!important;
+  display:block;background:transparent!important;cursor:default!important;
+}
+#officeGateCanvas{z-index:4!important}
+#officePreview.v28-hidden{display:none!important}
+.office-camera-hud{align-items:center}
+#officeTransport{letter-spacing:.05em}
+#officeTransport.webrtc{background:rgba(2,122,72,.9);border-color:rgba(255,255,255,.2)}
+#officeTransport.websocket{background:rgba(23,92,211,.88);border-color:rgba(255,255,255,.2)}
+#officeTransport.mjpeg{background:rgba(181,71,8,.88);border-color:rgba(255,255,255,.2)}
+@media(max-width:900px){
+  .office-camera-hud{font-size:10px}
+  .office-camera-hud span{padding:5px 7px!important}
+  #officeVideoBuffer{display:none}
+}
+
+/* V2.9.1 camera geometry hotfix: one exact content box for video + overlays. */
+.office-camera-wrap{
+  aspect-ratio:16/9!important;min-height:0!important;height:auto!important;
+  display:block;position:relative;overflow:hidden;background:#05070a;
+}
+#officeWebrtcVideo,#officePreview,#officePreviewCanvas,#officeOverlayCanvas,#officeGateCanvas{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+}
+#officeWebrtcVideo,#officePreview{object-fit:contain!important;object-position:center center!important;}
+#officePreviewCanvas{background:#05070a!important;}
+
+/* V2.9.1 entrance camera: preserve the full 16:9 Hikvision frame instead of
+   cropping a 16:9 source into the legacy 16:10 entrance viewport. */
+.entry-camera-panel{min-width:0!important;overflow:hidden!important;}
+.entry-camera-wrap{aspect-ratio:16/9!important;min-height:0!important;width:100%!important;max-width:100%!important;}
+.entry-camera-wrap .module-service-preview,#recognitionVideo{object-fit:contain!important;object-position:center center!important;background:#05070a!important;}

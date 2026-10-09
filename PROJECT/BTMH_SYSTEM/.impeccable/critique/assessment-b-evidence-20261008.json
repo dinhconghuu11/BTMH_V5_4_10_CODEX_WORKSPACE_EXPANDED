@@ -1,0 +1,248 @@
+{
+    "assessment":  "B: detector/browser evidence",
+    "date":  "2026-10-08",
+    "target_slug":  "frontend-index-html",
+    "ignore_list_present":  false,
+    "scope":  [
+                  "frontend/index.html",
+                  "frontend/enroll.html"
+              ],
+    "context":  {
+                    "init_rerun":  false,
+                    "context_rerun":  false,
+                    "product_source_edited":  false,
+                    "permission_mode":  "default sandbox only"
+                },
+    "index":  {
+                  "command":  ".agents/skills/impeccable/scripts/impeccable.cmd detect --json frontend/index.html",
+                  "cli_exit_code":  2,
+                  "count":  9,
+                  "severity_counts":  {
+                                          "advisory":  1,
+                                          "warning":  8
+                                      },
+                  "rule_counts":  {
+                                      "flat-type-hierarchy":  1,
+                                      "em-dash-overuse":  1,
+                                      "broken-image":  6,
+                                      "low-contrast":  1
+                                  },
+                  "raw_artifact":  ".impeccable/critique/assessment-b-index-20261008.json",
+                  "stderr_artifact":  ".impeccable/critique/assessment-b-index-20261008.stderr.txt",
+                  "raw_locations":  "All nine have frontend/index.html and line 0; source mapping below supplies usable lines.",
+                  "stylesheet_warning_count":  12,
+                  "limitations":  "All linked /static/css stylesheets resolved incorrectly under frontend/static/css rather than frontend/css. Color, custom-property and typography analysis incomplete."
+              },
+    "enroll":  {
+                   "command":  ".agents/skills/impeccable/scripts/impeccable.cmd detect --json frontend/enroll.html",
+                   "cli_exit_code":  0,
+                   "count":  0,
+                   "raw_artifact":  ".impeccable/critique/assessment-b-enroll-20261008.json",
+                   "stderr_artifact":  ".impeccable/critique/assessment-b-enroll-20261008.stderr.txt",
+                   "stylesheet_warning_count":  1,
+                   "limitations":  "Linked /static/css/btmh_mobile_enrollment.css resolved incorrectly under frontend/static/css. Zero findings does not prove rendered visual or CSS quality."
+               },
+    "source_mapping":  [
+                           {
+                               "classification":  "Candidate low contrast in legacy playback explanatory note. Actual paper background #fffdf9 and rendered visibility/computed contrast unverified.",
+                               "rule":  "low-contrast",
+                               "snippet":  "text #8c786c on #ffffff, reported 4.2:1",
+                               "file":  "frontend/index.html",
+                               "line":  96
+                           },
+                           {
+                               "id":  "v4CameraModalStream",
+                               "rule":  "broken-image",
+                               "evidence":  "frontend/js/btmh_v4.js:114; frontend/js/btmh_media_v5410.js:118",
+                               "line":  102,
+                               "classification":  "False positive: runtime camera image mount; modal initially hidden.",
+                               "file":  "frontend/index.html"
+                           },
+                           {
+                               "id":  "v13MonitorPreview",
+                               "rule":  "broken-image",
+                               "evidence":  "frontend/js/app.js:834; frontend/js/btmh_media_v5410.js:118",
+                               "line":  147,
+                               "classification":  "False positive: runtime media image slot with connection empty state.",
+                               "file":  "frontend/index.html"
+                           },
+                           {
+                               "id":  "recognitionSnapshot",
+                               "rule":  "broken-image",
+                               "evidence":  "frontend/js/app.js:1503; frontend/css/btmh_customer_bundle_v541.css:2466",
+                               "line":  367,
+                               "classification":  "False positive: hidden until actual snapshot arrives, explicit no-image state.",
+                               "file":  "frontend/index.html"
+                           },
+                           {
+                               "id":  "cameraControlPreview",
+                               "rule":  "broken-image",
+                               "evidence":  "frontend/js/app.js:1678",
+                               "line":  701,
+                               "classification":  "False positive: runtime image preview with load/error empty state.",
+                               "file":  "frontend/index.html"
+                           },
+                           {
+                               "id":  "cameraConfigImage",
+                               "rule":  "broken-image",
+                               "evidence":  "frontend/js/btmh_camera_configuration.js:73; frontend/js/btmh_media_v5410.js:118",
+                               "line":  771,
+                               "classification":  "False positive: initially hidden runtime media fallback image.",
+                               "file":  "frontend/index.html"
+                           },
+                           {
+                               "id":  "systemCameraPreview",
+                               "rule":  "broken-image",
+                               "evidence":  "frontend/js/app.js:734",
+                               "line":  864,
+                               "classification":  "False positive: runtime preview with connection empty state.",
+                               "file":  "frontend/index.html"
+                           },
+                           {
+                               "classification":  "False positive from unresolved external stylesheets: detector assumes body/h1/h2/h3 all 16px. Source body is 14px, panel h2 20px, auth h2 30px, page h1 1.35rem.",
+                               "rule":  "flat-type-hierarchy",
+                               "evidence":  "frontend/css/btmh_design_v550.css:59; frontend/css/btmh_design_v550.css:72; frontend/css/btmh_auth_ui_v550.css:73; frontend/css/btmh_customer_bundle_v541.css:3656",
+                               "file":  "frontend/index.html",
+                               "line":  0
+                           },
+                           {
+                               "classification":  "False positive for AI prose cadence: 51 mostly placeholder values and select delimiters across hidden views, not continuous body copy.",
+                               "rule":  "em-dash-overuse",
+                               "evidence":  "frontend/index.html:59; frontend/index.html:176; frontend/index.html:311; frontend/index.html:376; frontend/index.html:604",
+                               "file":  "frontend/index.html",
+                               "line":  0
+                           }
+                       ],
+    "browser":  {
+                    "tool":  "mcp__cua_repl.js",
+                    "first_call":  "await cua.getState();",
+                    "inventory":  {
+                                      "browsers":  [
+
+                                                   ],
+                                      "apps":  [
+
+                                               ]
+                                  },
+                    "actual_browser_available":  false,
+                    "fresh_tab_created":  false,
+                    "visibility":  "SKIPPED: no browser surface in current inventory",
+                    "mutable_injection_preflight":  "SKIPPED: no tab available",
+                    "overlay_injection":  "SKIPPED: no browser; no user-visible overlay claimed",
+                    "browser_console_findings":  null,
+                    "rendered_viewport_checks":  "BLOCKED: no current browser available",
+                    "live_server_started":  false,
+                    "live_server_cleanup":  "N/A: none started",
+                    "fallback_signal":  "Current tool inventory plus persisted CLI JSON/stderr and source validation of runtime image slots and stylesheet definitions. Static fixtures are not current browser evidence."
+                },
+    "artifacts":  {
+                      "temporary_files_created":  0,
+                      "cleanup":  "JSON, stderr and exit-code files intentionally retained as requested critique evidence; no server, browser, profile or temporary preview was created."
+                  },
+    "raw_index_findings":  [
+                               {
+                                   "value":  [
+                                                 {
+                                                     "antipattern":  "low-contrast",
+                                                     "name":  "Low contrast text",
+                                                     "description":  "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+                                                     "severity":  "warning",
+                                                     "category":  "quality",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "4.2:1 (need 4.5:1) — text #8c786c on #ffffff"
+                                                 },
+                                                 {
+                                                     "antipattern":  "broken-image",
+                                                     "name":  "Broken or placeholder image",
+                                                     "description":  "\u003cimg\u003e tags with empty src, missing src, or placeholder values ship as broken-image boxes. Use real images, generated assets, or remove the tag.",
+                                                     "severity":  "warning",
+                                                     "category":  "quality",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "\u003cimg\u003e with no src attribute"
+                                                 },
+                                                 {
+                                                     "antipattern":  "broken-image",
+                                                     "name":  "Broken or placeholder image",
+                                                     "description":  "\u003cimg\u003e tags with empty src, missing src, or placeholder values ship as broken-image boxes. Use real images, generated assets, or remove the tag.",
+                                                     "severity":  "warning",
+                                                     "category":  "quality",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "\u003cimg\u003e with no src attribute"
+                                                 },
+                                                 {
+                                                     "antipattern":  "broken-image",
+                                                     "name":  "Broken or placeholder image",
+                                                     "description":  "\u003cimg\u003e tags with empty src, missing src, or placeholder values ship as broken-image boxes. Use real images, generated assets, or remove the tag.",
+                                                     "severity":  "warning",
+                                                     "category":  "quality",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "\u003cimg\u003e with no src attribute"
+                                                 },
+                                                 {
+                                                     "antipattern":  "broken-image",
+                                                     "name":  "Broken or placeholder image",
+                                                     "description":  "\u003cimg\u003e tags with empty src, missing src, or placeholder values ship as broken-image boxes. Use real images, generated assets, or remove the tag.",
+                                                     "severity":  "warning",
+                                                     "category":  "quality",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "\u003cimg\u003e with no src attribute"
+                                                 },
+                                                 {
+                                                     "antipattern":  "broken-image",
+                                                     "name":  "Broken or placeholder image",
+                                                     "description":  "\u003cimg\u003e tags with empty src, missing src, or placeholder values ship as broken-image boxes. Use real images, generated assets, or remove the tag.",
+                                                     "severity":  "warning",
+                                                     "category":  "quality",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "\u003cimg\u003e with no src attribute"
+                                                 },
+                                                 {
+                                                     "antipattern":  "broken-image",
+                                                     "name":  "Broken or placeholder image",
+                                                     "description":  "\u003cimg\u003e tags with empty src, missing src, or placeholder values ship as broken-image boxes. Use real images, generated assets, or remove the tag.",
+                                                     "severity":  "warning",
+                                                     "category":  "quality",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "\u003cimg\u003e with no src attribute"
+                                                 },
+                                                 {
+                                                     "antipattern":  "flat-type-hierarchy",
+                                                     "name":  "Flat type hierarchy",
+                                                     "description":  "Dominant heading and body roles are separated by less than 1.25× at every step, leaving the size hierarchy flat. Add at least one stronger size step.",
+                                                     "severity":  "warning",
+                                                     "category":  "slop",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "Role sizes: body 16px, h1 16px, h2 16px, h3 16px (largest adjacent step 1.00:1; target 1.25:1)"
+                                                 },
+                                                 {
+                                                     "antipattern":  "em-dash-overuse",
+                                                     "name":  "Em-dash overuse",
+                                                     "description":  "Em-dash saturation in body copy is an AI cadence tell. Advisory only: humans use em-dashes legitimately, so this fires only on saturation — at least 8 em-dashes (— or --) at a density near one per 500 characters of body text — never on a long article that uses a few. Prefer commas, colons, periods, or parentheses.",
+                                                     "severity":  "advisory",
+                                                     "category":  "slop",
+                                                     "file":  "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\frontend\\index.html",
+                                                     "line":  0,
+                                                     "snippet":  "51 em-dashes in body text",
+                                                     "advisory":  true
+                                                 }
+                                             ],
+                                   "Count":  9
+                               }
+                           ],
+    "raw_enroll_findings":  [
+                                {
+                                    "value":  [
+
+                                              ],
+                                    "Count":  0
+                                }
+                            ]
+}

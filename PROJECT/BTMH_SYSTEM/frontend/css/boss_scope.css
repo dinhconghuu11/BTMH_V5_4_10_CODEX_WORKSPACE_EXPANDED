@@ -1,0 +1,15 @@
+/* V2.4 scope: keep the original CampusFace shell, enable the useful static-camera
+   classroom view, and continue hiding unrelated legacy/deferred platform pages. */
+#page-operations,
+#page-platform,
+.v22-pulse-strip,
+.v21-live-classes-card,
+.v201-node.node-class,
+.student-menu-item[data-student-scope="RESERVED"],
+.student-menu-item[data-student-scope="TRANSFERRED"],
+.student-menu-item[data-student-scope="GRADUATING"],
+.student-menu-item[data-student-scope="ATTENTION"] {
+  display:none!important;
+}
+#page-dashboard .v20-kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1100px){#page-dashboard .v20-kpi-grid{grid-template-columns:1fr}}

@@ -1,0 +1,25 @@
+CAMPUSFACE V1 ENTERPRISE STABLE
+===============================
+
+1. Giai nen vao thu muc ngan, vi du:
+   C:\FACE\CampusFace-V1-Enterprise-Stable
+
+2. Lan dau:
+   START_HERE_WINDOWS.bat
+
+3. Lan sau:
+   START_CAMPUSFACE.bat
+
+4. Mo trinh duyet:
+   http://127.0.0.1:8100
+
+5. Demo theo thu tu:
+   - Tao sinh vien
+   - Dang ky FaceID 2 vong
+   - Nhan dien nguoi that
+   - Thu anh/dien thoai: khong duoc check-in
+   - Mo Quan ly lop hoc
+   - Bat quan sat
+   - Thu Ngồi / Đứng / Giơ tay / Di chuyển
+
+Luu y: V1 chi dung camera tinh. PTZ de Version 2.

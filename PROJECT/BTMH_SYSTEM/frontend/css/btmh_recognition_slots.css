@@ -1,0 +1,43 @@
+/* Camera presentation uses the established BTMH palette and existing media layers. */
+body.btmh-v550 #page-recognition .entry-recognition-top { grid-template-columns: minmax(0, 1fr); }
+body.btmh-v550 #page-recognition .entry-side-stack { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); grid-template-rows: auto; align-items: start; }
+body.btmh-v550 #page-recognition .recognition-camera-panel { padding: 22px; overflow: visible !important; }
+.recognition-camera-heading { display: flex; align-items: start; justify-content: space-between; gap: 20px; margin-bottom: 12px; }
+.recognition-camera-heading h2 { margin: 5px 0 8px; }
+.recognition-camera-heading p, .recognition-slots-note { color: var(--btmh-v550-muted); font-size: 13px; line-height: 1.65; margin: 0; }
+.recognition-slots-note { margin-bottom: 18px; min-height: 22px; }
+.recognition-slots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.recognition-slots[data-layout="single"] { grid-template-columns: minmax(0, 1fr); }
+.recognition-slots[data-layout="single"] .recognition-slot-number { display: none; }
+.recognition-slot { min-width: 0; overflow: hidden; border: 1px solid var(--btmh-v550-line); border-radius: 13px; background: var(--btmh-v550-paper); }
+.recognition-slot.is-selected { border-color: var(--btmh-v550-burgundy); box-shadow: 0 0 0 1px var(--btmh-v550-burgundy); }
+.recognition-slot-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 14px 0; }
+.recognition-slot-choose { display: flex; align-items: center; gap: 9px; min-width: 0; min-height: 36px; padding: 0; border: 0; color: var(--btmh-v550-ink); background: transparent; text-align: left; cursor: pointer; }
+.recognition-slot-choose strong { overflow-wrap: anywhere; font-size: 14px; font-weight: 650; }
+.recognition-slot-number { display: grid; place-items: center; flex: 0 0 28px; height: 28px; border-radius: 8px; background: var(--btmh-v550-soft); color: var(--btmh-v550-burgundy); font-size: 12px; }
+.recognition-slot.is-selected .recognition-slot-number { background: var(--btmh-v550-burgundy); color: var(--btmh-v550-paper); }
+.recognition-slot-fullscreen { flex: 0 0 auto; min-height: 36px; border: 1px solid var(--btmh-v550-line); border-radius: 8px; padding: 6px 9px; background: var(--btmh-v550-paper); color: var(--btmh-v550-burgundy); font: inherit; font-size: 11px; cursor: pointer; }
+.recognition-slot-fullscreen:disabled { opacity: .5; cursor: default; }
+.recognition-slot-location { min-height: 21px; margin: 5px 14px 10px; color: var(--btmh-v550-muted); font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.recognition-slot-picker { display: block; margin: 0 14px 14px; color: var(--btmh-v550-muted); font-size: 11px; }
+body.btmh-v550 #page-recognition .recognition-slot-picker select { display: block; width: 100%; max-width: 100%; min-height: 38px; margin-top: 5px; border-radius: 8px; border: 1px solid var(--btmh-v550-line); padding: 6px 10px; background: var(--btmh-v550-paper); color: var(--btmh-v550-ink); font-size: 12px; }
+body.btmh-v550 #page-recognition .recognition-slot-viewport.entry-camera-wrap { position: relative; width: 100%; min-height: 0 !important; height: auto !important; aspect-ratio: 16 / 9; margin: 0; border: 0; border-radius: 0; background: #191719; }
+.recognition-slot-viewport > :is(video, img, canvas) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.recognition-slot-viewport .camera-empty { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; background: #191719; color: #d4cbcd; text-align: center; font-size: 13px; }
+.recognition-slot-status { display: flex; flex-wrap: wrap; gap: 7px 12px; min-height: 46px; align-items: center; padding: 10px 14px; color: var(--btmh-v550-muted); font-size: 11px; line-height: 1.5; }
+.recognition-slot-live { font-weight: 650; }
+.recognition-slot-live.is-live { color: var(--btmh-v550-success); }
+.recognition-slot-live::before { content: ''; display: inline-block; width: 6px; height: 6px; margin-right: 5px; border-radius: 50%; background: currentColor; vertical-align: 1px; }
+.recognition-slot button:focus-visible, .recognition-slot select:focus-visible { outline: 2px solid var(--btmh-v550-gold); outline-offset: 3px; }
+.recognition-slot:fullscreen { display: flex; flex-direction: column; width: 100%; height: 100dvh; border-radius: 0; border: 0; background: #191719; }
+.recognition-slot:fullscreen .recognition-slot-head, .recognition-slot:fullscreen .recognition-slot-location, .recognition-slot:fullscreen .recognition-slot-picker, .recognition-slot:fullscreen .recognition-slot-status { background: var(--btmh-v550-paper); margin: 0; padding: 8px 18px; }
+body.btmh-v550 #page-recognition .recognition-slot:fullscreen .recognition-slot-viewport { flex: 1 1 0; aspect-ratio: auto; min-height: 0 !important; }
+body.btmh-v550 #page-recognition .entry-snapshot-quality { display: none; }
+.recognition-selected-context { margin: 0 0 15px; color: var(--btmh-v550-muted); font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .recognition-slots { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+  body.btmh-v550 #page-recognition .entry-side-stack { grid-template-columns: minmax(0, 1fr); }
+  body.btmh-v550 #page-recognition .recognition-camera-panel { padding: 16px; }
+  .recognition-camera-heading { gap: 10px; }
+  .recognition-camera-heading .btn { font-size: 12px; padding: 8px 10px; flex-shrink: 0; }
+}

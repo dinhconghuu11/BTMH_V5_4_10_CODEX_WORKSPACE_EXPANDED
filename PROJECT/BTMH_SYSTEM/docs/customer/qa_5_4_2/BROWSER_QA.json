@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Desktop: password -> SMS; masked phone; no forced TOTP; trust unchecked; resend cooldown",
+    "Mobile 390x844: no horizontal overflow; SMS controls available",
+    "Correct mock SMS -> authenticated page and HttpOnly trust cookie (TestClient transport)",
+    "Account security: SMS status, masked phone, trusted browser list render",
+    "No uncaught JavaScript exceptions in tested flow"
+  ],
+  "page_errors": [],
+  "transport": "Real FastAPI TestClient bridge; fake SMS provider; isolated SQLite; no hardware/lifespan"
+}

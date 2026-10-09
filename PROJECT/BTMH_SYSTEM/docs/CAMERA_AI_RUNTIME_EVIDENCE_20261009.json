@@ -1,0 +1,228 @@
+{
+  "timestamp_utc": "2026-10-09T02:36:24.113200+00:00",
+  "read_only": true,
+  "data_root": "C:\\Users\\ACER\\AppData\\Local\\CampusFace",
+  "diagnostic_interpreter": "C:\\Users\\ACER\\AppData\\Local\\CampusFace\\runtime\\venv\\Scripts\\python.exe",
+  "flags": {
+    "MODULE_CAMERA_MODE": "service",
+    "MODULE_AI_NATIVE_FRAME": "1",
+    "MODULE_USE_CUSTOM_FACE_YOLO": "auto"
+  },
+  "models": [
+    {
+      "file": "face_detection_yunet_2023mar.onnx",
+      "present": true,
+      "role": "REQUIRED_FACEID_PAD",
+      "size": 232589,
+      "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+      "supported_hash": true
+    },
+    {
+      "file": "face_recognition_sface_2021dec.onnx",
+      "present": true,
+      "role": "REQUIRED_FACEID_PAD",
+      "size": 38696353,
+      "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79",
+      "supported_hash": true
+    },
+    {
+      "file": "minifasnet_v2.onnx",
+      "present": true,
+      "role": "REQUIRED_FACEID_PAD",
+      "size": 1743581,
+      "sha256": "b32929adc2d9c34b9486f8c4c7bc97c1b69bc0ea9befefc380e4faae4e463907",
+      "supported_hash": true
+    },
+    {
+      "file": "campusface-face-yolo.pt",
+      "present": false,
+      "role": "OPTIONAL_YOLO"
+    },
+    {
+      "file": "yolo11n.pt",
+      "present": false,
+      "role": "OPTIONAL_YOLO"
+    }
+  ],
+  "packages": {
+    "opencv-contrib-python": "4.11.0.86",
+    "onnxruntime": "1.22.1",
+    "numpy": "1.26.4",
+    "psycopg": "3.3.5",
+    "ultralytics": "NOT_INSTALLED",
+    "torch": "NOT_INSTALLED"
+  },
+  "default_flags_when_unset": {
+    "MODULE_PAD_ENABLED": "1",
+    "MODULE_DEVICE_CONTEXT": "1"
+  },
+  "registry": {
+    "mode": "postgres",
+    "status": "READ_ONLY_OK",
+    "cameras": [
+      {
+        "camera_id": 1,
+        "camera_name": "Laptop Camera",
+        "enabled": true,
+        "ai_enabled": false,
+        "zone_name": "Máy vận hành",
+        "assignment_count": 0,
+        "store_id": null,
+        "store_name": null,
+        "eligible_configuration": false,
+        "blocking_reasons": [
+          "AI_DISABLED",
+          "STORE_ASSIGNMENT_MISSING_OR_INVALID"
+        ]
+      },
+      {
+        "camera_id": 2,
+        "camera_name": "Hikvision DS-2CD1123G0-IUF",
+        "enabled": true,
+        "ai_enabled": false,
+        "zone_name": "Hikvision LAN",
+        "assignment_count": 0,
+        "store_id": null,
+        "store_name": null,
+        "eligible_configuration": false,
+        "blocking_reasons": [
+          "AI_DISABLED",
+          "STORE_ASSIGNMENT_MISSING_OR_INVALID"
+        ]
+      },
+      {
+        "camera_id": 3,
+        "camera_name": "WyreStorm CAM001",
+        "enabled": true,
+        "ai_enabled": false,
+        "zone_name": "Chưa gán phòng",
+        "assignment_count": 0,
+        "store_id": null,
+        "store_name": null,
+        "eligible_configuration": false,
+        "blocking_reasons": [
+          "AI_DISABLED",
+          "STORE_ASSIGNMENT_MISSING_OR_INVALID"
+        ]
+      },
+      {
+        "camera_id": 4,
+        "camera_name": "Camera PTZ",
+        "enabled": true,
+        "ai_enabled": false,
+        "zone_name": "Chưa gán khu vực",
+        "assignment_count": 0,
+        "store_id": null,
+        "store_name": null,
+        "eligible_configuration": false,
+        "blocking_reasons": [
+          "AI_DISABLED",
+          "STORE_ASSIGNMENT_MISSING_OR_INVALID"
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "id": 1,
+        "store_name": "Cửa hàng mặc định"
+      }
+    ],
+    "relevant_role_permissions": [
+      {
+        "role": "ADMIN",
+        "permission": "*"
+      },
+      {
+        "role": "ADMIN",
+        "permission": "camera.view"
+      },
+      {
+        "role": "EMPLOYEE",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "HR",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "MANAGER",
+        "permission": "camera.live"
+      },
+      {
+        "role": "MANAGER",
+        "permission": "camera.view"
+      },
+      {
+        "role": "MANAGER",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "OPERATOR",
+        "permission": "camera.live"
+      },
+      {
+        "role": "OPERATOR",
+        "permission": "camera.view"
+      },
+      {
+        "role": "OPERATOR",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "SECURITY",
+        "permission": "camera.live"
+      },
+      {
+        "role": "SECURITY",
+        "permission": "camera.view"
+      },
+      {
+        "role": "SECURITY",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "SUPER_ADMIN",
+        "permission": "*"
+      },
+      {
+        "role": "SUPER_ADMIN",
+        "permission": "camera.view"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "camera.configure"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "camera.live"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "camera.view"
+      },
+      {
+        "role": "TECHNICIAN",
+        "permission": "dashboard.view"
+      },
+      {
+        "role": "VIEWER",
+        "permission": "camera.live"
+      },
+      {
+        "role": "VIEWER",
+        "permission": "dashboard.view"
+      }
+    ],
+    "actor_scope": "NOT_INSPECTED: current browser account/session is not read"
+  },
+  "separate_process_model_load": {
+    "interpreter": "installed Production runtime",
+    "yunet": "PASS",
+    "sface": "PASS",
+    "pad_onnxruntime_cpu": "PASS",
+    "real_camera_frame_inference": "NOT_RUN",
+    "active_server_model_memory": "NOT_INSPECTED"
+  },
+  "worker_inference_and_frontend_events": "NOT_INSPECTED: collect authenticated website runtime status separately",
+  "localhost_sandbox_limit": "Unavailable sandbox localhost does not prove host Production is stopped"
+}

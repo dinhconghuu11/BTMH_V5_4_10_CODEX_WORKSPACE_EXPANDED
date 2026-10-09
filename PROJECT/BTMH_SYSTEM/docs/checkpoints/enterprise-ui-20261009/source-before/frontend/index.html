@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bảo Tín Mạnh Hải | Quản lý nhận diện</title>
+  <link rel="stylesheet" href="/static/css/btmh_customer_bundle_v541.css?v=5.4.10">
+  <link rel="stylesheet" href="/static/css/btmh_media_v5410.css?v=5.4.10-ui2">
+  <link rel="stylesheet" href="/static/css/btmh_design_v550.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_account_ui_v550.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_auth_ui_v550.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_recognition_slots.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_recent_recognition.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_demo_reports.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_camera_configuration.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_management.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_account_profile.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_qr_enrollment_admin.css?v=1">
+  <link rel="stylesheet" href="/static/css/btmh_recognition_console.css?v=20261009-light1">
+</head>
+<body class="v13-performance-ui v131-lean-operations v141-sidebar-icons btmh-v550">
+<div class="app-shell" inert><button type="button" id="btmhMenuBackdrop" aria-label="Đóng menu"></button>
+  <aside class="sidebar" id="btmhSidebar">
+    <div class="brand btmh-sidebar-brand">
+      <span class="btmh-sidebar-emblem"><img src="/static/img/btmh_emblem.png" alt=""></span>
+      <div><strong>Bảo Tín Mạnh Hải</strong><small>Quản lý nhận diện</small></div>
+    </div>
+    <nav aria-label="Điều hướng chính" class="v13-nav v5-primary-nav btmh-primary-nav">
+      <div class="v13-nav-group"><span class="v13-nav-label">VẬN HÀNH CỬA HÀNG</span>
+        <button class="nav-item active" data-page="dashboard" data-permission="dashboard.view"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="8" rx="2" fill="currentColor" fill-opacity=".18"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="3" y="15" width="7" height="6" rx="2"/><rect x="14" y="12" width="7" height="9" rx="2" fill="currentColor" fill-opacity=".18"/></svg></span><span class="nav-label">Tổng quan</span></button>
+        <button class="nav-item" data-page="students" data-permission="employee.view"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3" fill="currentColor" fill-opacity=".18"/><path d="M3 21v-3a6 6 0 0 1 12 0v3ZM16 4a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v3"/></svg></span><span class="nav-label">Nhân sự</span></button>
+        <button class="nav-item" data-page="recognition" data-permission="camera.live"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8V5a2 2 0 0 1 2-2h3m8 0h3a2 2 0 0 1 2 2v3m0 8v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><rect x="7" y="6" width="10" height="12" rx="5" fill="currentColor" fill-opacity=".15"/><path d="M9 10h.1M15 10h.1M10 14q2 2 4 0"/></svg></span><span class="nav-label">Nhận diện &amp; chấm công</span></button>
+        <div class="btmh-nav-cluster open" data-nav-cluster="camera">
+          <button class="btmh-nav-cluster-toggle" type="button" aria-expanded="true"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="13" rx="3" fill="currentColor" fill-opacity=".15"/><path d="m17 10 4-3v11l-4-3"/><circle cx="10" cy="12.5" r="3"/></svg></span><span>Camera &amp; giám sát</span><span class="btmh-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+          <div class="btmh-nav-cluster-items">
+            <button class="nav-item btmh-subnav" data-page="live-grid" data-permission="camera.live"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="m10 8 5 3-5 3Z" fill="currentColor" stroke="none"/></svg></span><span class="nav-label">Xem trực tiếp</span></button>
+            <button class="nav-item btmh-subnav" data-page="playback" data-permission="camera.playback"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a9 9 0 1 1-.3 5M4 4v5h5"/><path d="m11 8 5 4-5 4Z" fill="currentColor" fill-opacity=".2"/></svg></span><span class="nav-label">Xem lại camera</span></button>
+            <button class="nav-item btmh-subnav" data-page="incidents" data-permission="incident.view"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 4v6c0 4-8 8-8 8s-8-4-8-8V7Z" fill="currentColor" fill-opacity=".15"/><path d="M12 8v5m0 3h.01"/></svg></span><span class="nav-label">Sự cố &amp; bằng chứng</span></button>
+          </div>
+        </div>
+        <button class="nav-item" data-page="history" data-permission="history.view"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18h16M8 16v-4m4 4V8m4 8v-6"/><path d="m7 7 4-3 4 2 5-4" stroke-opacity=".5"/></svg></span><span class="nav-label">Lịch sử &amp; báo cáo</span></button>
+      </div>
+      <div class="v13-nav-group btmh-admin-nav"><span class="v13-nav-label">QUẢN LÝ HỆ THỐNG</span>
+        <button class="nav-item hidden" id="adminSecurityNav" data-page="admin-security"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 4v6c0 4-8 8-8 8s-8-4-8-8V7Z" fill="currentColor" fill-opacity=".15"/><circle cx="12" cy="10" r="2"/><path d="M9 16a3 3 0 0 1 6 0"/></svg></span><span class="nav-label">Tài khoản &amp; phân quyền</span></button>
+        <button class="nav-item" data-page="system" data-permission="system.health"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="#54212b"/><circle cx="16" cy="12" r="2" fill="#54212b"/><circle cx="10" cy="18" r="2" fill="#54212b"/></svg></span><span class="nav-label">Cài đặt hệ thống</span></button>
+      </div>
+    </nav>
+    <div class="privacy-note"><span class="dot green"></span><div><b>Hệ thống đang hoạt động</b><small>Dữ liệu được xử lý nội bộ</small></div></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar v13-topbar">
+      <button type="button" id="btmhMenuToggle" aria-controls="btmhSidebar" aria-expanded="false" aria-label="Mở menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div class="v13-page-heading">
+        <h1 id="pageTitle">Tổng quan</h1>
+        <p id="pageSubtitle">Tình trạng vận hành cửa hàng</p>
+      </div>
+      <div class="top-actions v13-top-actions">
+        <div class="v13-top-status"><span class="dot" id="cameraDot"></span><span id="cameraStatus">Camera đang kiểm tra</span></div>
+        <div class="v13-status-chip" id="v13TopAi"><i></i><span>NHẬN DIỆN</span><b>Hoạt động</b></div>
+        <div class="v13-status-chip" id="v13TopDb"><i></i><span>DỮ LIỆU</span><b>—</b></div>
+        <div class="v13-status-chip" id="v13TopStorage"><i></i><span>Ổ ĐĨA</span><b>—</b></div>
+        <div class="v4-camera-rolebar">
+          <div class="v4-camera-role enrollment"><span class="ico">E</span><div><small>Camera đăng ký</small><b id="v4EnrollmentCameraName">Laptop Camera</b></div><span class="status">Online</span></div>
+          <div class="v4-camera-role surveillance"><span class="ico">S</span><div><small>Camera giám sát</small><b id="v4SurveillanceCameraName">Hikvision</b></div><span class="status" id="v4SurveillanceCameraState">Đang kiểm tra</span></div>
+        </div>
+        <span id="globalCameraHandoverBadge" class="hidden">Sẵn sàng</span>
+        <button class="v13-alert-button" type="button" onclick="navigate('incidents')" title="Sự cố cần xử lý" data-permission="incident.view"><span>!</span><b id="v13AlertCount">0</b></button>
+        <div class="btmh-account-control" id="btmhAccountControl">
+          <button class="v23-user-chip" id="v23UserChip" type="button" aria-haspopup="menu" aria-controls="btmhAccountMenu" aria-expanded="false" aria-label="Mở menu tài khoản" disabled><span id="v23UserInitial">?</span><div><small>TÀI KHOẢN</small><b id="v23UserName">Chưa đăng nhập</b></div><svg class="btmh-account-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="btmh-account-menu" id="btmhAccountMenu" role="menu" aria-label="Tài khoản đang đăng nhập" hidden>
+            <div class="btmh-account-summary" role="presentation"><b id="accountMenuName">Chưa đăng nhập</b><span id="accountMenuUsername"></span><small id="accountMenuRole"></small></div>
+            <button id="accountMenuProfileBtn" type="button" role="menuitem">Hồ sơ</button>
+            <button id="accountMenuPasswordBtn" type="button" role="menuitem">Đổi mật khẩu</button>
+            <button id="accountMenuManageBtn" type="button" role="menuitem" hidden>Tài khoản &amp; bảo mật</button>
+            <button id="accountMenuLogoutBtn" class="btmh-account-logout" type="button" role="menuitem">Đăng xuất</button>
+            <p id="accountMenuNote" role="status" aria-live="polite" hidden></p>
+          </div>
+        </div>
+        <div class="clock" id="clock">--:--:--</div>
+      </div>
+    </header>
+
+
+    <section class="page" id="page-live-grid">
+      <div class="panel" style="padding:18px">
+        <div class="v4-live-head v5-live-head"><div><span class="btmh-kicker">STORE OBSERVATION</span><h2>Quan sát cửa hàng</h2><p>AI chỉ tập trung xác định người xuất hiện: nhân viên sẽ hiện tên, người chưa có FaceID hiển thị là Khách hàng.</p></div><div class="v4-layout-buttons"><button data-v4-layout="1">1×1</button><button class="active" data-v4-layout="2">2×2</button><button data-v4-layout="3">3×3</button><button data-v4-layout="4">4×4</button></div></div>
+        <div class="v5-camera-switchbar" data-permission="camera.switch"><div><span>Nguồn AI đang xử lý</span><b id="v5ActiveCameraLabel">Đang kiểm tra...</b></div><select id="v5ActiveCameraSelect"><option value="0">Laptop Camera</option></select><button class="btn primary" id="v5SwitchCameraBtn" type="button">Chuyển camera</button><button type="button" class="btn ghost" data-camera-test="v5ActiveCameraSelect" data-note="#v5CameraSwitchNote">Kiểm tra</button><button type="button" class="btn ghost" data-permission="camera.configure" data-camera-edit="v5ActiveCameraSelect">Sửa kết nối</button><small id="v5CameraSwitchNote">Recording của các camera khác vẫn hoạt động độc lập.</small></div>
+        <div class="btmh-source-tools"><button type="button" class="btn ghost" data-refresh-sources>Tải lại</button><button type="button" class="btn ghost" data-permission="camera.configure" onclick="navigate('ops-center')">Quản lý camera</button><small data-source-note></small></div>
+        <div class="v4-camera-grid cols-2" id="v4CameraGrid"><div class="v4-empty">Đang tải danh sách camera...</div></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-playback">
+      <div class="panel" style="padding:18px;margin-bottom:14px"><div class="v4-camera-page-head"><div><span class="btmh-kicker">VIDEO PLAYBACK &amp; EVIDENCE</span><h2>Xem lại camera</h2><p>Chọn camera, ngày và segment. Có thể cắt một khoảng video để gắn vào sự cố/bằng chứng.</p></div><span class="v4-badge rec">● Recording / NVR</span></div></div>
+      <div class="v4-playback-layout">
+        <aside class="panel v4-playback-side"><label>Camera<select id="v4PlaybackCamera"><option value="">Chọn camera</option></select></label><label style="margin-top:12px">Ngày<input id="v4PlaybackDate" type="date"></label><button class="btn primary" id="v4PlaybackSearch" style="width:100%;margin-top:12px">Tìm bản ghi</button><button class="btn ghost" id="v4PlaybackRefresh" style="width:100%;margin-top:8px">Làm mới camera</button><div id="v4PlaybackResults" style="margin-top:14px"><div class="v4-empty">Chọn camera và ngày để xem bản ghi.</div></div></aside>
+        <div><div class="v4-playback-player"><div id="v4PlaybackEmpty">Chọn một đoạn video ở bên trái.</div><video id="v4PlaybackVideo" controls playsinline style="display:none"></video></div><div class="v4-timeline"><b>Timeline</b><div class="v4-timeline-track" style="margin-top:10px"><i style="left:0;width:0"></i></div><small style="display:block;margin-top:8px;color:#8c786c">Event nhận diện/khách sẽ được dùng làm marker khi có recording tương ứng.</small></div>
+          <div class="v5-clip-maker" data-permission="video.clip"><div><b>Cắt đoạn video</b><small>Chọn segment bên trái rồi nhập khoảng thời gian cần lưu.</small></div><label>Bắt đầu<input id="v5ClipStart" type="datetime-local" step="1"></label><label>Kết thúc<input id="v5ClipEnd" type="datetime-local" step="1"></label><button class="btn primary" id="v5CreateClipBtn" type="button" disabled>Tạo clip</button><span id="v5ClipState">Chưa chọn segment.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="v4-camera-modal hidden" id="v4CameraModal"><div class="v4-camera-modal-card"><div class="v4-camera-modal-head"><div><b id="v4CameraModalTitle">Camera</b><small id="v4CameraModalMeta" style="display:block;opacity:.65;margin-top:3px"></small></div><button id="v4CameraModalClose" type="button" aria-label="Đóng camera">×</button></div><div id="v4CameraModalViewport" style="position:relative;aspect-ratio:16/9;max-height:76vh;background:#050505"><img id="v4CameraModalStream" alt="Camera live"></div></div></div>
+
+    <section class="page active" id="page-dashboard">
+      <div id="managementDashboard" aria-busy="false">
+        <header class="btmh-management-header">
+          <div><h2>Tổng quan cửa hàng</h2><p>Nhân sự, lượt ghé và các sự kiện đã ghi nhận trong ngày.</p></div>
+          <div class="btmh-management-controls">
+            <label for="managementStore">Cửa hàng<select id="managementStore"><option value="">Tất cả cửa hàng</option></select></label>
+            <button id="managementRefresh" class="btn ghost" type="button">Làm mới</button>
+          </div>
+        </header>
+        <p id="managementFeedback" class="btmh-management-feedback" role="status" aria-live="polite">Đang tải tổng quan…</p>
+        <section class="panel btmh-management-staff" aria-labelledby="managementStaffTitle">
+          <h3 id="managementStaffTitle">Nhân sự hôm nay</h3>
+          <dl class="btmh-management-metrics">
+            <div><dt>Đã nhận diện hợp lệ</dt><dd id="managementPresent">—</dd></div>
+            <div><dt>Đi muộn theo ca</dt><dd id="managementLate">—</dd></div>
+            <div><dt>Vắng sau khi ca kết thúc</dt><dd id="managementAbsent">—</dd></div>
+            <div><dt>Chưa đến hạn kết luận</dt><dd id="managementPending">—</dd></div>
+            <div><dt>Thiếu ghi nhận ra</dt><dd id="managementMissingOut">—</dd></div>
+          </dl>
+          <p id="managementAttendanceNote" class="btmh-management-note">Đang kiểm tra ca đã phân công.</p>
+        </section>
+        <div class="btmh-management-grid">
+          <section class="panel" aria-labelledby="managementVisitsTitle">
+            <h3 id="managementVisitsTitle">Lượt ghé cửa hàng</h3>
+            <div id="managementVisits"><p class="empty-card">Đang tải lượt ghé…</p></div>
+          </section>
+          <section class="panel" aria-labelledby="managementRecentTitle">
+            <dl class="btmh-management-equipment">
+              <div><dt>Camera online / đã cấu hình</dt><dd id="managementCamera">—</dd></div>
+              <div><dt>Sự cố đang mở</dt><dd id="managementIncidents">—</dd></div>
+            </dl>
+            <h3 id="managementRecentTitle" style="margin-top:24px">Nhận diện gần nhất</h3>
+            <ol id="managementRecent" class="btmh-management-recent"><li class="empty-card">Đang tải nhận diện…</li></ol>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-live-monitor">
+      <section class="v13-live-header panel"><div><span class="v13-eyebrow">GIÁM SÁT TRỰC TIẾP</span><h2>Camera &amp; nhận diện</h2></div><div class="v13-live-actions"><span class="v13-live-badge" id="v13MonitorLive"><i></i> Đang kết nối</span><button class="btn ghost" id="v13MonitorRefresh" type="button">Làm mới</button></div></section>
+      <div class="v13-monitor-layout">
+        <article class="panel v13-monitor-video-card">
+          <div class="panel-head"><div><span class="v13-eyebrow">CAMERA TRỰC TIẾP</span><h2 id="v13MonitorCameraName">Camera hiện tại</h2></div><span class="v13-camera-zone" id="v13MonitorZone">Khu vực chưa đặt</span></div>
+          <div class="v13-monitor-video"><img id="v13MonitorPreview" alt="Camera trực tiếp"><div class="v13-preview-empty" id="v13MonitorEmpty"><b>Camera</b><span>Đang kết nối…</span></div></div>
+        </article>
+        <aside class="v13-monitor-side">
+          <article class="panel"><div class="panel-head"><div><span class="v13-eyebrow">DANH SÁCH CAMERA</span><h2>Thiết bị</h2></div></div><div class="v13-device-monitor-list" id="v13MonitorDevices"><div class="empty-card">Đang tải camera...</div></div></article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page" id="page-register">
+      <div class="registration-phase active" id="registrationProfilePhase">
+        <article class="panel enrollment-profile-card">
+          <section class="btmh-enroll-hero">
+            <div>
+              <span class="btmh-eyebrow">ĐĂNG KÝ NHẬN DIỆN</span>
+              <h2>Đăng ký danh tính nhân viên</h2>
+              <p>Tạo hồ sơ nhân sự và bộ FaceID đa góc trên hệ thống nội bộ. Dữ liệu sinh trắc được xử lý tại máy và chỉ các mẫu đặc trưng cần thiết được lưu.</p>
+            </div>
+            <div class="btmh-trust-row" aria-label="Trạng thái bảo mật">
+              <span class="btmh-trust-chip"><i></i> LOCAL AI</span>
+              <span class="btmh-trust-chip"><i></i> MULTI-ANGLE</span>
+              <span class="btmh-trust-chip"><i></i> CONTROLLED ACCESS</span>
+            </div>
+          </section>
+          <div class="enrollment-stepbar">
+            <span class="step active"><i>1</i> Hồ sơ nhân viên</span>
+            <span class="step-line"></span>
+            <span class="step"><i>2</i> Quét FaceID</span>
+          </div>
+          <div class="panel-head enrollment-title"><div><h2>Thông tin nhân viên</h2></div></div>
+          <div class="field"><label for="enrollmentStoreSelect">Cửa hàng đăng ký</label><select id="enrollmentStoreSelect"><option value="">— Chọn cửa hàng —</option></select><small>Mỗi phiên quét gắn với cửa hàng được chọn. Chỉ Quản trị viên hoặc Chủ sở hữu được duyệt FaceID.</small></div>
+          <div class="profile-phase-grid">
+            <form id="studentForm" class="student-form">
+              <div class="btmh-form-heading"><div><span class="btmh-card-kicker">Bước 01 · Employee Profile</span><h3>Thông tin hồ sơ</h3><p>Hồ sơ nhân viên và thông tin tổ chức được xác nhận trước khi thu mẫu FaceID.</p></div><span class="btmh-id-badge">SECURE ENTRY</span></div>
+              <div class="field-row">
+                <div class="field"><label>Mã nhân viên *</label><input id="studentCode" required placeholder="VD: NV2026001" /></div>
+                <div class="field"><label>Họ và tên *</label><input id="fullName" required placeholder="Nguyễn Văn A" /></div>
+              </div>
+              <div class="field-row v23-academic-row">
+                <div class="field"><label>Phòng ban</label><select id="faculty"><option value="">Chọn phòng ban</option></select></div>
+                <div class="field"><label>Chức vụ</label><select id="major"><option value="">Chọn chức vụ</option></select></div>
+              </div>
+              <div class="field"><label>Bộ phận / Nhóm</label><input id="className" placeholder="VD: Kinh doanh 1" /></div>
+              <div class="field-row">
+                <div class="field"><label>Email</label><input id="email" type="email" placeholder="nhanvien@congty.vn" /></div>
+                <div class="field"><label>Số điện thoại</label><input id="phone" placeholder="09xxxxxxxx" /></div>
+              </div>
+              <label class="consent"><input id="consent" type="checkbox" /><span>Tôi xác nhận nhân viên đồng ý đăng ký FaceID phục vụ kiểm soát ra vào và nghiệp vụ nội bộ.</span></label>
+              <button class="btn primary" type="submit">Lưu hồ sơ &amp; chuyển sang quét FaceID →</button>
+            </form>
+            <div class="existing-student-box">
+              <span class="btmh-card-kicker">Quick Enrollment</span>
+              <div class="btmh-existing-visual" aria-hidden="true"><div class="btmh-existing-face"></div><span class="btmh-existing-status"><i></i> Sẵn sàng nhận diện</span></div>
+              <h3>Hồ sơ đã tồn tại?</h3>
+              <p class="btmh-existing-copy">Chọn một nhân viên để đăng ký mới hoặc quét lại bộ FaceID mà không cần tạo lại hồ sơ.</p>
+              <div class="field"><label>Chọn nhân viên</label><select id="enrollStudentSelect"><option value="">— Chọn nhân viên —</option></select></div>
+              <button class="btn ghost full" id="startExistingFaceBtn" type="button" disabled>Mở phiên quét FaceID →</button>
+            </div>
+          </div>
+          <div id="qrEnrollmentPanel" aria-live="polite"></div>
+        </article>
+      </div>
+
+      <div class="registration-phase" id="registrationFacePhase">
+        <article class="panel faceid-pro-shell">
+          <div class="faceid-pro-topbar">
+            <button class="back-link" id="backToProfileBtn" type="button">← Quay lại hồ sơ</button>
+            <div class="faceid-pro-title"><span>BTMH · SECURE LOCAL BIOMETRIC AI</span><b>Đăng ký FaceID</b></div>
+            <div class="v5-enroll-source"><label>Camera đăng ký<select id="v5EnrollmentCameraSelect"><option value="browser">Laptop Camera</option></select></label><span class="live-badge"><i></i> LIVE</span></div>
+          </div>
+
+          <div class="faceid-pro-grid">
+            <section class="faceid-pro-camera-card">
+              <div class="faceid-pro-copy">
+                <span class="scan-pass-pill" id="scanPassPill">Chuẩn bị quét</span>
+                <h2 id="faceidTitle">Đưa khuôn mặt vào khung</h2>
+                <p id="enrollHint">Đưa khuôn mặt vào vùng quét. Điểm sáng sẽ hướng dẫn bạn thu đủ các góc mặt.</p>
+              </div>
+
+              <div class="faceid-camera-wrap faceid-pro-camera-wrap">
+                <video id="enrollVideo" autoplay playsinline muted></video>
+                <canvas id="enrollOverlay"></canvas>
+                <canvas id="faceidBiometricOverlay" class="faceid-biometric-overlay" aria-hidden="true"></canvas>
+                <div class="camera-empty" id="enrollEmpty"><div class="face-icon">◎</div><p>Đang mở camera...</p></div>
+                <div class="faceid-shade"></div>
+                <div class="faceid-lock-chip" id="faceidLockChip"><i></i><span>Đang tìm khuôn mặt</span></div>
+
+                <div class="faceid-scanner faceid-pro-scanner v24-faceid-scanner" id="faceidScanner" data-guide="center">
+                  <div class="faceid-pro-halo halo-a"></div>
+                  <div class="faceid-pro-halo halo-b"></div>
+                  <div class="v24-face-oval" aria-hidden="true">
+                    <div class="v24-face-progress" id="v23ScanRing"></div>
+                    <div class="v24-face-inner"></div>
+                    <div class="v24-depth-dots" id="v24DepthDots"></div>
+                    <div class="v24-scan-glow"></div>
+                    <div class="faceid-pro-scanline"></div>
+                    <div class="v24-orbit-cursor" id="v24OrbitCursor"></div>
+                    <div class="faceid-v2-guide-orb" id="faceidGuideOrb" aria-hidden="true"><span></span></div>
+                  </div>
+                  <div class="faceid-pro-center-dot"></div>
+                  <div class="faceid-sample-meter" aria-live="polite"><strong id="faceidSampleCount">VÒNG 1</strong><span>2 LẦN QUÉT</span></div>
+                  <div class="faceid-pro-direction direction-left">‹</div>
+                  <div class="faceid-pro-direction direction-right">›</div>
+                  <div class="faceid-pro-direction direction-up">⌃</div>
+                  <div class="faceid-pro-direction direction-down">⌄</div>
+                  <div class="scan-ticks" id="scanTicks" aria-hidden="true"></div>
+                  <div class="faceid-motion" id="faceidMotion" aria-hidden="true"><i></i><i></i></div>
+                  <div class="faceid-center-cue" id="faceidCenterCue">•</div>
+                  <div class="faceid-brackets" id="faceidBrackets"><i></i><i></i><i></i><i></i></div>
+                </div>
+
+                <div class="faceid-pro-bottom-status">
+                  <div class="faceid-pro-wave"><i></i><i></i><i></i><i></i><i></i></div>
+                  <span id="faceidInstruction"><span class="instruction-icon">◎</span><span>Đưa khuôn mặt vào vùng quét để bắt đầu.</span></span>
+                </div>
+
+                <div class="faceid-success-overlay" id="faceidSuccess">
+                  <div class="success-check">✓</div>
+                  <h3>Đã gửi hồ sơ khuôn mặt</h3>
+                  <span class="v5-face-validation-badge warn" id="v5FaceValidationBadge">CHỜ DUYỆT</span>
+                  <p id="v5FaceValidationNote">Chủ sở hữu hoặc Quản trị viên cần duyệt trước khi mẫu mới được dùng để nhận diện.</p>
+                  <div class="success-actions v5-validation-actions">
+                    <button class="btn primary" id="v5ValidateStoreCameraBtn" type="button" disabled>Chờ duyệt FaceID</button>
+                    <button class="btn ghost" id="reviewEnrollmentBtn" type="button">Xem hồ sơ chờ duyệt</button>
+                    <button class="btn ghost" id="scanAnotherBtn" type="button">Đăng ký người khác</button>
+                    <button class="btn ghost" id="goRecognitionBtn" type="button">Sang nhận diện</button>
+                  </div>
+                </div>
+              </div>
+              <div class="faceid-v13-simple-help" aria-label="Hướng dẫn quét FaceID">
+                <span><i>1</i> Chính diện → trái nhẹ → phải nhẹ → ngẩng/cúi nhẹ</span>
+                <span><i>2</i> AI tự chọn 8–12 mẫu rõ và đa dạng nhất</span>
+              </div>
+              <div class="faceid-v2-pose-strip" id="faceidPoseStrip" aria-label="Các góc khuôn mặt đã thu">
+                <div class="pose-chip" data-pose="center"><i>●</i><span>Chính diện</span><b id="poseCenterCount">0</b></div>
+                <div class="pose-chip" data-pose="left"><i>↙</i><span>Nghiêng trái</span><b id="poseLeftCount">0</b></div>
+                <div class="pose-chip" data-pose="right"><i>↘</i><span>Nghiêng phải</span><b id="poseRightCount">0</b></div>
+                <div class="pose-chip" data-pose="down"><i>⌄</i><span>Hơi cúi</span><b id="poseDownCount">0</b></div>
+                <div class="pose-chip" data-pose="up"><i>⌃</i><span>Hơi ngẩng</span><b id="poseUpCount">0</b></div>
+              </div>
+            </section>
+
+            <aside class="faceid-guide faceid-pro-side">
+              <div class="enroll-person-card">
+                <div class="enroll-person-chip"><span class="mini-avatar" id="enrollPersonAvatar">?</span><div><small>Nhân viên đang đăng ký</small><b id="enrollPersonName">Nhân viên</b><span id="enrollPersonCode">—</span></div></div>
+              </div>
+
+              <div class="faceid-pro-progress-card">
+                <div class="v23-pass-head"><div><span id="scanPassLabel">Vòng quét 1/2</span><strong id="faceidPercent">0%</strong></div><small id="scanPassSub">Định vị khuôn mặt</small></div>
+                <div class="scan-summary-track"><i id="scanSummaryFill"></i></div>
+                <div class="faceid-pro-progress-note">AI chỉ nhận mẫu khi ảnh đủ nét, đủ sáng và góc mặt có ích. Hai vòng quét tạo bộ FaceID đa góc; ảnh thô không được lưu.</div>
+              </div>
+
+              <div class="faceid-pro-steps">
+                <div class="v23-pass-card active" id="v23PassOne"><i>1</i><div><b>Quét đa góc có hướng dẫn</b><span>Giữ chuyển động chậm, không xoay đầu quá rộng</span></div><em id="v23PassOneState">Đang kiểm tra</em></div>
+                <div class="v23-pass-card" id="v23PassTwo"><i>2</i><div><b>Xác nhận chất lượng</b><span>AI tự bổ sung góc còn thiếu và loại frame mờ/trùng</span></div><em id="v23PassTwoState">Chờ</em></div>
+              </div>
+
+              <div class="scan-signals faceid-pro-signals">
+                <div><i class="signal-dot" id="enrollFaceSignal"></i><span>Khuôn mặt</span></div>
+                <div><i class="signal-dot" id="enrollQualitySignal"></i><span>Chất lượng ảnh</span></div>
+                <div><i class="signal-dot" id="enrollLiveSignal"></i><span>Xác minh người thật</span></div>
+              </div>
+
+              <div class="faceid-pro-quality">
+                <div><span>Độ nét</span><b id="qSharp">—</b></div>
+                <div><span>Ánh sáng</span><b id="qLight">—</b></div>
+                <div><span>Góc hiện tại</span><b id="qPose">—</b></div>
+                <div><span>Chất lượng</span><b id="qScore">—</b></div>
+              </div>
+
+              <div class="faceid-pro-tip"><b>Cách quét</b><span>Giữ mắt trong khung, di chuyển đầu chậm như vẽ một vòng tròn nhỏ. Không cần xoay quá rộng.</span></div>
+              <button class="btn ghost full" id="resetEnrollBtn" type="button">Quét lại từ đầu</button>
+              <button class="btn primary full hidden" id="finalizeEnrollBtn" type="button" disabled>Hoàn tất đăng ký FaceID</button>
+            </aside>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="student-modal hidden" id="v5DuplicateFaceModal" aria-modal="true" role="dialog">
+      <div class="student-modal-backdrop" id="v5DuplicateFaceBackdrop"></div>
+      <div class="student-modal-card v5-duplicate-face-card">
+        <div class="student-modal-head"><div><span class="btmh-card-kicker">FACEID DUPLICATE CHECK</span><h3>Cần xác nhận khuôn mặt tương đồng</h3></div></div>
+        <p>Hệ thống phát hiện bộ mẫu mới có độ tương đồng cao với một nhân viên đã tồn tại. Không lưu đè tự động để tránh một người bị đăng ký thành hai hồ sơ.</p>
+        <div class="v5-duplicate-candidate"><span>Hồ sơ gần nhất</span><b id="v5DuplicateFaceCandidate">—</b><small id="v5DuplicateFaceMeta">—</small></div>
+        <div class="student-modal-actions"><button class="btn ghost" id="v5DuplicateFaceCancel" type="button">Quét lại</button><button class="btn primary" id="v5DuplicateFaceConfirm" type="button">Tôi đã kiểm tra · vẫn lưu</button></div>
+      </div>
+    </div>
+
+    <section class="page recognition-console" id="page-recognition">
+      <div class="entry-recognition-workspace">
+        <div class="entry-recognition-top">
+          <div class="recognition-main-stack">
+          <article class="panel entry-camera-panel recognition-camera-panel">
+            <div class="recognition-camera-heading">
+              <div>
+                <h2><svg class="recognition-console-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="14" height="13" rx="3"/><path d="m17 10 4-3v11l-4-3"/><circle cx="10" cy="12.5" r="3"/></svg>Nhận diện trực tiếp</h2>
+              </div>
+              <button type="button" class="btn ghost small" id="recognitionSlotsRefresh">Tải lại</button>
+            </div>
+            <div class="recognition-slots" id="recognitionSlots" data-layout="single" aria-label="Camera nhận diện đang xem">
+              <div class="camera-wrap entry-camera-wrap recognition-slot-viewport">
+              <video id="recognitionVideo" autoplay playsinline muted></video>
+              <canvas id="recognitionOverlay"></canvas>
+              <div class="camera-empty" id="recognitionEmpty"><div class="face-icon">⌾</div><p>Đang chờ camera</p></div>
+              </div>
+            </div>
+          </article>
+          <article class="panel recognition-camera-switch-panel" aria-labelledby="recognitionCameraSwitchTitle">
+            <div class="recognition-switch-heading">
+              <h2 id="recognitionCameraSwitchTitle"><svg class="recognition-console-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m8 9-3 3 3 3m8-6 3 3-3 3"/></svg>Chuyển đổi camera</h2>
+              <div class="recognition-switch-actions"><button id="recognitionCameraPrevious" type="button" aria-label="Xem camera trước" disabled>‹</button><button id="recognitionCameraNext" type="button" aria-label="Xem camera tiếp theo" disabled>›</button></div>
+            </div>
+            <div id="recognitionCameraStrip" class="recognition-camera-strip" role="group" aria-label="Chọn camera được cấp quyền"></div>
+            <p class="recognition-slots-note" id="recognitionSlotsNote" role="status">Đang tải danh sách camera…</p>
+          </article>
+          </div>
+
+          <div class="entry-side-stack">
+            <article class="panel identity-card entry-current-card">
+              <div class="panel-head entry-current-head">
+                <div><h2><svg class="recognition-console-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v8m-4-4h8"/></svg>Chi tiết nhận diện trực tiếp</h2></div>
+                <span class="entry-state-badge neutral" id="entryStateBadge">Sẵn sàng</span>
+              </div>
+              <p id="recognitionSelectedContext" class="recognition-selected-context">Chưa chọn camera</p>
+              <div class="entry-current-main">
+                <div class="entry-snapshot-wrap">
+                  <img id="recognitionSnapshot" alt="Ảnh khuôn mặt vừa nhận diện" />
+                  <div class="entry-snapshot-empty" id="recognitionSnapshotEmpty"><div class="profile-avatar" id="profileAvatar">?</div><span>Chưa có ảnh</span></div>
+                  <span class="entry-snapshot-quality" id="recognitionSnapshotQuality">BEST SHOT</span>
+                </div>
+                <div class="entry-current-info">
+                  <div class="identity-state entry-identity-state" id="identityState">
+                    <h2 id="profileName">Sẵn sàng nhận diện</h2>
+                    <p id="profileCode"></p>
+                  </div>
+                  <div class="entry-confidence"><span>Độ khớp</span><b id="profileConfidence">—</b></div>
+                  <div class="profile-info entry-profile-info">
+                    <div><span>Camera</span><b id="profileCamera">—</b></div>
+                    <div><span>Đối tượng</span><b id="profileSubject">—</b></div>
+                    <div><span>Chống giả mạo</span><b id="profileLiveness">—</b></div>
+                    <div><span>Thời gian</span><b id="profileTime">—</b></div>
+                  </div>
+                </div>
+              </div>
+              <div class="v21-recognition-progress" id="v21RecognitionProgress">
+                <div><span id="v21RecognitionState">Sẵn sàng</span><b id="v21RecognitionPercent">0%</b></div>
+                <div class="v21-recognition-track"><i id="v21RecognitionFill"></i></div>
+              </div>
+              <details class="recognition-attendance-details"><summary>Chấm công &amp; trạng thái</summary>
+              <div class="profile-info entry-profile-info"><div><span>Bộ phận</span><b id="profileClass">—</b></div><div><span>Phòng ban</span><b id="profileFaculty">—</b></div><div><span>Hướng</span><b id="profileDirection">Chưa ghi nhận</b></div></div>
+              <div class="field recognition-session-field"><label for="recognitionAttendanceSession">Khu vực làm việc / phiên ghi nhận</label><select id="recognitionAttendanceSession"><option value="">Nhận diện chung</option></select></div>
+              <div class="alert-box neutral" id="recognitionAlert">Camera chạy liên tục; nhận diện và chống giả mạo hoạt động thụ động, không yêu cầu nhìn camera.</div>
+              </details>
+            </article>
+
+        <article class="panel recent-recognition-panel">
+          <div class="recent-recognition-header">
+            <div><h2><svg class="recognition-console-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9a9 9 0 1 1-.3 5M4 4v5h5"/><path d="M12 7v5l3 2"/></svg>Lịch sử nhận diện gần đây</h2></div>
+            <div class="recent-recognition-actions"><span class="count-pill" id="recentRecognitionCount">0</span><button class="btn ghost small" id="recentRecognitionRefresh" type="button">Tải lại</button></div>
+          </div>
+          <p class="recent-recognition-context" id="recentRecognitionContext">Chưa chọn camera</p>
+          <p id="recentRecognitionNote" class="recent-recognition-note" role="status">Chọn camera để xem nhận diện gần nhất.</p>
+          <ul class="recent-recognition-items" id="recentRecognitionItems" aria-label="Nhận diện gần nhất theo camera" aria-busy="false"></ul>
+          <div class="recognition-history-footer"><p>#NNNN là số thứ tự xuất hiện theo camera trong ngày, không phải lượt khách.</p><button type="button" class="recognition-history-link" onclick="navigate('history')" data-permission="history.view">Xem lịch sử <span aria-hidden="true">→</span></button></div>
+        </article>
+          </div>
+        </div>
+        <div id="recentRecognitionDetail" class="recent-recognition-dialog" role="dialog" aria-modal="true" aria-labelledby="recentRecognitionDetailTitle" hidden>
+          <div id="recentRecognitionDetailBackdrop" class="recent-recognition-backdrop"></div>
+          <div class="recent-recognition-detail-card"><div class="recent-recognition-detail-head"><h3 id="recentRecognitionDetailTitle">Chi tiết nhận diện</h3><button id="recentRecognitionDetailClose" type="button" aria-label="Đóng chi tiết">×</button></div><div id="recentRecognitionDetailContent"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-students">
+      <div class="v5-module-hero panel"><div><h2>Nhân sự</h2><p>Quản lý hồ sơ, khuôn mặt và thời gian làm việc của nhân viên.</p></div><div class="v5-module-actions"><button class="btn primary" type="button" onclick="navigate('register')" data-permission="employee.enroll">Đăng ký khuôn mặt</button><button class="btn ghost" type="button" onclick="navigate('work-shifts')" data-permission="attendance.manage">Ca làm &amp; giờ làm</button></div></div>
+      <div class="student-enterprise-layout">
+        <aside class="student-enterprise-nav">
+          <div class="student-nav-title">Nhân viên</div>
+          <button class="student-menu-item active" data-student-scope="ALL">Danh sách nhân viên</button>
+          <button class="student-menu-item" data-student-scope="IN_CLASS">Nhân viên đang làm việc</button>
+          <button class="student-menu-item" data-student-scope="RESERVED">Nhân viên tạm nghỉ</button>
+          <button class="student-menu-item" data-student-scope="TRANSFERRED">Nhân viên chuyển bộ phận</button>
+          <button class="student-menu-item" data-student-scope="GRADUATING">Nhân viên sắp nghỉ</button>
+          <button class="student-menu-item" data-student-scope="ATTENTION">Nhân viên cần chú ý</button>
+          <button class="student-menu-item" data-student-scope="NO_FACEID">Chưa đăng ký FaceID</button>
+        </aside>
+
+        <div class="student-enterprise-main">
+          <div id="studentListView">
+            <div class="student-breadcrumb">Danh sách nhân viên</div>
+            <div class="student-enterprise-toolbar">
+              <div class="student-search-box">
+                <button class="student-filter-toggle" id="studentFilterToggle" type="button" title="Bộ lọc">⌄</button>
+                <input id="studentSearch" placeholder="Tìm mã nhân viên, họ tên, email..." />
+                <button class="student-search-button" id="studentSearchButton" type="button">Tìm</button>
+              </div>
+              <div class="student-enterprise-actions">
+                <button class="btn ghost" id="studentTemplateBtn" type="button">File mẫu</button>
+                <button class="btn ghost" id="studentExportBtn" type="button">Xuất file</button>
+                <button class="btn primary" id="studentAddBtn" type="button" data-permission="employee.manage">+ Đăng ký nhân viên</button>
+              </div>
+            </div>
+
+            <div class="student-filter-panel hidden" id="studentFilterPanel">
+              <select id="studentFacultyFilter"><option value="">Tất cả phòng ban</option></select>
+              <select id="studentMajorFilter"><option value="">Tất cả chức vụ</option></select>
+              <select id="studentClassFilter"><option value="">Tất cả bộ phận</option></select>
+              <select id="studentStatusFilter"><option value="">Tất cả trạng thái</option></select>
+              <select id="studentFaceFilter"><option value="">Tất cả FaceID</option><option value="YES">Đã đăng ký FaceID</option><option value="NO">Chưa đăng ký FaceID</option></select>
+              <button class="btn ghost" id="studentClearFilter" type="button">Xóa lọc</button>
+              <button class="btn ghost" id="studentLmsRefreshBtn" type="button">Làm mới</button>
+            </div>
+
+            <div class="student-enterprise-table-card">
+              <div class="table-wrap">
+                <table class="student-enterprise-table">
+                  <thead><tr><th class="student-expand-col" scope="col" aria-label="Mở thông tin nhân sự"></th><th>Thông tin</th><th>Liên hệ</th><th>FaceID</th><th>Trạng thái</th><th>Phòng ban / Bộ phận</th><th>Chức năng</th></tr></thead>
+                  <tbody id="studentsBody"></tbody>
+                </table>
+              </div>
+              <div class="student-table-footer"><span id="studentListCount">0 nhân viên</span><div class="student-pagination"><button id="studentPrevPage" type="button" aria-label="Trang trước">‹</button><b id="studentPageInfo">1 / 1</b><button id="studentNextPage" type="button" aria-label="Trang sau">›</button></div></div>
+            </div>
+            <b class="hidden" id="lmsTotalStudents">0</b><b class="hidden" id="lmsActiveStudents">0</b><b class="hidden" id="lmsFaceIdStudents">0</b><b class="hidden" id="lmsAttentionStudents">0</b>
+          </div>
+
+          <div id="studentDetailView" class="hidden">
+            <button class="student-back-btn" id="studentBackBtn" type="button">← Danh sách nhân viên</button>
+            <div class="student-profile-cover"></div>
+            <div class="student-profile-heading">
+              <div class="student-profile-avatar" id="studentDetailAvatar">SV</div>
+              <div class="student-profile-name"><h2 id="studentDetailName">Nhân viên</h2><span id="studentDetailMeta">Mã nhân viên</span></div>
+              <div class="student-profile-status" id="studentDetailStatus"></div>
+            </div>
+            <div class="student-profile-tabs" id="studentProfileTabs">
+              <button class="active" data-student-tab="detail">Chi tiết</button>
+              <button data-student-tab="academic">Thông tin công việc</button>
+              <button data-student-tab="classes">Khu vực làm việc</button>
+              <button data-student-tab="attendance">Chuyên cần</button>
+              <button data-student-tab="faceid">FaceID</button>
+              <button data-student-tab="notes">Ghi chú</button>
+              <button data-student-tab="history">Lịch sử</button>
+            </div>
+            <div id="studentProfileContent" class="student-profile-content"><div class="empty-card">Đang tải hồ sơ...</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="student-modal hidden" id="studentCreateModal">
+        <div class="student-modal-backdrop" id="studentCreateBackdrop"></div>
+        <form class="student-modal-card" id="studentCreateForm">
+          <div class="student-modal-head"><h3>Đăng ký nhân viên</h3><button type="button" id="studentCreateClose">×</button></div>
+          <div class="student-form-grid">
+            <label>Họ và tên<input id="newStudentName" required></label>
+            <label>Mã nhân viên<input id="newStudentCode" required></label>
+            <label>Email<input id="newStudentEmail" type="email"></label>
+            <label>Số điện thoại<input id="newStudentPhone"></label>
+            <label>Phòng ban<select id="newStudentFaculty"><option value="">Chọn phòng ban</option></select></label>
+            <label>Bộ phận / Nhóm<input id="newStudentClass" placeholder="VD: 8B1"></label>
+          </div>
+          <div class="student-modal-actions"><button type="button" class="btn ghost" id="studentCreateCancel">Hủy</button><button type="submit" class="btn primary">Lưu nhân viên</button></div>
+        </form>
+      </div>
+      <div class="hidden" id="studentProfileDrawer"></div><div class="hidden" id="studentDrawerBackdrop"></div><button class="hidden" id="studentDrawerClose" type="button" aria-label="Đóng hồ sơ nhân viên">×</button>
+      <b class="hidden" id="lmsBehaviorAttention">0</b><b class="hidden" id="lmsEngagementSignals">0</b><b class="hidden" id="studentBehaviorAttention">0</b><b class="hidden" id="lmsFaceCoverage">0</b>
+    </section>
+
+    <section class="page" id="page-work-shifts">
+      <div class="v5-module-hero panel"><div><span class="btmh-kicker">SHIFT &amp; ATTENDANCE POLICY</span><h2>Ca làm / Giờ làm</h2><p>Camera tự ghi nhận thời điểm nhân viên đến/ra. Quản lý có thể hiệu chỉnh chấm công khi có lý do hợp lệ mà không xóa dữ liệu camera gốc.</p></div><button class="btn ghost" type="button" onclick="navigate('students')">← Nhân sự</button></div>
+      <div class="v5-shift-grid">
+        <article class="panel"><div class="panel-head"><div><h2>Cấu hình ca làm</h2><p>Tạo ca và thời gian cho phép đi muộn/về sớm.</p></div></div><form id="v5ShiftForm" class="v5-form-grid"><input id="v5ShiftId" type="hidden"><label>Mã ca<input id="v5ShiftCode" value="HC" required></label><label>Tên ca<input id="v5ShiftName" value="Ca hành chính" required></label><label>Giờ bắt đầu<input id="v5ShiftStart" type="time" value="08:00" required></label><label>Giờ kết thúc<input id="v5ShiftEnd" type="time" value="17:30" required></label><label>Cho phép đi muộn (phút)<input id="v5ShiftLate" type="number" min="0" max="180" value="5"></label><label>Cho phép về sớm (phút)<input id="v5ShiftEarly" type="number" min="0" max="180" value="5"></label><button class="btn primary" type="submit">Lưu ca làm</button></form></article>
+        <article class="panel"><div class="panel-head"><div><h2>Danh sách ca</h2><p>Chọn một ca để chỉnh sửa.</p></div><button class="btn ghost" id="v5ShiftRefresh" type="button">Làm mới</button></div><div id="v5ShiftList" class="v5-shift-list"><div class="empty-card">Đang tải ca làm...</div></div></article>
+      </div>
+      <article class="panel v5-correction-panel" data-permission="attendance.manage"><div class="panel-head"><div><h2>Gán ca cho nhân viên</h2><p>Một nhân viên có một ca hiệu lực hiện tại; thay đổi luôn ghi người thực hiện và ngày hiệu lực.</p></div></div><form id="v5ShiftAssignForm" class="v5-form-grid"><label>Nhân viên<select id="v5ShiftEmployee"></select></label><label>Ca làm<select id="v5ShiftAssignment"></select></label><label>Hiệu lực từ<input id="v5ShiftEffective" type="date"></label><button class="btn primary" type="submit">Gán ca</button></form><div id="v5ShiftAssignmentState" class="v5-audit-list"></div></article>
+      <article class="panel v5-correction-panel" data-permission="attendance.adjust"><div class="panel-head"><div><h2>Điều chỉnh chấm công có audit</h2><p>Giữ nguyên giờ camera ghi nhận; giá trị hiệu chỉnh được lưu thành một bản ghi riêng kèm lý do và người duyệt.</p></div></div><form id="v5AttendanceCorrectionForm" class="v5-form-grid"><label>Nhân viên<select id="v5CorrectionEmployee"></select></label><label>Ngày làm việc<input id="v5CorrectionDate" type="date" required></label><label>Giờ camera ghi nhận<input id="v5CorrectionOriginal" type="datetime-local" step="1"></label><label>Giờ hiệu chỉnh<input id="v5CorrectionEffective" type="datetime-local" step="1"></label><label class="v5-wide">Lý do<textarea id="v5CorrectionReason" placeholder="VD: Đi công tác theo yêu cầu quản lý" required></textarea></label><button class="btn primary" type="submit">Lưu điều chỉnh</button></form><div id="v5CorrectionList" class="v5-audit-list"></div></article>
+    </section>
+
+    <section class="page" id="page-visitors">
+      <div class="btmh-visitor-head panel">
+        <div><span class="btmh-kicker">QUAN SÁT KHÁCH</span><h2>Ảnh và ghi chú quan sát</h2><p>Các phiên quan sát giúp xem ảnh và gắn nhãn. Số lượt khách được tính từ sự kiện vào hợp lệ trong Lịch sử → Lượt khách.</p></div>
+        <div class="btmh-visitor-actions"><select id="visitorStatusFilter" aria-label="Trạng thái quan sát"><option value="">Tất cả quan sát</option><option value="ACTIVE">Phiên đang mở</option><option value="CLOSED">Phiên đã đóng</option></select><button class="btn ghost" id="visitorRefresh" type="button">Làm mới</button></div>
+      </div>
+      <div class="btmh-visitor-kpis">
+        <article><span>Quan sát đang mở</span><b id="visitorActiveCount">—</b><small>Không xác nhận đang ở trong cửa hàng</small></article>
+        <article><span>Phiên quan sát hiển thị</span><b id="visitorTotalCount">—</b><small>Trong trang hiện tại; không dùng làm số khách</small></article>
+        <article><span>Cần xác nhận</span><b id="visitorUnknownCount">0</b><small>chưa gắn nhãn</small></article>
+      </div>
+      <div class="btmh-visitor-grid" id="visitorGrid"><div class="empty-card">Chưa có phiên quan sát để xem ảnh hoặc gắn nhãn.</div></div>
+    </section>
+
+    <section class="page" id="page-operations">
+      <div class="pr-page-head panel">
+        <div><span class="pr-eyebrow">REALTIME PERSONNEL</span><h2>Nhân viên hiện tại</h2><p>Không cần tạo phiên thủ công. Hệ thống tự mở/đóng phiên hiện diện từ FaceID và sự kiện ra/vào.</p></div>
+        <button class="btn ghost" type="button" onclick="window.BTMHV4?.loadPresence()">Làm mới</button>
+      </div>
+      <div class="v4-presence-grid"><article><span>ĐANG CÓ MẶT</span><b id="v4PresenceNow">0</b><small>FaceID đang hiện diện</small></article><article><span>TỔNG NHÂN VIÊN</span><b id="v4PresenceTotal">0</b><small>Hồ sơ đang hoạt động</small></article><article><span>CHƯA CÓ MẶT</span><b id="v4PresenceAway">0</b><small>Theo dữ liệu hiện tại</small></article><article><span>QUAN SÁT KHÁCH ĐANG MỞ</span><b id="v4PresenceVisitors">0</b><small>Không xác nhận số khách trong cửa hàng</small></article></div>
+      <article class="panel" style="padding:18px"><div class="panel-head"><div><h2>Danh sách đang hiện diện</h2><p>Chỉ hiển thị người đã xác định là nhân viên.</p></div></div><div class="v4-presence-list" id="v4PresenceList"><div class="v4-empty">Đang tải...</div></div></article>
+      <button class="btn primary" id="attendanceNewToggle" type="button" style="display:none">Legacy</button>
+      <div class="pr-session-create panel" id="attendanceCreateCard">
+        <div class="panel-head"><div><h2>Tạo phiên mới</h2><p>Phiên đang hoạt động sẽ tự nhận check-in hợp lệ của đúng bộ phận.</p></div></div>
+        <form id="attendanceSessionForm" class="pr-session-form">
+          <label>Tên phiên<input id="attendanceName" required placeholder="VD: Ca sáng - Văn phòng chính"></label>
+          <label>Bộ phận<select id="attendanceClass"><option value="">Tất cả nhân viên</option></select></label>
+          <label>Phòng<input id="attendanceRoom" placeholder="VD: A203"></label>
+          <label>Bắt đầu<input id="attendanceStart" type="datetime-local" required></label>
+          <label>Kết thúc<input id="attendanceEnd" type="datetime-local" required></label>
+          <label>Cho phép muộn (phút)<input id="attendanceGrace" type="number" min="0" max="180" value="5"></label>
+          <button class="btn primary" type="submit">Tạo và khởi tạo danh sách</button>
+        </form>
+      </div>
+      <div class="pr-kpi-grid" id="attendanceKpis">
+        <article><span>TỔNG NHÂN VIÊN</span><b id="attTotal">0</b><small>Trong phiên đang chọn</small></article>
+        <article class="success"><span>ĐÃ CHECK-IN</span><b id="attPresent">0</b><small>Có mặt đúng giờ</small></article>
+        <article class="warning"><span>ĐI MUỘN</span><b id="attLate">0</b><small>Sau thời gian cho phép</small></article>
+        <article class="danger"><span>CHƯA CÓ MẶT</span><b id="attAbsent">0</b><small>Chưa có check-in hợp lệ</small></article>
+        <article class="security"><span>BỊ TỪ CHỐI</span><b id="attRejected">0</b><small>Ảnh/điện thoại/liveness</small></article>
+      </div>
+      <article class="panel pr-session-list-panel">
+        <div class="panel-head table-head"><div><h2>Danh sách phiên</h2></div><button class="btn ghost" id="attendanceRefresh" type="button">Làm mới</button></div>
+        <div class="table-wrap"><table class="pr-table"><thead><tr><th>Phiên</th><th>Bộ phận</th><th>Thời gian</th><th>Trạng thái</th><th>Tiến độ</th><th scope="col" aria-label="Thao tác"></th></tr></thead><tbody id="attendanceSessionsBody"><tr><td colspan="6" class="empty-card">Chưa có phiên.</td></tr></tbody></table></div>
+      </article>
+      <article class="panel pr-ledger-panel">
+        <div class="panel-head table-head"><div><span class="pr-eyebrow">SỔ HIỆN DIỆN</span><h2 id="attendanceLedgerTitle">Chọn một phiên để xem</h2></div><div class="toolbar-actions"><button class="btn ghost" id="attendanceExport" type="button" disabled>Xuất CSV</button><button class="btn ghost" id="attendanceClose" type="button" disabled>Đóng phiên</button></div></div>
+        <div class="table-wrap"><table class="pr-table"><thead><tr><th>Nhân viên</th><th>Bộ phận</th><th>Check-in đầu</th><th>Check-in cuối</th><th>Trạng thái</th><th>Lần hợp lệ</th><th>Bị từ chối</th><th>Điều chỉnh</th></tr></thead><tbody id="attendanceLedgerBody"><tr><td colspan="8" class="empty-card">Chưa chọn phiên.</td></tr></tbody></table></div>
+      </article>
+      <div class="v12-modal hidden" id="attendanceAdjustModal">
+        <div class="v12-modal-backdrop" id="attendanceAdjustBackdrop"></div>
+        <form class="v12-modal-card" id="attendanceAdjustForm">
+          <div class="v12-modal-head"><div><span>ĐIỀU CHỈNH CÓ KIỂM SOÁT</span><h3 id="attendanceAdjustTitle">Sửa hiện diện</h3></div><button type="button" id="attendanceAdjustClose">×</button></div>
+          <input type="hidden" id="attendanceAdjustStudentId">
+          <label>Trạng thái mới<select id="attendanceAdjustStatus"><option value="PRESENT">Có mặt</option><option value="LATE">Đi muộn</option><option value="ABSENT">Vắng</option><option value="EXCUSED">Vắng có phép</option><option value="EARLY_LEAVE">Về sớm</option></select></label>
+          <label>Lý do<textarea id="attendanceAdjustReason" rows="4" required placeholder="VD: Camera mất tín hiệu lúc 07:05; quản lý đã xác nhận trực tiếp."></textarea></label>
+          <div class="v12-modal-note">CampusFace giữ trạng thái ban đầu, người sửa, thời gian và lý do trong Audit Log.</div>
+          <div class="v12-modal-actions"><button type="button" class="btn ghost" id="attendanceAdjustCancel">Hủy</button><button type="submit" class="btn primary">Lưu điều chỉnh</button></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="page" id="page-history">
+      <div class="demo-reports">
+        <div class="demo-report-tabs" id="demoReportTabs" role="tablist" aria-label="Loại báo cáo">
+          <button class="active" id="demoReportRecognitionTab" type="button" data-demo-report="recognition" role="tab" aria-selected="true" aria-controls="demoReportContent">Nhận diện</button>
+          <button id="demoReportAttendanceTab" type="button" data-demo-report="attendance" role="tab" aria-selected="false" aria-controls="demoReportContent" tabindex="-1">Chấm công</button>
+          <button id="demoReportVisitsTab" type="button" data-demo-report="visits" role="tab" aria-selected="false" aria-controls="demoReportContent" tabindex="-1">Lượt khách</button>
+        </div>
+        <form class="panel demo-report-filters" id="demoReportFilters">
+          <div class="demo-report-filter-heading"><h2 id="demoReportTitle">Lịch sử nhận diện</h2><a class="btn ghost demo-report-export" id="demoReportExport" aria-disabled="true" tabindex="-1">Xuất CSV</a></div>
+          <p class="demo-report-filter-hint" data-demo-scope="recognition">#NNNN là số thứ tự xuất hiện theo camera trong ngày, không phải lượt khách.</p>
+          <div class="demo-report-filter-grid">
+            <label class="demo-report-field">Khoảng thời gian<select id="demoReportPeriod"><option value="DAY">Theo ngày</option><option value="RANGE">Khoảng ngày</option><option value="MONTH">Theo tháng</option><option value="YEAR">Theo năm</option></select></label>
+            <label class="demo-report-field" data-demo-period="DAY RANGE">Từ ngày<input id="demoReportStart" type="date" required></label>
+            <label class="demo-report-field" data-demo-period="RANGE" hidden>Đến ngày<input id="demoReportEnd" type="date"></label>
+            <label class="demo-report-field" data-demo-period="MONTH" hidden>Tháng<input id="demoReportMonth" type="month"></label>
+            <label class="demo-report-field" data-demo-period="YEAR" hidden>Năm<input id="demoReportYear" type="number" min="2000" max="2100" step="1"></label>
+            <label class="demo-report-field">Cửa hàng<select id="demoReportStore"><option value="">Tất cả cửa hàng</option></select></label>
+            <label class="demo-report-field" data-demo-scope="recognition">Camera<select id="demoReportCamera"><option value="">Tất cả camera</option></select></label>
+            <label class="demo-report-field" data-demo-scope="recognition">Tìm kiếm<input id="demoReportSearch" type="search" maxlength="100" placeholder="Tên hoặc mã nhân viên"></label>
+          </div>
+          <details class="demo-report-additional"><summary id="demoReportMoreSummary">Bộ lọc bổ sung</summary><div class="demo-report-filter-grid">
+            <label class="demo-report-field" data-demo-scope="recognition">Khu vực<select id="demoReportZone"><option value="">Tất cả khu vực</option></select></label>
+            <label class="demo-report-field">Nhân viên<select id="demoReportEmployee"><option value="">Tất cả nhân viên</option></select></label>
+            <label class="demo-report-field" data-demo-scope="attendance" hidden>Bộ phận<select id="demoReportDepartment"><option value="">Tất cả bộ phận</option></select></label>
+            <label class="demo-report-field" data-demo-scope="recognition">Đối tượng<select id="demoReportSubject"><option value="">Tất cả đối tượng</option><option value="EMPLOYEE">Nhân viên</option><option value="VISITOR">Khách</option><option value="UNKNOWN">Chưa xác định</option></select></label>
+            <label class="demo-report-field">Kết quả<select id="demoReportResult"><option value="">Tất cả kết quả</option></select></label>
+          </div></details>
+          <div class="demo-report-filter-actions"><span class="demo-report-filter-hint">Bộ lọc tự áp dụng khi thay đổi. Bấm Enter để tìm kiếm.</span><button class="btn ghost" id="demoReportReset" type="button">Xóa bộ lọc</button><button class="btn ghost" id="demoReportRefresh" type="button">Tải lại</button></div>
+        </form>
+        <p class="demo-report-status" id="demoReportStatus" role="status" aria-live="polite">Chọn bộ lọc để tra cứu báo cáo.</p>
+        <div class="demo-report-totals" id="demoReportTotals" hidden>
+          <article><span>Ca theo bộ lọc</span><strong id="demoTotalShifts">—</strong></article><article><span>Ca đã ghi nhận</span><strong id="demoTotalPresent">—</strong></article><article><span>Đi muộn</span><strong id="demoTotalLate">—</strong></article><article><span>Vắng</span><strong id="demoTotalAbsent">—</strong></article><article><span>Thiếu ghi nhận ra</span><strong id="demoTotalMissingOut">—</strong></article>
+        </div>
+        <div id="demoReportContent" role="tabpanel" aria-labelledby="demoReportRecognitionTab">
+          <article class="panel demo-report-table-panel" id="demoReportTablePanel" aria-busy="false">
+            <div class="demo-report-table-heading"><h3>Kết quả tra cứu</h3><span class="count-pill" id="demoReportCount">—</span></div>
+            <div class="demo-report-table-wrap" tabindex="0" role="region" aria-label="Bảng kết quả báo cáo, cuộn ngang để xem đầy đủ">
+              <table class="demo-report-table"><thead id="demoReportHead"></thead><tbody id="demoReportBody"></tbody></table>
+            </div>
+            <div class="demo-report-pagination"><span id="demoReportPageInfo">Chưa tải dữ liệu</span><div><button class="btn ghost" id="demoReportPrevious" type="button" disabled>Trang trước</button><button class="btn ghost" id="demoReportNext" type="button" disabled>Trang sau</button></div></div>
+          </article>
+          <section class="panel demo-report-visits" id="demoReportVisits" hidden>
+            <div class="demo-report-filter-heading"><div><h2>Lượt khách qua lối vào</h2><p>Mỗi lượt vào hợp lệ được tính một lượt ghé. Ra rồi vào lại được tính lượt mới.</p></div><button class="btn ghost" id="demoVisitsRefresh" type="button">Tải lại</button></div>
+            <div class="demo-visit-filters"><label class="demo-report-field">Ngày<input id="demoVisitsDate" type="date"></label><label class="demo-report-field">Cửa hàng<select id="demoVisitsStore"><option value="">Tất cả cửa hàng</option></select></label><div class="demo-visit-quick"><button class="btn ghost" id="demoVisitsToday" type="button">Hôm nay</button><button class="btn ghost" id="demoVisitsYesterday" type="button">Hôm qua</button></div></div>
+            <div id="demoVisitsContent" aria-busy="false"></div>
+          </section>
+        </div>
+      </div>
+      <div class="demo-report-detail" id="demoReportDetail" role="dialog" aria-modal="true" aria-labelledby="demoReportDetailTitle" hidden>
+        <div class="demo-report-detail-backdrop" id="demoReportDetailBackdrop"></div><div class="demo-report-detail-card">
+          <div class="demo-report-detail-heading"><h3 id="demoReportDetailTitle">Chi tiết</h3><button id="demoReportDetailClose" type="button" aria-label="Đóng chi tiết báo cáo">×</button></div><div id="demoReportDetailContent"></div>
+        </div>
+      </div>
+    </section>
+    <section class="page" id="page-hr-report">
+      <div class="hr-report-head panel">
+        <div>
+          <span class="pr-eyebrow">HR REPORTING</span>
+          <h2>Báo cáo nhân sự</h2>
+        </div>
+        <div class="hr-report-head-actions">
+          <button class="btn ghost" id="hrReportExportXlsx" type="button">Xuất Excel</button>
+          <button class="btn primary" id="hrReportExportPdf" type="button">Xuất PDF</button>
+        </div>
+      </div>
+
+      <article class="panel hr-report-toolbar">
+        <div class="hr-report-period" id="hrReportPeriodTabs">
+          <button class="active" type="button" data-period="day">Ngày</button>
+          <button type="button" data-period="week">Tuần</button>
+          <button type="button" data-period="month">Tháng</button>
+        </div>
+        <label>Ngày tham chiếu<input id="hrReportAnchor" type="date"></label>
+        <button class="btn ghost" id="hrReportRefresh" type="button">Làm mới</button>
+        <div class="hr-report-range" id="hrReportRange">—</div>
+      </article>
+
+      <div class="hr-report-kpis">
+        <article><span>NHÂN VIÊN</span><b id="hrReportEmployeeCount">0</b><small id="hrReportPresentCount">0 có mặt</small></article>
+        <article class="success"><span>TỔNG HIỆN DIỆN</span><b id="hrReportPresence">0h 00p</b><small>Trong kỳ báo cáo</small></article>
+        <article class="info"><span>THỜI GIAN RA NGOÀI</span><b id="hrReportOutside">0h 00p</b><small id="hrReportOutCount">0 lượt OUT</small></article>
+        <article class="warning"><span>ĐI MUỘN</span><b id="hrReportLate">0</b><small id="hrReportEarly">0 rời sớm</small></article>
+      </div>
+
+      <div class="hr-report-layout">
+        <article class="panel hr-report-table-card">
+          <div class="panel-head compact-head"><div><h2>Tổng hợp nhân sự</h2><p id="hrReportTableNote">Dữ liệu từ Presence Session và Virtual Gate.</p></div><input id="hrReportSearch" class="hr-report-search" placeholder="Tìm tên hoặc mã nhân viên"></div>
+          <div class="table-wrap hr-report-table-wrap">
+            <table class="hr-report-table">
+              <thead><tr><th>Nhân viên</th><th>Đầu</th><th>Cuối</th><th>Hiện diện</th><th>Ra ngoài</th><th>Phiên</th><th>OUT</th><th>Muộn</th><th>Trạng thái</th></tr></thead>
+              <tbody id="hrReportBody"><tr><td colspan="9" class="empty-card">Đang tải báo cáo...</td></tr></tbody>
+            </table>
+          </div>
+        </article>
+
+        <aside class="panel hr-shift-card">
+          <div class="panel-head compact-head"><div><span class="pr-eyebrow">SHIFT POLICY</span><h2>Ca làm việc</h2></div><label class="office-switch"><input id="hrShiftEnabled" type="checkbox"><span></span>Bật</label></div>
+          <form id="hrShiftForm" class="hr-shift-form">
+            <label>Tên ca<input id="hrShiftName" value="Ca hành chính"></label>
+            <div class="hr-shift-time-grid"><label>Giờ vào<input id="hrShiftStart" type="time" value="08:00"></label><label>Giờ ra<input id="hrShiftEnd" type="time" value="17:30"></label></div>
+            <div class="hr-shift-time-grid"><label>Nghỉ từ<input id="hrShiftBreakStart" type="time" value="12:00"></label><label>Đến<input id="hrShiftBreakEnd" type="time" value="13:30"></label></div>
+            <div class="hr-shift-time-grid"><label>Cho phép đi muộn<input id="hrShiftLateGrace" type="number" min="0" max="180" value="10"><small>phút</small></label><label>Cho phép rời sớm<input id="hrShiftEarlyGrace" type="number" min="0" max="180" value="10"><small>phút</small></label></div>
+            <div class="hr-shift-days"><span>Ngày làm việc</span><div><label><input type="checkbox" data-workday="0" checked>T2</label><label><input type="checkbox" data-workday="1" checked>T3</label><label><input type="checkbox" data-workday="2" checked>T4</label><label><input type="checkbox" data-workday="3" checked>T5</label><label><input type="checkbox" data-workday="4" checked>T6</label><label><input type="checkbox" data-workday="5">T7</label><label><input type="checkbox" data-workday="6">CN</label></div></div>
+            <button class="btn primary" type="submit">Lưu quy tắc ca</button>
+          </form>
+          <div class="hr-shift-state" id="hrShiftState">Chưa bật quy tắc ca làm việc.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page" id="page-camera-control">
+      <div class="camera-control-head panel">
+        <div>
+          <span class="pr-eyebrow">CAMERA CONTROL</span>
+          <h2>Điều khiển camera</h2>
+        </div>
+        <div class="camera-control-top">
+          <label>Camera đang điều khiển
+            <select id="cameraControlPreset" data-camera-picker="control"><option value="laptop">Camera laptop</option><option value="ptz">Hikvision Camera</option></select>
+          </label>
+          <span class="pr-state" id="cameraControlMode">ĐANG KIỂM TRA</span>
+        </div>
+      </div>
+
+      <div class="camera-control-grid">
+        <article class="panel camera-control-preview-card">
+          <div class="panel-head"><div><span class="pr-eyebrow">LIVE PREVIEW</span><h2>Khung hình điều khiển</h2></div><span class="camera-control-source" data-camera-current>Camera laptop</span></div>
+          <div class="camera-control-preview">
+            <img id="cameraControlPreview" alt="Camera control preview">
+            <div class="camera-control-preview-empty" id="cameraControlPreviewEmpty"><b>CAMERA</b><span>Đang mở camera...</span></div>
+            <div class="camera-control-preview-overlay"><span id="cameraControlOnline">OFFLINE</span><span id="cameraControlZoom">Zoom 1.00×</span></div>
+          </div>
+          <div class="camera-control-info" id="cameraControlMessage">Đang đọc khả năng điều khiển camera...</div>
+        </article>
+
+        <article class="panel camera-control-pad-card">
+          <div class="panel-head"><div><h2>Pan · Tilt · Zoom</h2></div></div>
+          <div class="ptz-pad">
+            <span></span><button type="button" data-ptz="up" title="Lên">▲</button><span></span>
+            <button type="button" data-ptz="left" title="Trái">◀</button><button class="ptz-home" type="button" data-ptz="home" title="Về giữa">⌂</button><button type="button" data-ptz="right" title="Phải">▶</button>
+            <span></span><button type="button" data-ptz="down" title="Xuống">▼</button><span></span>
+          </div>
+          <div class="ptz-zoom-row"><button type="button" data-ptz="zoom_out">− Zoom</button><button type="button" data-ptz="zoom_in">+ Zoom</button></div>
+          <label class="ptz-speed">Tốc độ <input id="cameraControlSpeed" type="range" min="10" max="100" value="50"><b id="cameraControlSpeedLabel">50%</b></label>
+          <div class="ptz-focus-row"><button type="button" data-ptz="focus_near">Focus −</button><button type="button" data-ptz="autofocus_on">Auto Focus</button><button type="button" data-ptz="focus_far">Focus +</button></div>
+          <div class="camera-control-state-grid">
+            <div><span>Pan</span><b id="cameraControlPan">0.00</b></div>
+            <div><span>Tilt</span><b id="cameraControlTilt">0.00</b></div>
+            <div><span>Zoom</span><b id="cameraControlZoomValue">1.00×</b></div>
+            <div><span>Chế độ</span><b id="cameraControlModeValue">DIGITAL</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="page" id="page-ops-center">
+      <div class="camera-configuration">
+        <header class="panel camera-config-header"><div><h2>Quản lý camera</h2><p>Gán camera vào cửa hàng và khu vực; cấu hình nhận diện, chấm công và lối vào theo từng thiết bị.</p></div><button class="btn ghost" id="cameraConfigurationRefresh" type="button">Tải lại</button></header>
+        <p class="camera-config-note" id="cameraConfigurationNote" role="status" aria-live="polite">Chọn camera để quản lý cấu hình.</p>
+        <div class="camera-config-workspace">
+          <aside class="panel camera-config-registry"><div class="camera-config-registry-head"><h3>Camera được cấp quyền</h3><span class="count-pill" id="cameraConfigurationCount">—</span></div><div class="camera-config-list" id="cameraConfigurationList" aria-busy="false"></div></aside>
+          <article class="panel camera-config-editor">
+            <p class="camera-config-empty" id="cameraConfigurationEmpty">Chọn một camera để xem và thay đổi cấu hình.</p><p class="camera-config-empty" id="cameraConfigurationPermission" hidden>Tài khoản hiện tại chỉ được xem trạng thái camera. Cấu hình cần quyền quản lý camera.</p>
+            <form id="cameraConfigurationForm" hidden>
+              <h3 id="cameraConfigurationTitle">Chọn camera</h3>
+              <div class="camera-config-fields">
+                <label class="camera-config-full">Tên hiển thị<input id="cameraConfigName" maxlength="120" required placeholder="VD: Hà Đông - Cửa vào"></label>
+                <label>Cửa hàng<select id="cameraConfigStore"><option value="">Chưa gán cửa hàng</option></select></label><label>Khu vực<input id="cameraConfigZone" maxlength="120" placeholder="VD: Cửa vào, quầy tư vấn"></label>
+              </div>
+              <div class="camera-config-switches">
+                <label><input id="cameraConfigAi" type="checkbox"><span>Nhận diện AI<small>AI hoạt động độc lập với việc mở hoặc đóng trang xem camera.</small></span></label>
+                <label><input id="cameraConfigAttendance" type="checkbox"><span>Ghi nhận chấm công<small>Cần gán cửa hàng và cấu hình ca làm việc để lập báo cáo.</small></span></label>
+                <label><input id="cameraConfigVisitors" type="checkbox"><span>Đếm lượt khách vào<small>Dùng lượt vào hợp lệ qua lối vào đã cấu hình.</small></span></label>
+                <label><input id="cameraConfigGate" type="checkbox"><span>Lối vào có hướng<small>Phân biệt chiều vào và chiều ra qua đường A–B.</small></span></label>
+              </div>
+              <div class="camera-config-line" id="cameraConfigLineFields" hidden>
+                <h4>Đường lối vào và phía trong</h4><p>Tọa độ tính theo phần trăm khung hình: góc trên trái là (0, 0), góc dưới phải là (100, 100). Mũi tên xanh đi từ phía ngoài vào phía trong đã chọn.</p>
+                <div class="camera-config-fields">
+                  <label class="camera-config-full">Tên lối vào<input id="cameraConfigGateName" maxlength="120" placeholder="VD: Cửa chính"></label>
+                  <label>Điểm A · ngang (%)<input id="cameraConfigX1" type="number" min="0" max="100" step="0.1"></label><label>Điểm A · dọc (%)<input id="cameraConfigY1" type="number" min="0" max="100" step="0.1"></label>
+                  <label>Điểm B · ngang (%)<input id="cameraConfigX2" type="number" min="0" max="100" step="0.1"></label><label>Điểm B · dọc (%)<input id="cameraConfigY2" type="number" min="0" max="100" step="0.1"></label>
+                  <label>Phía trong<select id="cameraConfigInside"><option value="positive">Phía + của đường A → B</option><option value="negative">Phía − của đường A → B</option></select></label>
+                  <label>Điểm theo dõi<select id="cameraConfigAnchor"><option value="person_center">Tâm người</option><option value="person_bottom">Chân người</option><option value="face_center">Tâm khuôn mặt</option></select></label>
+                </div>
+                <svg class="camera-config-diagram" id="cameraConfigDiagram" viewBox="0 0 1000 1000" preserveAspectRatio="none" role="img" aria-label="Sơ đồ đường A B và hướng đi vào phía trong"></svg>
+                <div class="camera-config-roi"><label class="camera-config-check"><input id="cameraConfigRoi" type="checkbox"><span>Giới hạn vùng theo dõi quanh lối vào</span></label><div class="camera-config-fields" id="cameraConfigRoiFields" hidden>
+                  <label>Vùng · trái (%)<input id="cameraConfigRoiX1" type="number" min="0" max="100" step="0.1"></label><label>Vùng · trên (%)<input id="cameraConfigRoiY1" type="number" min="0" max="100" step="0.1"></label>
+                  <label>Vùng · phải (%)<input id="cameraConfigRoiX2" type="number" min="0" max="100" step="0.1"></label><label>Vùng · dưới (%)<input id="cameraConfigRoiY2" type="number" min="0" max="100" step="0.1"></label>
+                </div></div>
+                <details class="camera-config-tuning" id="cameraConfigTuning"><summary>Thông số theo dõi nâng cao</summary><div class="camera-config-fields">
+                  <label>Dải trung lập quanh đường (0–1)<input id="cameraConfigDeadband" type="number" min="0.001" max="0.2" step="0.001"></label><label>Khoảng chống đếm trùng (giây)<input id="cameraConfigCooldown" type="number" min="0.1" max="60" step="0.1"></label>
+                  <label>Thời gian nối lại theo dõi (giây)<input id="cameraConfigReacquire" type="number" min="0" max="10" step="0.1"></label><label>Khoảng cách nối lại (0–1)<input id="cameraConfigDistance" type="number" min="0.01" max="0.5" step="0.01"></label>
+                </div></details>
+              </div>
+              <div class="camera-config-actions"><button class="btn primary" id="cameraConfigurationSave" type="submit" disabled>Lưu cấu hình</button><button class="btn ghost" id="cameraConfigurationCancel" type="button" disabled>Hủy thay đổi</button></div>
+            </form>
+            <div class="camera-config-preview-control"><button class="btn ghost" id="cameraConfigurationPreview" type="button" disabled>Xem camera để đặt lối vào</button><span id="cameraConfigPreviewState">Chưa mở camera</span></div>
+            <div class="camera-config-preview" id="cameraConfigPreviewWrap" hidden><video id="cameraConfigVideo" autoplay playsinline muted></video><img id="cameraConfigImage" alt="Hình camera được cấp quyền" hidden><svg id="cameraConfigPreviewLine" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true" hidden></svg><div class="camera-config-preview-empty" id="cameraConfigPreviewEmpty"><p>Đang kết nối camera…</p></div></div>
+          </article>
+        </div>
+        <details class="panel camera-config-connection" data-permission="camera.configure"><summary>Kết nối nâng cao · thêm thiết bị</summary><p>Dành cho người được cấp quyền cấu hình kết nối. Sau khi thêm, chọn thiết bị để gán cửa hàng và khu vực.</p>
+          <form id="v12CameraDeviceForm" class="v12-device-form"><input id="v12DeviceName" aria-label="Tên thiết bị mới" required maxlength="120" placeholder="Tên hiển thị"><input id="v12DeviceSource" aria-label="Nguồn kết nối thiết bị" required placeholder="Nguồn kết nối"><select id="v12DeviceType" aria-label="Loại camera"><option value="LAPTOP">Laptop</option><option value="USB">USB</option><option value="PTZ">PTZ</option><option value="RTSP">RTSP</option></select><input id="v12DeviceZone" aria-label="Khu vực thiết bị mới" placeholder="Khu vực"><label class="v12-check"><input id="v12DevicePtz" type="checkbox">Điều khiển xoay</label><button class="btn primary" type="submit">Thêm thiết bị</button></form>
+        </details>
+      </div>
+    </section>
+    <section class="page" id="page-incidents">
+      <div class="v5-module-hero panel"><div><span class="btmh-kicker">INCIDENT &amp; EVIDENCE</span><h2>Sự cố &amp; Bằng chứng</h2><p>Tạo hồ sơ sự cố, gắn Best Face/video clip và khóa bằng chứng khỏi chính sách xóa tự động. AI chỉ cung cấp dữ liệu, người có trách nhiệm là người xác nhận sự cố.</p></div><button class="btn primary" id="v5NewIncidentBtn" type="button" data-permission="incident.manage">+ Tạo sự cố</button></div>
+      <div class="v5-incident-layout"><aside class="panel"><div class="panel-head"><div><h2>Danh sách sự cố</h2></div><button class="btn ghost" id="v5IncidentRefresh" type="button">Làm mới</button></div><div id="v5IncidentList" class="v5-incident-list"><div class="empty-card">Chưa có sự cố.</div></div></aside><div class="panel"><div id="v5IncidentDetail" class="v5-incident-detail"><div class="empty-card">Chọn một sự cố để xem ảnh, video và bằng chứng liên quan.</div></div></div></div>
+      <div class="student-modal hidden" id="v5IncidentModal"><div class="student-modal-backdrop" id="v5IncidentBackdrop"></div><form class="student-modal-card" id="v5IncidentForm"><div class="student-modal-head"><h3>Tạo sự cố</h3><button type="button" id="v5IncidentClose">×</button></div><div class="student-form-grid"><label>Tiêu đề<input id="v5IncidentTitle" required placeholder="VD: Kiểm tra giao dịch tại quầy 2"></label><label>Mức độ<select id="v5IncidentSeverity"><option value="NORMAL">Thông thường</option><option value="HIGH">Cao</option><option value="CRITICAL">Khẩn cấp</option></select></label><label>Visitor ID<input id="v5IncidentVisitor" placeholder="VS-..."></label><label>Thời gian<input id="v5IncidentTime" type="datetime-local" step="1"></label><label class="v5-wide">Ghi chú<textarea id="v5IncidentNote"></textarea></label></div><div class="student-modal-actions"><button class="btn ghost" id="v5IncidentCancel" type="button">Hủy</button><button class="btn primary" type="submit">Tạo sự cố</button></div></form></div>
+    </section>
+
+
+    <section class="page btmh-access-page" id="page-admin-security">
+      <div class="v5-module-hero panel btmh-access-hero">
+        <div><h2>Tài khoản &amp; phân quyền</h2><p>Quản lý người dùng, vai trò và lớp xác thực dành cho tài khoản có quyền cao.</p></div>
+        <span class="pr-state ok" id="adminSecurityHeroState">ĐƯỢC BẢO VỆ</span>
+      </div>
+
+      <div class="btmh-access-summary-grid">
+        <article class="panel">
+          <div class="panel-head"><div><h2>Phiên đăng nhập hiện tại</h2><p>Thông tin này được xác thực trực tiếp từ máy chủ.</p></div><span class="pr-state" id="authState">Đang kiểm tra</span></div>
+          <div id="authSetupArea" class="hidden"></div>
+          <div id="authLoginArea" class="hidden"></div>
+          <div id="authUserArea" class="hidden">
+            <div class="pr-user-current"><div><span>Đang sử dụng</span><b id="authCurrentUser">—</b></div><button class="btn ghost" id="authLogoutBtn" type="button">Đăng xuất</button></div>
+            <div class="btmh-current-permissions" id="authPermissionSummary"></div>
+          </div>
+        </article>
+
+        <article class="panel btmh-sms-security" id="adminSecurityPanel">
+          <div class="panel-head"><div><h2>Bảo mật tài khoản</h2><p>SMS cho trình duyệt mới. Tin cậy trình duyệt cá nhân tối đa 30 ngày.</p></div><span class="pr-state" id="adminSecurityState">Đang kiểm tra</span></div>
+          <p id="smsSecuritySummary" role="status"></p>
+          <p id="smsProviderNote" class="sms-security-note"></p>
+          <form id="smsEnrollForm" class="sms-enroll-form">
+            <label for="smsCurrentPassword">Mật khẩu hiện tại</label><input id="smsCurrentPassword" type="password" autocomplete="current-password" maxlength="256" required>
+            <label for="smsPhone">Số điện thoại nhận mã</label><input id="smsPhone" type="tel" autocomplete="tel" placeholder="09xxxxxxxx" maxlength="25" required>
+            <div class="sms-actions"><button class="btn primary" type="submit" id="smsEnrollBtn">Bật SMS / đổi số</button><button class="btn ghost" type="button" id="smsStepUpBtn">Xác minh lại</button></div>
+          </form>
+          <section id="smsSettingsChallenge" class="sms-challenge-box hidden" aria-label="Xác minh số điện thoại">
+            <p id="smsSettingsDestination"></p>
+            <div class="sms-actions"><button class="btn ghost" id="smsSettingsSend" type="button">Gửi mã SMS</button><button class="btn ghost" id="smsSettingsCancel" type="button">Hủy</button></div>
+            <label for="smsSettingsCode" id="smsSettingsCodeLabel">Mã SMS 6 số</label><input id="smsSettingsCode" autocomplete="one-time-code" inputmode="numeric" maxlength="40" placeholder="Nhập mã">
+            <label class="sms-trust-check"><input id="smsSettingsTrust" type="checkbox">Tin cậy trình duyệt này 30 ngày</label>
+            <button class="btn primary" id="smsSettingsVerify" type="button">Xác minh</button>
+          </section>
+          <section id="smsRecoveryPanel" class="sms-challenge-box hidden"><h3>Lưu mã khôi phục</h3><p>Mỗi mã dùng một lần, cùng mật khẩu. Lưu ngoài PC này; không gửi cho người khác.</p><div id="smsRecoveryCodes" class="sms-recovery-codes"></div><div class="sms-actions"><button class="btn ghost" type="button" id="smsCopyRecovery">Sao chép</button><button class="btn primary" type="button" id="smsSavedRecovery">Tôi đã lưu</button></div></section>
+          <p id="smsSettingsFeedback" role="status" class="sms-security-note"></p>
+          <h3>Trình duyệt tin cậy</h3><div id="smsTrustedBrowsers"></div>
+          <div class="sms-actions"><button class="btn ghost" type="button" id="smsRevokeAll">Thu hồi tất cả</button><button class="btn ghost" type="button" id="smsDisable">Tắt SMS</button></div>
+        </article>
+      </div>
+
+      <article class="panel btmh-rbac-panel" data-permission="account.approve">
+        <div class="panel-head"><div><h2>Danh sách tài khoản</h2><p>Tạo tài khoản, gán vai trò và giới hạn phạm vi truy cập cho từng người dùng.</p></div><button class="btn ghost" id="rbacRefresh" type="button">Làm mới</button></div>
+        <form id="rbacCreateForm" class="btmh-rbac-create" data-permission="system.manage">
+          <label for="rbacUsername">Tên đăng nhập<input id="rbacUsername" required minlength="3" maxlength="80" autocomplete="off" placeholder="nhanvien01"></label>
+          <label for="rbacDisplayName">Tên hiển thị<input id="rbacDisplayName" required maxlength="120" autocomplete="name" placeholder="Nguyễn Văn A"></label>
+          <label for="rbacRole">Vai trò<select id="rbacRole"></select></label>
+          <label for="rbacPhone">Số điện thoại<input id="rbacPhone" type="tel" autocomplete="tel" aria-describedby="rbacContactNote" placeholder="Số điện thoại của tài khoản"></label>
+          <label for="rbacEmail">Email<input id="rbacEmail" type="email" autocomplete="email"></label>
+          <label for="rbacStore">Cửa hàng<select id="rbacStore"><option value="">Chưa gán cửa hàng</option></select></label>
+          <label for="rbacPassword">Mật khẩu<input id="rbacPassword" type="password" autocomplete="new-password" minlength="12" maxlength="256" required aria-describedby="rbacPasswordNote" placeholder="Tối thiểu 12 ký tự"></label>
+          <label for="rbacPasswordConfirm">Xác nhận mật khẩu<input id="rbacPasswordConfirm" type="password" autocomplete="new-password" minlength="12" maxlength="256" required></label>
+          <button class="btn primary" type="submit">Tạo tài khoản</button>
+          <p id="rbacContactNote">Cần số điện thoại khi lưu email hoặc gán cửa hàng. Các vai trò theo chi nhánh cần được gán cửa hàng để xem dữ liệu trong phạm vi của mình.</p>
+          <p id="rbacPasswordNote">Mật khẩu có chữ hoa, chữ thường, số và ký tự đặc biệt. Đây là tài khoản hệ thống, tách biệt với đăng ký khuôn mặt.</p>
+          <p id="rbacCreateFeedback" role="status" aria-live="polite"></p>
+        </form>
+        <div class="btmh-role-catalog" id="rbacRoleCatalog"></div>
+        <div class="btmh-user-list" id="rbacUserList"><div class="empty-card">Đang tải tài khoản...</div></div>
+      </article>
+    </section>
+
+    <section class="page" id="page-system">
+      <div class="pr-page-head panel v6-system-head">
+        <div><h2>Cài đặt &amp; hệ thống</h2><p>Trạng thái camera, dữ liệu và các công cụ quản trị được cấp quyền.</p></div>
+        <div class="v6-head-actions"><span class="pr-state" id="systemOverall">ĐANG KIỂM TRA</span><button class="btn primary" id="systemSelfTest" type="button">Kiểm tra hệ thống</button></div>
+      </div>
+
+      <div class="v6-system-kpis">
+        <article><span>Camera</span><b id="v6SystemCamera">—</b><small id="v6SystemCameraMeta">Đang đọc thiết bị</small></article>
+        <article><span>Hồ sơ khuôn mặt</span><b id="v6SystemFace">—</b><small id="v6SystemFaceMeta">—</small></article>
+        <article><span>Dữ liệu</span><b id="v6SystemDb">—</b><small id="v6SystemDbMeta">—</small></article>
+        <article><span>Dung lượng trống</span><b id="v6SystemStorage">—</b><small id="v6SystemStorageMeta">—</small></article>
+      </div>
+
+      <article class="panel v6-camera-center">
+        <div class="panel-head"><div><h2>Camera trực tiếp</h2><p>Xem trạng thái kết nối camera hiện tại.</p></div><div class="toolbar-actions"><span class="pr-state" id="cameraRuntimeState">Chưa ghi nhận</span><button class="btn ghost" id="cameraTestCurrent" data-permission="camera.configure" type="button">Kiểm tra kết nối</button><button class="btn ghost" id="cameraReconnect" data-permission="camera.configure" type="button">Kết nối lại camera</button></div></div>
+        <div class="v6-camera-grid">
+          <div class="v6-camera-preview">
+            <img id="systemCameraPreview" alt="Camera hệ thống">
+            <div class="v6-camera-empty" id="systemCameraEmpty"><b>CAMERA</b><span>Đang chờ luồng camera...</span></div>
+          </div>
+          <div class="v6-camera-side">
+            <div class="v6-quality-card"><span>Trạng thái thiết bị</span><b id="v6CameraStateText">—</b><small id="v6CameraWarning">Chưa có cảnh báo</small></div>
+          </div>
+        </div>
+        <div class="pr-runtime-line" id="cameraRuntimeInfo">Đang đọc cấu hình camera...</div>
+      </article>
+
+      <div class="pr-system-grid">
+        <article class="panel">
+          <div class="panel-head"><div><h2>Sức khỏe hệ thống</h2><p>Kiểm tra các thành phần thật, không tạo dữ liệu giả.</p></div><button class="btn ghost" id="runtimeRefresh" type="button">Làm mới</button></div>
+          <div class="pr-health-list" id="systemHealthList"><div class="empty-card">Đang kiểm tra...</div></div>
+        </article>
+      </div>
+
+
+
+      <article class="panel v53-edge-admin" data-permission="system.manage">
+        <div class="panel-head">
+          <div><span class="btmh-kicker">CHAIN &amp; EDGE MANAGEMENT</span><h2>Chuỗi cửa hàng &amp; Edge PC</h2><p>Duyệt máy cửa hàng bằng public pairing file, theo dõi Online/Offline, lần đồng bộ gần nhất và hàng đợi còn chờ. Private key không bao giờ được tải lên Central.</p></div>
+          <button class="btn ghost" id="v53EdgeRefresh" type="button">Làm mới</button>
+        </div>
+        <div class="v53-edge-kpis">
+          <div><span>Edge PC</span><b id="v53EdgeTotal">—</b><small>Đã đăng ký</small></div>
+          <div><span>Online</span><b id="v53EdgeOnline">—</b><small>Heartbeat ≤ 90 giây</small></div>
+          <div><span>Offline / Revoke</span><b id="v53EdgeOffline">—</b><small>Cần kiểm tra</small></div>
+          <div><span>Event đang chờ</span><b id="v53EdgePending">—</b><small>Tổng trên các Edge</small></div>
+        </div>
+        <div class="v53-edge-layout">
+          <form id="v53EdgePairingForm" class="v53-edge-pairing">
+            <div class="v53-edge-form-head"><div><b>Duyệt Edge PC mới</b><small>Chọn <code>edge_pairing_public.json</code> do PC cửa hàng tạo, hoặc nhập public pairing thủ công.</small></div><label class="btn ghost v53-file-button">Đọc pairing file<input id="v53EdgePairingFile" type="file" accept="application/json,.json"></label></div>
+            <div class="v53-edge-form-grid">
+              <label>Node ID<input id="v53EdgeNodeId" required placeholder="store01-edge01"></label>
+              <label>Tên thiết bị<input id="v53EdgeNodeName" required placeholder="PC cửa hàng Cầu Giấy"></label>
+              <label>Chi nhánh<select id="v53EdgeStore" required><option value="">Chọn chi nhánh</option></select></label>
+              <label class="v53-edge-key">Public key Ed25519<textarea id="v53EdgePublicKey" required rows="3" spellcheck="false" placeholder="Public key từ pairing file"></textarea></label>
+            </div>
+            <div class="v53-edge-form-actions"><button class="btn primary" type="submit">Duyệt &amp; đăng ký Edge</button><small id="v53EdgePairingHint">Central chỉ lưu public key/fingerprint. Private key vẫn ở PC cửa hàng và được bảo vệ bằng DPAPI.</small></div>
+          </form>
+          <div class="v53-edge-nodes" id="v53EdgeNodeList"><div class="empty-card">Đang tải danh sách Edge PC...</div></div>
+        </div>
+      </article>
+
+      <details class="panel v6-camera-settings camera-config-tuning" id="cameraConnectionDetails" data-permission="camera.configure">
+        <summary>Kết nối camera nâng cao</summary><p>Dành cho người cấu hình thiết bị tại máy cài đặt. Quản lý tên, cửa hàng và lối vào tại trang Quản lý camera.</p>
+        <form id="cameraSettingsForm" class="pr-camera-form">
+          <label>Nguồn camera<input id="camSource" value="0"></label>
+          <label>Backend<select id="camBackend"><option value="auto">Auto</option><option value="dshow">DirectShow</option><option value="msmf">MSMF</option></select></label>
+          <label>Độ phân giải<select id="camResolution"><option value="1920x1080">1920 × 1080</option><option value="1280x720">1280 × 720</option><option value="640x480">640 × 480</option></select></label>
+          <label>FPS<input id="camFps" type="number" min="5" max="60" value="30"></label>
+          <label>FourCC<select id="camFourcc"><option value="AUTO">AUTO</option><option value="MJPG">MJPG</option></select></label>
+          <label>Preview FPS<input id="camPreviewFps" type="number" min="5" max="30" value="25"></label>
+          <label>Quan sát FPS<input id="camObservationPreviewFps" type="number" min="5" max="30" value="25"></label>
+          <button class="btn primary" type="submit">Lưu cấu hình camera</button>
+        </form>
+      </details>
+
+      <details class="panel v6-runtime-panel" id="btmhPerformanceDetails" data-permission="system.diagnostics">
+        <summary>Chi tiết kỹ thuật</summary>
+        <p>Chỉ cập nhật khi mở. Chỉ số chưa đo hiển thị “—”; số liệu video trình duyệt tách riêng với xử lý AI.</p>
+        <p id="btmhPerformanceStatus" role="status">Mở để xem hiệu năng hiện tại.</p>
+        <div class="pr-metrics" id="btmhPerformanceMetrics"></div>
+        <div id="runtimeMetrics" hidden></div>
+      </details>
+
+      <div class="v210-production-grid" data-role-min="ADMIN">
+        <article class="panel">
+          <div class="panel-head"><div><span class="pr-eyebrow">PRODUCTION HEALTH</span><h2>Vận hành 24/7</h2></div><span class="v210-watchdog-state" id="v210ProdState">ĐANG KIỂM TRA</span></div>
+          <div class="v210-prod-status">
+            <div><span>Dữ liệu</span><b id="v210DbLatency">—</b></div>
+            <div><span>Auto recovery</span><b id="v210RecoveryCount">—</b></div>
+            <div><span>Auto backup</span><b id="v210BackupState">—</b></div>
+          </div>
+          <div class="v210-prod-actions">
+            <button class="btn ghost" id="v210CheckNow" type="button">Kiểm tra ngay</button>
+            <button class="btn ghost" id="v210RecoverCamera" type="button">Phục hồi camera</button>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><div><h2>Chính sách vận hành</h2></div></div>
+          <form class="v210-prod-config" id="v210ProductionForm">
+            <label class="v210-switch-row"><span><b>Watchdog</b><small>Tự kiểm tra dịch vụ</small></span><input id="v210WatchdogEnabled" type="checkbox"></label>
+            <label class="v210-switch-row"><span><b>Tự phục hồi camera</b><small>Chỉ khi stream lỗi kéo dài</small></span><input id="v210AutoRecovery" type="checkbox"></label>
+            <label class="v210-switch-row"><span><b>Backup tự động</b><small>Database + ảnh bằng chứng</small></span><input id="v210AutoBackup" type="checkbox"></label>
+            <div class="v210-prod-fields"><label>Chu kỳ backup (giờ)<input id="v210BackupHours" type="number" min="6" max="168" step="1"></label><label>Giữ số backup<input id="v210BackupRetention" type="number" min="3" max="60" step="1"></label></div>
+            <button class="btn primary" type="submit">Lưu chính sách</button>
+          </form>
+        </article>
+      </div>
+
+      <div class="pr-system-grid">
+        <article class="panel" data-role-min="ADMIN">
+          <div class="panel-head"><div><h2>Dữ liệu &amp; sao lưu</h2><p>Backup gồm database và ảnh hồ sơ; dữ liệu khách hàng không phải tìm thủ công trong AppData.</p></div><button class="btn primary" id="backupCreate" type="button">Tạo backup</button></div>
+          <div class="v6-storage-line"><span>Thư mục dữ liệu</span><b id="v6DataRoot">—</b></div>
+          <div class="pr-backup-import"><input id="backupImportFile" type="file" accept=".zip"><button class="btn ghost" id="backupImportBtn" type="button">Nhập backup</button></div>
+          <div class="pr-backup-list" id="backupList"><div class="empty-card">Đăng nhập Admin để quản lý backup.</div></div>
+        </article>
+        <article class="panel" data-role-min="ADMIN">
+          <div class="panel-head"><div><h2>Mobile Viewer</h2><p>Điện thoại chỉ có quyền xem. Mọi thao tác sửa/xóa/cấu hình đều bị chặn ở backend.</p></div><span class="pr-state" id="mobileViewerState">CHƯA BẬT</span></div>
+          <form id="mobileViewerForm" class="pr-mobile-viewer-form">
+            <label class="pr-switch-row"><span><b>Cho phép Mobile Viewer</b><small>Bật khi cần theo dõi từ điện thoại trong mạng cho phép.</small></span><input id="mobileViewerEnabled" type="checkbox"></label>
+            <label>Mật khẩu Mobile Viewer<input id="mobileViewerPassword" type="password" autocomplete="new-password" placeholder="Để trống nếu không đổi mật khẩu"></label>
+            <div class="pr-mobile-url"><span>Địa chỉ Mobile</span><b id="mobileViewerUrl">—</b><button class="btn ghost" id="mobileCopyUrl" type="button">Sao chép</button></div>
+            <button class="btn primary" type="submit">Lưu Mobile Viewer</button>
+          </form>
+          <div class="pr-mobile-note"><b>READ ONLY</b><span>Mobile xem Dashboard, camera trực tiếp, nhân sự hiện diện và lịch sử. Không thể đăng ký FaceID, đổi camera, sửa nhân viên hay cấu hình hệ thống.</span></div>
+        </article>
+      </div>
+
+      <article class="panel btmh-video-index" data-permission="camera.playback">
+        <div class="panel-head"><div><span class="btmh-kicker">VIDEO ARCHIVE INDEX</span><h2>Lưu trữ &amp; tra cứu video</h2><p>Web giữ metadata/timeline; NVR hoặc storage camera vẫn là nguồn video chính.</p></div><span class="pr-state" id="recordingIndexState">ĐANG KIỂM TRA</span></div>
+        <div class="pr-metrics"><div class="pr-metric"><span>Chế độ</span><b id="recordingIndexMode">—</b></div><div class="pr-metric"><span>Segment đã index</span><b id="recordingIndexSegments">0</b></div><div class="pr-metric"><span>Evidence bảo vệ</span><b id="recordingIndexProtected">0</b></div><div class="pr-metric"><span>Retention mặc định</span><b id="recordingIndexRetention">30 ngày</b></div></div>
+        <div class="pr-runtime-line" id="recordingIndexRoot">Chưa có video được index.</div>
+      </article>
+
+      <article class="panel v6-audit-panel">
+        <div class="panel-head"><div><h2>Nhật ký quản trị gần nhất</h2><p>Theo dõi thay đổi cấu hình, đăng ký FaceID, backup và trạng thái hệ thống.</p></div></div>
+        <div class="v6-audit-list" id="systemAuditList"><div class="empty-card">Đang tải nhật ký...</div></div>
+      </article>
+      <details class="panel v6-audit-panel v26-technical-panel camera-config-tuning" id="systemTechnicalDetails" data-permission="system.diagnostics">
+        <summary>Nhật ký kỹ thuật</summary><p>Các mốc phục vụ người được cấp quyền chẩn đoán hệ thống.</p>
+        <div class="v6-audit-list" id="systemTechnicalList"><div class="empty-card">Đang tải nhật ký kỹ thuật...</div></div>
+      </details>
+      <div class="pr-restart-note">Một số thay đổi camera cần khởi động lại hệ thống để thiết bị áp dụng cấu hình mới. Dữ liệu nhân viên và dữ liệu nhận diện không bị xóa khi khởi động lại.</div>
+    </section>
+  </main>
+</div>
+<div class="v23-auth-gate btmh-auth-v41 btmh-customer-auth" id="authGate" role="dialog" aria-modal="true" aria-label="Xác thực hệ thống">
+  <section class="btmh-store-story btmh-gold-story" aria-label="Bảo Tín Mạnh Hải">
+    <div class="btmh-story-logo"><img src="/static/img/btmh_official_logo.png" alt="Bảo Tín Mạnh Hải"></div>
+    <div class="btmh-story-copy"><span>KHÔNG GIAN QUẢN TRỊ NỘI BỘ</span><h1>Gìn giữ giá trị.<br><em>Vận hành an tâm.</em></h1><p>Kết nối nhân sự, nhận diện và hoạt động cửa hàng trong một không gian quản lý.</p></div>
+    <div class="btmh-jewelry-scene" aria-hidden="true"><div class="btmh-jewelry-halo"></div><img src="/static/img/gold-jewelry-v543.svg" alt=""><i class="btmh-gold-glint"></i></div>
+    <div class="btmh-story-signature"><span aria-hidden="true"></span><small>NHÂN SỰ &nbsp; / &nbsp; NHẬN DIỆN &nbsp; / &nbsp; CỬA HÀNG</small></div>
+  </section>
+
+  <section class="btmh-auth-card" aria-label="Xác thực hệ thống">
+    <div class="btmh-auth-mobile-brand"><img src="/static/img/btmh_emblem.png" alt=""><div><b>Bảo Tín Mạnh Hải</b><small>Quản lý nhận diện</small></div></div>
+    <div class="btmh-auth-context"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 4v3"/></svg><span>Cổng quản trị nội bộ</span></div>
+
+    <div id="gateEntryActions" class="btmh-auth-entry-actions" role="group" aria-label="Chọn chức năng xác thực">
+      <button type="button" id="gateOpenLoginBtn" class="btn ghost" aria-pressed="true" aria-controls="gateLoginView">Đăng nhập</button>
+      <button type="button" id="gateOpenRegistrationBtn" class="btn ghost" aria-pressed="false" aria-controls="gateRegistrationView">Đăng ký</button>
+      <button type="button" id="gateOpenSetupBtn" class="btn ghost hidden" aria-pressed="false" aria-controls="authGateSetup">Thiết lập lần đầu</button>
+    </div>
+
+    <div id="authGateSetup" class="hidden btmh-auth-view">
+      <div class="btmh-form-heading"><span>THIẾT LẬP LẦN ĐẦU</span><h2>Khởi tạo Chủ sở hữu</h2><p>Tạo tài khoản đầu tiên trên PC quản lý trung tâm để bắt đầu sử dụng hệ thống.</p></div>
+      <form id="gateSetupForm" class="btmh-auth-form" novalidate>
+        <label for="gateSetupDisplay">Họ và tên<input id="gateSetupDisplay" name="display_name" autocomplete="name" placeholder="Họ và tên Chủ sở hữu" required aria-describedby="gateSetupNote"></label>
+        <label for="gateSetupUsername">Tên đăng nhập<input id="gateSetupUsername" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Tên đăng nhập" required minlength="3" aria-describedby="gateSetupNote"></label>
+        <div class="btmh-auth-field"><label for="gateSetupPassword">Mật khẩu</label>
+          <span class="btmh-password-field"><input id="gateSetupPassword" name="password" type="password" autocomplete="new-password" placeholder="Tối thiểu 12 ký tự" required minlength="12" aria-describedby="gateSetupPasswordPolicy gateSetupNote"><button type="button" data-toggle-password="gateSetupPassword" aria-label="Hiện mật khẩu" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></button></span>
+        </div>
+        <div class="btmh-auth-field"><label for="gateSetupPassword2">Xác nhận mật khẩu</label>
+          <span class="btmh-password-field"><input id="gateSetupPassword2" name="password_confirmation" type="password" autocomplete="new-password" placeholder="Nhập lại mật khẩu" required minlength="12" aria-describedby="gateSetupNote"><button type="button" data-toggle-password="gateSetupPassword2" aria-label="Hiện mật khẩu" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></button></span>
+        </div>
+        <div class="btmh-password-policy" id="gateSetupPasswordPolicy">Dùng ít nhất 12 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.</div>
+        <button class="btn primary btmh-auth-submit" id="gateSetupBtn" type="submit"><span>Tạo tài khoản Chủ sở hữu</span><i aria-hidden="true">→</i></button>
+      </form>
+      <div class="btmh-auth-feedback" id="gateSetupNote" role="status" aria-live="polite" aria-atomic="true">Sẵn sàng thiết lập hệ thống.</div>
+    </div>
+
+    <div id="authGateLogin" class="hidden">
+      <div id="gateLoginView" class="btmh-auth-view">
+        <div class="btmh-form-heading"><span>CHÀO MỪNG TRỞ LẠI</span><h2>Đăng nhập</h2><p>Sử dụng tài khoản được cấp để truy cập không gian quản lý cửa hàng.</p></div>
+        <div id="gateFirstSetupNotice" class="btmh-help-card hidden"><b>Hệ thống chưa được thiết lập</b><p>Chọn Thiết lập lần đầu trên PC quản lý trung tâm để tạo Chủ sở hữu. Sau đó sử dụng tài khoản đã tạo để đăng nhập.</p></div>
+        <form id="gateLoginForm" class="btmh-auth-form" novalidate>
+          <label for="gateLoginUsername">Tên đăng nhập<input id="gateLoginUsername" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Nhập tên đăng nhập" required aria-describedby="gateLoginNote"></label>
+          <div class="btmh-auth-field"><label for="gateLoginPassword">Mật khẩu</label>
+            <span class="btmh-password-field"><input id="gateLoginPassword" name="password" type="password" autocomplete="current-password" placeholder="Nhập mật khẩu" required aria-describedby="gateLoginNote"><button type="button" data-toggle-password="gateLoginPassword" aria-label="Hiện mật khẩu" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></button></span>
+          </div>
+          <div class="btmh-login-options"><label class="btmh-remember"><input id="gateRememberUsername" type="checkbox"> Ghi nhớ tên đăng nhập</label><button type="button" id="openForgotBtn" class="v5-text-button">Cần hỗ trợ?</button></div>
+          <button class="btn primary btmh-auth-submit" id="gateLoginBtn" type="submit"><span>Đăng nhập</span><i aria-hidden="true">→</i></button>
+        </form>
+        <div class="btmh-auth-feedback" id="gateLoginNote" role="status" aria-live="polite" aria-atomic="true">Sẵn sàng đăng nhập.</div>
+      </div>
+
+      <div id="gateRegistrationView" class="btmh-auth-view hidden">
+        <div class="btmh-form-heading"><span>ĐĂNG KÝ THEO LỜI MỜI</span><h2>Đăng ký nhân viên</h2><p>Quét mã QR hoặc mở lời mời do Chủ sở hữu / Quản trị viên cấp để đăng ký khuôn mặt cho đúng hồ sơ và cửa hàng.</p></div>
+        <form id="gateEnrollmentForm" class="btmh-auth-form" novalidate>
+          <label for="gateEnrollmentInvite">Mã hoặc đường dẫn lời mời<input id="gateEnrollmentInvite" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Dán lời mời được cấp" required maxlength="2048" aria-describedby="gateEnrollmentNote"></label>
+          <button class="btn primary btmh-auth-submit" type="submit"><span>Mở lời mời đăng ký</span><i aria-hidden="true">→</i></button>
+        </form>
+        <div class="btmh-auth-feedback" id="gateEnrollmentNote" role="status" aria-live="polite" aria-atomic="true">Mẫu được gửi để chờ duyệt. Chủ sở hữu / Quản trị viên có thể phê duyệt, từ chối hoặc yêu cầu quét lại.</div>
+        <div class="btmh-help-card"><b>Cần tài khoản đăng nhập?</b><p>Liên hệ Chủ sở hữu / Quản trị viên để được cấp tài khoản và quyền phù hợp. Lời mời đăng ký khuôn mặt không cấp quyền vào cổng quản trị.</p></div>
+      </div>
+
+      <div id="gateForgotView" class="btmh-auth-view hidden">
+        <button type="button" class="btmh-back-login" id="forgotBackLoginBtn">← Quay lại đăng nhập</button>
+        <div class="btmh-form-heading"><span>KHÔI PHỤC QUYỀN TRUY CẬP</span><h2>Không đăng nhập được?</h2><p>Để bảo vệ dữ liệu cửa hàng, hệ thống không đặt lại mật khẩu trực tuyến.</p></div>
+        <div class="btmh-help-card"><b>Nhân viên</b><p>Liên hệ Chủ sở hữu hoặc Quản trị viên để được đặt lại mật khẩu.</p></div>
+        <div class="btmh-help-card"><b>Chủ sở hữu / Quản trị viên</b><p>Mã khôi phục thay bước xác minh, không thay mật khẩu. Nếu quên mật khẩu hoặc mất cả SIM và mã, liên hệ quản trị để khôi phục có kiểm soát.</p></div>
+        <button class="btn ghost btmh-full-button" type="button" id="forgotReturnBtn">Trở về đăng nhập</button>
+      </div>
+
+      <div id="gateMfaView" class="btmh-auth-view hidden">
+        <button type="button" class="btmh-back-login" id="gateMfaCancelBtn">← Hủy và đăng nhập lại</button>
+        <div class="btmh-form-heading"><span>XÁC THỰC QUẢN TRỊ</span><h2 id="gateMfaTitle">Ứng dụng xác thực</h2><p id="gateMfaDescription">Nhập mã 6 số từ ứng dụng Authenticator.</p></div>
+        <div id="gateMfaSetupBox" class="btmh-mfa-setup hidden">
+          <ol><li>Mở ứng dụng Google Authenticator hoặc Microsoft Authenticator.</li><li>Chọn thêm tài khoản bằng khóa thiết lập.</li><li>Nhập mã 6 số đang hiển thị để kích hoạt.</li></ol>
+          <div class="btmh-secret-box"><div><small>Khóa thiết lập</small><code id="gateMfaSecret">—</code></div><button type="button" id="gateMfaCopySecret">Sao chép</button></div>
+          <input id="gateMfaUri" type="hidden">
+        </div>
+        <div id="gateSmsActions" class="sms-actions hidden"><button type="button" class="btn ghost" id="gateSmsSend">Gửi mã SMS</button><button type="button" class="btn ghost" id="gateUseRecovery">Dùng mã khôi phục</button></div>
+        <div id="gateMfaVerifyBox" class="btmh-mfa-verify">
+          <label for="gateMfaCode">Mã xác thực hoặc mã khôi phục<input id="gateMfaCode" name="verification_code" autocomplete="one-time-code" autocapitalize="none" spellcheck="false" inputmode="text" placeholder="Nhập mã" maxlength="40" aria-describedby="gateMfaDescription gateMfaNote"></label>
+          <label class="sms-trust-check" for="gateTrustBrowser"><input id="gateTrustBrowser" type="checkbox" aria-describedby="gateTrustBrowserNote">Tin cậy trình duyệt này 30 ngày</label>
+          <small class="sms-trust-note" id="gateTrustBrowserNote">Chỉ chọn trên PC cá nhân, không dùng trên máy chung.</small>
+          <button class="btn primary btmh-auth-submit" id="gateMfaVerifyBtn" type="button"><span>Xác minh &amp; tiếp tục</span><i aria-hidden="true">→</i></button>
+        </div>
+        <div id="gateMfaRecoveryBox" class="btmh-recovery-box hidden">
+          <div class="btmh-recovery-warning"><b>Lưu mã khôi phục ngay bây giờ</b><p>Mỗi mã chỉ dùng một lần và sẽ không được hiển thị lại.</p></div>
+          <div id="gateMfaRecoveryCodes" class="btmh-recovery-codes"></div>
+          <div class="btmh-recovery-actions"><button class="btn ghost" id="gateMfaCopyRecovery" type="button">Sao chép mã</button><button class="btn primary" id="gateMfaContinueBtn" type="button">Tôi đã lưu mã</button></div>
+        </div>
+        <div class="btmh-auth-feedback" id="gateMfaNote" role="status" aria-live="polite" aria-atomic="true">Nhập mã từ ứng dụng xác thực.</div>
+      </div>
+    </div>
+
+    <div class="btmh-auth-foot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 4v6c0 4-8 8-8 8s-8-4-8-8V7Z"/><path d="m8 12 3 3 5-6"/></svg><small>Chỉ sử dụng tài khoản được cấp. Không chia sẻ mật khẩu và mã xác minh.</small></div>
+  </section>
+</div>
+<div class="toast" id="toast"></div>
+<script src="/static/js/btmh_runtime_v543.js?v=5.4.10"></script>
+<script src="/static/js/btmh_media_v5410.js?v=5.4.10-ui2"></script>
+<script src="/static/js/btmh_account_profile.js?v=1"></script>
+<script src="/static/js/btmh_qr_enrollment_admin.js?v=1"></script>
+<script src="/static/js/app.js?v=5.4.10-ui3"></script>
+<script src="/static/js/btmh_recognition_slots.js?v=20261009-1"></script>
+<script src="/static/js/btmh_recent_recognition.js?v=20261009-bounded1"></script>
+<script src="/static/js/btmh_demo_reports.js?v=1"></script>
+<script src="/static/js/btmh_camera_configuration.js?v=1"></script>
+<script src="/static/js/btmh_management.js?v=1"></script>
+<script src="/static/js/btmh_v4.js?v=5.4.10-live1"></script>
+  <script defer src="/static/btmh_auth_v54.js?v=5.4.10"></script>
+  <script defer src="/static/js/btmh_customer_v541.js?v=5.4.10"></script>
+  <script defer src="/static/js/btmh_sms_v542.js?v=5.4.10"></script>
+<script defer src="/static/js/camera_tools_v544.js?v=5.4.10-live1"></script>
+<script defer src="/static/js/btmh_diagnostics_v550.js?v=1"></script>
+</body>
+</html>

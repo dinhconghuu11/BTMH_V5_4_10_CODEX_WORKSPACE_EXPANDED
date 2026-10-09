@@ -1,0 +1,298 @@
+/* BTMH 5.5 presentation layer. Load last; activation is body.btmh-v550.
+   Visibility, permission states and video/overlay geometry remain owned by
+   the existing application and media styles. All artwork stays local. */
+body.btmh-v550 {
+  --btmh-v550-burgundy: #521a2b;
+  --btmh-v550-burgundy-dark: #37131f;
+  --btmh-v550-gold: #b68a38;
+  --btmh-v550-gold-ink: #785a23;
+  --btmh-v550-ivory: #f5f1e9;
+  --btmh-v550-paper: #fffdf9;
+  --btmh-v550-soft: #f1ebe1;
+  --btmh-v550-ink: #29232a;
+  --btmh-v550-muted: #6c6162;
+  --btmh-v550-line: #dfd7ca;
+  --btmh-v550-success: #236343;
+  --btmh-v550-warning: #83591e;
+  --btmh-v550-danger: #9f2635;
+  --btmh-v550-info: #36546b;
+  --btmh-v550-radius: 14px;
+  --btmh-v550-shadow: 0 3px 16px #37131f08;
+  --btmh-sidebar-width: 264px;
+  --sidebar-w543: 264px;
+  --sidebar-w: 264px;
+  /* Feed existing components through their established variable contracts. */
+  --bg: var(--btmh-v550-ivory);
+  --bg-soft: var(--btmh-v550-soft);
+  --surface: var(--btmh-v550-paper);
+  --surface-strong: var(--btmh-v550-paper);
+  --surface-soft: var(--btmh-v550-ivory);
+  --ink: var(--btmh-v550-ink);
+  --ink-soft: var(--btmh-v550-muted);
+  --muted: var(--btmh-v550-muted);
+  --line: var(--btmh-v550-line);
+  --primary: var(--btmh-v550-burgundy);
+  --primary-strong: var(--btmh-v550-burgundy-dark);
+  --primary-soft: #f3e8eb;
+  --accent: var(--btmh-v550-gold);
+  --success: var(--btmh-v550-success);
+  --danger: var(--btmh-v550-danger);
+  --warning: var(--btmh-v550-warning);
+  --btmh-ink: var(--btmh-v550-ink);
+  --btmh-muted: var(--btmh-v550-muted);
+  --btmh-border: var(--btmh-v550-line);
+  --btmh-paper: var(--btmh-v550-paper);
+  --btmc-ink: var(--btmh-v550-ink);
+  --btmc-muted: var(--btmh-v550-muted);
+  --btmc-border: var(--btmh-v550-line);
+  --v131-bg: var(--btmh-v550-ivory);
+  --v131-text: var(--btmh-v550-ink);
+  --v131-muted: var(--btmh-v550-muted);
+  --v131-border: var(--btmh-v550-line);
+  --v5-line: var(--btmh-v550-line);
+  --v5-muted: var(--btmh-v550-muted);
+  --v5-gold: var(--btmh-v550-gold);
+  --v20-line: var(--btmh-v550-line);
+  --v20-primary: var(--btmh-v550-burgundy);
+  --v20-primary-soft: #f3e8eb;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--btmh-v550-ink);
+  background: var(--btmh-v550-ivory) !important;
+}
+body.btmh-v550 .app-shell { background: var(--btmh-v550-ivory); }
+body.btmh-v550 .main {
+  background: var(--btmh-v550-ivory) !important;
+  padding: 24px 28px 36px !important;
+  min-width: 0;
+}
+body.btmh-v550 .page { min-width: 0; }
+body.btmh-v550 :is(h1,h2,h3,h4) { letter-spacing: -.02em; }
+body.btmh-v550 .panel-head h2 { font-size: 20px !important; line-height: 1.3; color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 :is(.panel-head,.v4-live-head,.student-enterprise-head,.v5-module-hero,.pr-page-head) { gap: 16px !important; }
+body.btmh-v550 :is(.panel-head,.v5-module-hero,.pr-page-head) p { color: var(--btmh-v550-muted) !important; line-height: 1.6; }
+body.btmh-v550 :is(.btmh-kicker,.btmh-card-kicker,.pr-eyebrow,.prod-eyebrow,.entry-eyebrow) { color: var(--btmh-v550-gold-ink) !important; }
+body.btmh-v550 :is(.toolbar-actions,.student-enterprise-actions,.student-modal-actions,.btmh-source-tools) { gap: 10px !important; }
+
+/* Shell and navigation: restrained gold accents on burgundy. */
+body.btmh-v550 #btmhSidebar {
+  background: var(--btmh-v550-burgundy-dark) !important;
+  border-right: 1px solid #9a784945 !important;
+  box-shadow: none !important;
+}
+body.btmh-v550 #btmhSidebar .btmh-sidebar-brand { margin: 0 18px 14px !important; padding: 24px 0 20px !important; gap: 12px; }
+body.btmh-v550 #btmhSidebar .btmh-sidebar-emblem { background: #f1d6a016 !important; border-color: #ddbd7255 !important; border-radius: 12px; }
+body.btmh-v550 #btmhSidebar .btmh-sidebar-emblem img { filter: none !important; }
+body.btmh-v550 #btmhSidebar .btmh-sidebar-brand strong { color: #fff8ed !important; font-size: 17px !important; line-height: 1.35; }
+body.btmh-v550 #btmhSidebar .btmh-sidebar-brand small { color: #dfcec8 !important; font-size: 12px !important; }
+body.btmh-v550 #btmhSidebar .v13-nav-label { color: #dec394 !important; font-size: 11px !important; font-weight: 600 !important; letter-spacing: .08em !important; margin: 10px 10px 8px !important; }
+body.btmh-v550 #btmhSidebar .btmh-primary-nav { padding: 0 12px 12px !important; }
+body.btmh-v550 #btmhSidebar .v13-nav-group { margin-bottom: 18px !important; }
+body.btmh-v550 #btmhSidebar :is(.nav-item,.btmh-nav-cluster-toggle) {
+  min-height: 46px !important;
+  margin: 4px 0 !important;
+  padding: 8px 10px !important;
+  border-radius: 9px !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  color: #f5e9df !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+body.btmh-v550 #btmhSidebar :is(.nav-label,.btmh-nav-cluster-toggle>span:not(.nav-icon):not(.btmh-chevron)) { font-size: 13px !important; font-weight: 600 !important; color: inherit !important; }
+body.btmh-v550 #btmhSidebar .nav-icon { background: transparent !important; color: #e4c894 !important; border: 0 !important; box-shadow: none !important; }
+body.btmh-v550 #btmhSidebar :is(.nav-item,.btmh-nav-cluster-toggle):hover { background: #ffffff0d !important; color: #fffdf6 !important; }
+body.btmh-v550 #btmhSidebar .nav-item.active { background: #d7b57619 !important; border-color: #dcc28c40 !important; box-shadow: inset 3px 0 0 #d9b96f !important; color: #fffaf0 !important; }
+body.btmh-v550 #btmhSidebar .nav-item.active .nav-icon { background: #d7b57612 !important; color: #f4dca6 !important; }
+body.btmh-v550 #btmhSidebar .privacy-note { margin: 8px 18px 18px !important; border-color: #dfc69c30 !important; color: #f5e9df !important; }
+body.btmh-v550 #btmhSidebar .privacy-note small { color: #d8c6be !important; }
+body.btmh-v550 .topbar.v13-topbar { padding: 16px 20px !important; border: 1px solid var(--btmh-v550-line) !important; border-radius: var(--btmh-v550-radius); background: var(--btmh-v550-paper) !important; box-shadow: none !important; backdrop-filter: none; }
+body.btmh-v550 .v13-page-heading h1 { color: var(--btmh-v550-burgundy) !important; font-size: 24px !important; line-height: 1.3; }
+body.btmh-v550 .v13-top-actions { gap: 9px !important; }
+body.btmh-v550 :is(.v13-top-status,.v13-status-chip,.v23-user-chip,.clock) { background: var(--btmh-v550-ivory) !important; border-color: var(--btmh-v550-line) !important; border-radius: 9px; color: var(--btmh-v550-ink) !important; box-shadow: none !important; }
+body.btmh-v550 .v23-user-chip > span { background: var(--btmh-v550-burgundy) !important; color: #fff8ed !important; }
+body.btmh-v550 .v23-user-chip b { color: var(--btmh-v550-ink) !important; }
+body.btmh-v550 .v23-user-chip small { color: var(--btmh-v550-muted) !important; }
+
+/* Shared surfaces across operations, HR, security and system modules. */
+body.btmh-v550 :is(.panel,.stat-card,.student-enterprise-table-card,.mona-detail-card,.student-profile-card,
+  .btmh-visitor-kpis article,.pr-kpi-grid article,.v4-presence-grid article,.prod-history-kpi,.hr-report-kpis article,.v5-dashboard-kpis article,
+  .v201-kpi,.v131-quick-strip button,.btmh-access-summary-grid article,.v6-system-kpis article,
+  .v210-production-kpis article,.v12-ops-kpis article,.v53-edge-kpis>div,.v5-dashboard-shortcuts button) {
+  background: var(--btmh-v550-paper) !important;
+  color: var(--btmh-v550-ink) !important;
+  border: 1px solid var(--btmh-v550-line) !important;
+  border-radius: var(--btmh-v550-radius) !important;
+  box-shadow: var(--btmh-v550-shadow) !important;
+}
+body.btmh-v550 :is(.v131-quick-strip b,.v201-kpi b,.prod-history-kpi b,.hr-report-kpis b,.v5-dashboard-kpis b,.v4-presence-grid b,.btmh-visitor-kpis b,.v6-system-kpis b) { color: var(--btmh-v550-burgundy) !important; font-variant-numeric: tabular-nums; }
+body.btmh-v550 :is(.v131-quick-strip span,.prod-history-kpi span,.hr-report-kpis span,.v5-dashboard-kpis span,.v4-presence-grid span,.btmh-visitor-kpis span) { font-size: 11px !important; color: var(--btmh-v550-muted) !important; font-weight: 600 !important; letter-spacing: .03em; }
+body.btmh-v550 :is(.v131-system-summary,.v13-event-row,.v13-device-row,.v12-device-row,.v12-exception-row,
+  .v4-presence-row,.v5-audit-row,.pr-health-row,.v6-audit-row,.btmh-user-row,.v5-shift-row,.v5-incident-card,
+  .btmh-visitor-card,.v537-provider-card,.v537-provider-warning,.v210-prod-status>div) {
+  background: var(--btmh-v550-paper) !important;
+  border-color: var(--btmh-v550-line) !important;
+  color: var(--btmh-v550-ink) !important;
+  border-radius: 10px;
+  box-shadow: none !important;
+}
+body.btmh-v550 :is(.v13-command-header.v131-command-header,.v5-module-hero,.student-enterprise-head,.btmh-access-hero,.v537-security-hero) { background: var(--btmh-v550-paper) !important; border-color: var(--btmh-v550-line) !important; color: var(--btmh-v550-ink) !important; border-radius: var(--btmh-v550-radius) !important; box-shadow: none !important; }
+body.btmh-v550 :is(.v131-command-header h2,.v5-module-hero h2,.student-enterprise-head h2,.btmh-access-hero h2,.v537-security-hero h2) { color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 :is(.v13-event-row,.v13-device-row,.v5-audit-row,.v4-presence-row,.btmh-user-row,.v537-provider-card) :is(small,span) { color: var(--btmh-v550-muted); }
+body.btmh-v550 :is(.empty-card,.v4-empty,.pr-empty,.v12-empty,.btmh-empty) { color: var(--btmh-v550-muted) !important; background: var(--btmh-v550-ivory) !important; border-color: var(--btmh-v550-line) !important; border-radius: 10px; font-size: 14px !important; line-height: 1.6; padding: 28px 20px !important; }
+body.btmh-v550 :is(.student-enterprise-nav,.student-enterprise-toolbar,.student-filter-panel,.btmh-rbac-create,.btmh-role-pill,.v6-health-strip,.v5-dashboard-hero) { background: var(--btmh-v550-paper) !important; border-color: var(--btmh-v550-line) !important; color: var(--btmh-v550-ink) !important; box-shadow: none !important; }
+body.btmh-v550 :is(.student-menu-item,.student-profile-tabs button) { color: var(--btmh-v550-muted) !important; font-weight: 600; }
+body.btmh-v550 .student-menu-item.active { color: var(--btmh-v550-burgundy) !important; background: #f3e8eb !important; }
+body.btmh-v550 .student-search-button { background: var(--btmh-v550-burgundy) !important; color: #fff !important; }
+body.btmh-v550 .student-profile-cover { background: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 :is(.v5-dashboard-shortcuts b,.v5-dashboard-hero h2,.hr-report-head h2,.btmh-visitor-head h2,.btmh-visitor-card-head b,.btmh-role-pill b,.btmh-user-id b) { color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 :is(.v5-dashboard-shortcuts span,.v5-dashboard-kpis small,.btmh-visitor-card-head small,.btmh-role-pill small,.btmh-user-id small,.btmh-rbac-create label) { color: var(--btmh-v550-muted) !important; font-size: 12px !important; }
+body.btmh-v550 .btmh-visitor-head { background: var(--btmh-v550-paper) !important; }
+body.btmh-v550 .btmh-visitor-meta div { background: var(--btmh-v550-ivory); border-color: var(--btmh-v550-line); }
+body.btmh-v550 .btmh-visitor-meta span { color: var(--btmh-v550-muted); font-size: 11px; }
+body.btmh-v550 .btmh-visitor-meta b { color: var(--btmh-v550-ink); font-size: 12px; }
+body.btmh-v550 .btmh-visitor-status { color: var(--btmh-v550-muted); background: var(--btmh-v550-soft); font-size: 11px; }
+body.btmh-v550 .btmh-visitor-status.active { color: var(--btmh-v550-success); background: #eaf4ed; border-color: #b2cfbb; }
+body.btmh-v550 .btmh-visitor-card.watchlist { border-color: var(--btmh-v550-danger) !important; }
+body.btmh-v550 .btmh-shot.empty { color: #ddd0c5; font-size: 12px; }
+body.btmh-v550 .v5-incident-card > b { color: var(--btmh-v550-ink); }
+body.btmh-v550 .v5-incident-card.active { border-color: var(--btmh-v550-gold) !important; background: var(--btmh-v550-ivory) !important; }
+
+/* Controls retain disabled, hidden and permission behavior. */
+body.btmh-v550 .btn { min-height: 44px !important; padding: 10px 16px !important; border-radius: 9px !important; font-size: 14px !important; font-weight: 600 !important; line-height: 1.3; box-shadow: none !important; transform: none !important; transition: background-color .12s ease, border-color .12s ease; }
+body.btmh-v550 .btn.primary { background: var(--btmh-v550-burgundy) !important; color: #fff !important; border-color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 .btn.primary:hover:not(:disabled) { background: var(--btmh-v550-burgundy-dark) !important; filter: none; }
+body.btmh-v550 .btn.ghost { background: var(--btmh-v550-paper) !important; color: var(--btmh-v550-burgundy) !important; border-color: #c9bba4 !important; }
+body.btmh-v550 .btn.ghost:hover:not(:disabled) { background: var(--btmh-v550-soft) !important; border-color: var(--btmh-v550-gold) !important; }
+body.btmh-v550 .btn.danger { background: #fbeeee !important; color: var(--btmh-v550-danger) !important; border-color: #dfb9bd !important; }
+body.btmh-v550 .btn.small { min-height: 36px !important; padding: 7px 11px !important; font-size: 12px !important; }
+body.btmh-v550 .btn:disabled { opacity: .65; cursor: not-allowed; }
+body.btmh-v550 :is(input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]),select,textarea) {
+  min-height: 44px;
+  max-width: 100%;
+  border: 1px solid #c9bfaf !important;
+  border-radius: 9px !important;
+  color: var(--btmh-v550-ink) !important;
+  background: var(--btmh-v550-paper) !important;
+  font-family: inherit;
+  font-size: 14px !important;
+  line-height: 1.4;
+  box-shadow: none !important;
+}
+body.btmh-v550 input::placeholder, body.btmh-v550 textarea::placeholder { color: #796e70; opacity: 1; }
+body.btmh-v550 textarea { min-height: 96px; resize: vertical; }
+body.btmh-v550 :is(input[type="checkbox"],input[type="radio"],input[type="range"]) { accent-color: var(--btmh-v550-burgundy); }
+body.btmh-v550 :is(.field>label,.v5-form-grid>label,.student-form-grid>label,.v537-provider-card label,.hr-report-toolbar label) { color: var(--btmh-v550-ink) !important; font-size: 13px !important; font-weight: 600; }
+body.btmh-v550 :is(button,a,input,select,textarea,summary,[tabindex]):focus-visible { outline: 3px solid var(--btmh-v550-gold-ink) !important; outline-offset: 3px !important; box-shadow: none !important; }
+body.btmh-v550 :is(.prod-history-filters,.student-enterprise-filters,.hr-report-toolbar,.v5-camera-switchbar,.v5-recognition-sourcebar,.btmh-visitor-actions) { gap: 12px !important; border-color: var(--btmh-v550-line) !important; background-color: var(--btmh-v550-paper) !important; }
+body.btmh-v550 :is(.student-profile-tabs,.history-split-switch,.hr-report-period,.v4-layout-buttons) button { border-color: var(--btmh-v550-line) !important; background: var(--btmh-v550-paper) !important; color: var(--btmh-v550-muted) !important; border-radius: 8px !important; font-weight: 600 !important; }
+body.btmh-v550 :is(.student-profile-tabs,.history-split-switch,.hr-report-period,.v4-layout-buttons) button.active { border-color: var(--btmh-v550-burgundy) !important; background: var(--btmh-v550-burgundy) !important; color: #fff !important; }
+
+/* Data workspaces use one legible table rhythm. Existing scroll wrappers stay. */
+body.btmh-v550 :is(.table-wrap,.prod-history-table-wrap,.hr-report-table-wrap) { border-color: var(--btmh-v550-line) !important; border-radius: 10px; max-width: 100%; }
+body.btmh-v550 :is(.student-enterprise-table,.prod-history-table,.hr-report-table,.pr-table,table) { color: var(--btmh-v550-ink) !important; background: var(--btmh-v550-paper) !important; font-size: 13px !important; border-collapse: collapse; }
+body.btmh-v550 table th { padding: 14px 16px !important; color: var(--btmh-v550-muted) !important; background: var(--btmh-v550-ivory) !important; border-color: var(--btmh-v550-line) !important; font-size: 12px !important; font-weight: 600 !important; letter-spacing: .01em; }
+body.btmh-v550 table td { padding: 14px 16px !important; border-color: var(--btmh-v550-line) !important; line-height: 1.45; vertical-align: middle; }
+body.btmh-v550 table tbody tr { background: var(--btmh-v550-paper) !important; }
+body.btmh-v550 table tbody tr:hover { background: #f6f0e7 !important; }
+body.btmh-v550 :is(.student-table-footer,.student-pagination,.hr-report-table-footer) { color: var(--btmh-v550-muted) !important; border-color: var(--btmh-v550-line) !important; background: var(--btmh-v550-paper) !important; }
+body.btmh-v550 :is(.student-pagination button,.v13-device-row button) { color: var(--btmh-v550-burgundy) !important; background: var(--btmh-v550-paper) !important; border-color: var(--btmh-v550-line) !important; border-radius: 8px; min-height: 36px; }
+
+/* Status is conveyed by text and tint, never color alone. */
+body.btmh-v550 :is(.pr-state,.v4-badge,.v5-incident-badge,.student-live-chip,.v5-face-validation-badge,.history-policy-chip,.btmh-status-chip) { font-size: 12px !important; font-weight: 600 !important; line-height: 1.4; border-radius: 7px !important; }
+body.btmh-v550 :is(.pr-state.ok,.v4-badge.ok,.student-live-chip.ok,.v5-face-validation-badge.ok,.v537-secret-state.ok,.v4-state-present) { color: var(--btmh-v550-success) !important; }
+body.btmh-v550 :is(.pr-state.warn,.student-live-chip.warn,.v5-face-validation-badge.warn) { color: var(--btmh-v550-warning) !important; background: #fbf2df !important; border-color: #d8c08e !important; }
+body.btmh-v550 :is(.pr-state.bad,.pr-state.error,.student-live-chip.bad,.v5-incident-badge.critical) { color: var(--btmh-v550-danger) !important; background: #fbeeee !important; border-color: #dfb9bd !important; }
+
+/* Enrollment and recognition keep their camera/overlay sizes and state logic. */
+body.btmh-v550 #page-register :is(.enrollment-profile-card,.faceid-pro-shell,.existing-student-box,.faceid-pro-progress-card,.enroll-person-card,.faceid-pro-tip) { background: var(--btmh-v550-paper) !important; border-color: var(--btmh-v550-line) !important; color: var(--btmh-v550-ink) !important; box-shadow: none !important; }
+body.btmh-v550 #page-register :is(.btmh-enroll-hero,.faceid-pro-topbar,.faceid-pro-side) { background: var(--btmh-v550-ivory) !important; border-color: var(--btmh-v550-line) !important; }
+body.btmh-v550 #page-register :is(.btmh-enroll-hero h2,.btmh-form-heading h3,.faceid-pro-title b,.faceid-pro-copy h2,.existing-student-box h3) { color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 #page-register :is(.btmh-enroll-hero p,.btmh-existing-copy,.faceid-pro-progress-note,.faceid-pro-tip span) { color: var(--btmh-v550-muted) !important; }
+body.btmh-v550 #page-recognition :is(.entry-camera-panel,.entry-last-person-card,.entry-stat-card,.entry-events-panel,.entry-ai-card) { border-color: var(--btmh-v550-line) !important; background: var(--btmh-v550-paper) !important; color: var(--btmh-v550-ink) !important; box-shadow: none !important; }
+body.btmh-v550 :is(.entry-camera-wrap,.v13-dashboard-preview,.v13-monitor-video,.v4-playback-player,.v4-camera-card) { border-color: #5c454b !important; background-color: #171215 !important; }
+body.btmh-v550 .v4-camera-card { box-shadow: none !important; border-radius: 12px !important; }
+body.btmh-v550 .v4-camera-card .meta { color: #fff8ed; }
+body.btmh-v550 .v4-camera-card .meta small { font-size: 12px !important; opacity: .9; }
+body.btmh-v550 .v4-camera-card .flags span { font-size: 11px !important; line-height: 1.4; font-weight: 600; background: #171215d9; border: 1px solid #ffffff35; }
+body.btmh-v550 .v4-camera-card .placeholder { color: #ddd0c5; }
+body.btmh-v550 .v4-camera-card .placeholder strong { color: #fff8ed; }
+body.btmh-v550 .v4-playback-side, body.btmh-v550 .v4-timeline { background: var(--btmh-v550-paper) !important; border-color: var(--btmh-v550-line) !important; }
+body.btmh-v550 .v4-timeline-track i { background: var(--btmh-v550-burgundy) !important; }
+
+/* Existing dialogs retain open/hidden mechanics and scroll within the viewport. */
+body.btmh-v550 :is(.student-modal-card,.v12-modal-card,.prod-history-detail-card,#cameraConnectionDialog[open]) { background: var(--btmh-v550-paper) !important; color: var(--btmh-v550-ink) !important; border: 1px solid var(--btmh-v550-line) !important; border-radius: 16px !important; box-shadow: 0 24px 72px #29111a38 !important; max-height: calc(100dvh - 40px); overflow-y: auto; }
+body.btmh-v550 :is(.student-modal-head,.v12-modal-head,.prod-history-detail-head) { border-color: var(--btmh-v550-line) !important; }
+body.btmh-v550 :is(.student-modal-head h3,.v12-modal-head h3,.prod-history-detail-head h3) { color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 :is(.student-modal-backdrop,.v12-modal-backdrop) { background: #26141cbc !important; backdrop-filter: none; }
+body.btmh-v550 .v4-camera-modal { background: #171015e8; backdrop-filter: none; }
+body.btmh-v550 .v4-camera-modal-card { border-color: #7b5c52; border-radius: 16px; }
+body.btmh-v550 .v4-camera-modal-head { background: var(--btmh-v550-burgundy-dark); color: #fff8ed; }
+
+/* Technical details remain collapsed until the existing details control opens. */
+body.btmh-v550 #btmhPerformanceDetails { padding: 20px; }
+body.btmh-v550 #btmhPerformanceDetails summary { color: var(--btmh-v550-burgundy); font-weight: 600; font-size: 16px; cursor: pointer; padding: 4px 0; }
+body.btmh-v550 #btmhPerformanceDetails > p { color: var(--btmh-v550-muted); font-size: 13px; margin: 12px 0; }
+body.btmh-v550 #btmhPerformanceMetrics { gap: 10px; }
+body.btmh-v550 #btmhPerformanceMetrics .btmh-performance-metric { background: var(--btmh-v550-ivory); border: 1px solid var(--btmh-v550-line); border-radius: 9px; padding: 12px; min-width: 0; }
+body.btmh-v550 .btmh-performance-metric span { color: var(--btmh-v550-muted); font-size: 12px; line-height: 1.45; }
+body.btmh-v550 .btmh-performance-metric strong { color: var(--btmh-v550-ink); font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+
+/* Auth uses the official emblem, wordmark and jewelry image unchanged. */
+body.btmh-v550 #authGate .btmh-gold-story { background: var(--btmh-v550-burgundy-dark) !important; }
+body.btmh-v550 #authGate :is(.btmh-story-logo img,.btmh-jewelry-scene>img,.btmh-auth-mobile-brand img) { filter: none !important; }
+body.btmh-v550 #authGate .btmh-auth-card { background: var(--btmh-v550-paper) !important; border-color: var(--btmh-v550-line) !important; box-shadow: 0 12px 40px #37131f0d !important; }
+body.btmh-v550 #authGate .btmh-form-heading h2 { color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 #authGate :is(.btmh-form-heading p,.btmh-auth-foot,.sms-trust-note,.btmh-help-card p) { color: var(--btmh-v550-muted) !important; }
+body.btmh-v550 #authGate .btmh-auth-mobile-brand b { color: var(--btmh-v550-burgundy) !important; }
+body.btmh-v550 #authGate .btmh-auth-mobile-brand small { color: var(--btmh-v550-muted) !important; }
+body.btmh-v550 #authGate :is(.btmh-gold-glint,.btmh-jewelry-scene>img,.btmh-auth-card) { animation: none !important; }
+
+/* Last visibility guards outrank legacy important nav/auth display rules.
+   No presentational override may reveal a locked or intentionally hidden view. */
+body.btmh-v550 :is([hidden],.hidden,.permission-locked,.role-locked),
+body.btmh-v550 #runtimeMetrics[hidden],
+body.btmh-v550 #btmhSidebar .btmh-primary-nav .nav-item:is([hidden],.hidden,.permission-locked,.role-locked),
+body.btmh-v550 #btmhSidebar :is([hidden],.hidden,.permission-locked,.role-locked),
+body.btmh-v550 #authGate:is([hidden],.hidden,.permission-locked,.role-locked),
+body.btmh-v550 #authGate :is([hidden],.hidden,.permission-locked,.role-locked) { display: none !important; }
+
+@media (min-width: 901px) {
+  body.btmh-v550 .main { margin-left: 264px !important; width: calc(100% - 264px) !important; }
+}
+@media (max-width: 1200px) {
+  body.btmh-v550 .main { padding: 20px !important; }
+  body.btmh-v550 :is(.v5-shift-grid,.v5-incident-layout,.v537-provider-columns) { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 900px) {
+  body.btmh-v550 .main { margin-left: 0 !important; width: 100% !important; padding: 16px !important; }
+  body.btmh-v550 #btmhSidebar { width: min(300px,86vw) !important; min-width: min(300px,86vw) !important; }
+  body.btmh-v550 #btmhMenuToggle { background: var(--btmh-v550-paper); border-color: #c9bfaf; color: var(--btmh-v550-burgundy); }
+  body.btmh-v550 .topbar.v13-topbar { padding: 14px !important; }
+  body.btmh-v550 .v13-page-heading h1 { font-size: 22px !important; }
+  body.btmh-v550 :is(.profile-phase-grid,.faceid-pro-grid,.entry-recognition-top,.v4-playback-layout,.hr-report-layout,.pr-system-grid,.v6-camera-grid) { grid-template-columns: minmax(0,1fr) !important; }
+  body.btmh-v550 :is(.v4-presence-grid,.btmh-visitor-kpis,.btmh-access-summary-grid) { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width: 600px) {
+  body.btmh-v550 { font-size: 14px; }
+  body.btmh-v550 .main { padding: 12px !important; }
+  body.btmh-v550 .topbar.v13-topbar { padding: 12px !important; gap: 10px !important; }
+  body.btmh-v550 .v13-page-heading h1 { font-size: 20px !important; }
+  body.btmh-v550 :is(.panel-head,.v4-live-head,.student-enterprise-head,.v5-module-hero,.pr-page-head) { align-items: flex-start !important; gap: 12px !important; }
+  body.btmh-v550 :is(.student-enterprise-filters,.prod-history-filters,.hr-report-controls,.v5-camera-switchbar,.v5-recognition-sourcebar) { min-width: 0; }
+  body.btmh-v550 :is(.field-row,.student-form-grid,.v5-form-grid,.v537-two,.v537-test-row) { grid-template-columns: minmax(0,1fr) !important; }
+  body.btmh-v550 :is(.v4-presence-grid,.btmh-visitor-kpis,.btmh-access-summary-grid) { gap: 10px !important; }
+  body.btmh-v550 :is(.prod-history-kpis,.hr-report-kpis) { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  body.btmh-v550 :is(.student-modal-card,.v12-modal-card,.prod-history-detail-card) { width: calc(100vw - 24px) !important; max-height: calc(100dvh - 24px); padding: 20px !important; }
+  body.btmh-v550 :is(.student-modal-actions,.v12-modal-actions) .btn { flex: 1 1 140px; }
+  body.btmh-v550 .v4-camera-modal { padding: 12px; }
+  body.btmh-v550 .v4-camera-card .meta { padding-left: 10px; padding-right: 10px; }
+  body.btmh-v550 .v4-camera-card .flags { flex-wrap: wrap; }
+  body.btmh-v550 #btmhPerformanceDetails { padding: 16px; }
+  body.btmh-v550 #authGate .btmh-auth-card { padding: 26px 22px !important; }
+  body.btmh-v550 #authGate :is(input:not([type="checkbox"]):not([type="hidden"]),select,textarea) { font-size: 16px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.btmh-v550 *, body.btmh-v550 *::before, body.btmh-v550 *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

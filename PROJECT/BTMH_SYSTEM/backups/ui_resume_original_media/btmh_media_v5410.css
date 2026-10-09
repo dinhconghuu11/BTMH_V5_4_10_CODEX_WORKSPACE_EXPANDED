@@ -1,0 +1,20 @@
+/* BTMH 5.4.10 realtime transport layers. */
+.btmh-media-video,.btmh-media-canvas{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  display:none;z-index:1;background:#05070a;pointer-events:none;
+  object-position:center center;transform:translateZ(0);backface-visibility:hidden;
+}
+.btmh-media-video.btmh-media-active,.btmh-media-canvas.btmh-media-active{display:block!important}
+.btmh-media-legacy{z-index:1!important}
+.btmh-media-legacy:not(.btmh-media-active){display:none!important}
+.btmh-media-overlay{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;z-index:3!important;pointer-events:none!important;background:transparent!important}
+.entry-camera-wrap,.v13-dashboard-preview,.v13-monitor-video{position:relative;overflow:hidden;background:#05070a}
+#recognitionVideo{z-index:1!important;visibility:visible!important}
+#recognitionOverlay{z-index:3!important;pointer-events:none!important}
+.btmh-media-transport-status{
+  position:absolute;left:8px;bottom:8px;z-index:4;max-width:calc(100% - 16px);
+  padding:5px 8px;border:1px solid #346850;border-radius:6px;background:rgba(4,18,29,.9);
+  color:#def9eb;font:500 11px/1.4 system-ui,sans-serif;white-space:pre-line;overflow-wrap:anywhere;
+  pointer-events:none;text-align:left;
+}
+.btmh-media-transport-status.btmh-media-fallback{border-color:#a7782f;color:#ffe4b4}

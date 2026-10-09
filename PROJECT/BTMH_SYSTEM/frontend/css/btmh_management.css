@@ -1,0 +1,58 @@
+body.btmh-v550 .btmh-management-header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:24px}
+body.btmh-v550 .btmh-management-header h2{font-size:24px;margin:0 0 8px;color:var(--btmh-v550-burgundy)}
+body.btmh-v550 .btmh-management-header p{margin:0;color:var(--btmh-v550-muted);max-width:65ch}
+body.btmh-v550 .btmh-management-controls{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}
+body.btmh-v550 .btmh-management-controls label{display:grid;gap:6px;font-size:13px;font-weight:600}
+body.btmh-v550 .btmh-management-controls select{min-height:44px;max-width:260px;background:var(--btmh-v550-paper);border:1px solid var(--btmh-v550-line);border-radius:8px;padding:0 12px;color:var(--btmh-v550-ink)}
+body.btmh-v550 .btmh-management-feedback{min-height:24px;margin:0 0 16px;color:var(--btmh-v550-muted);font-size:13px}
+body.btmh-v550 .btmh-management-staff{padding:24px;margin-bottom:24px}
+body.btmh-v550 .btmh-management-staff h3,body.btmh-v550 .btmh-management-grid h3{margin:0 0 18px;font-size:19px;color:var(--btmh-v550-burgundy)}
+body.btmh-v550 .btmh-management-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:20px;margin:0}
+body.btmh-v550 .btmh-management-metrics div{min-width:0}
+body.btmh-v550 .btmh-management-metrics dt{font-size:13px;color:var(--btmh-v550-muted)}
+body.btmh-v550 .btmh-management-metrics dd{margin:8px 0 0;font-size:28px;font-weight:650;color:var(--btmh-v550-ink);font-variant-numeric:tabular-nums}
+body.btmh-v550 .btmh-management-note{font-size:13px;line-height:1.65;color:var(--btmh-v550-muted);margin:16px 0 0;max-width:70ch}
+body.btmh-v550 .btmh-management-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px}
+body.btmh-v550 .btmh-management-grid>.panel{padding:24px;min-width:0}
+body.btmh-v550 .btmh-management-equipment{display:flex;flex-wrap:wrap;gap:28px;margin:0;padding:0 0 20px;border-bottom:1px solid var(--btmh-v550-line)}
+body.btmh-v550 .btmh-management-equipment dt{color:var(--btmh-v550-muted);font-size:13px}
+body.btmh-v550 .btmh-management-equipment dd{margin:6px 0 0;font-size:20px;font-weight:650;font-variant-numeric:tabular-nums}
+body.btmh-v550 .btmh-management-recent{list-style:none;padding:0;margin:0}
+body.btmh-v550 .btmh-management-event{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--btmh-v550-line)}
+body.btmh-v550 .btmh-management-event:last-child{border-bottom:0}
+body.btmh-v550 .btmh-management-event b{display:block;font-size:14px;overflow-wrap:anywhere}
+body.btmh-v550 .btmh-management-event small{display:block;margin-top:5px;color:var(--btmh-v550-muted);line-height:1.5;overflow-wrap:anywhere}
+body.btmh-v550 .btmh-management-state{font-size:12px;color:var(--btmh-v550-burgundy)}
+body.btmh-v550 .btmh-management-event time{font-size:12px;font-variant-numeric:tabular-nums}
+body.btmh-v550 .btmh-visit-comparison{font-size:17px;line-height:1.7;font-weight:600;font-variant-numeric:tabular-nums;color:var(--btmh-v550-burgundy);margin:20px 0}
+body.btmh-v550 .btmh-management-table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+body.btmh-v550 .btmh-management-table th,body.btmh-v550 .btmh-management-table td{padding:12px;text-align:left;border-bottom:1px solid var(--btmh-v550-line);vertical-align:top}
+body.btmh-v550 .btmh-management-table th{background:var(--btmh-v550-ivory);font-weight:600}
+body.btmh-v550 .btmh-visit-hours{margin-top:20px}
+body.btmh-v550 .btmh-visit-hours summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--btmh-v550-burgundy);font-weight:600}
+body.btmh-v550 .btmh-visit-hour-chart{display:grid;grid-template-columns:repeat(24,minmax(12px,1fr));gap:4px;overflow:auto;margin-top:16px;padding-bottom:8px}
+body.btmh-v550 .btmh-visit-hour-bars{height:104px;display:flex;gap:2px;align-items:flex-end}
+body.btmh-v550 .btmh-visit-hour-bars i{flex:1;min-width:3px;background:var(--btmh-v550-line)}
+body.btmh-v550 .btmh-visit-hour-bars i.selected{background:var(--btmh-v550-burgundy)}
+body.btmh-v550 .btmh-visit-hour small{font-size:10px;color:var(--btmh-v550-muted)}
+body.btmh-v550 .btmh-rbac-create{grid-template-columns:repeat(3,minmax(0,1fr));align-items:end}
+body.btmh-v550 .btmh-rbac-create>p{grid-column:1/-1;margin:0;color:var(--btmh-v550-muted);font-size:13px;line-height:1.6}
+@media(max-width:700px){body.btmh-v550 .btmh-rbac-create{grid-template-columns:1fr}}
+@media(max-width:1000px){body.btmh-v550 .btmh-management-grid{grid-template-columns:1fr}body.btmh-v550 .btmh-management-header{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){body.btmh-v550 .btmh-management-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}body.btmh-v550 .btmh-management-grid>.panel,body.btmh-v550 .btmh-management-staff{padding:18px}body.btmh-v550 .btmh-management-event{grid-template-columns:minmax(0,1fr) auto}body.btmh-v550 .btmh-management-state{grid-row:2}body.btmh-v550 .btmh-management-controls{width:100%}body.btmh-v550 .btmh-management-controls label{flex:1}body.btmh-v550 .btmh-management-controls select{width:100%;max-width:100%}}
+body.btmh-v550 .btmh-business-kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:var(--btmh-space-grid); margin:0 0 var(--btmh-space-section); }
+body.btmh-v550 .btmh-business-kpis > div { padding:var(--btmh-space-card); background:var(--btmh-v550-paper); border:1px solid var(--btmh-v550-line); border-radius:var(--btmh-v550-radius); min-width:0; }
+body.btmh-v550 .btmh-business-kpis dt { font-size:13px; color:var(--btmh-v550-muted); font-weight:600; }
+body.btmh-v550 .btmh-business-kpis dd { margin:12px 0; font-size:32px; line-height:1.2; font-weight:650; color:var(--btmh-v550-burgundy); font-variant-numeric:tabular-nums; }
+body.btmh-v550 .btmh-business-kpis small { font-size:12px; color:var(--btmh-v550-muted); line-height:1.5; display:block; }
+body.btmh-v550 .btmh-management-tasks { margin-bottom:var(--btmh-space-section); }
+body.btmh-v550 .btmh-management-tasks h3 { margin:0; color:var(--btmh-v550-burgundy); font-size:19px; }
+body.btmh-v550 .btmh-management-tasks ul { list-style:none; padding:0; margin:16px 0; }
+body.btmh-v550 .btmh-management-tasks li { padding:12px 0; border-bottom:1px solid var(--btmh-v550-line); }
+body.btmh-v550 .btmh-management-shortcuts { display:flex; flex-wrap:wrap; gap:12px; }
+body.btmh-v550 .btmh-attendance-chart { display:grid; gap:16px; margin-top:24px; }
+body.btmh-v550 .btmh-attendance-bar { display:grid; grid-template-columns:minmax(130px,1fr) minmax(80px,2fr) 40px; gap:16px; align-items:center; font-size:13px; }
+body.btmh-v550 .btmh-attendance-bar-track { display:block; height:8px; border-radius:4px; background:var(--btmh-v550-soft); overflow:hidden; }
+body.btmh-v550 .btmh-attendance-bar-track i { display:block; height:100%; background:var(--btmh-v550-burgundy); }
+@media(max-width:1100px){body.btmh-v550 .btmh-business-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){body.btmh-v550 .btmh-business-kpis{gap:12px}body.btmh-v550 .btmh-business-kpis>div{padding:16px}body.btmh-v550 .btmh-business-kpis dd{font-size:28px}body.btmh-v550 .btmh-attendance-bar{grid-template-columns:minmax(0,1fr) 60px 24px;gap:10px}}

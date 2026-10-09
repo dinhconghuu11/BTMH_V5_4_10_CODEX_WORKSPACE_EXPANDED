@@ -1,0 +1,223 @@
+/* CampusFace Recognition Module V1.2
+   Final scoped overrides only. The existing application shell is intentionally
+   untouched. This file improves FaceID enrollment and the student activity tab. */
+
+/* --------------------------------------------------------------------------
+   FaceID enrollment — calm, phone-grade biometric guidance
+   -------------------------------------------------------------------------- */
+#page-register .faceid-pro-camera-wrap{
+  min-height:560px!important;
+  max-height:720px!important;
+  background:linear-gradient(155deg,#041316,#071f23)!important;
+  box-shadow:inset 0 0 0 1px rgba(204,255,246,.05),0 18px 38px rgba(3,29,33,.12)!important;
+}
+#page-register .faceid-pro-camera-wrap .module-service-preview{
+  filter:brightness(.78) saturate(.88) contrast(1.055)!important;
+  transition:filter .22s ease!important;
+}
+#page-register .faceid-shade{
+  background:
+    radial-gradient(ellipse 29% 43% at 50% 47%,rgba(2,15,18,0) 0 64%,rgba(2,16,19,.09) 73%,rgba(2,15,18,.55) 100%),
+    linear-gradient(180deg,rgba(2,16,19,.08),rgba(2,16,19,.26))!important;
+}
+#page-register .faceid-pro-scanner{
+  width:clamp(265px,35%,360px)!important;
+  aspect-ratio:.79!important;
+  top:47%!important;
+  filter:drop-shadow(0 16px 35px rgba(0,0,0,.12));
+}
+#page-register .faceid-pro-scanner .v24-face-oval{
+  border:0!important;
+  background:radial-gradient(ellipse at 50% 49%,rgba(52,230,195,.035),rgba(7,41,43,.02) 64%,transparent 65%)!important;
+  box-shadow:none!important;
+}
+#page-register .faceid-pro-scanner .v24-face-inner{
+  inset:5px!important;
+  border:1.5px solid rgba(221,255,249,.74)!important;
+  border-radius:inherit!important;
+  box-shadow:inset 0 0 22px rgba(35,214,179,.055),0 0 0 1px rgba(32,218,183,.06)!important;
+}
+#page-register .faceid-pro-scanner .v24-face-inner:before,
+#page-register .faceid-pro-scanner .v24-face-inner:after{
+  opacity:.22!important;
+}
+#page-register .faceid-pro-scanner .v24-face-progress{
+  inset:-9px!important;
+  background:conic-gradient(from -90deg,
+    #56f4d2 0 var(--pass-angle),
+    rgba(216,255,247,.12) var(--pass-angle) 360deg)!important;
+  -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 4px),#000 calc(100% - 3px));
+  mask:radial-gradient(farthest-side,transparent calc(100% - 4px),#000 calc(100% - 3px));
+  filter:drop-shadow(0 0 7px rgba(66,235,201,.26))!important;
+}
+#page-register .scan-ticks{
+  display:block!important;
+  inset:-15px!important;
+  opacity:.72!important;
+}
+#page-register .scan-ticks i{
+  width:2px!important;
+  height:5px!important;
+  background:rgba(225,255,250,.14)!important;
+}
+#page-register .scan-ticks i.head{height:7px!important;background:rgba(233,255,251,.34)!important}
+#page-register .scan-ticks i.done{background:#66f5d5!important;box-shadow:0 0 6px rgba(76,235,202,.52)!important}
+#page-register .v24-depth-dots{
+  opacity:.35;
+  inset:11% 13%!important;
+  transform:perspective(360px)
+    translate(var(--dot-shift-x,0),var(--dot-shift-y,0))
+    rotateY(calc(var(--head-x) * 7deg)) rotateX(calc(var(--head-y) * -6deg))!important;
+  transition:opacity .18s ease,transform .14s linear!important;
+}
+#page-register .v24-depth-dot{
+  width:2.4px!important;height:2.4px!important;
+  background:rgba(126,242,219,.72)!important;
+  box-shadow:0 0 5px rgba(78,230,201,.25)!important;
+  transition:opacity .16s ease,transform .18s ease,background .18s ease!important;
+}
+#page-register .v24-depth-dot.hot{
+  background:#e9fffb!important;
+  box-shadow:0 0 8px rgba(105,246,218,.78)!important;
+  transform:scale(1.42)!important;
+}
+#page-register .v24-orbit-cursor{
+  width:12px!important;height:12px!important;
+  border:2px solid #72f4d7!important;
+  background:#f3fffc!important;
+  box-shadow:0 0 0 5px rgba(88,237,206,.10),0 0 16px rgba(88,237,206,.55)!important;
+}
+#page-register .faceid-pro-direction{
+  display:grid!important;place-items:center!important;
+  width:34px;height:34px;border-radius:50%!important;
+  background:rgba(7,37,40,.44)!important;
+  border:1px solid rgba(207,255,246,.12)!important;
+  font-size:22px!important;
+  color:#abfff0!important;
+  opacity:.12!important;
+  backdrop-filter:blur(6px);
+}
+#page-register .faceid-pro-scanner[data-guide="left"] .direction-left,
+#page-register .faceid-pro-scanner[data-guide="right"] .direction-right,
+#page-register .faceid-pro-scanner[data-guide="up"] .direction-up,
+#page-register .faceid-pro-scanner[data-guide="down"] .direction-down{
+  opacity:1!important;
+  border-color:rgba(102,245,213,.42)!important;
+  box-shadow:0 0 0 5px rgba(82,235,202,.08),0 0 18px rgba(78,230,198,.20)!important;
+}
+#page-register .faceid-sample-meter{
+  position:absolute;left:50%;bottom:16%;transform:translateX(-50%);z-index:8;
+  min-width:76px;padding:7px 10px;border-radius:999px;text-align:center;
+  background:rgba(3,28,31,.58);border:1px solid rgba(205,255,246,.11);
+  backdrop-filter:blur(8px);color:#effffb;opacity:.92;
+}
+#page-register .faceid-sample-meter strong{display:block;font-size:13px;line-height:1.05;letter-spacing:.02em}
+#page-register .faceid-sample-meter span{display:block;margin-top:3px;font-size:7.5px;letter-spacing:.12em;color:#9bd8cc;font-weight:800}
+#page-register .faceid-lock-chip{
+  top:16px!important;
+  background:rgba(3,24,27,.70)!important;
+  border-color:rgba(211,255,247,.14)!important;
+  box-shadow:0 8px 20px rgba(0,0,0,.08)!important;
+}
+#page-register .faceid-lock-chip.locked{
+  background:rgba(7,53,46,.70)!important;
+  border-color:rgba(88,239,207,.30)!important;
+}
+#page-register .faceid-pro-bottom-status{
+  max-width:min(640px,86%)!important;
+  border-radius:999px!important;
+  background:rgba(3,25,29,.78)!important;
+  border:1px solid rgba(188,255,242,.13)!important;
+  box-shadow:0 10px 28px rgba(0,0,0,.12)!important;
+}
+#page-register .faceid-pro-bottom-status #faceidInstruction{font-size:11.5px!important;line-height:1.35!important}
+#page-register .faceid-pro-pose-strip{
+  gap:8px!important;
+  padding-top:11px!important;
+}
+#page-register .faceid-pro-pose-strip .pose-chip{
+  border-radius:14px!important;
+  transition:border-color .18s ease,background .18s ease,transform .18s ease!important;
+}
+#page-register .faceid-pro-pose-strip .pose-chip.active{transform:translateY(-1px)}
+#page-register .faceid-pro-progress-card,
+#page-register .faceid-pro-steps .v23-pass-card,
+#page-register .faceid-pro-quality>div,
+#page-register .faceid-pro-tip{border-radius:15px!important}
+#page-register .faceid-pro-copy h2{letter-spacing:-.025em!important}
+#page-register .faceid-pro-copy p{max-width:620px!important}
+#page-register .faceid-pro-scanner.aligning .v24-depth-dots{opacity:.18!important}
+#page-register .faceid-pro-scanner.face-locked .v24-depth-dots{opacity:.82!important}
+#page-register .faceid-pro-scanner.capture-accepted .faceid-sample-meter{
+  animation:v12MeterPulse .36s ease-out;
+}
+@keyframes v12MeterPulse{0%{transform:translateX(-50%) scale(1)}45%{transform:translateX(-50%) scale(1.08)}100%{transform:translateX(-50%) scale(1)}}
+
+/* --------------------------------------------------------------------------
+   Student profile — live camera + action AI, using the existing detail page
+   -------------------------------------------------------------------------- */
+#page-students .student-v12-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#page-students .student-v12-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+#page-students .student-tab-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+#page-students .student-tab-title.compact{margin-bottom:10px}
+#page-students .student-tab-title>div>span{display:block;font-size:9px;letter-spacing:.12em;font-weight:900;color:#178e7a;margin-bottom:3px}
+#page-students .student-tab-title h3{margin:0;font-size:18px;color:#102b35}
+#page-students .student-live-chip{display:inline-flex;align-items:center;min-height:30px;padding:6px 10px;border-radius:999px;background:#eef3f4;color:#607078;font-size:10px;font-weight:800;white-space:nowrap}
+#page-students .student-live-chip.ok{background:#e7fbf5;color:#08745e}
+#page-students .student-live-chip.warn{background:#fff5df;color:#986512}
+#page-students .student-live-chip.bad{background:#ffeded;color:#a74545}
+#page-students .student-live-activity{display:grid;gap:14px}
+#page-students .student-live-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,.70fr);gap:14px;align-items:start}
+#page-students .student-live-camera-card,
+#page-students .student-current-action-card,
+#page-students .student-action-help,
+#page-students .student-action-history-card,
+#page-students .student-faceid-summary{background:#fff;border:1px solid #e4ecec;border-radius:18px;box-shadow:0 10px 26px rgba(23,59,68,.055)}
+#page-students .student-live-camera-card{padding:10px}
+#page-students .student-live-camera-wrap{position:relative;overflow:hidden;border-radius:15px;background:#08171a;aspect-ratio:16/9;min-height:320px;isolation:isolate}
+#page-students .student-live-camera-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block}
+#page-students .student-live-camera-wrap canvas{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none}
+#page-students .student-live-camera-empty{position:absolute;inset:0;z-index:2;display:grid;place-content:center;text-align:center;gap:5px;color:#d9eeeb;background:linear-gradient(145deg,#071719,#0d2528)}
+#page-students .student-live-camera-empty.hidden{display:none!important}
+#page-students .student-live-camera-empty b{font-size:11px;letter-spacing:.12em;color:#73e3cd}
+#page-students .student-live-camera-empty span{font-size:11px;color:#a7c1be}
+#page-students .student-live-hud{position:absolute;left:12px;right:12px;top:12px;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:10px;color:#eafffa;font-size:10px;font-weight:800;text-shadow:0 2px 8px rgba(0,0,0,.45)}
+#page-students .student-live-hud span{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:999px;background:rgba(4,24,27,.60);border:1px solid rgba(212,255,247,.11);backdrop-filter:blur(8px)}
+#page-students .student-live-hud i{width:7px;height:7px;border-radius:50%;background:#e5a33a;box-shadow:0 0 0 4px rgba(229,163,58,.11)}
+#page-students .student-live-hud i.ok{background:#32d6ad;box-shadow:0 0 0 4px rgba(50,214,173,.12)}
+#page-students .student-live-hud i.warn{background:#e5a33a}
+#page-students .student-live-note{padding:9px 4px 2px;color:#74858a;font-size:10px;line-height:1.45}
+#page-students .student-live-side{display:grid;gap:12px}
+#page-students .student-current-action-card{padding:18px;background:linear-gradient(155deg,#0a2a2f,#103b3d);color:#f5fffd;border-color:#17494a}
+#page-students .student-current-action-card>span{display:block;color:#8adcca;font-size:9px;letter-spacing:.12em;font-weight:900}
+#page-students .student-current-action-card>strong{display:block;margin-top:8px;font-size:21px;line-height:1.16;letter-spacing:-.02em}
+#page-students .student-current-action-card>p{margin:7px 0 0;color:#b7d6d1;font-size:11px;line-height:1.45}
+#page-students .student-action-signals{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+#page-students .student-action-signals>div{padding:10px;border-radius:12px;background:rgba(255,255,255,.055);border:1px solid rgba(215,255,247,.07)}
+#page-students .student-action-signals small{display:block;color:#91b8b3;font-size:9px}
+#page-students .student-action-signals b{display:block;margin-top:3px;font-size:12px;color:#fff}
+#page-students .student-action-help{padding:15px}
+#page-students .student-action-help b{display:block;color:#173943;font-size:12px}
+#page-students .student-action-help span{display:block;margin-top:5px;color:#6c7e83;font-size:10.5px;line-height:1.5}
+#page-students .student-action-help .btn{margin-top:10px}
+#page-students .student-action-history-card{padding:16px}
+#page-students .student-action-history-card table th,
+#page-students .student-action-history-card table td{font-size:10.5px}
+#page-students .student-faceid-summary{padding:18px}
+#page-students .student-faceid-summary p{color:#667b81;font-size:11px;line-height:1.55;max-width:760px}
+
+@media(max-width:1080px){
+  #page-students .student-live-grid{grid-template-columns:1fr}
+  #page-students .student-live-side{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  #page-register .faceid-pro-camera-wrap{min-height:470px!important}
+  #page-register .faceid-pro-scanner{width:min(290px,68%)!important}
+  #page-students .student-v12-info-grid{grid-template-columns:1fr}
+  #page-students .student-live-side{grid-template-columns:1fr}
+  #page-students .student-live-camera-wrap{min-height:250px}
+  #page-students .student-tab-title{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+  #page-register .faceid-pro-scanner.capture-accepted .faceid-sample-meter{animation:none}
+}

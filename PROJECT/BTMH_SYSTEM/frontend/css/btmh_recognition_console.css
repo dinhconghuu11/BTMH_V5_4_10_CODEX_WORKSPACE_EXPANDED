@@ -1,0 +1,166 @@
+/* Readable brand surface, scoped to recognition. Media layers remain media-owned. */
+body.btmh-v550 #page-recognition.recognition-console {
+  --entry-ink: var(--btmh-v550-ink);
+  --surface: var(--btmh-v550-paper);
+  --ink: var(--btmh-v550-ink);
+  --muted: var(--btmh-v550-muted);
+  --line: var(--btmh-v550-line);
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: var(--btmh-v550-ivory);
+  color: var(--btmh-v550-ink);
+  color-scheme: light;
+}
+body.btmh-v550 #page-recognition .entry-recognition-workspace { gap: 0; }
+body.btmh-v550 #page-recognition .entry-recognition-top {
+  grid-template-columns: minmax(0, 1.7fr) minmax(340px, 1fr) !important;
+  gap: var(--btmh-space-grid); align-items: start;
+}
+body.btmh-v550 #page-recognition :is(.recognition-main-stack, .entry-side-stack) {
+  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto;
+  gap: var(--btmh-space-grid); min-width: 0; align-items: start;
+}
+body.btmh-v550 #page-recognition .panel {
+  padding: var(--btmh-space-card) !important; background: var(--btmh-v550-paper) !important; border-color: var(--btmh-v550-line) !important;
+  border-radius: 12px !important; box-shadow: none !important;
+}
+body.btmh-v550 #page-recognition :is(h2, .panel-head h2) {
+  display: flex; align-items: center; gap: 8px; margin: 0;
+  color: var(--btmh-v550-burgundy) !important; font-size: 16px !important; line-height: 1.45;
+}
+#page-recognition .recognition-console-icon { flex: 0 0 18px; width: 18px; height: 18px; color: var(--btmh-v550-gold-ink); }
+#page-recognition :is(.recognition-camera-heading, .recognition-switch-heading) {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 12px;
+}
+body.btmh-v550 #page-recognition .btn.ghost {
+  background: var(--btmh-v550-soft) !important; border-color: #cdbfae !important; color: var(--btmh-v550-burgundy) !important;
+}
+body.btmh-v550 #page-recognition .btn.small { min-height: 36px !important; padding: 7px 10px !important; font-size: 11px !important; }
+body.btmh-v550 #page-recognition :is(select, input) { border-color: #cdbfae !important; }
+body.btmh-v550 #page-recognition :is(button, select, summary):focus-visible { outline-color: var(--btmh-v550-gold-ink) !important; }
+#page-recognition .recognition-slot { position: relative; border-color: var(--btmh-v550-line); border-radius: 9px; box-shadow: none; }
+#page-recognition .recognition-slot.is-selected { border-color: #cdbfae; box-shadow: none; }
+#page-recognition .recognition-slot-head {
+  position: absolute; inset: 12px 12px auto; z-index: 5; padding: 0; pointer-events: none;
+}
+#page-recognition :is(.recognition-slot-choose, .recognition-slot-fullscreen) {
+  pointer-events: auto; min-height: 38px; border: 1px solid #ffffff26; border-radius: 8px;
+  background: #06101cdb; color: #f0f6ff; padding: 7px 10px; font-size: 11px;
+}
+#page-recognition .recognition-slot-choose { max-width: calc(100% - 110px); }
+#page-recognition .recognition-slot-choose strong { font-size: 12px; }
+#page-recognition .recognition-slot-location { display: none; }
+#page-recognition .recognition-slot { display: flex; flex-direction: column; }
+body.btmh-v550 #page-recognition .recognition-slot-viewport.entry-camera-wrap {
+  order: 0; aspect-ratio: 16 / 9 !important; border-radius: 0 !important; background: #050b12 !important;
+}
+#page-recognition .recognition-slot-viewport .camera-empty { background: #050b12; color: #dce9fa; padding: 65px 16px 20px; }
+#page-recognition .recognition-slot-picker { order: 2; margin: 0; padding: 10px 12px; border-top: 1px solid var(--btmh-v550-line); }
+body.btmh-v550 #page-recognition .recognition-slot-picker select { min-height: 40px; font-size: 12px !important; }
+#page-recognition .recognition-slot-status { order: 1; min-height: 38px; padding: 8px 12px; background: #f4efe6; font-size: 11px; }
+#page-recognition .recognition-slot-live.is-live { color: var(--btmh-v550-success); }
+#page-recognition .recognition-slot:fullscreen { background: #050b12; }
+body.btmh-v550 #page-recognition .recognition-slot:fullscreen .recognition-slot-viewport { aspect-ratio: auto !important; }
+#page-recognition .recognition-slot:fullscreen .recognition-slot-head { background: transparent; }
+#page-recognition .recognition-slot:fullscreen .recognition-slot-picker { display: none; }
+#page-recognition .recognition-slot:fullscreen .recognition-slot-status { background: #f4efe6; }
+#page-recognition .recognition-switch-actions { display: flex; gap: 6px; }
+#page-recognition .recognition-switch-actions button {
+  width: 36px; min-height: 36px; border: 1px solid #cdbfae; border-radius: 8px;
+  color: var(--btmh-v550-burgundy); background: var(--btmh-v550-soft); font-size: 23px; line-height: 1; cursor: pointer;
+}
+#page-recognition .recognition-switch-actions button:disabled { opacity: .4; cursor: default; }
+#page-recognition .recognition-camera-strip {
+  display: flex; gap: 10px; padding: 3px 3px 9px; margin: 0 -3px;
+  overflow-x: auto; scrollbar-width: thin; scrollbar-color: #cdbfae var(--btmh-v550-paper);
+}
+#page-recognition .recognition-camera-choice {
+  flex: 0 0 calc((100% - 30px) / 4); min-width: 140px; padding: 6px;
+  display: flex; flex-direction: column; gap: 5px; border: 1px solid var(--btmh-v550-line); border-radius: 9px;
+  background: var(--btmh-v550-paper); color: var(--btmh-v550-ink); text-align: left; cursor: pointer; font: inherit;
+}
+#page-recognition .recognition-camera-choice:hover { border-color: #b68a38; }
+#page-recognition .recognition-camera-choice.is-selected { border-color: var(--btmh-v550-burgundy); box-shadow: inset 0 0 0 1px var(--btmh-v550-burgundy); background: #f3e8e6; }
+#page-recognition .recognition-camera-thumbnail {
+  position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 16 / 9;
+  overflow: hidden; border-radius: 5px; background: var(--btmh-v550-soft);
+}
+#page-recognition .recognition-camera-placeholder { color: var(--btmh-v550-gold-ink); font-size: 30px; line-height: 1; }
+#page-recognition .recognition-camera-thumbnail canvas { position: absolute; inset: 0; width: 100%; height: 100%; background: #050b12; }
+#page-recognition .recognition-camera-choice strong { padding: 0 3px; font-size: 11px; line-height: 1.5; overflow-wrap: anywhere; }
+#page-recognition :is(.recognition-camera-choice-location, .recognition-camera-choice-status) { padding: 0 3px; color: var(--btmh-v550-muted); font-size: 11px; line-height: 1.4; overflow-wrap: anywhere; }
+#page-recognition .recognition-camera-choice.is-selected .recognition-camera-choice-status { color: var(--btmh-v550-burgundy); }
+#page-recognition .recognition-slots-note { margin: 8px 0 0; min-height: 0; font-size: 11px; line-height: 1.5; }
+#page-recognition .entry-current-head { flex-wrap: wrap; gap: 8px !important; margin-bottom: 10px; padding: 0; }
+body.btmh-v550 #page-recognition .entry-current-card { color: var(--btmh-v550-ink) !important; }
+#page-recognition .entry-state-badge { font-weight: 650; color: var(--btmh-v550-muted); background: #ede5da; }
+#page-recognition .entry-state-badge.good { color: var(--btmh-v550-success); background: #e8f2eb; }
+#page-recognition .entry-state-badge.bad { color: var(--btmh-v550-danger); background: #fae9ec; border-color: #dec0c6; }
+#page-recognition .recognition-selected-context { margin: 0 0 12px; font-size: 11px; }
+#page-recognition .entry-current-main { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: start; }
+#page-recognition .entry-snapshot-wrap { height: 160px; min-height: 0; border: 2px solid #cdbfae; border-radius: 9px; background: var(--btmh-v550-soft); }
+#page-recognition .entry-current-card[data-tone="verified"] .entry-snapshot-wrap { border-color: var(--btmh-v550-success); }
+#page-recognition .entry-current-card[data-tone="blocked"] .entry-snapshot-wrap { border-color: var(--btmh-v550-danger); }
+#page-recognition .entry-current-card[data-tone="pending"] .entry-snapshot-wrap { border-color: var(--btmh-v550-warning); }
+#page-recognition #recognitionSnapshot { position: absolute; inset: 0; min-height: 0; width: 100%; height: 100%; object-fit: cover; }
+#page-recognition .entry-snapshot-empty { padding: 10px; color: var(--btmh-v550-muted); text-align: center; overflow-wrap: anywhere; }
+#page-recognition .entry-snapshot-empty .profile-avatar { width: 46px; height: 46px; border: 2px solid #cdbfae; background: var(--btmh-v550-paper); color: var(--btmh-v550-burgundy); font-size: 18px; }
+body.btmh-v550 #page-recognition .entry-identity-state h2 { display: block; white-space: normal; overflow-wrap: anywhere; font-size: 17px !important; line-height: 1.4; }
+body.btmh-v550 #page-recognition .entry-identity-state p { margin: 5px 0 0; color: var(--btmh-v550-muted) !important; line-height: 1.5; overflow-wrap: anywhere; }
+#page-recognition .entry-confidence { padding: 9px 0; border-color: var(--btmh-v550-line); }
+#page-recognition .entry-confidence span { color: var(--btmh-v550-muted); font-weight: 500; font-size: 11px; }
+#page-recognition .entry-confidence b { font-size: 22px; color: var(--btmh-v550-muted); }
+#page-recognition .entry-current-card[data-tone="verified"] .entry-confidence b { color: var(--btmh-v550-success); }
+#page-recognition .entry-profile-info { margin: 6px 0 0; gap: 0 10px; border: 0; background: transparent; border-radius: 0; }
+#page-recognition .entry-profile-info div { background: transparent; border: 0; }
+#page-recognition .entry-profile-info span { color: var(--btmh-v550-muted) !important; font-size: 11px; }
+#page-recognition .entry-profile-info b { display: block; color: var(--btmh-v550-ink) !important; font-size: 11px; font-weight: 500; margin-top: 3px; }
+#page-recognition .v21-recognition-progress { padding: 10px 0 0; background: transparent; border: 0; color: var(--btmh-v550-muted); }
+#page-recognition .v21-recognition-progress > div:first-child { color: var(--btmh-v550-muted); font-size: 11px; }
+#page-recognition .v21-recognition-progress b { color: var(--btmh-v550-burgundy); }
+#page-recognition .v21-recognition-track { height: 4px; margin-top: 7px; background: #ede5da; }
+#page-recognition .v21-recognition-track i { background: var(--btmh-v550-success); }
+#page-recognition .recognition-attendance-details { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--btmh-v550-line); }
+#page-recognition .recognition-attendance-details summary { cursor: pointer; color: var(--btmh-v550-muted); font-size: 11px; }
+#page-recognition .recognition-attendance-details .alert-box { background: var(--btmh-v550-soft); border-color: #cdbfae; color: var(--btmh-v550-muted); }
+#page-recognition .recognition-attendance-details .alert-box.good { color: var(--btmh-v550-success); border-color: #a9c6b4; }
+#page-recognition .recognition-attendance-details .alert-box.bad { color: var(--btmh-v550-danger); border-color: #dec0c6; }
+#page-recognition .recent-recognition-header { align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+#page-recognition .recent-recognition-actions { gap: 6px; }
+#page-recognition .count-pill { min-width: 25px; padding: 4px 7px; background: #ede5da; color: var(--btmh-v550-burgundy); font-size: 11px; }
+#page-recognition :is(.recent-recognition-context, .recent-recognition-note) { font-size: 11px; line-height: 1.5; }
+#page-recognition .recent-recognition-note { margin: 6px 0 12px; min-height: 0; }
+#page-recognition .recent-recognition-items { grid-template-columns: minmax(0, 1fr); gap: 7px; max-height: 390px; overflow-y: auto; padding: 3px; margin: 0 -3px; scrollbar-width: thin; scrollbar-color: #cdbfae var(--btmh-v550-paper); }
+#page-recognition .recent-recognition-card { min-height: 76px; padding: 8px; gap: 10px; border-color: var(--btmh-v550-line); border-radius: 8px; background: var(--btmh-v550-paper); }
+#page-recognition .recent-recognition-card:hover { background: var(--btmh-v550-soft); border-color: #b68a38; }
+#page-recognition .recent-recognition-photo { flex-basis: 48px; width: 48px; height: 60px; min-height: 0; border-radius: 5px; }
+#page-recognition .recent-recognition-photo-empty { font-size: 11px; padding: 4px; line-height: 1.3; }
+#page-recognition .recent-recognition-copy { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(70px, .55fr); gap: 4px 8px; align-content: center; }
+#page-recognition .recent-recognition-heading { grid-column: 1; gap: 2px 5px; }
+#page-recognition .recent-recognition-heading strong { font-size: 13px; line-height: 1.4; }
+#page-recognition .recent-recognition-sequence { color: var(--btmh-v550-burgundy); font-size: 11px; }
+#page-recognition .recent-recognition-state { grid-column: 1; font-size: 11px; }
+#page-recognition .recent-recognition-copy time { grid-column: 2; grid-row: 1 / 3; align-self: center; text-align: right; color: var(--btmh-v550-muted); font-size: 11px; }
+#page-recognition .recent-recognition-location { display: none; }
+#page-recognition .recognition-history-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-top: 12px; }
+#page-recognition .recognition-history-footer p { flex: 1 1 190px; color: var(--btmh-v550-muted); margin: 0; font-size: 11px; line-height: 1.5; }
+#page-recognition .recognition-history-link { padding: 8px 0; min-height: 36px; border: 0; background: transparent; color: var(--btmh-v550-gold-ink); font: inherit; font-size: 11px; cursor: pointer; }
+#page-recognition .recent-recognition-detail-head h3 { color: var(--btmh-v550-ink); }
+#page-recognition .recent-recognition-photo.is-detail { width: 150px; height: 180px; }
+#page-recognition :is([hidden], .hidden, .permission-locked, .role-locked) { display: none !important; }
+@media (max-width: 1100px) {
+  body.btmh-v550 #page-recognition .entry-recognition-top { grid-template-columns: minmax(0, 1fr) !important; }
+  body.btmh-v550 #page-recognition .entry-side-stack { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  body.btmh-v550 #page-recognition.recognition-console { padding: 10px; border-radius: 12px; }
+  body.btmh-v550 #page-recognition .entry-side-stack { grid-template-columns: minmax(0, 1fr); }
+  body.btmh-v550 #page-recognition .panel { padding: 12px !important; }
+  #page-recognition .recognition-slot-head { inset: 8px 8px auto; gap: 6px; }
+  #page-recognition .recognition-slot-choose { max-width: calc(100% - 90px); }
+  #page-recognition .recognition-slot-fullscreen { font-size: 11px; padding: 7px; }
+  #page-recognition .entry-current-main { grid-template-columns: 92px minmax(0, 1fr); gap: 10px; }
+  #page-recognition .entry-snapshot-wrap { height: 138px; }
+  #page-recognition .recognition-camera-choice { flex-basis: 140px; }
+}

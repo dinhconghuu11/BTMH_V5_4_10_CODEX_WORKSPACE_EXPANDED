@@ -1,0 +1,118 @@
+:root{
+  --mh-red:#8b0008;
+  --mh-red-deep:#310004;
+  --mh-gold:#d6a74e;
+  --mh-gold-soft:#f1d38a;
+  --mh-ink:#05080a;
+  --mh-cream:#fff4dc;
+}
+
+/* V4.5 — Bảo Tín Mạnh Hải premium auth. Inspired by the customer's own visual language,
+   but implemented from scratch for the local/offline security platform. */
+.btmh-auth-v41{
+  grid-template-columns:minmax(390px,545px) 1fr!important;
+  background:
+    radial-gradient(circle at 76% 45%,rgba(198,138,43,.13),transparent 24%),
+    radial-gradient(circle at 92% 12%,rgba(145,0,12,.18),transparent 31%),
+    linear-gradient(116deg,#030607 0%,#070c0f 43%,#180306 100%)!important;
+}
+.btmh-auth-v41:before{
+  left:-22%!important;right:-6%!important;bottom:-30%!important;height:48%!important;
+  background:linear-gradient(167deg,transparent 0 18%,rgba(138,0,14,.88) 38%,rgba(61,0,8,.96) 65%,rgba(12,2,4,.45) 85%)!important;
+  opacity:.66!important;
+}
+.btmh-auth-ambient{
+  background:
+    radial-gradient(circle at 72% 50%,rgba(215,169,76,.045) 0 1px,transparent 2px) 0 0/41px 41px,
+    linear-gradient(90deg,rgba(0,0,0,.61),transparent 43% 74%,rgba(0,0,0,.23))!important;
+}
+
+/* Gold/jewelry kinetic centerpiece */
+.btmh-jewel-stage{
+  position:absolute;z-index:1;inset:-12% -11% -15% 35%;pointer-events:none;
+  display:grid;place-items:center;overflow:visible;isolation:isolate;
+}
+.btmh-jewel-glow{
+  position:absolute;width:min(73vw,940px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,215,124,.12),rgba(165,82,18,.08) 34%,transparent 67%);
+  filter:blur(16px);animation:mhGlow 7s ease-in-out infinite;
+}
+.btmh-orbit{position:absolute;border-radius:50%;border:1px solid rgba(232,190,102,.32);transform-origin:center}
+.btmh-orbit:before,.btmh-orbit:after{content:"";position:absolute;inset:-1px;border-radius:50%;pointer-events:none}
+.orbit-outer{
+  width:min(64vw,800px);aspect-ratio:1;
+  border-color:rgba(225,178,83,.40);
+  box-shadow:0 0 0 13px rgba(213,157,55,.018),0 0 80px rgba(210,143,39,.10),inset 0 0 90px rgba(195,117,24,.05);
+  animation:mhOrbitCW 58s linear infinite;
+}
+.orbit-outer:before{border:2px dashed rgba(238,202,124,.20);inset:7%}
+.orbit-outer:after{border:1px solid rgba(255,229,160,.13);inset:16%}
+.orbit-middle{
+  width:min(48vw,600px);aspect-ratio:1;border:2px solid rgba(248,218,147,.27);
+  box-shadow:0 0 55px rgba(214,150,50,.07);
+  animation:mhOrbitCCW 41s linear infinite;
+}
+.orbit-middle:before{inset:9%;border:1px dashed rgba(215,166,71,.27)}
+.orbit-middle:after{inset:21%;border:1px solid rgba(255,238,190,.13)}
+.orbit-inner{
+  width:min(31vw,385px);aspect-ratio:1;border:1px solid rgba(255,222,143,.36);
+  box-shadow:0 0 40px rgba(226,167,59,.10),inset 0 0 60px rgba(116,37,3,.13);
+  animation:mhOrbitCW 29s linear infinite;
+}
+.btmh-orbit i{position:absolute;width:9px;height:9px;border-radius:50%;background:#e7bd68;box-shadow:0 0 18px #e3a940,0 0 40px rgba(255,194,77,.35)}
+.orbit-outer i:nth-child(1){left:8%;top:31%}.orbit-outer i:nth-child(2){right:12%;top:18%}.orbit-outer i:nth-child(3){right:4%;bottom:36%}.orbit-outer i:nth-child(4){left:19%;bottom:9%}
+.orbit-middle i:nth-child(1){left:14%;top:16%}.orbit-middle i:nth-child(2){right:8%;top:35%}.orbit-middle i:nth-child(3){right:28%;bottom:3%}.orbit-middle i:nth-child(4){left:6%;bottom:33%}.orbit-middle i:nth-child(5){left:44%;top:-4%}.orbit-middle i:nth-child(6){right:44%;bottom:-4%}
+.btmh-jewel-core{
+  position:relative;width:min(20vw,250px);aspect-ratio:1;display:grid;place-items:center;transform:rotate(45deg);
+  border-radius:28%;background:linear-gradient(135deg,#fff1ae 0%,#d8a44d 26%,#784011 59%,#e5b555 82%,#fff0ad 100%);
+  border:1px solid rgba(255,238,178,.74);box-shadow:0 30px 70px rgba(0,0,0,.52),0 0 50px rgba(224,155,48,.18),inset 0 0 0 10px rgba(255,244,194,.06);
+  animation:mhCoreFloat 6s ease-in-out infinite;
+}
+.btmh-jewel-core:before{content:"";position:absolute;inset:11%;border:1px solid rgba(255,242,202,.40);border-radius:22%;box-shadow:inset 0 0 35px rgba(39,12,2,.24)}
+.btmh-jewel-facet{position:absolute;inset:12%;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);mix-blend-mode:screen;opacity:.36}
+.facet-a{background:linear-gradient(120deg,transparent 0 43%,#fff4c2 46% 54%,transparent 57%)}
+.facet-b{transform:rotate(90deg);background:linear-gradient(120deg,transparent 0 44%,#ffc55f 48% 52%,transparent 56%)}
+.facet-c{transform:rotate(45deg);inset:28%;background:radial-gradient(circle,#fff7d1,transparent 60%);opacity:.24}
+.btmh-jewel-mark{transform:rotate(-45deg);font-family:Georgia,"Times New Roman",serif;font-size:clamp(31px,4vw,60px);font-weight:900;color:#2b1305;text-shadow:0 1px 0 rgba(255,255,255,.28);letter-spacing:-.08em;padding-right:.08em}
+.btmh-brand-watermark{position:absolute;left:50%;top:10%;transform:translateX(-50%);width:min(31vw,390px);opacity:.14;filter:sepia(1) saturate(1.6) hue-rotate(350deg) brightness(1.42);mix-blend-mode:screen}
+.btmh-brand-watermark img{display:block;width:100%;height:auto}
+.btmh-jewel-copy{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);width:min(64vw,760px);text-align:center;text-shadow:0 5px 30px rgba(0,0,0,.92)}
+.btmh-jewel-copy span{display:block;color:#d7ae58;font-size:10px;font-weight:950;letter-spacing:.34em;margin-bottom:8px}
+.btmh-jewel-copy strong{display:block;color:#fff4dc;font:700 clamp(27px,3vw,47px)/1.03 Georgia,"Times New Roman",serif;letter-spacing:-.03em}
+.btmh-jewel-copy small{display:block;color:#a9956d;font-size:10px;letter-spacing:.12em;font-weight:800;margin-top:10px}
+
+/* Hide obsolete drum markup if an upgraded HTML is mixed with a stale stylesheet. */
+.btmh-drum-stage{display:none!important}
+
+/* Official logo from customer-provided asset. Black pixels disappear against the dark card. */
+.btmh-auth-card .v23-auth-brand.btmh-official-brand{
+  display:flex!important;flex-direction:column!important;gap:4px!important;align-items:center!important;justify-content:center!important;margin-bottom:20px!important;
+}
+.btmh-official-brand img{display:block;width:min(260px,76%);height:auto;mix-blend-mode:screen;filter:sepia(.18) saturate(.72) brightness(1.12);opacity:.98}
+.btmh-official-brand small{display:block!important;color:#b7a77f!important;font-size:9px!important;letter-spacing:.22em!important;font-weight:900!important}
+
+/* Form reliability and feedback */
+.btmh-auth-form{margin:0;padding:0}
+.btmh-auth-feedback{min-height:34px;margin-top:10px;padding:8px 10px;border-radius:9px;color:#89999d;font-size:11px;line-height:1.45;text-align:center;border:1px solid transparent;transition:.2s ease}
+.btmh-auth-feedback.loading{color:#efd58c;background:rgba(215,173,85,.07);border-color:rgba(215,173,85,.14)}
+.btmh-auth-feedback.success{color:#8de0c1;background:rgba(25,170,118,.08);border-color:rgba(25,170,118,.18)}
+.btmh-auth-feedback.error{color:#ffb0ae;background:rgba(205,61,56,.10);border-color:rgba(205,61,56,.20)}
+.btmh-auth-card .btn.primary[disabled]{cursor:wait;opacity:.76;transform:none!important;filter:saturate(.72)}
+
+@keyframes mhOrbitCW{to{transform:rotate(360deg)}}
+@keyframes mhOrbitCCW{to{transform:rotate(-360deg)}}
+@keyframes mhGlow{0%,100%{opacity:.58;transform:scale(.96)}50%{opacity:.98;transform:scale(1.04)}}
+@keyframes mhCoreFloat{0%,100%{transform:rotate(45deg) translate(0,0)}50%{transform:rotate(45deg) translate(-4px,-4px)}}
+
+@media(max-width:1100px){
+  .btmh-jewel-stage{inset:-10% -26% -12% 29%}
+  .btmh-jewel-copy{left:57%}
+  .btmh-brand-watermark{left:57%;width:min(39vw,370px)}
+}
+@media(max-width:850px){
+  .btmh-jewel-stage{inset:-11% -60% -8% -13%;opacity:.58}
+  .btmh-jewel-copy,.btmh-brand-watermark{display:none}
+  .btmh-jewel-core{width:min(46vw,230px)}
+  .orbit-outer{width:min(150vw,760px)}.orbit-middle{width:min(112vw,570px)}.orbit-inner{width:min(73vw,370px)}
+}
+@media(prefers-reduced-motion:reduce){.btmh-jewel-stage *{animation:none!important}}

@@ -1,0 +1,18 @@
+{
+  "preview_only": true,
+  "photo_regression_only": true,
+  "real_camera_verified": false,
+  "api_requests": 0,
+  "results": [
+    {
+      "name": "photo-regression",
+      "status": "PASS",
+      "hidden_png_decoded": true,
+      "detail_stable_across_three_polls": true,
+      "permission_logout_cleanup": true,
+      "technical_image_pixels": 4,
+      "real_face_images": 0,
+      "api_requests": 0
+    }
+  ]
+}

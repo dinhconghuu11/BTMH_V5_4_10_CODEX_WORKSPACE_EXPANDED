@@ -1,0 +1,688 @@
+{
+  "pytest_summary": {
+    "passed": 162,
+    "total": 162,
+    "collected": 162
+  },
+  "duration_seconds": 47.493545055389404,
+  "warnings": [
+    "DeprecationWarning",
+    "DeprecationWarning",
+    "DeprecationWarning",
+    "DeprecationWarning"
+  ],
+  "tests": [
+    {
+      "name": "tests_v54/test_camera_v544.py::test_bad_target_keeps_active_camera_and_faceid",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_success_commits_after_frames_and_retires_only_previous",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_preflight_does_not_pause_old_faceid",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_test_only_never_swaps",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_same_source_noop_never_opens_second_usb_handle",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_start_exception_does_not_touch_old",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_shutdown_during_preflight_never_commits_late",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_invalid_or_masked_source_rejected_before_open[rtsp://***:***@192.0.2.1/x]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_invalid_or_masked_source_rejected_before_open[rtsp://u:%2A%2A%2A@192.0.2.1/x]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_invalid_or_masked_source_rejected_before_open[file:///etc/passwd]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_invalid_or_masked_source_rejected_before_open[/tmp/file.avi]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_invalid_or_masked_source_rejected_before_open[rtsp://localhost:99999/x]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_invalid_or_masked_source_rejected_before_open[http://]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_literal_percent_password_is_preserved_roundtrip",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_native_errors_classified_without_leaking_raw_text[method DESCRIBE failed: 401 Unauthorized rtsp://u:SECRET@x-AUTH_FAILED]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_native_errors_classified_without_leaking_raw_text[method DESCRIBE failed: 404 Not Found-PATH_NOT_FOUND]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_native_errors_classified_without_leaking_raw_text[Connection refused-CONNECTION_REFUSED]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_native_errors_classified_without_leaking_raw_text[No route to host-UNREACHABLE]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_native_errors_classified_without_leaking_raw_text[Could not find decoder-CODEC_UNSUPPORTED]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_native_errors_classified_without_leaking_raw_text[random warning-None]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_fleet_reservation_blocks_reopening_candidate",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_read_and_reseed_never_overwrite_operator_camera",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_connection_edit_hides_secret_and_preserves_blank",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_select_failure_has_actionable_error_and_keeps_source",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_diagnostic_does_not_require_switch",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_failed_switch_not_persisted",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_employee_denied_test_edit_and_switch",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_anonymous_denied_camera_tools",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_uri_path_at_sign_not_confused_with_credentials",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_watchdog_restart_cannot_retire_active_during_preflight",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_long_encoded_camera_secret_is_not_silently_truncated",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_exception_during_commit_restores_open_previous_source[_clear_transient_recognition]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_exception_during_commit_restores_open_previous_source[_publish_frame]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_shipped_profile_cannot_override_local_camera",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_camera_v544.py::test_fleet_polling_does_not_retry_rejected_credentials",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_catalog_includes_usb_rtsp_offline_disabled_without_credentials",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_catalog_missing_ip_config_does_not_invent_cameras",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_catalog_invalid_source_visible_but_not_selectable",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_catalog_deduplicates_builtin_camera",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_sources_api_anonymous_denied",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_sources_api_owner_sees_all_registered_no_capture",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_sources_api_employee_cannot_read",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_alias_resolves_server_side_and_disabled_is_rejected",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_usb_one_is_not_network_alias",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_active_source_comparison_uses_internal_not_redacted_value",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_disabled_fleet_source_never_opens",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_finite_frames_send_age_and_sequence[frame.jpg]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_finite_frames_send_age_and_sequence[frame_raw.jpg]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_missing_frame_is_explicit_503",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_preview_packet_marks_raw_and_preserves_encoded_sequence",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_stream_disconnect_stops_async_iterator",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_operations_websocket_rejects_anonymous",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_operations_websocket_rejects_employee",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_navigation_presentation_has_no_mutation_observer_feedback_loop",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_runtime_has_bounded_single_flight_and_cancellation",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_realtime_v543.py::test_login_uses_preserved_logo_and_left_brand_right_light_form",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_config_v545.py::test_corrected_registry_endpoint_reaches_decoder_without_secret_loss",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_config_v545.py::test_test_connection_does_not_rewrite_network_or_database",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_manifest_keeps_secret_outside_argv",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_manifest_injection_and_wrong_protocol_rejected[file:///tmp/private]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_manifest_injection_and_wrong_protocol_rejected[http://example.test/x]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_manifest_injection_and_wrong_protocol_rejected[rtsp://example.test/x\\nfile /etc/passwd]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_manifest_injection_and_wrong_protocol_rejected[rtsp://x/\\rfile /etc/passwd]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_manifest_injection_and_wrong_protocol_rejected[rtsp://x/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_command_retains_native_resolution_and_frame_rate",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_ppm_frame_preserves_first_whitespace_pixel",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_invalid_ppm_rejected_before_allocation[P5\\n16 16\\n255\\n]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_invalid_ppm_rejected_before_allocation[P6\\n100000 20000\\n255\\n]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_invalid_ppm_rejected_before_allocation[P6\\n16 16\\n65535\\n]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_invalid_ppm_rejected_before_allocation[P6\\n0 16\\n255\\n]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_invalid_ppm_rejected_before_allocation[P6\\n16 16 3\\n255\\n]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_truncated_ppm_rejected",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_localhost_usb_keeps_existing_worker",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_force_native_missing_has_actionable_error",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[method DESCRIBE failed: 401 Unauthorized-AUTH_FAILED]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[method SETUP failed: 403 Forbidden-AUTH_FAILED]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[method DESCRIBE failed: 404 Not Found-PATH_NOT_FOUND]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[Connection timed out-TIMEOUT]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[Unrecognized option fps_mode-DECODER_OPTIONS]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[Protocol not found-DECODER_UNAVAILABLE]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[Stream map 0:v:0 matches no streams-NO_VIDEO_STREAM]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[method SETUP failed: 453 Not Enough Bandwidth-CAMERA_BUSY]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_errors_classified[method DESCRIBE failed: 503 Service Unavailable-CAMERA_BUSY]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_editor_keeps_original_password_when_changing_only_host",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_force_opencv_does_not_lookup_native",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_rtsp_native_v545.py::test_native_launch_failure_falls_back_without_network_retry",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_unenrolled_user_no_forced_totp",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_wrong_password_cannot_create_challenge",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_enrollment_password_required_and_phone_not_pretrusted",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_phone_normalization_and_validation",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_enrollment_requires_real_code_and_returns_recovery_once",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_login_phone_is_server_bound_not_input",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_password_alone_never_issues_session_for_sms_account",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_provider_unconfigured_no_demo_no_bypass",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_send_failure_is_not_success_and_does_not_disable_factor",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_resend_cooldown_and_attempts_not_reset",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_max_five_attempts",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_challenge_expiry",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_binding_cookie_prevents_other_browser_using_challenge",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_trust_only_after_verified_factor_and_always_needs_password",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_trust_expired_revoked_and_cross_account_denied",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_password_reset_and_role_change_revoke_trust",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_recovery_works_offline_once",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_recovery_cannot_verify_new_phone",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_recovery_double_submit_only_one_session",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_sms_double_submit_only_one_session",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_provider_check_outage_no_session",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_new_enrollment_does_not_downgrade_existing_totp",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_phone_change_requires_recent_factor",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_stepup_recovery_refreshes_proof_without_provider",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_sensitive_action_requires_stepup_after_trusted_login",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_enrollment_challenge_invalid_after_logout",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_mfa_cookies_secure_httponly_same_site_no_raw_token_json",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_lan_plain_http_rejected",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_csrf_origin_rejected",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_legacy_demo_endpoints_remain_disabled",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_otp_phone_and_token_not_in_audit",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_schema_repeated_does_not_erase_enrollment",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_trusted_browser_persists_across_process_session_reset",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_private_security_requires_authentication",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_disabled_user_pending_challenge_revoked",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_six_digit_code_provider_contract_checks_target_and_sid",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_new_owner_http_bootstrap_sets_real_session_without_forced_totp",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_enroll_cannot_reuse_another_accounts_session",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_single_use_after_success_even_with_same_cookie",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_factor_verification_budget_persists_across_new_challenges",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_auth_validation_does_not_reflect_submitted_secrets",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_sms_v542.py::test_provider_approved_without_legacy_valid_property",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_customer_brand_and_auth_assets_present",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_customer_ui_hides_build_and_development_labels",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_public_registration_removed_from_visible_auth_flow",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_first_run_owner_is_local_and_no_longer_forces_totp_setup",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_sms_email_otp_is_not_part_of_visible_login",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_customer_navigation_is_simplified",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_customer_roles_are_defined",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_backend_enforces_strong_customer_passwords",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_hr_does_not_receive_camera_control_permission",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_management_portal_denies_employee_role",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_manager_cannot_manage_system_accounts",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_all_private_browser_routes_are_permission_mapped",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_setup_state_is_fail_closed_for_private_api",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v541_customer_ui.py::test_legacy_sms_email_otp_api_is_disabled_by_default",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_no_fixed_customer_credentials",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_security_hardening_installed",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_rtsp_redaction_utility_present",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_mcp_is_disabled_by_default",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_auth_brand_assets_present",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_csv_export_request_fix",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_production_local_default",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_redact_uri_masks_rtsp_credentials",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_all_declared_sensitive_routes_have_server_permission_check",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_v54/test_v54_release_contract.py::test_first_run_owner_fallback_is_explicitly_guarded",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v544.py::test_real_h264_rtsp_tcp_and_encoded_credentials",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v544.py::test_wrong_rtsp_password_reports_auth_failed",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v544.py::test_wrong_rtsp_path_reports_not_found",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v544.py::test_stalled_rtsp_has_outer_deadline_and_terminates",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v544.py::test_live_switch_repeats_and_auth_failure_keeps_source",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v545.py::test_digest_auth_reserved_characters_end_to_end[ffmpeg]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v545.py::test_digest_auth_reserved_characters_end_to_end[opencv]",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v545.py::test_native_h264_full_hd_25fps_fresh_frames",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v545.py::test_native_wrong_digest_password_is_not_auto_retried",
+      "outcome": "passed"
+    },
+    {
+      "name": "tests_integration/test_rtsp_v545.py::test_native_stopped_rtsp_does_not_report_old_frame_as_live",
+      "outcome": "passed"
+    }
+  ],
+  "browser": {
+    "passed": 17,
+    "checks": [
+      "saved host loaded",
+      "password not returned to form",
+      "reference URL updates IP",
+      "reference URL preserves user",
+      "blank password retained on reference paste",
+      "reference text cleared",
+      "no automatic save",
+      "save sends corrected endpoint",
+      "save keeps existing password",
+      "dialog closes after save",
+      "failure report visible",
+      "controls unlocked after failure",
+      "safe diagnostics copied",
+      "copy excludes full runtime",
+      "report clears on source change",
+      "wrong protocol rejected",
+      "no JavaScript errors"
+    ],
+    "errors": [],
+    "backend": "MOCK fetch and clipboard; real Chromium DOM (localhost blocked by container policy)"
+  }
+}

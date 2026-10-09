@@ -1,0 +1,148 @@
+/* Face Enrollment V2 — segmented two-pass scan for multi-angle office FaceID. */
+#page-register .faceid-pro-camera-wrap{
+  background:radial-gradient(circle at 50% 42%,#17343a 0,#0c2227 44%,#06171b 100%)!important;
+}
+#page-register .faceid-pro-camera-wrap video{
+  filter:brightness(.78) saturate(.9) contrast(1.05)!important;
+}
+#page-register .faceid-pro-scanner{
+  width:clamp(250px,35%,350px)!important;
+  aspect-ratio:.79!important;
+}
+#page-register .faceid-pro-scanner .v24-face-oval{
+  border:1px solid rgba(212,255,247,.42)!important;
+  box-shadow:0 0 0 1px rgba(42,235,195,.08),0 0 26px rgba(27,221,181,.09)!important;
+}
+#page-register .faceid-pro-scanner .v24-face-progress{
+  opacity:.28!important;
+  filter:none!important;
+}
+#page-register .scan-ticks{
+  position:absolute!important;
+  inset:-12px!important;
+  z-index:11!important;
+  pointer-events:none!important;
+}
+#page-register .scan-ticks i{
+  position:absolute!important;
+  width:3px!important;
+  height:10px!important;
+  border-radius:99px!important;
+  margin:0!important;
+  background:rgba(224,255,249,.24)!important;
+  box-shadow:none!important;
+  transform-origin:center!important;
+  transition:background .18s ease,box-shadow .18s ease,height .18s ease,opacity .18s ease!important;
+}
+#page-register .scan-ticks i.head{
+  height:14px!important;
+  width:3.5px!important;
+  background:rgba(232,255,251,.44)!important;
+}
+#page-register .scan-ticks i.done{
+  background:#55f0cf!important;
+  box-shadow:0 0 6px rgba(52,239,199,.78),0 0 14px rgba(52,239,199,.30)!important;
+}
+#page-register .scan-ticks i.current{
+  height:17px!important;
+  background:#dffff7!important;
+  box-shadow:0 0 8px #6ff8da,0 0 18px rgba(75,244,210,.74)!important;
+}
+#page-register .faceid-v2-guide-orb{
+  position:absolute;
+  z-index:13;
+  width:18px;height:18px;
+  transform:translate(-50%,-50%);
+  transition:left .34s cubic-bezier(.2,.8,.2,1),top .34s cubic-bezier(.2,.8,.2,1),opacity .2s ease;
+  pointer-events:none;
+}
+#page-register .faceid-v2-guide-orb:before,
+#page-register .faceid-v2-guide-orb:after{
+  content:"";position:absolute;inset:0;border-radius:50%;
+}
+#page-register .faceid-v2-guide-orb:before{
+  background:#dffff7;
+  box-shadow:0 0 0 5px rgba(73,240,207,.14),0 0 18px rgba(73,240,207,.88);
+}
+#page-register .faceid-v2-guide-orb:after{
+  inset:-8px;border:1px solid rgba(105,252,221,.55);animation:faceidV2Pulse 1.15s ease-out infinite;
+}
+#page-register .faceid-v2-guide-orb.done{opacity:0}
+@keyframes faceidV2Pulse{0%{transform:scale(.7);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+
+#page-register .faceid-sample-meter{
+  min-width:94px!important;
+  padding:8px 12px!important;
+  background:rgba(3,29,31,.72)!important;
+  border:1px solid rgba(94,242,210,.22)!important;
+  backdrop-filter:blur(10px);
+}
+#page-register .faceid-sample-meter strong{font-size:12px!important;color:#e9fff9!important}
+#page-register .faceid-sample-meter span{font-size:7px!important;color:#7cead2!important}
+
+#page-register .faceid-v2-pose-strip{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:8px;
+  margin-top:10px;
+}
+#page-register .faceid-v2-pose-strip .pose-chip{
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr) 26px;
+  align-items:center;
+  gap:6px;
+  min-height:44px;
+  padding:8px 9px;
+  border:1px solid #dceae7;
+  border-radius:13px;
+  background:#fbfefd;
+  color:#5f7479;
+  transition:.18s ease;
+}
+#page-register .faceid-v2-pose-strip .pose-chip i{
+  display:grid;place-items:center;
+  width:24px;height:24px;border-radius:50%;
+  font-style:normal;font-size:11px;font-weight:900;
+  background:#edf5f3;color:#66847d;
+}
+#page-register .faceid-v2-pose-strip .pose-chip span{
+  font-size:9.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+#page-register .faceid-v2-pose-strip .pose-chip b{
+  display:grid;place-items:center;min-width:25px;height:22px;border-radius:999px;
+  background:#eef4f2;color:#768b87;font-size:9px;
+}
+#page-register .faceid-v2-pose-strip .pose-chip.active{
+  border-color:#7fe4ce;background:#f1fcf8;box-shadow:0 0 0 3px rgba(46,205,171,.08);
+}
+#page-register .faceid-v2-pose-strip .pose-chip.active i{background:#d8f8f0;color:#0a8c73}
+#page-register .faceid-v2-pose-strip .pose-chip.done{
+  border-color:#a7e9da;background:#f6fffb;color:#267d6b;
+}
+#page-register .faceid-v2-pose-strip .pose-chip.done i{
+  background:#36cba9;color:white;
+}
+#page-register .faceid-v2-pose-strip .pose-chip.done i:before{content:"✓"}
+#page-register .faceid-v2-pose-strip .pose-chip.done i{font-size:0}
+#page-register .faceid-v2-pose-strip .pose-chip.done i:before{font-size:11px}
+
+#page-register .faceid-pro-bottom-status{
+  max-width:88%!important;
+  background:rgba(2,24,27,.76)!important;
+  border-color:rgba(100,244,213,.22)!important;
+}
+#page-register .faceid-pro-bottom-status #faceidInstruction{font-weight:750!important;letter-spacing:.005em}
+#page-register .faceid-pro-copy h2{font-size:24px!important}
+#page-register .faceid-pro-copy p{color:#6f858a!important}
+
+@media(max-width:900px){
+  #page-register .faceid-v2-pose-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #page-register .faceid-v2-pose-strip .pose-chip:first-child{grid-column:1/-1}
+}
+@media(max-width:560px){
+  #page-register .faceid-v2-pose-strip{grid-template-columns:1fr}
+  #page-register .faceid-v2-pose-strip .pose-chip:first-child{grid-column:auto}
+}
+@media(prefers-reduced-motion:reduce){
+  #page-register .faceid-v2-guide-orb:after{animation:none}
+}

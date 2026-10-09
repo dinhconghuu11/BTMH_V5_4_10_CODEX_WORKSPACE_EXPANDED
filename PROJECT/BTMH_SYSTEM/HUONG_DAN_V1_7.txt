@@ -1,0 +1,24 @@
+CAMPUSFACE V1.7 - REALTIME CLASSROOM
+===================================
+
+LAN DAU:
+1. Giai nen vao C:\FACE\CampusFace-V1.7
+2. Chay START_HERE_WINDOWS.bat
+3. Mo http://127.0.0.1:8100
+4. Nhan Ctrl+F5 neu vua nang cap tu ban cu
+
+CAC LAN SAU:
+- Chay START_CAMPUSFACE.bat
+
+TEST NHANH CLASSROOM:
+1. Vao Quan ly lop hoc
+2. Bam Bat quan sat
+3. Di chuyen tay: hinh preview phai bam sat thoi gian thuc hon
+4. Gio tay: trang thai nen cap nhat nhanh hon ban V1.6
+5. Dung/ngoi: cho 0.5-1 giay de temporal voting xac nhan
+6. Bam Tat quan sat khi khong dung
+
+LUU Y:
+- Nhan dien chinh giu nguyen.
+- V1 van la camera tinh, chua PTZ.
+- 50 hoc sinh la muc tieu kien truc ve tai CPU, khong phai cam ket FaceID du xa tren webcam 720p/1080p.

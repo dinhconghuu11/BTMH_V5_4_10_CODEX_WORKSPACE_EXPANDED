@@ -1,0 +1,4 @@
+Acquired 2026-10-09 from https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe
+SHA256: 67b5635e80ea51072b87941312d00ec8927c4db9ba18938f7ad2d27b328b95fb
+Primary license source: https://raw.githubusercontent.com/python/cpython/v3.12.10/LICENSE
+Acquisition proves pinned bytes. Exact redistribution notices and obligations must still be reviewed before commercial release.

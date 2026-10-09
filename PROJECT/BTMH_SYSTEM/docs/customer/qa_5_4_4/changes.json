@@ -1,0 +1,157 @@
+[
+  {
+    "file": "README_FIRST.txt",
+    "change": "modified",
+    "sha256": "3af4d52f96cc55785f81c5af1e8716482c11570dc007c896091c5a680cca97fa"
+  },
+  {
+    "file": "VERIFY_RELEASE.py",
+    "change": "modified",
+    "sha256": "a1c7cb6c04b4a80b88df7f9e2bebed7584d0dfe227e3de8e9a496e01ac69c677"
+  },
+  {
+    "file": "VERSION",
+    "change": "modified",
+    "sha256": "bead858fc3b7604a94c9e623326e5b70e16a608de951fd55cdcbf8791e7b575a"
+  },
+  {
+    "file": "VERSION.txt",
+    "change": "modified",
+    "sha256": "bead858fc3b7604a94c9e623326e5b70e16a608de951fd55cdcbf8791e7b575a"
+  },
+  {
+    "file": "README.md",
+    "change": "modified",
+    "sha256": "59374d7889ea25c6aec566c751145fad0760b5d7a9e376d6e553722527ee82f2"
+  },
+  {
+    "file": "00_DOC_TRUOC_KHI_PHAT_TRIEN.md",
+    "change": "modified",
+    "sha256": "9b6ea5532c18a0a1fac9acec0e8c4b5d65869d235237a2de69a4680f56172ad1"
+  },
+  {
+    "file": "module_app/camera_connection_v544.py",
+    "change": "added",
+    "sha256": "1a066384a06f7969c81db716a4161c1bf0fbd4cfd262a3fe3500d4c09abd4b0f"
+  },
+  {
+    "file": "module_app/capture_session_v544.py",
+    "change": "added",
+    "sha256": "a190aaab31c3a98047c56f4fb25a6d0afbecc666facce4f2af9ebdad334a7af0"
+  },
+  {
+    "file": "module_app/camera_handover_v544.py",
+    "change": "added",
+    "sha256": "92c7efb3aceb4c9fe2496c4d10c42845149ba4fe8db6dd2652c1f6c3920e88af"
+  },
+  {
+    "file": "module_app/camera_profiles.py",
+    "change": "modified",
+    "sha256": "1ebfd89353dcc81f4a17bb23d1db26fab449384ad8706e5b4e5f835c43be6583"
+  },
+  {
+    "file": "module_app/production_ops.py",
+    "change": "modified",
+    "sha256": "d1f0cfc70036df9cdd2e3c9da200e9d599ac46dff5a9af22eee27bcb967dfd0f"
+  },
+  {
+    "file": "module_app/main.py",
+    "change": "modified",
+    "sha256": "f45452acd61efd4d5b1c4e50f078fc1f8392bba8a741f23c8edd614d2a8167de"
+  },
+  {
+    "file": "module_app/capture_worker_v544.py",
+    "change": "added",
+    "sha256": "64d7936bd506e70de590a0025184504cc9dcfa557def174857e5ff3d050c0e33"
+  },
+  {
+    "file": "module_app/config.py",
+    "change": "modified",
+    "sha256": "baebb21e45f56eb84c481c7eaae1c9fd867a174b2580a28d69c8bc4e74ae6d61"
+  },
+  {
+    "file": "module_app/camera_fleet_v4.py",
+    "change": "modified",
+    "sha256": "ed30d08f6ec13d3c2301e2355c762abbb61b0fb65cc1d8568b2d0259567d6275"
+  },
+  {
+    "file": "module_app/camera.py",
+    "change": "modified",
+    "sha256": "f2e8758ad4806ce7d0c9624ca5588ae42a0453857c19e17bbbe62fdbb7b5e43c"
+  },
+  {
+    "file": "tests_integration/__init__.py",
+    "change": "added",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "tests_integration/rtsp_fixture.py",
+    "change": "added",
+    "sha256": "bdeb3638b22c66f980f534d0282a6ab0e6794fec2b6fdb47dbba6210c9f0393b"
+  },
+  {
+    "file": "tests_integration/test_rtsp_v544.py",
+    "change": "added",
+    "sha256": "3ca3a2465ee4fa87092afdf353a0bdb8ffeb0616aec47cb7a14989b1eea6fa8a"
+  },
+  {
+    "file": "frontend/index.html",
+    "change": "modified",
+    "sha256": "6354e80ca061d5958cf1360a080b86d0301a7016f7251f69523680ea42e90954"
+  },
+  {
+    "file": "tests_v54/test_camera_v544.py",
+    "change": "added",
+    "sha256": "ff0c22e71ca1887286377ac9a6e1bc83a8a8978330f6a7bfe5b3a631a6fc6370"
+  },
+  {
+    "file": "config/cameras.json",
+    "change": "modified",
+    "sha256": "86ff7a4d95e15ccc8e3e8fd31f3dd89a534db1c8d51e231c956fe53ce3f52ec9"
+  },
+  {
+    "file": "config/hikvision_test_camera.json",
+    "change": "modified",
+    "sha256": "4b455985804cc6628336c8f890b8e277865989a74cd22f544850314386274459"
+  },
+  {
+    "file": "frontend/css/btmh_customer_bundle_v541.css",
+    "change": "modified",
+    "sha256": "dd1d1f3a9010f35efbc4905b9b11d6535cad5a0745f0f73c6f0fff0e6bd88139"
+  },
+  {
+    "file": "frontend/css/camera_tools_v544.css",
+    "change": "added",
+    "sha256": "8db0e0a55324c5636c8933ff95e4c4db99a989a94f30bf5845064b4efe3cfb7c"
+  },
+  {
+    "file": "frontend/js/btmh_v4.js",
+    "change": "modified",
+    "sha256": "9845f453d905a802868567e070d0a060dd9ad3e3d1677d0e2c182f5a18647973"
+  },
+  {
+    "file": "frontend/js/camera_tools_v544.js",
+    "change": "added",
+    "sha256": "d265b0bbccb2a0d39ca7d61b954fa05869aab9cf67bf0f904c7a06bbb3e2fc6f"
+  },
+  {
+    "file": "frontend/js/app.js",
+    "change": "modified",
+    "sha256": "456156ffca7cf0386a0cd695aa5b1eb5d2cde3ca7805fd3215d8c03f4744d9e7"
+  },
+  {
+    "file": "docs/customer/QA_REPORT.md",
+    "change": "modified",
+    "sha256": "15a89a269df26dfbe1857a722503fa2c3bb6f57f6fe4246513c9f691c660ad01"
+  },
+  {
+    "file": "docs/customer/CAMERA_SETUP_V5_4_4.md",
+    "change": "added",
+    "sha256": "59374d7889ea25c6aec566c751145fad0760b5d7a9e376d6e553722527ee82f2"
+  },
+  {
+    "file": "docs/customer/CHANGELOG_V5_4_4.md",
+    "change": "added",
+    "sha256": "15a89a269df26dfbe1857a722503fa2c3bb6f57f6fe4246513c9f691c660ad01"
+  }
+]

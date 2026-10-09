@@ -1,0 +1,41 @@
+========================================================================
+BTMH SECURITY V5.4.2 CUSTOMER RELEASE CHECK
+========================================================================
+PASS  No fixed owner username
+PASS  No fixed owner password
+PASS  No packaged owner hash
+PASS  V5.4.2 version
+PASS  Auth CSS
+PASS  Auth JS
+PASS  Customer CSS
+PASS  Customer CSS bundle
+PASS  Customer JS
+PASS  Official BTMH logo
+PASS  No public registration UI
+PASS  No inactive OTP delivery UI
+PASS  No visible build label
+PASS  Single customer stylesheet
+PASS  Local first-run owner
+PASS  SMS and optional legacy MFA
+PASS  Public registration off
+PASS  Security middleware
+PASS  MCP default disabled
+PASS  Legacy SMS/Email OTP disabled
+PASS  Local host default
+PASS  CSV Request fix
+PASS  RBAC /api/v1/camera/status
+PASS  RBAC /api/v1/camera/stream.mjpg
+PASS  RBAC /api/v1/system/diagnostics
+PASS  RBAC /api/v1/system/self-test
+PASS  RBAC /api/v1/history/recognition
+PASS  RBAC /api/v1/events/{event_id}/evidence.jpg
+PASS  All private browser APIs mapped
+PASS  Python compile - []
+PASS  JavaScript syntax frontend/js/app.js
+PASS  JavaScript syntax frontend/js/btmh_customer_v541.js
+PASS  JavaScript syntax frontend/btmh_auth_v54.js
+PASS  JavaScript syntax frontend/js/btmh_sms_v542.js
+PASS  V5.4 pytest - exit=0
+------------------------------------------------------------------------
+PASS=35 FAIL=0
+AUTOMATED CHECKS PASSED - RC; WINDOWS/CAMERA/LIVE SMS ACCEPTANCE STILL REQUIRED

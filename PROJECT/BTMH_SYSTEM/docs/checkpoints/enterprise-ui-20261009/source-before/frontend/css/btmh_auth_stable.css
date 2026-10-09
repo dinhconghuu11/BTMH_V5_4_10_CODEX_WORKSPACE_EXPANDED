@@ -1,0 +1,459 @@
+:root{
+  --mh46-red:#6f0009;
+  --mh46-red-2:#a00614;
+  --mh46-wine:#280408;
+  --mh46-gold:#d7ad55;
+  --mh46-gold-hi:#f1d58c;
+  --mh46-gold-soft:#b88a3c;
+  --mh46-ink:#05090b;
+  --mh46-cream:#f8f0df;
+  --mh46-muted:#8d999c;
+}
+
+/*
+  V4.6 premium auth rebuild.
+  Visual language follows the customer's red / champagne-gold identity but the
+  kinetic seal and CSS motion are implemented locally from scratch for offline use.
+*/
+.btmh-auth-v41{
+  position:fixed!important;inset:0!important;overflow:hidden!important;
+  display:grid!important;grid-template-columns:minmax(390px,525px) minmax(0,1fr)!important;
+  align-items:center!important;gap:clamp(22px,4vw,72px)!important;
+  padding:clamp(22px,4.4vh,54px) clamp(24px,5.6vw,92px)!important;
+  background:
+    radial-gradient(circle at 76% 48%,rgba(171,27,30,.15),transparent 31%),
+    linear-gradient(118deg,#030709 0%,#061014 42%,#1b0307 73%,#3a0308 100%)!important;
+  isolation:isolate;
+}
+.btmh-auth-v41:before{
+  content:""!important;display:block!important;position:absolute!important;z-index:0!important;pointer-events:none!important;
+  left:-13%!important;right:-8%!important;bottom:-35%!important;height:58%!important;
+  transform:rotate(-4deg)!important;border-radius:52% 62% 0 0/35% 43% 0 0!important;
+  background:
+    linear-gradient(170deg,transparent 0 17%,rgba(148,4,18,.88) 36%,rgba(68,2,10,.94) 63%,rgba(15,2,4,.28) 84%)!important;
+  filter:drop-shadow(0 -15px 52px rgba(114,3,16,.34))!important;opacity:.78!important;
+}
+.btmh-auth-v41:after{
+  content:""!important;display:block!important;position:absolute!important;z-index:0!important;pointer-events:none!important;
+  right:-12%!important;top:-24%!important;width:53%!important;height:48%!important;
+  background:radial-gradient(ellipse at 45% 76%,rgba(238,190,91,.11),transparent 54%)!important;
+}
+.btmh-auth-ambient{position:absolute!important;inset:0!important;z-index:0!important;pointer-events:none!important;background:
+  radial-gradient(circle at 74% 52%,rgba(255,205,104,.04) 0 1px,transparent 1.5px) 0 0/38px 38px,
+  linear-gradient(90deg,rgba(0,0,0,.52),transparent 43% 78%,rgba(0,0,0,.18))!important}
+.btmh-auth-ambient:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 73% 49%,transparent 0 25%,rgba(1,4,6,.18) 57%,rgba(1,4,6,.53) 100%)}
+
+/* Right-side kinetic brand seal. No oversized drum / fake gemstone. */
+.btmh-signature-stage{
+  position:relative;z-index:2;grid-column:2;justify-self:stretch;align-self:stretch;
+  min-width:0;display:grid;place-items:center;pointer-events:none;overflow:visible;
+}
+.mh-red-lacquer{
+  position:absolute;width:min(74vw,880px);height:min(66vh,640px);right:-5%;top:50%;transform:translateY(-50%) rotate(-7deg);
+  border-radius:46% 9% 42% 12%;opacity:.44;
+  background:
+    linear-gradient(135deg,rgba(101,0,9,.08),rgba(157,4,18,.32) 43%,rgba(48,0,6,.08) 72%),
+    radial-gradient(ellipse at 40% 42%,rgba(255,79,58,.10),transparent 57%);
+  filter:blur(.2px);box-shadow:0 48px 110px rgba(0,0,0,.35);
+}
+.mh-light-sweep{
+  position:absolute;width:min(68vw,820px);height:1px;left:49%;top:47%;transform:translate(-50%,-50%) rotate(-34deg);
+  background:linear-gradient(90deg,transparent,rgba(255,221,141,.06),rgba(255,224,151,.66),rgba(255,221,141,.06),transparent);
+  box-shadow:0 0 34px rgba(255,190,70,.18);animation:mh46Sweep 9s ease-in-out infinite;
+}
+.mh-kinetic-seal{position:relative;width:min(48vw,590px);aspect-ratio:1;display:grid;place-items:center;filter:drop-shadow(0 30px 60px rgba(0,0,0,.55))}
+.mh-ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 10deg,transparent 0 7%,rgba(240,204,127,.84) 8% 13%,transparent 14% 32%,rgba(203,153,63,.42) 34% 42%,transparent 43% 72%,rgba(242,211,143,.72) 74% 79%,transparent 80% 100%);-webkit-mask:radial-gradient(circle,transparent 0 48%,#000 49% 50%,transparent 51%);mask:radial-gradient(circle,transparent 0 48%,#000 49% 50%,transparent 51%);opacity:.72}
+.mh-ring-a{animation:mh46CW 84s linear infinite}
+.mh-ring-b{inset:7%;opacity:.48;transform:rotate(17deg);background:conic-gradient(from 80deg,transparent 0 15%,rgba(218,173,85,.75) 16% 25%,transparent 26% 53%,rgba(247,218,153,.58) 54% 61%,transparent 62% 82%,rgba(196,139,48,.48) 83% 90%,transparent 91%);-webkit-mask:radial-gradient(circle,transparent 0 48%,#000 49% 49.7%,transparent 50.5%);mask:radial-gradient(circle,transparent 0 48%,#000 49% 49.7%,transparent 50.5%);animation:mh46CCW 67s linear infinite}
+.mh-ring-c{inset:16%;opacity:.38;background:conic-gradient(from 210deg,transparent 0 21%,rgba(237,203,127,.86) 22% 28%,transparent 29% 65%,rgba(222,173,82,.62) 66% 73%,transparent 74%);animation:mh46CW 48s linear infinite}
+.mh-ring:after{content:"";position:absolute;inset:4%;border-radius:50%;border:1px solid rgba(215,173,85,.08)}
+.mh-ring-dots{position:absolute;inset:3%;border-radius:50%;animation:mh46CW 58s linear infinite}
+.mh-ring-dots.mh-dots-b{inset:13%;animation:mh46CCW 43s linear infinite}
+.mh-ring-dots i{position:absolute;width:5px;height:5px;border-radius:50%;background:#efcb78;box-shadow:0 0 15px rgba(241,189,78,.68)}
+.mh-dots-a i:nth-child(1){left:7%;top:35%}.mh-dots-a i:nth-child(2){right:9%;top:22%}.mh-dots-a i:nth-child(3){right:2%;bottom:39%}.mh-dots-a i:nth-child(4){left:22%;bottom:7%}
+.mh-dots-b i:nth-child(1){left:12%;top:19%}.mh-dots-b i:nth-child(2){right:4%;top:48%}.mh-dots-b i:nth-child(3){left:47%;bottom:-1%}
+.mh-emblem-disc{
+  position:relative;width:min(19vw,215px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 42% 36%,rgba(255,225,155,.10),rgba(98,17,8,.11) 51%,rgba(4,8,9,.79) 72%);
+  border:1px solid rgba(230,190,99,.34);box-shadow:0 0 0 12px rgba(215,173,85,.025),0 0 72px rgba(189,116,34,.17),inset 0 0 48px rgba(0,0,0,.62);
+  animation:mh46Breath 6.5s ease-in-out infinite;
+}
+.mh-emblem-disc:before{content:"";position:absolute;inset:11%;border-radius:50%;border:1px solid rgba(242,213,151,.14)}
+.mh-emblem-disc img{width:59%;height:auto;filter:sepia(1) saturate(.65) hue-rotate(350deg) brightness(1.55) drop-shadow(0 0 18px rgba(231,185,91,.20));opacity:.95}
+.mh-hero-brand{position:absolute;left:50%;bottom:6%;transform:translateX(-50%);width:min(44vw,610px);text-align:center;text-shadow:0 4px 26px rgba(0,0,0,.94)}
+.mh-hero-brand>img{display:block;width:min(250px,56%);height:auto;margin:0 auto 9px;opacity:.20;filter:sepia(1) saturate(.65) hue-rotate(350deg) brightness(1.55);mix-blend-mode:screen}
+.mh-hero-brand span{display:block;color:#a48c62;font-size:8px;letter-spacing:.29em;font-weight:900;margin-bottom:9px}
+.mh-hero-brand strong{display:block;color:#f8efdc;font:700 clamp(26px,2.7vw,42px)/1.04 Georgia,"Times New Roman",serif;letter-spacing:-.025em}
+.mh-hero-brand small{display:block;color:#8f7e64;font-size:9px;letter-spacing:.13em;font-weight:800;margin-top:10px}
+.btmh-jewel-stage,.btmh-drum-stage{display:none!important}
+
+/* Compact premium auth card. */
+.btmh-auth-card{
+  position:relative!important;z-index:5!important;grid-column:1!important;justify-self:start!important;
+  width:min(500px,100%)!important;max-height:calc(100vh - 42px)!important;overflow:auto!important;
+  padding:27px 30px 24px!important;border-radius:24px!important;
+  background:linear-gradient(154deg,rgba(9,15,18,.965),rgba(4,9,12,.972))!important;
+  border:1px solid rgba(218,176,82,.40)!important;
+  box-shadow:0 32px 100px rgba(0,0,0,.60),inset 0 1px 0 rgba(255,255,255,.035)!important;
+  backdrop-filter:blur(22px) saturate(1.05);scrollbar-width:thin;scrollbar-color:rgba(215,173,85,.25) transparent;
+}
+.btmh-auth-card::-webkit-scrollbar{width:5px}.btmh-auth-card::-webkit-scrollbar-thumb{background:rgba(215,173,85,.25);border-radius:999px}
+.btmh-auth-card:after{content:"";position:absolute;left:9%;right:9%;top:0;height:1px;background:linear-gradient(90deg,transparent,#ebcc7b,transparent);opacity:.7}
+.btmh-auth-card .v23-auth-brand.btmh-official-brand{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:13px!important;margin:0 0 18px!important;text-align:left!important}
+.mh-brand-emblem{flex:0 0 50px;width:50px;height:50px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,rgba(230,186,90,.13),rgba(122,75,27,.10));border:1px solid rgba(231,195,112,.30);box-shadow:inset 0 0 22px rgba(235,190,94,.06)}
+.mh-brand-emblem img{display:block;width:31px;height:auto;filter:sepia(1) saturate(.65) hue-rotate(350deg) brightness(1.58)}
+.mh-brand-type{display:flex;min-width:0;flex-direction:column;gap:3px}
+.mh-brand-type b{font:700 21px/1.05 Georgia,"Times New Roman",serif!important;color:#f7edd8!important;white-space:nowrap}
+.mh-brand-type small{font-size:8px!important;letter-spacing:.20em!important;color:#9c8b67!important;font-weight:900!important}
+.btmh-auth-slogan-mobile{display:none!important}
+
+.btmh-auth-tabs{display:grid!important;grid-template-columns:1fr 1fr!important;gap:0!important;margin:0 0 20px!important;border-bottom:1px solid rgba(255,255,255,.085)!important;background:transparent!important}
+.btmh-auth-tabs button{position:relative;height:42px;border:0;background:transparent;color:#6f7d81;font-size:12px;font-weight:900;cursor:pointer;transition:.2s ease}
+.btmh-auth-tabs button:after{content:"";position:absolute;left:16%;right:16%;bottom:-1px;height:2px;border-radius:999px;background:transparent;transition:.2s ease}
+.btmh-auth-tabs button:hover{color:#dcc170}.btmh-auth-tabs button.active{color:#efd37d!important}.btmh-auth-tabs button.active:after{background:linear-gradient(90deg,#a96b24,#f0d48b,#a96b24);box-shadow:0 0 14px rgba(215,173,85,.19)}
+.btmh-auth-card .v23-auth-eyebrow{display:block;color:#d9b65e!important;font-size:9px!important;letter-spacing:.19em!important;font-weight:950!important}
+.btmh-auth-card h2{margin:6px 0 6px!important;color:#fff7e9!important;font-size:29px!important;letter-spacing:-.035em!important;font-weight:900!important}
+.btmh-auth-card p{margin:0 0 16px!important;color:#859498!important;font-size:12px!important;line-height:1.55!important}
+.btmh-auth-card label{display:block;margin-bottom:11px!important;color:#cfd1cd!important;font-size:11px!important;font-weight:850!important}
+.btmh-auth-card input{width:100%!important;height:48px!important;margin-top:6px!important;padding:0 14px!important;border-radius:10px!important;background:rgba(255,255,255,.052)!important;color:#f5eee2!important;border:1px solid rgba(255,255,255,.085)!important;outline:none!important;font-weight:700!important;transition:.16s ease!important}
+.btmh-auth-card input::placeholder{color:#5f6f74!important;font-weight:600!important}.btmh-auth-card input:focus{border-color:#d1a749!important;box-shadow:0 0 0 3px rgba(213,172,79,.09)!important;background:rgba(255,255,255,.065)!important}
+.btmh-auth-card .btn.primary{width:100%!important;height:49px!important;margin-top:2px!important;border:1px solid #e8c97b!important;border-radius:10px!important;background:linear-gradient(180deg,#eac975,#c18a36)!important;color:#211207!important;font-size:14px!important;font-weight:950!important;box-shadow:0 12px 31px rgba(167,105,34,.16)!important;transition:.17s ease!important}
+.btmh-auth-card .btn.primary:hover{transform:translateY(-1px);filter:brightness(1.055);box-shadow:0 17px 36px rgba(167,105,34,.23)!important}.btmh-auth-card .btn.primary[disabled]{cursor:wait;opacity:.70;transform:none!important}
+.btmh-auth-feedback{min-height:31px;margin-top:9px;padding:7px 10px;border-radius:9px;color:#7d8d91;font-size:10.5px;line-height:1.42;text-align:center;border:1px solid transparent;transition:.18s ease}.btmh-auth-feedback.loading{color:#e8cd86;background:rgba(215,173,85,.06);border-color:rgba(215,173,85,.12)}.btmh-auth-feedback.success{color:#8bdcbd;background:rgba(26,165,116,.07);border-color:rgba(26,165,116,.16)}.btmh-auth-feedback.error{color:#ffaaa8;background:rgba(197,48,47,.10);border-color:rgba(208,59,55,.22)}
+.btmh-auth-switch{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:11px;color:#738388;font-size:10.5px;font-weight:700}.btmh-auth-switch button{appearance:none;border:0;background:transparent;color:#dcb95e;font:inherit;font-weight:900;cursor:pointer;padding:2px 3px;border-bottom:1px solid transparent}.btmh-auth-switch button:hover{border-bottom-color:#dcb95e}
+.btmh-register-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:13px}.btmh-register-heading h2{margin-bottom:0!important}.btmh-back-login{flex:0 0 auto;height:31px;padding:0 10px;border-radius:8px;border:1px solid rgba(215,173,85,.18);background:rgba(215,173,85,.035);color:#d7b75f;font-size:10px;font-weight:900;cursor:pointer}.btmh-back-login:hover{background:rgba(215,173,85,.08);border-color:rgba(215,173,85,.31)}
+.btmh-register-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 11px}.btmh-register-grid label.full{grid-column:1/-1}.btmh-auth-card .v23-auth-foot{margin-top:15px!important;padding-top:13px!important;border-top:1px solid rgba(215,173,85,.09)!important;color:#68797e!important;text-align:center!important}.btmh-auth-card .v23-auth-foot>span{display:none!important}.btmh-auth-card .v23-auth-foot small{font-size:9.5px!important}
+.btmh-auth-view{animation:mh46View .24s ease both}
+
+@keyframes mh46CW{to{transform:rotate(360deg)}}
+@keyframes mh46CCW{to{transform:rotate(-360deg)}}
+@keyframes mh46Breath{0%,100%{box-shadow:0 0 0 12px rgba(215,173,85,.025),0 0 60px rgba(189,116,34,.13),inset 0 0 48px rgba(0,0,0,.62)}50%{box-shadow:0 0 0 13px rgba(215,173,85,.035),0 0 86px rgba(220,151,55,.21),inset 0 0 48px rgba(0,0,0,.62)}}
+@keyframes mh46Sweep{0%,100%{opacity:.16;transform:translate(-52%,-50%) rotate(-34deg)}50%{opacity:.72;transform:translate(-43%,-50%) rotate(-34deg)}}
+@keyframes mh46View{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+@media(max-width:1100px){
+  .btmh-auth-v41{grid-template-columns:minmax(360px,500px) 1fr!important;padding-left:4vw!important;padding-right:4vw!important;gap:24px!important}
+  .mh-kinetic-seal{width:min(56vw,530px)}.mh-hero-brand{width:min(49vw,540px)}
+}
+@media(max-width:850px){
+  .btmh-auth-v41{grid-template-columns:1fr!important;place-items:center!important;padding:16px!important}
+  .btmh-signature-stage{position:absolute;inset:0;grid-column:auto;opacity:.30}.mh-kinetic-seal{width:min(94vw,620px);transform:translateX(24%)}.mh-hero-brand,.mh-red-lacquer{display:none}
+  .btmh-auth-card{grid-column:auto!important;justify-self:center!important;width:min(500px,calc(100vw - 28px))!important;max-height:94vh!important;background:linear-gradient(154deg,rgba(8,14,17,.975),rgba(4,9,12,.982))!important}
+}
+@media(max-width:600px){
+  .btmh-auth-v41{padding:8px!important}.btmh-auth-card{padding:22px 17px 19px!important;border-radius:19px!important}.mh-brand-type b{font-size:19px!important}.mh-brand-type small{font-size:7px!important}.mh-brand-emblem{width:45px;height:45px;flex-basis:45px}.mh-brand-emblem img{width:28px}.btmh-auth-card h2{font-size:24px!important}.btmh-register-grid{grid-template-columns:1fr;gap:0}.btmh-register-grid label.full{grid-column:auto}.btmh-register-heading{display:block}.btmh-back-login{margin-top:8px}
+}
+@media(prefers-reduced-motion:reduce){.mh-ring,.mh-ring-dots,.mh-emblem-disc,.mh-light-sweep,.btmh-auth-view{animation:none!important}}
+/* BTMH Security V4.6.1 — Auth typography hardening.
+   Purpose: neutralise legacy span/serif rules that broke Vietnamese rendering. */
+
+/* A single, Vietnamese-safe, offline system font stack for the entire auth surface. */
+#authGate,
+#authGate button,
+#authGate input,
+#authGate label,
+#authGate small,
+#authGate span,
+#authGate div,
+#authGate p,
+#authGate h1,
+#authGate h2,
+#authGate strong,
+#authGate b {
+  font-family:"Segoe UI", Arial, Helvetica, sans-serif !important;
+  font-kerning:normal;
+  text-rendering:optimizeLegibility;
+  font-synthesis:none;
+}
+
+/* Reset dangerous legacy typography/layout rules inside the brand block. */
+#authGate .btmh-official-brand > * {
+  box-sizing:border-box !important;
+}
+#authGate .btmh-official-brand .mh-brand-emblem {
+  width:50px !important;
+  height:50px !important;
+  min-width:50px !important;
+  flex:0 0 50px !important;
+  padding:0 !important;
+  margin:0 !important;
+  overflow:hidden !important;
+}
+#authGate .btmh-official-brand .mh-brand-type {
+  width:auto !important;
+  height:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  flex:1 1 auto !important;
+  padding:0 !important;
+  margin:0 !important;
+  background:none !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  color:inherit !important;
+  letter-spacing:normal !important;
+  overflow:visible !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  gap:4px !important;
+}
+#authGate .mh-brand-type b {
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#f7edd8 !important;
+  font-size:21px !important;
+  line-height:1.25 !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+  white-space:nowrap !important;
+  word-break:normal !important;
+  overflow-wrap:normal !important;
+}
+#authGate .mh-brand-type small {
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#a89773 !important;
+  font-size:9px !important;
+  line-height:1.35 !important;
+  font-weight:700 !important;
+  letter-spacing:.08em !important;
+  white-space:nowrap !important;
+  word-break:normal !important;
+  overflow-wrap:normal !important;
+}
+
+/* Keep Vietnamese words intact everywhere in Auth. */
+#authGate h2,
+#authGate p,
+#authGate label,
+#authGate button,
+#authGate .btmh-auth-feedback,
+#authGate .btmh-auth-switch,
+#authGate .mh-hero-brand,
+#authGate .mh-hero-brand * {
+  word-break:normal !important;
+  overflow-wrap:normal !important;
+  hyphens:none !important;
+}
+
+/* Hero brand — clean wordmark, no text baked into an image behind live text. */
+#authGate .mh-hero-brand {
+  width:min(46vw,650px) !important;
+  bottom:7% !important;
+  padding:0 18px !important;
+}
+#authGate .mh-hero-wordmark {
+  color:rgba(244,224,181,.76) !important;
+  font-size:clamp(15px,1.35vw,22px) !important;
+  line-height:1.2 !important;
+  font-weight:700 !important;
+  letter-spacing:.16em !important;
+  white-space:nowrap !important;
+  margin:0 0 8px !important;
+  text-shadow:0 2px 20px rgba(0,0,0,.8) !important;
+}
+#authGate .mh-hero-brand > span {
+  color:#aa9065 !important;
+  font-size:9px !important;
+  line-height:1.3 !important;
+  letter-spacing:.16em !important;
+  font-weight:700 !important;
+  margin:0 0 12px !important;
+}
+#authGate .mh-hero-brand strong {
+  display:block !important;
+  max-width:640px !important;
+  margin:0 auto !important;
+  color:#f8efdc !important;
+  font-size:clamp(28px,2.7vw,44px) !important;
+  line-height:1.12 !important;
+  font-weight:700 !important;
+  letter-spacing:-.015em !important;
+  white-space:normal !important;
+  text-wrap:balance;
+}
+#authGate .mh-hero-brand small {
+  display:block !important;
+  margin-top:12px !important;
+  color:#8f8068 !important;
+  font-size:9px !important;
+  line-height:1.35 !important;
+  letter-spacing:.10em !important;
+  font-weight:700 !important;
+}
+
+/* Main auth content typography: consistent metrics and no inherited legacy font shorthand. */
+#authGate .v23-auth-eyebrow {
+  line-height:1.35 !important;
+}
+#authGate .btmh-auth-card h2 {
+  font-size:29px !important;
+  line-height:1.18 !important;
+  font-weight:800 !important;
+  letter-spacing:-.02em !important;
+}
+#authGate .btmh-auth-card p {
+  line-height:1.58 !important;
+}
+#authGate .btmh-auth-tabs button,
+#authGate .btmh-auth-card label,
+#authGate .btmh-auth-card input,
+#authGate .btmh-auth-card .btn,
+#authGate .btmh-back-login,
+#authGate .btmh-auth-switch,
+#authGate .btmh-auth-feedback {
+  letter-spacing:0 !important;
+}
+#authGate .btmh-auth-tabs button { line-height:1.2 !important; }
+#authGate .btmh-auth-card label { line-height:1.35 !important; }
+#authGate .btmh-auth-card input { line-height:normal !important; }
+#authGate .btmh-auth-card .btn { line-height:1 !important; }
+
+@media(max-width:600px){
+  #authGate .mh-brand-type b{font-size:18px !important;white-space:normal !important}
+  #authGate .mh-brand-type small{font-size:8px !important;white-space:normal !important}
+}
+/* BTMH Security V4.6.2 — Auth viewport/grid hotfix.
+   Fixes CSS grid auto-placement that put the auth card on row 2 below the viewport. */
+
+/* One explicit viewport row: hero and auth card must share it. */
+#authGate.btmh-auth-v41{
+  grid-template-rows:minmax(0,1fr) !important;
+  min-height:100dvh !important;
+  height:100dvh !important;
+  max-height:100dvh !important;
+  overflow:hidden !important;
+}
+
+#authGate .btmh-signature-stage{
+  grid-row:1 !important;
+  grid-column:2 !important;
+  min-height:0 !important;
+  align-self:stretch !important;
+}
+
+#authGate .btmh-auth-card{
+  grid-row:1 !important;
+  grid-column:1 !important;
+  align-self:center !important;
+  justify-self:start !important;
+  min-height:0 !important;
+  max-height:min(92dvh,820px) !important;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+  overscroll-behavior:contain;
+}
+
+/* Login is intentionally compact enough to fit typical 768–1080p displays. */
+#authGate #gateLoginView:not(.hidden){
+  display:block !important;
+}
+
+/* Register keeps two columns on desktop to avoid unnecessary vertical scrolling. */
+#authGate .btmh-register-grid{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  column-gap:12px !important;
+}
+#authGate .btmh-register-grid label.full{grid-column:1 / -1 !important;}
+
+/* Compact vertical rhythm on short laptop screens. */
+@media (max-height:820px) and (min-width:851px){
+  #authGate.btmh-auth-v41{padding-top:16px !important;padding-bottom:16px !important;}
+  #authGate .btmh-auth-card{padding:20px 26px 18px !important;max-height:calc(100dvh - 32px) !important;}
+  #authGate .btmh-official-brand{margin-bottom:12px !important;}
+  #authGate .btmh-auth-tabs{margin-bottom:13px !important;}
+  #authGate .btmh-auth-card h2{font-size:25px !important;margin-top:4px !important;margin-bottom:4px !important;}
+  #authGate .btmh-auth-card p{margin-bottom:10px !important;line-height:1.42 !important;}
+  #authGate .btmh-auth-card label{margin-bottom:8px !important;}
+  #authGate .btmh-auth-card input{height:43px !important;margin-top:4px !important;}
+  #authGate .btmh-auth-card .btn.primary{height:45px !important;}
+  #authGate .btmh-auth-feedback{min-height:26px !important;margin-top:6px !important;padding:5px 9px !important;}
+  #authGate .btmh-auth-switch{margin-top:7px !important;}
+  #authGate .v23-auth-foot{margin-top:9px !important;padding-top:9px !important;}
+}
+
+@media(max-width:850px){
+  #authGate.btmh-auth-v41{
+    grid-template-columns:1fr !important;
+    grid-template-rows:minmax(0,1fr) !important;
+    place-items:center !important;
+  }
+  #authGate .btmh-signature-stage{
+    grid-row:1 !important;
+    grid-column:1 !important;
+    position:absolute !important;
+  }
+  #authGate .btmh-auth-card{
+    grid-row:1 !important;
+    grid-column:1 !important;
+    align-self:center !important;
+    justify-self:center !important;
+    max-height:calc(100dvh - 24px) !important;
+  }
+}
+
+@media(max-width:600px){
+  #authGate .btmh-register-grid{grid-template-columns:1fr !important;}
+  #authGate .btmh-register-grid label.full{grid-column:auto !important;}
+}
+
+/* V4.6.3 AUTH EXIT HOTFIX
+   The premium auth layer declares display:grid !important. Without this
+   higher-specificity hidden rule an authenticated session can exist while
+   the auth overlay remains visually pinned above the application. */
+#authGate.btmh-auth-v41.hidden,
+#authGate.v23-auth-gate.hidden{
+  display:none !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+}
+
+/* V5 privileged-account MFA: compact, offline TOTP setup and recovery codes. */
+#authGate .v5-mfa-setup,#authGate .v5-mfa-recovery{margin:10px 0;padding:12px;border:1px solid rgba(215,173,85,.16);border-radius:12px;background:rgba(215,173,85,.035)}
+#authGate .v5-mfa-step{display:grid;gap:4px;margin-bottom:10px}
+#authGate .v5-mfa-step b,#authGate .v5-mfa-recovery strong{font-size:11px;line-height:1.45;color:#e8d39a}
+#authGate .v5-mfa-step small,#authGate .v5-mfa-recovery p{margin:0;color:#88999d;font-size:10px;line-height:1.5}
+#authGate .v5-mfa-secret-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;margin:8px 0 12px}
+#authGate .v5-mfa-secret-row code{display:block;min-width:0;overflow-wrap:anywhere;padding:10px;border-radius:9px;background:#071014;border:1px solid rgba(215,173,85,.14);color:#f0d37d;font:800 12px/1.4 Consolas,"Courier New",monospace;letter-spacing:.08em}
+#authGate .v5-mfa-secret-row .btn{height:38px;margin:0!important;padding:0 10px}
+#authGate .v5-mfa-verify{display:grid;gap:8px}
+#authGate .v5-mfa-recovery pre{max-height:190px;overflow:auto;margin:10px 0;padding:12px;border-radius:10px;background:#061014;border:1px solid rgba(215,173,85,.12);color:#f2db91;font:800 12px/1.65 Consolas,"Courier New",monospace;letter-spacing:.04em;user-select:text}
+@media(max-width:720px){#authGate .v5-mfa-secret-row{grid-template-columns:1fr}#authGate .v5-mfa-secret-row .btn{width:100%}}
+
+/* V5.3.3 — Admin first-login enrollment + SMS/Email OTP second factor */
+#authGate .v533-login-methods{display:grid;gap:10px;margin:12px 0}
+#authGate .v533-login-method{width:100%;display:grid;grid-template-columns:34px 1fr 18px;gap:10px;align-items:center;text-align:left;padding:13px 14px;border-radius:12px;border:1px solid rgba(215,173,85,.16);background:rgba(255,255,255,.025);color:#dce5e6;cursor:pointer;transition:.18s ease}
+#authGate .v533-login-method:hover,#authGate .v533-login-method.preferred{border-color:rgba(215,173,85,.42);background:rgba(215,173,85,.07);transform:translateY(-1px)}
+#authGate .v533-login-method>span{font-size:21px;filter:saturate(.8)}
+#authGate .v533-login-method div{display:grid;gap:3px}
+#authGate .v533-login-method b{font-size:12px;color:#f0d995}
+#authGate .v533-login-method small{font-size:10px;color:#8da0a4}
+#authGate .v533-login-method i{font-style:normal;font-size:20px;color:#b99a50}
+#authGate .v533-login-otp{display:grid;gap:10px;margin-top:12px;padding:13px;border:1px solid rgba(215,173,85,.16);border-radius:12px;background:rgba(215,173,85,.035)}
+#authGate .v533-login-otp-head{display:grid;gap:4px}
+#authGate .v533-login-otp-head b{font-size:12px;color:#f0d995}
+#authGate .v533-login-otp-head small{font-size:10px;line-height:1.45;color:#8da0a4}
+
+.v533-admin-security{position:relative;overflow:hidden}
+.v533-admin-security:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(180deg,#d7ad55,#715520)}
+.v533-admin-security-alert{margin:6px 0 14px;padding:10px 12px;border-radius:10px;border:1px solid rgba(223,167,72,.25);background:rgba(223,167,72,.07);color:#d9c18d;font-size:12px;line-height:1.5}
+.v533-admin-security-alert.ready{border-color:rgba(50,180,130,.22);background:rgba(50,180,130,.07);color:#9bd9c2}
+.v533-admin-security-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.v533-admin-security-grid>label{grid-column:1/-1}
+.v533-admin-security-grid label{display:grid;gap:6px;font-size:11px;color:#9badb0}
+.v533-admin-security-grid input,.v533-admin-security-otp input{height:42px;border-radius:9px;border:1px solid rgba(255,255,255,.1);background:#071014;color:#e6eeee;padding:0 11px;outline:none}
+.v533-admin-security-grid input:focus,.v533-admin-security-otp input:focus{border-color:rgba(215,173,85,.46);box-shadow:0 0 0 2px rgba(215,173,85,.08)}
+.v533-security-contact{display:grid;gap:8px;padding:11px;border-radius:11px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.018)}
+.v533-security-contact-actions{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.v533-security-contact-actions span{font-size:10px;color:#8da0a4}
+.v533-security-contact-actions span.verified{color:#83d9ba}
+.v533-admin-security-otp{display:grid;grid-template-columns:minmax(180px,1fr) 150px auto auto;gap:8px;align-items:end;margin-top:12px;padding:12px;border-radius:11px;border:1px solid rgba(215,173,85,.16);background:rgba(215,173,85,.035)}
+.v533-admin-security-otp>div{display:grid;gap:3px}
+.v533-admin-security-otp b{font-size:11px;color:#ead28d}
+.v533-admin-security-otp small{font-size:10px;color:#8da0a4}
+.v533-admin-security-otp .btn{height:42px;margin:0}
+@media(max-width:900px){.v533-admin-security-grid{grid-template-columns:1fr}.v533-admin-security-otp{grid-template-columns:1fr}.v533-admin-security-otp .btn{width:100%}}

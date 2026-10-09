@@ -1,0 +1,117 @@
+# BTMH repository hygiene. These rules never delete local files.
+# Keep canonical source, tests, docs, deployment scripts, models, training,
+# developer instructions, vendor_py, and the pinned vendor/offline payload.
+# Do not ignore *.onnx, *.pt, *.pth, *.safetensors, *.whl, or *.zip globally.
+
+# Python environments and installed test/tool dependencies
+.venv/
+venv/
+virtualenv/
+.test_venv/
+/.test_dependencies/
+/.codex_tools/
+/.test_media/
+/PROJECT/BTMH_SYSTEM/.qa_production/offline-venv/
+# QA model-runtime contains verified copies of canonical models plus test data.
+/PROJECT/BTMH_SYSTEM/.qa_production/model-runtime/
+
+# Python, test, type-checker and coverage caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.pytest_*/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+/PROJECT/BTMH_SYSTEM/.offline-audit-test-*/
+/PROJECT/BTMH_SYSTEM/tests_demo/.tmp/
+/PROJECT/BTMH_SYSTEM/tests_demo/.tmp_auth_regression_*/
+
+# Node dependencies, build outputs and caches
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+*.egg-info/
+
+# Local credentials; retain sanitized environment templates
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+module.env
+module.env.*
+!module.env.example
+!module.env.sample
+!module.env.template
+*.key
+*.pem
+*.pfx
+*.p12
+.pgpass
+pgpass.conf
+/.codex/auth.json
+/.aws/credentials
+/.ssh/id_*
+/PROJECT/BTMH_SYSTEM/config/secrets*.json
+/PROJECT/BTMH_SYSTEM/config/credentials*.json
+/PROJECT/BTMH_SYSTEM/config/tokens*.json
+/PROJECT/BTMH_SYSTEM/config/camera_credentials*.json
+/PROJECT/BTMH_SYSTEM/config/sms_secrets*.json
+!/PROJECT/BTMH_SYSTEM/config/*.example.json
+
+# Operational databases, journals and logs stay on disk, outside Git.
+# Database schema/migrations and business logic remain versioned source.
+%LOCALAPPDATA%*/
+/data/*
+!/data/.gitkeep
+/PROJECT/BTMH_SYSTEM/data/*
+!/PROJECT/BTMH_SYSTEM/data/.gitkeep
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-*
+*.sqlite3-*
+*.db-*
+*.log
+logs/*
+!logs/.gitkeep
+/backups/*
+!/backups/.gitkeep
+# Business backup naming from production_ops.py. Keep CODEX source snapshots.
+/PROJECT/BTMH_SYSTEM/backups/CampusFace-Backup-*.zip
+
+# Local runtime downloads; keep the offline installation payload under vendor/.
+runtime/
+mediamtx.exe
+!/PROJECT/BTMH_SYSTEM/vendor/mediamtx/mediamtx.exe
+
+# Isolated UI/camera QA data and browser profiles (never source/test scripts)
+/PROJECT/BTMH_SYSTEM/.btmh-ui-preview/
+/.qa_camera_video_*/
+/PROJECT/BTMH_SYSTEM/frontend/.qa_*/chrome-profile-*/
+/PROJECT/BTMH_SYSTEM/docs/checkpoints/**/chrome-profile-*/
+
+# Reproducible checkpoint runtime internals. Keep reports, XML/JSON results,
+# screenshots, hashes and source-before snapshots in these checkpoints.
+/PROJECT/BTMH_SYSTEM/docs/checkpoints/**/pg-test-*/data/
+/PROJECT/BTMH_SYSTEM/docs/checkpoints/**/pg-test-*/app-test-data/
+/PROJECT/BTMH_SYSTEM/docs/checkpoints/**/pytest-environment/
+/PROJECT/BTMH_SYSTEM/docs/checkpoints/**/python-pg/
+
+# OS/editor temporary files; retain .vscode settings and workspace definitions.
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+*.swo

@@ -1,0 +1,13 @@
+{
+  "name": "Hikvision DS-2CD1123G0-IUF - Cửa chính",
+  "type": "RTSP",
+  "model": "DS-2CD1123G0-IUF",
+  "ip": "",
+  "rtsp_port": 554,
+  "stream": "/Streaming/Channels/101",
+  "username": "",
+  "password_storage": "Windows DPAPI - configured locally",
+  "purpose": "SURVEILLANCE_PRIMARY",
+  "example_only": true,
+  "enabled": false
+}

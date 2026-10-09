@@ -1,0 +1,4 @@
+Acquired 2026-10-09 from https://github.com/bluenviron/mediamtx/releases/download/v1.21.1/mediamtx_v1.21.1_windows_amd64.zip
+SHA256: faa97974861eb75a68b5aa326c78e7e7a6f670b5ef191bace78e715130381f23
+Primary license source: https://raw.githubusercontent.com/bluenviron/mediamtx/v1.21.1/LICENSE
+Acquisition proves pinned bytes. Exact redistribution notices and obligations must still be reviewed before commercial release.

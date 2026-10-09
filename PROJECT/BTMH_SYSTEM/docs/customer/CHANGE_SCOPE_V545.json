@@ -1,0 +1,105 @@
+{
+  "base": "5.4.4",
+  "new": "5.4.5",
+  "changed": [
+    "README.md",
+    "VERIFY_RELEASE.py",
+    "VERSION",
+    "VERSION.txt",
+    "frontend/index.html",
+    "frontend/js/camera_tools_v544.js",
+    "module_app/capture_session_v544.py",
+    "module_app/config.py",
+    "scripts/runtime_quick_check.py",
+    "tests_integration/rtsp_fixture.py"
+  ],
+  "added": [
+    "docs/customer/CHANGE_SCOPE_V545.json",
+    "docs/customer/QA_V545.md",
+    "docs/customer/QA_V545_RESULTS.json",
+    "docs/customer/RTSP_V545.md",
+    "module_app/rtsp_native_v545.py",
+    "scripts/check_rtsp_runtime_v545.py",
+    "scripts/diagnose_rtsp_v545.py",
+    "tests_browser/camera_controls_v545.py",
+    "tests_integration/test_rtsp_v545.py",
+    "tests_v54/test_rtsp_config_v545.py",
+    "tests_v54/test_rtsp_native_v545.py"
+  ],
+  "protected": {
+    "module_app/face_core.py": {
+      "unchanged": true,
+      "sha256": "a184d7aea25a94894dba6b7628b9508037863ffbe807d16b1c8d4a4ebeb5646b"
+    },
+    "module_app/anti_spoof.py": {
+      "unchanged": true,
+      "sha256": "9c7abd90e53d3646fcf8acfbf93b72e89f333fcec967127513169f0db8ea3d19"
+    },
+    "module_app/passive_pad.py": {
+      "unchanged": true,
+      "sha256": "585e6a98f11a41bdee92338b7ba83b958095b6b06b35be3e3fd2380cfb7f960e"
+    },
+    "module_app/walkby.py": {
+      "unchanged": true,
+      "sha256": "566aaa1552eb2bab2de01136c728d29f47d4c8edeeb72b5205c13c5b0e91897d"
+    },
+    "module_app/camera.py": {
+      "unchanged": true,
+      "sha256": "f2e8758ad4806ce7d0c9624ca5588ae42a0453857c19e17bbbe62fdbb7b5e43c"
+    },
+    "module_app/camera_handover_v544.py": {
+      "unchanged": true,
+      "sha256": "92c7efb3aceb4c9fe2496c4d10c42845149ba4fe8db6dd2652c1f6c3920e88af"
+    },
+    "module_app/capture_worker_v544.py": {
+      "unchanged": true,
+      "sha256": "64d7936bd506e70de590a0025184504cc9dcfa557def174857e5ff3d050c0e33"
+    },
+    "module_app/office_engine.py": {
+      "unchanged": true,
+      "sha256": "be31ba2d9eea76ffc3948c338d389fab34f99f909ee85852257bbd2d1def6690"
+    },
+    "module_app/visitor.py": {
+      "unchanged": true,
+      "sha256": "66587ca96e4415175c8c43fe00d365802584583b4092c5f3db713a72c77a6762"
+    },
+    "module_app/db.py": {
+      "unchanged": true,
+      "sha256": "9e97f77456c636ebc1ad04480cc1b2af96cb2ce94ec9dc7dba64f3f8ee059907"
+    },
+    "module_app/auth.py": {
+      "unchanged": true,
+      "sha256": "a8dcedf8d860e1089ed35914b53eb5a18a2d03cbafe64774a8559d606c7302c5"
+    },
+    "module_app/hr_reporting.py": {
+      "unchanged": true,
+      "sha256": "9e5eb1ba1991536f7faa6a724d4bfecf2a5ec192ba2a9f4f8107eee684ea6be9"
+    },
+    "module_app/sms_auth_v542.py": {
+      "unchanged": true,
+      "sha256": "59f1c16d1c52ca525747c39055a81b565c8ae78e7d26264fa6e75c5fe23177c7"
+    },
+    "module_app/sms_provider_v542.py": {
+      "unchanged": true,
+      "sha256": "5c9a6d81c57e0f3684316c5c804cae48a8289b5cc71eaa4103d65f8c3da3d292"
+    },
+    "module_app/sms_routes_v542.py": {
+      "unchanged": true,
+      "sha256": "89f52aa9174b013c7aa44a53e1dfa0a339b8210cbda9a61043110ebc25ba6b1e"
+    },
+    "module_app/main.py": {
+      "unchanged": true,
+      "sha256": "f45452acd61efd4d5b1c4e50f078fc1f8392bba8a741f23c8edd614d2a8167de"
+    },
+    "module_app/production_ops.py": {
+      "unchanged": true,
+      "sha256": "d1f0cfc70036df9cdd2e3c9da200e9d599ac46dff5a9af22eee27bcb967dfd0f"
+    },
+    "requirements-runtime.txt": {
+      "unchanged": true,
+      "sha256": "6b94ac4e71b0b97640570056f76e949dbc26c2c0430384fe2685f6aa6af27661"
+    }
+  },
+  "removed": [],
+  "note": "Source changes compared to original 5.4.4; customer wrapper/docs and manifest refreshed separately. Test credentials are synthetic. No runtime data is included."
+}

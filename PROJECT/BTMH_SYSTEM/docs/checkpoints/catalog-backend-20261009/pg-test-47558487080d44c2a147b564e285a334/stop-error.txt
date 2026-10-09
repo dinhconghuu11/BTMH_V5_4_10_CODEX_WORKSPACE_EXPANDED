@@ -1,0 +1,2 @@
+pg_ctl: PID file "C:/FACE/BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED/PROJECT/BTMH_SYSTEM/docs/checkpoints/catalog-backend-20261009/pg-test-47558487080d44c2a147b564e285a334/data/postmaster.pid" does not exist
+Is server running?

@@ -1,0 +1,43 @@
+/* CampusFace V24 - FaceID + Classroom focus */
+:root{--v24-mint:#26d6b0;--v24-cyan:#42bff5;--v24-ink:#0c1f2b;--v24-line:#dce8e8}
+
+/* FaceID enrollment: a clear, depth-like oval scanner inspired by familiar mobile biometric setup. */
+.faceid-camera-wrap{background:#061416!important;border-radius:24px!important;min-height:610px}
+.faceid-camera-wrap video{filter:brightness(.68) saturate(.90) contrast(1.04)!important}
+.faceid-camera-wrap:has(.faceid-scanner.scanning) video{filter:brightness(.64) saturate(.88) contrast(1.05)!important}
+.faceid-shade{background:radial-gradient(ellipse 27% 43% at 50% 44%,rgba(1,10,12,.00) 0 66%,rgba(1,13,16,.18) 76%,rgba(1,12,15,.56) 100%)!important}
+.v24-faceid-scanner{width:min(360px,42%)!important;height:min(450px,74%)!important;top:45%!important;--scan-angle:0deg}
+.v24-face-oval{position:absolute;inset:2%;border-radius:46% 46% 44% 44%/42% 42% 50% 50%;transform:translate(calc(var(--head-x) * 9px),calc(var(--head-y) * -8px));transition:transform .12s linear;filter:drop-shadow(0 0 16px rgba(47,221,185,.22))}
+.v24-face-progress{position:absolute;inset:-12px;border-radius:inherit;background:conic-gradient(from -90deg,var(--v24-mint) 0 var(--scan-angle),rgba(230,255,250,.16) var(--scan-angle) 360deg);-webkit-mask:radial-gradient(ellipse at center,transparent 0 71%,#000 72% 77%,transparent 78%);mask:radial-gradient(ellipse at center,transparent 0 71%,#000 72% 77%,transparent 78%);opacity:.98;transition:filter .25s ease}
+.v24-face-inner{position:absolute;inset:2px;border:2px solid rgba(229,255,250,.78);border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(33,214,174,.12),0 0 20px rgba(39,214,174,.15)}
+.v24-face-inner:before,.v24-face-inner:after{content:"";position:absolute;left:50%;width:44%;height:1px;background:linear-gradient(90deg,transparent,rgba(103,244,216,.75),transparent);transform:translateX(-50%)}
+.v24-face-inner:before{top:31%}.v24-face-inner:after{top:64%}
+.v24-depth-dots{position:absolute;inset:10% 12%;border-radius:45%;overflow:hidden;opacity:.56;transform:perspective(360px) rotateY(calc(var(--head-x) * 7deg)) rotateX(calc(var(--head-y) * -6deg));transition:transform .12s linear,opacity .2s ease}
+.v24-depth-dot{position:absolute;width:3px;height:3px;border-radius:50%;background:rgba(107,244,219,.82);box-shadow:0 0 6px rgba(67,224,194,.38);transition:opacity .18s ease,transform .18s ease,background .18s ease}
+.v24-depth-dot.hot{background:#d8fff7;box-shadow:0 0 9px rgba(89,239,210,.82);transform:scale(1.45)}
+.v24-scan-glow{position:absolute;left:10%;right:10%;height:24%;top:12%;border-radius:50%;background:linear-gradient(180deg,transparent,rgba(55,225,193,.12),transparent);filter:blur(8px);animation:v24FaceSweep 2.8s ease-in-out infinite;opacity:.7}
+.v24-orbit-cursor{position:absolute;width:13px;height:13px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);background:#f3fffc;border:3px solid #28d8b1;box-shadow:0 0 0 5px rgba(40,216,177,.13),0 0 18px rgba(40,216,177,.75);opacity:0;transition:left .12s linear,top .12s linear,opacity .2s ease}
+.faceid-scanner.scanning .v24-orbit-cursor{opacity:1}.faceid-scanner.aligning .v24-orbit-cursor{opacity:.35}.faceid-scanner.pass-complete .v24-orbit-cursor{opacity:0}
+.faceid-brackets{display:none!important}.scan-ticks{display:none!important}.faceid-motion{display:none!important}.faceid-center-cue{display:none!important}
+.faceid-scanner.aligning .v24-face-progress{opacity:.42}.faceid-scanner.pass-complete .v24-face-progress{filter:drop-shadow(0 0 18px rgba(45,230,188,.80))}.faceid-scanner.liveness .v24-face-progress{animation:v24Pulse 1.05s ease-in-out infinite}
+.faceid-stage-copy{bottom:4.5%!important}.faceid-stage-copy h2{font-size:25px!important;color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.28)}.faceid-stage-copy p{font-size:13px!important;color:rgba(238,255,251,.88)!important}.scan-pass-pill{background:rgba(5,30,32,.72)!important;border:1px solid rgba(91,234,205,.28)!important;color:#baffee!important;backdrop-filter:blur(10px)}
+.v23-pass-overview{border-radius:16px!important}.v23-pass-card span{display:none!important}.v23-pass-card{min-height:52px}.v23-pass-card b{font-size:13px!important}.optional-label{font-weight:600;color:#8a9b9f;font-size:10px;text-transform:none;letter-spacing:0}.v23-class-selectors{grid-template-columns:minmax(220px,.8fr) minmax(260px,1fr) minmax(320px,1.4fr)!important}
+
+@keyframes v24FaceSweep{0%,100%{top:8%;opacity:.28}50%{top:68%;opacity:.82}}
+@keyframes v24Pulse{0%,100%{opacity:.65;filter:drop-shadow(0 0 9px rgba(45,230,188,.35))}50%{opacity:1;filter:drop-shadow(0 0 22px rgba(45,230,188,.8))}}
+
+@media(max-width:1100px){.v24-faceid-scanner{width:min(340px,50%)!important}.v23-class-selectors{grid-template-columns:1fr 1fr!important}.v23-class-selectors .grow{grid-column:1/-1}}
+@media(max-width:760px){.faceid-camera-wrap{min-height:500px}.v24-faceid-scanner{width:min(290px,66%)!important;height:min(380px,68%)!important}.v23-class-selectors{grid-template-columns:1fr!important}.v23-class-selectors .grow{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.v24-scan-glow{animation:none}.v24-face-progress,.v24-depth-dots,.v24-orbit-cursor{transition:none}}
+
+/* V24.2 classroom observer: smoother overlay + explicit AI readiness. */
+.v20-class-camera canvas{will-change:contents;transform:translateZ(0)}
+.v20-live-counts{grid-template-columns:repeat(auto-fit,minmax(88px,1fr))!important}
+.v20-live-badge{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.v20-live-badge b{font:inherit}
+.v20-live-badge.limited{background:#fff7df;color:#8a6411}
+.v20-live-badge.limited i{background:#e9ab2e}
+.v20-live-badge.warn{background:#fff0ee;color:#b3483e}
+.v20-live-badge.warn i{background:#e76a5d}
+#v20ClassStopBtn:disabled{opacity:.6;cursor:wait}
+@media(max-width:900px){.v20-live-counts{grid-template-columns:repeat(3,minmax(82px,1fr))!important}}

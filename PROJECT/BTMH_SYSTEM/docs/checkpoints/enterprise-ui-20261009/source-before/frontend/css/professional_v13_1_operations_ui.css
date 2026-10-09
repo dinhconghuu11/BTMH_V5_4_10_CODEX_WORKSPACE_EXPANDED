@@ -1,0 +1,50 @@
+/* CampusFace V13.1 - Lean Operations UI
+   Goal: clear daily operations first; technical detail stays available but secondary. */
+.v131-lean-operations{
+  --v131-border:#dfe6ef;
+  --v131-bg:#f5f7fa;
+  --v131-text:#1f2d3d;
+  --v131-muted:#6e7c8f;
+  --v131-ok:#1e8c63;
+  --v131-warn:#b87819;
+  --v131-bad:#be4652;
+}
+.v131-lean-operations .main{background:var(--v131-bg)}
+.v131-lean-operations .panel,.v131-lean-operations .stat-card{box-shadow:0 2px 8px rgba(26,45,74,.045)!important}
+.v131-lean-operations .v13-topbar{border:1px solid var(--v131-border);box-shadow:0 2px 8px rgba(26,45,74,.04)!important}
+.v131-lean-operations .v13-command-header.v131-command-header{background:#fff;color:var(--v131-text);border:1px solid var(--v131-border);box-shadow:none!important}
+.v131-lean-operations .v131-command-header h2{font-size:20px;color:var(--v131-text)}
+.v131-lean-operations .v131-command-header p{color:var(--v131-muted);max-width:820px}
+.v131-lean-operations .v131-command-header .btn.ghost{background:#fff;color:#38526f;border-color:#d8e1eb}
+.v131-lean-operations .v13-eyebrow{color:#4f6680}
+.v131-lean-operations .v13-dashboard-main>.panel,.v131-lean-operations .v13-live-header,.v131-lean-operations .v13-monitor-side>.panel,.v131-lean-operations .v13-monitor-video-card{border:1px solid var(--v131-border);box-shadow:none}
+.v131-quick-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 14px}
+.v131-quick-strip button{appearance:none;text-align:left;border:1px solid var(--v131-border);background:#fff;border-radius:12px;padding:13px 14px;cursor:pointer;min-height:86px;box-shadow:none;transition:border-color .12s ease,background .12s ease}
+.v131-quick-strip button:hover{border-color:#b9c9da;background:#fbfcfe}
+.v131-quick-strip span,.v131-quick-strip b,.v131-quick-strip small{display:block}
+.v131-quick-strip span{font-size:10px;font-weight:800;color:#738196;text-transform:uppercase;letter-spacing:.04em}
+.v131-quick-strip b{margin-top:6px;font-size:20px;color:#203149;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v131-quick-strip small{margin-top:4px;font-size:10px;color:#8a96a7}
+.v131-system-summary{display:flex;align-items:flex-start;gap:10px;padding:12px;border:1px solid #e3e9f0;border-radius:10px;background:#fafbfd}
+.v131-system-dot{width:9px;height:9px;border-radius:50%;background:var(--v131-ok);margin-top:4px;box-shadow:0 0 0 3px rgba(30,140,99,.1);flex:0 0 auto}
+.v131-system-summary b,.v131-system-summary small{display:block}.v131-system-summary b{font-size:11px;color:#26364b}.v131-system-summary small{margin-top:3px;color:#7d8999;font-size:9px;line-height:1.4}
+.v131-tech-details{margin-top:10px;border-top:1px solid #edf1f5;padding-top:8px}
+.v131-tech-details summary{cursor:pointer;color:#5f7085;font-size:10px;font-weight:800;list-style:none;padding:6px 0;user-select:none}
+.v131-tech-details summary::-webkit-details-marker{display:none}.v131-tech-details summary:after{content:' +';font-weight:900}.v131-tech-details[open] summary:after{content:' −'}
+.v131-tech-details .v13-perf-grid{margin-top:7px}
+.v131-lean-operations .v13-perf-tags{display:none!important}
+.v131-lean-operations .v13-live-header{background:#fff;box-shadow:none!important}
+.v131-lean-operations .v13-live-header h2{font-size:18px}.v131-lean-operations .v13-live-header p{font-size:11px}
+.v131-lean-operations .v13-dashboard-preview,.v131-lean-operations .v13-monitor-video{border-radius:10px}
+.v131-lean-operations .v13-live-badge,.v131-lean-operations .v13-perf-state,.v131-lean-operations .v13-camera-zone{border-radius:7px}
+.v131-lean-operations .v13-event-row{border-radius:8px;background:#fff}
+.v131-lean-operations .v13-device-row{border-radius:8px;background:#fff}
+.v131-lean-operations .v13-device-row button{border:1px solid #d7e0e9;background:#fff;color:#35506f;border-radius:7px;padding:6px 9px;font-size:9px;font-weight:800;cursor:pointer}
+.v131-lean-operations .v13-device-row button:hover:not(:disabled){background:#f2f6fa}.v131-lean-operations .v13-device-row button:disabled{opacity:.55;cursor:default}
+.v131-lean-operations .v6-health-strip,.v131-lean-operations .v22-pulse-strip{box-shadow:none!important;border:1px solid var(--v131-border)}
+.v131-lean-operations .v201-kpi{box-shadow:none!important;border:1px solid var(--v131-border)!important;background:#fff!important}
+.v131-lean-operations .v201-kpi-glow{display:none!important}
+.v131-lean-operations .v13-top-status,.v131-lean-operations .v13-status-chip,.v131-lean-operations .v13-alert-button,.v131-lean-operations .top-camera-select{box-shadow:none!important;background:#fff}
+.v131-lean-operations .nav-item,.v131-lean-operations .btn,.v131-lean-operations button{transition-duration:.12s!important}
+@media(max-width:1280px){.v131-quick-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.v131-quick-strip{grid-template-columns:1fr}.v131-lean-operations .v13-command-header{align-items:stretch;flex-direction:column}}

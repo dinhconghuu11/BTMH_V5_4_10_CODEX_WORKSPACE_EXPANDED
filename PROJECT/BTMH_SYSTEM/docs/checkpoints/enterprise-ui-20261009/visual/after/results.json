@@ -1,0 +1,913 @@
+{
+  "mode": "AFTER_STATIC_LAYOUT",
+  "results": [
+    {
+      "page": "dashboard",
+      "width": 1910,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "students",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "history",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "ops-center",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "system",
+      "width": 1910,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "recognition",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "live-grid",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "playback",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "register",
+      "width": 1910,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "work-shifts",
+      "width": 1910,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "hr-report",
+      "width": 1910,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "operations",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "incidents",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "visitors",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "admin-security",
+      "width": 1910,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "camera-control",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "live-monitor",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "form": "store",
+      "width": 1920,
+      "height": 1080,
+      "pageWidth": 1910,
+      "overflow": []
+    },
+    {
+      "form": "employee",
+      "width": 1920,
+      "height": 1080,
+      "pageWidth": 1920,
+      "overflow": []
+    },
+    {
+      "form": "system",
+      "width": 1920,
+      "height": 1080,
+      "pageWidth": 1910,
+      "overflow": []
+    },
+    {
+      "form": "report",
+      "width": 1920,
+      "height": 1080,
+      "pageWidth": 1920,
+      "overflow": []
+    },
+    {
+      "page": "dashboard",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "students",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "history",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "ops-center",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "system",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "recognition",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "live-grid",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "playback",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "register",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "work-shifts",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "hr-report",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "operations",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "incidents",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "visitors",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "admin-security",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "camera-control",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "live-monitor",
+      "width": 1430,
+      "height": 900,
+      "viewport": 1440,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "form": "store",
+      "width": 1440,
+      "height": 900,
+      "pageWidth": 1430,
+      "overflow": []
+    },
+    {
+      "form": "employee",
+      "width": 1440,
+      "height": 900,
+      "pageWidth": 1440,
+      "overflow": []
+    },
+    {
+      "form": "system",
+      "width": 1440,
+      "height": 900,
+      "pageWidth": 1430,
+      "overflow": []
+    },
+    {
+      "form": "report",
+      "width": 1440,
+      "height": 900,
+      "pageWidth": 1430,
+      "overflow": []
+    },
+    {
+      "page": "dashboard",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "students",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "history",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "ops-center",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "system",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "recognition",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "live-grid",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "playback",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "register",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "work-shifts",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "hr-report",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "operations",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "incidents",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "visitors",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "admin-security",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "camera-control",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "page": "live-monitor",
+      "width": 1356,
+      "height": 768,
+      "viewport": 1366,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 264
+    },
+    {
+      "form": "store",
+      "width": 1366,
+      "height": 768,
+      "pageWidth": 1356,
+      "overflow": []
+    },
+    {
+      "form": "employee",
+      "width": 1366,
+      "height": 768,
+      "pageWidth": 1366,
+      "overflow": []
+    },
+    {
+      "form": "system",
+      "width": 1366,
+      "height": 768,
+      "pageWidth": 1356,
+      "overflow": []
+    },
+    {
+      "form": "report",
+      "width": 1366,
+      "height": 768,
+      "pageWidth": 1356,
+      "overflow": []
+    },
+    {
+      "page": "dashboard",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "students",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "history",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "ops-center",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "system",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "recognition",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-grid",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "playback",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "register",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "work-shifts",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "hr-report",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "operations",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "incidents",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "visitors",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "admin-security",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "camera-control",
+      "width": 758,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-monitor",
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "form": "store",
+      "width": 768,
+      "height": 1024,
+      "pageWidth": 758,
+      "overflow": []
+    },
+    {
+      "form": "employee",
+      "width": 768,
+      "height": 1024,
+      "pageWidth": 768,
+      "overflow": []
+    },
+    {
+      "form": "system",
+      "width": 768,
+      "height": 1024,
+      "pageWidth": 758,
+      "overflow": []
+    },
+    {
+      "form": "report",
+      "width": 768,
+      "height": 1024,
+      "pageWidth": 768,
+      "overflow": []
+    },
+    {
+      "page": "dashboard",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "students",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "history",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "ops-center",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "system",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "recognition",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-grid",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "playback",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "register",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "work-shifts",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "hr-report",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "operations",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "incidents",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "visitors",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "admin-security",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "camera-control",
+      "width": 380,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "page": "live-monitor",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "hiddenLeaks": [],
+      "controlOverflow": [],
+      "mainLeft": 0
+    },
+    {
+      "form": "store",
+      "width": 390,
+      "height": 844,
+      "pageWidth": 380,
+      "overflow": []
+    },
+    {
+      "form": "employee",
+      "width": 390,
+      "height": 844,
+      "pageWidth": 390,
+      "overflow": []
+    },
+    {
+      "form": "system",
+      "width": 390,
+      "height": 844,
+      "pageWidth": 380,
+      "overflow": []
+    },
+    {
+      "form": "report",
+      "width": 390,
+      "height": 844,
+      "pageWidth": 380,
+      "overflow": []
+    }
+  ],
+  "errors": [],
+  "apiRequests": 0,
+  "hardwareAcceptance": false
+}

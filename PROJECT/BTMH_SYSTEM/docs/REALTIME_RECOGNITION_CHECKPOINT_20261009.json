@@ -1,0 +1,351 @@
+{
+  "timestamp_utc": "2026-10-09T04:11:22.613248+00:00",
+  "status": "PARTIAL_HARDWARE_ACCEPTANCE_PENDING",
+  "source_root": "PROJECT/BTMH_SYSTEM",
+  "git_status_diff": "UNAVAILABLE_NO_GIT_METADATA_OR_CLI",
+  "preserve_prior_changes": true,
+  "production_database_configuration_modified": false,
+  "faceid_pad_thresholds_models_modified": false,
+  "tests": {
+    "python_suite_pass": 153,
+    "node_suite_pass": 101,
+    "isolated_existing_identity_guards_pass": 2,
+    "python_compile_pass": 8,
+    "javascript_syntax_pass": 5,
+    "powershell_parse_pass": 1,
+    "pre_fix_regressions_demonstrated": 5,
+    "legacy_failures": 3,
+    "legacy_control_same_failures_with_old_association": true
+  },
+  "hardware": {
+    "after_camera_benchmark": "NOT_MEASURED",
+    "cpu_gpu_ram": "NOT_MEASURED",
+    "actual_evidence_http_ui": "NOT_INSPECTED",
+    "accuracy_spoof_crossing_soak": "NOT_ACCEPTED"
+  },
+  "next_step": "Ctrl+F5; check saved real evidence card/dialog for 10 seconds. Restart only the existing backend once via its launcher to load the FPS telemetry change. Capture a 30-second allowlisted read-only benchmark or a BLOCKED track sample to diagnose PAD; do not weaken admission.",
+  "files": [
+    {
+      "path": "module_app/camera.py",
+      "sha256": "2cbe66cc715bbd1e6d636cffb905e78f1e88bff7b79ff5b44ca94c68591852a9"
+    },
+    {
+      "path": "module_app/walkby.py",
+      "sha256": "a1c68fa5d2d4bdefaefb2f1d4d6d6b353140d51800093f4e08b6e93a8808eec1"
+    },
+    {
+      "path": "module_app/ai_pipeline_v550.py",
+      "sha256": "b965583c7a9aae049cd2bdf9d619f0cbcf60ff77ec72c51bbcea0eecf019ef96"
+    },
+    {
+      "path": "module_app/main.py",
+      "sha256": "d87c5af4e52f23c242cd91e67073582ead7f4ae4d32bae8c476fd86e485cad2d"
+    },
+    {
+      "path": "frontend/js/app.js",
+      "sha256": "40c911798f3969bb0f15ad9383c3feb7b18d994e5eb345278d706427614528ec"
+    },
+    {
+      "path": "frontend/js/btmh_media_v5410.js",
+      "sha256": "ef2c82e236af5ac7bf5a6c3258b1beab5260f7a0fb73e3e569d475be79cc0077"
+    },
+    {
+      "path": "frontend/js/btmh_recognition_slots.js",
+      "sha256": "947f7b43bab266ced567547f6f9b7a8017135507e5251855d6dcf07f69a0bfe7"
+    },
+    {
+      "path": "frontend/js/btmh_recent_recognition.js",
+      "sha256": "a994a236ddcb70eabd1e1f45a9dd3a923b62ecf6c1465cb88ddf04ec38d215c5"
+    },
+    {
+      "path": "frontend/index.html",
+      "sha256": "3b328bea1b8bf3d260374f1209e9039d5baf2a48a5141c0721a2e3a0aa03ea43"
+    },
+    {
+      "path": "frontend/css/btmh_recognition_slots.css",
+      "sha256": "d4a1751de441a3d9ab50be0cedc4cc0ef249d13db36a1329e4bde9f73ca86cc8"
+    },
+    {
+      "path": "scripts/benchmark_camera_ai.js",
+      "sha256": "8600dc68f9008f5ccbd8230ae14a11f2aa41e7ca6cde5e3acb227a2a8464bac0"
+    },
+    {
+      "path": "scripts/measure_camera_ai_host.ps1",
+      "sha256": "2607d1c9c8237c30689d2fc6969c51485344906283dbfc7cb44725322a1915f3"
+    },
+    {
+      "path": "tests_demo/test_ai_diagnosis_contract.py",
+      "sha256": "73e889249c9faad543de653fbc327537d16905aa19bdf1094f2e4de714115726"
+    },
+    {
+      "path": "tests_v54/test_ai_pipeline_v550.py",
+      "sha256": "987c3dc7ed05c9e5fcc92bc6516888b6a91d5a1b4438c3a49872ad8a18c9b676"
+    },
+    {
+      "path": "tests_v54/test_tracking_assignment_v5410.py",
+      "sha256": "64318143e06baf32849a313b514e3b03ab246ea15192ce4be17ef56b2d1711b5"
+    },
+    {
+      "path": "tests_v54/test_ai_acquisition_v5410.py",
+      "sha256": "ebc00cb44efc75a7f488cc3d8d51d6867a61c95c65841293dc698c872dacd7ce"
+    },
+    {
+      "path": "tests_browser/media_lifecycle.test.cjs",
+      "sha256": "0437b3513093b09d4c027e521dd44af1ada4d24065c8618813b83a775b2ee1e7"
+    },
+    {
+      "path": "tests_browser/media_overlay.test.cjs",
+      "sha256": "1de96fe204aa9b7e77fe4618d6dcbd8138414ef7b5c34fd0e0db702c17b61a6a"
+    },
+    {
+      "path": "tests_browser/media_overlay_labels.test.cjs",
+      "sha256": "c423644fe0b5436afd17c674f7d318f6430c089f36df29fc30674bf96ce2d8da"
+    },
+    {
+      "path": "tests_browser/recognition_slots.test.cjs",
+      "sha256": "214283485a9c750f94cf8aa327296c1bda7c16f647cb9119c497fa23f82a5154"
+    },
+    {
+      "path": "tests_browser/recent_recognition.test.cjs",
+      "sha256": "aa5e8665aa93ddab7947b1ddf524c9c58fc6e6319ae1003d863e532a9d1299b7"
+    },
+    {
+      "path": "tests_browser/camera_ai_benchmark.test.cjs",
+      "sha256": "89c1d5fe51f5ac9ed06e020679ad594e642688f983cd996b2b308a0bd1c56d13"
+    },
+    {
+      "path": "PRODUCT.md",
+      "sha256": "43ef5388627bfe4272176ded607b69533b8ab410922d43e2b74bd50720e43450"
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "df3a4b44c7d43c3c983b965934ed2962144a6befb31b60f359e2a84308f17e11"
+    }
+  ],
+  "files_inventory_scope": "Original recognition snapshot and ui_continuation are historical; current follow-up inventory is photo_pad_followup.files.",
+  "ui_continuation": {
+    "timestamp_utc": "2026-10-09T04:45:31.6374721Z",
+    "status": "SOURCE_AND_STATIC_LAYOUT_DONE_REAL_CAMERA_ACCEPTANCE_PENDING",
+    "node_tests_pass": 102,
+    "javascript_syntax_pass": 4,
+    "visual_layout_pass": 4,
+    "visual_widths": [
+      390,
+      768,
+      1440,
+      1920
+    ],
+    "preview_http_api_requests": 0,
+    "fake_recognition_events_created": false,
+    "extra_thumbnail_streams": false,
+    "protected_prior_source_hashes_unchanged": 6,
+    "visual_evidence": "frontend/.qa_recognition_console/visual-results.json",
+    "refresh": "Ctrl+F5 on the Production recognition page when served from this workspace; no restart needed for these static UI assets",
+    "files": [
+      {
+        "path": "frontend/index.html",
+        "sha256": "a0c4e528975876db7651c83afd971890c2276d440c1149862e7a3606ca63963e"
+      },
+      {
+        "path": "frontend/css/btmh_recognition_console.css",
+        "sha256": "1e879e1bc1c48e27db3d6f334689d402cac699a8f9b32ba7881924bd25b0b92b"
+      },
+      {
+        "path": "frontend/js/btmh_recognition_slots.js",
+        "sha256": "234afee072be0410e47d3738b6efce4ce1f5416a8c857a57298daba66136d2f3"
+      },
+      {
+        "path": "frontend/js/app.js",
+        "sha256": "7edc69be74ee7103a08bb19697b3edd322b57ae5f8f57fa17684a5ef0222cdd0"
+      },
+      {
+        "path": "tests_browser/recognition_slots.test.cjs",
+        "sha256": "c4035470355f6dcbdfed130dfa9babe881e4c4b2f28a0e13446097650ad59e54"
+      },
+      {
+        "path": "tests_browser/visual_recognition_console.cjs",
+        "sha256": "d6aa03b8e8e2af7531f4bda4f65ddaa66692980ed6d02ce92262b1d1ddd6ee1a"
+      },
+      {
+        "path": "PRODUCT.md",
+        "sha256": "b817416ac540dccb74130210692ab984e501d9490a0b1a7a22c3f31bc9a94a58"
+      },
+      {
+        "path": "DESIGN.md",
+        "sha256": "7634abdbb3e9f8df6151532caa7c281652a6c24700f39ee5547563a94054f689"
+      },
+      {
+        "path": "docs/EXECPLAN_REALTIME_RECOGNITION_20261009.md",
+        "sha256": "f3cb835a18d0421a8fffbe2bc4cc569644a61268ae2d48a33e235390807b5a6d"
+      },
+      {
+        "path": "docs/FINAL_REPORT_REALTIME_RECOGNITION_20261009.md",
+        "sha256": "a76f1baab5c8206e002bd2deceab40bcb95d728232d6f5f07d2baaec65e0707c"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "f9fa69304b1878af49e47a6f00747116d2fc8530118e18aec5d512bcd20bdda5"
+      }
+    ]
+  },
+  "photo_pad_followup": {
+    "timestamp_utc": "2026-10-09T05:09:15.690970+00:00",
+    "status": "CONFIRMED_PHOTO_AND_FPS_TELEMETRY_FIXES_TESTED_HIKVISION_PAD_ACCURACY_PENDING",
+    "node_tests_pass": 107,
+    "python_tests_pass": 52,
+    "chrome_photo_regressions_pass": 1,
+    "javascript_syntax_pass": 5,
+    "python_compile_pass": 2,
+    "regressions_failed_before_fix": [
+      "hidden_lazy_image",
+      "unchanged_dialog_poll_cancellation",
+      "frozen_startup_capture_fps"
+    ],
+    "protected_original_source_hashes_verified": 9,
+    "protected_source_hash_mismatches": [],
+    "production_database_configuration_modified": false,
+    "faceid_pad_thresholds_models_modified": false,
+    "production_restarted": false,
+    "production_photo_http_status": "NOT_INSPECTED",
+    "pad_false_reject_cause": "NOT_ESTABLISHED",
+    "host_sample": {
+      "origin": "USER_PROVIDED_AUTHENTICATED_METADATA_SINGLE_SAMPLE",
+      "camera_id": 2,
+      "ai_state": "ACTIVE",
+      "ai_successful_results_current_source": 45,
+      "tracking_age_ms": 19.6,
+      "source_age_ms": 32.3,
+      "ai_detection": {
+        "input_mode": "HIKVISION_SUBSTREAM",
+        "input_seq": 139,
+        "input_width": 640,
+        "input_height": 360,
+        "substream_capture_fps": 310.2,
+        "substream_age_ms": 20.5,
+        "detected_faces": 1,
+        "observed_faces": 1,
+        "observation_errors": 0,
+        "no_face_streak": 0,
+        "recovery_attempted": true
+      },
+      "ai_performance": {
+        "actual_ai_fps": 4,
+        "capture_fps": 19.7,
+        "avg_ai_ms": 91.8,
+        "p95_ai_ms": 295.6,
+        "effective_target_fps": 4,
+        "pad": {
+          "fps": 0.8,
+          "completed": 4,
+          "dropped": 1,
+          "errors": 0,
+          "last_ms": 98.5,
+          "last_latency_ms": 493.9,
+          "last_queue_wait_ms": 1.8,
+          "pending": 1,
+          "stalled": false,
+          "busy": false
+        },
+        "faceid": {
+          "fps": 0,
+          "completed": 0,
+          "dropped": 0,
+          "errors": 0,
+          "pending": 0,
+          "stalled": false,
+          "busy": false
+        },
+        "stage_times": {
+          "work_lock_wait_ms": 0.003,
+          "acquisition_ms": 0.28,
+          "preprocessing_ms": 0.374,
+          "detection_ms": 127.155,
+          "observation_ms": 1.003,
+          "tracking_ms": 0.072,
+          "verification_dispatch_ms": 50.633,
+          "sample_total_ms": 178.88,
+          "capture_to_result_ms": 241.855
+        }
+      },
+      "tracks": [
+        {
+          "recognized": false,
+          "spoof_blocked": false,
+          "status": "VERIFYING_PASSIVE",
+          "pad_status": "PENDING",
+          "verification_reason_code": "PAD_CHECKING",
+          "pad_live_score": null,
+          "pad_spoof_score": null,
+          "face_quality": {
+            "face_px": 90,
+            "score": 0.6853,
+            "sharpness": 6064.92,
+            "brightness": 57.4,
+            "contrast": 40.3
+          }
+        }
+      ],
+      "interpretation": "PAD pending, not the BLOCKED screenshot. Lane completion counters do not establish results applied to this current track. 493.9 ms is below the 2000 ms validity limit. Startup FPS metric is frozen in the pre-fix source. No accuracy inference."
+    },
+    "isolated_real_browser_qa": {
+      "technical_image_pixels": 4,
+      "real_face_images": 0,
+      "http_api_requests": 0
+    },
+    "next_step": "Ctrl+F5; check saved real evidence card/dialog for 10 seconds. Restart only the existing backend once via its launcher to load the FPS telemetry change. Capture a 30-second allowlisted read-only benchmark or a BLOCKED track sample to diagnose PAD; do not weaken admission.",
+    "files": [
+      {
+        "path": "frontend/js/btmh_recent_recognition.js",
+        "sha256": "c8073279228ebf0ecd7d09c679dc76d96a5703c99eba3bdc69b1eabb8b438752"
+      },
+      {
+        "path": "frontend/index.html",
+        "sha256": "fb030853bf66500f2d6ed6bfc58ab3d064cfa59e2ea741ef93ce9c84fd5e2f18"
+      },
+      {
+        "path": "module_app/ai_capture_v550.py",
+        "sha256": "e3b3476a48ff377c4e61e8e88c0d9d44ccdad0710b32ea393e2c5f84e935f833"
+      },
+      {
+        "path": "scripts/benchmark_camera_ai.js",
+        "sha256": "c3f3124a0b6baba9fbed53e867a211a9723d2c6ae810624e4ea4e8854bd9ca69"
+      },
+      {
+        "path": "tests_browser/recent_recognition.test.cjs",
+        "sha256": "898f2bfcfcf681fed76b39f6282bfae13d6d751e3d528855a3e234a1affa734b"
+      },
+      {
+        "path": "tests_browser/camera_ai_benchmark.test.cjs",
+        "sha256": "6e9697098c7c48056a7d56b3756fcf0f6f7154045d06c969b930abb91786c09f"
+      },
+      {
+        "path": "tests_browser/visual_recognition_console.cjs",
+        "sha256": "6fbfce088d2460827751f60edae89a774f8d2146309127cc295e2c103ea7e388"
+      },
+      {
+        "path": "tests_v54/test_ai_capture_v550.py",
+        "sha256": "c5a31964c4e7ce0abc7fc6404d47328f15e2022d400fd301f48adcfb5ae02085"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "18033c1afd842cb470bc3077dc85183084d2e7a9742b1379c2fdcb39f23ebbd0"
+      },
+      {
+        "path": "docs/EXECPLAN_REALTIME_RECOGNITION_20261009.md",
+        "sha256": "4a40656ed72cc4cb1aaab36f171ce4af065ad9d9016ae5818437d1922c9a81a6"
+      },
+      {
+        "path": "docs/FINAL_REPORT_REALTIME_RECOGNITION_20261009.md",
+        "sha256": "5000cb8e70fa88407a3cc076d57f046077c181845101ad4cae433c85a324449e"
+      },
+      {
+        "path": "docs/CAMERA_AI_FOLLOWUP_EVIDENCE_20261009.json",
+        "sha256": "b7ef83fdb56a19e756daeff3df282719a7e089acece08e3c55d506387285a5cf"
+      },
+      {
+        "path": "frontend/.qa_evidence_photos/visual-results.json",
+        "sha256": "e6c7a18aecf3819e4883682e83553c85a18300e0e18d557a1f4fef45f96ab1b2"
+      }
+    ]
+  }
+}

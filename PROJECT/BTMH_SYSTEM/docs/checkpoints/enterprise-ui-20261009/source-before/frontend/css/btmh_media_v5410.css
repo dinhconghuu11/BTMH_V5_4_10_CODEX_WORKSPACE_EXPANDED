@@ -1,0 +1,18 @@
+/* BTMH 5.4.10 realtime transport layers. */
+.btmh-media-video,.btmh-media-canvas{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  display:none;z-index:1;background:#05070a;pointer-events:none;
+  object-position:center center;transform:translateZ(0);backface-visibility:hidden;
+}
+.btmh-media-video.btmh-media-active,.btmh-media-canvas.btmh-media-active{display:block!important}
+.btmh-media-legacy{z-index:1!important}
+.btmh-media-legacy:not(.btmh-media-active){display:none!important}
+.btmh-media-overlay{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;z-index:3!important;pointer-events:none!important;background:transparent!important}
+.entry-camera-wrap,.v13-dashboard-preview,.v13-monitor-video{position:relative;overflow:hidden;background:#05070a}
+#recognitionVideo{z-index:1!important;visibility:visible!important}
+#recognitionOverlay{z-index:3!important;pointer-events:none!important}
+/* Keep technical HUDs out of camera footage; metrics remain available in panels. */
+.v13-dashboard-preview .v13-preview-hud,
+.v13-monitor-video .v13-monitor-overlay,
+.v6-camera-preview .v6-camera-overlay,
+.entry-camera-wrap .entry-camera-hud{display:none!important}

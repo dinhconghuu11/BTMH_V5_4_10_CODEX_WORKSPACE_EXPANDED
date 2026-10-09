@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-09",
+  "commercial_release_status": "NOT_PRODUCTION_READY",
+  "production_database_touched": false,
+  "official_artifact_acquisition": {
+    "status": "PASS",
+    "details": "Five pinned artifacts acquired and SHA256 verified; 60 Windows/portable wheels downloaded from official PyPI for unchanged runtime/media requirements.",
+    "artifacts": ["MediaMTX 1.21.1 Windows amd64", "Python 3.12.10 amd64 installer", "YuNet 2023mar", "SFace 2021dec", "MiniFASNetV2 yakhyo export"],
+    "python_authenticode": {"status": "Valid", "publisher": "Python Software Foundation"},
+    "acquisition_record": ".qa_production/artifact-acquisition.json"
+  },
+  "auth_focused_suites": {
+    "asgi_routing_qr": {"passed": 9, "data": "isolated SQLite", "hardware": "NOT_RUN"},
+    "bootstrap_transaction_service": {"passed": 7, "sqlite_concurrency": "PASS", "real_postgresql": "NOT_RUN"},
+    "existing_sms_mfa": {"passed": 42, "live_sms_delivery": "NOT_RUN"},
+    "node_auth_routing": {"passed": 11},
+    "node_auth_account": {"passed": 10},
+    "node_mobile_enrollment": {"passed": 22},
+    "node_qr_admin": {"passed": 25},
+    "node_desktop_enrollment": {"passed": 13},
+    "node_media_lifecycle": {"passed": 45, "note": "Initial 44 PASS/1 stale technical-copy assertion; fixture corrected to current approved customer status while retaining quality/cleanup checks; final 45 PASS."}
+  },
+  "mediamtx_actual": {
+    "offline_import": "PASS",
+    "supported_binary_discovery": "PASS",
+    "executed_version": "v1.21.1",
+    "test_root": ".qa_production/media-runtime",
+    "real_camera_webrtc": "NOT_RUN"
+  },
+  "offline_python_dependencies_actual": {
+    "status": "PASS",
+    "python": "3.12.10",
+    "venv": ".qa_production/offline-venv",
+    "installed_packages": 60,
+    "install_flags": "--no-index --find-links vendor/wheels",
+    "pip_check": "No broken requirements found",
+    "downloaded_python_installer_execution": "NOT_RUN",
+    "clean_windows_offline_install": "NOT_RUN"
+  },
+  "actual_models": {
+    "yunet_sface_load": "PASS",
+    "pad_onnxruntime_model_probe": "PASS",
+    "pad_profile": "yakhyo_live1_raw255",
+    "ffmpeg_resolution": "PASS",
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev",
+    "ffmpeg_build_flags": ["--enable-gpl", "--enable-version3", "--enable-static"],
+    "evidence": ".qa_production/model-runtime-results.json",
+    "real_person_spoof_accuracy_gpu": "NOT_RUN"
+  },
+  "exact_runtime_localhost_http": {
+    "passed": 8,
+    "frontend_pages": 3,
+    "local_assets": 36,
+    "auth_session_rbac_qr_api": "PASS",
+    "server_cleanup": "PASS",
+    "profile": "isolated preview test profile with forbidden hardware/external network",
+    "production_startup": "NOT_RUN"
+  },
+  "production_startup_focused": {
+    "passed": 16,
+    "real_windows_batch_control_flow": "PASS in isolated fixture",
+    "inherited_preview_rejected_before_mutation": "PASS",
+    "server_lifespan_bind_browser_order": "PASS unit collaborator tests",
+    "mediamtx_launcher_importer_suites": {"passed": 25},
+    "real_production_database_startup": "NOT_RUN"
+  },
+  "offline_packaging_focused": {
+    "passed": 16,
+    "payload_hash_tampering_unlisted_wheels": "PASS",
+    "active_upgrade_read_only_refusal": "PASS with actual live isolated test interpreter",
+    "remote_wheel_direct_dependency_network_refusal": "PASS",
+    "python_compile": "PASS",
+    "powershell_parse": "PASS"
+  },
+  "final_static_checks": {
+    "changed_python_compiles": 12,
+    "powershell_parses": 3,
+    "javascript_syntax_checks": 3,
+    "json_evidence_parses": 3,
+    "status": "PASS"
+  },
+  "actual_payload_gate": {
+    "status": "BLOCKED",
+    "dependency_resolution": "PASS",
+    "wheels": 60,
+    "verified_artifacts": 5,
+    "blocked_issues": 14,
+    "report": "docs/OFFLINE_PAYLOAD_AUDIT_20261009.json",
+    "actual_build_native_exit": 2,
+    "stage_created": false,
+    "zip_created": false,
+    "installer_exe_build": "NOT_RUN"
+  },
+  "official_production_entrypoint": {
+    "command": "START_CAMPUSFACE.bat",
+    "default_url": "http://127.0.0.1:8100/",
+    "url_condition": "Configured port may differ; WEB_READY is printed only after successful backend lifespan and bind. No operational Production server is claimed."
+  },
+  "external_acceptance": {
+    "rendered_browser": "BLOCKED: current CUA inventory apps=[] browsers=[]",
+    "real_postgresql": "NOT_RUN",
+    "actual_rtsp_webrtc_four_cameras": "NOT_RUN",
+    "gpu_load_soak": "NOT_RUN",
+    "phone_trusted_https_pad_capture": "NOT_RUN",
+    "clean_windows_install_upgrade_backup_restore": "NOT_RUN",
+    "full_verify_release_rerun": "NOT_RUN: focused scope; hundreds of unchanged master checks were not repeated"
+  }
+}

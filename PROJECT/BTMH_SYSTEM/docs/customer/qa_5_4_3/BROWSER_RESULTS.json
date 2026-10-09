@@ -1,0 +1,70 @@
+{
+  "fixture": "Real DOM/CSS/JS + local HTTP bridge, simulated WebSocket, synthetic camera/SQLite; not a hardware/cookie browser test",
+  "login_layout": {
+    "brand": [
+      0,
+      737.546875
+    ],
+    "form": [
+      853.765625,
+      470
+    ],
+    "overflow": false
+  },
+  "sources": [
+    "Camera laptop · đang dùng",
+    "Camera PTZ · chưa kiểm tra",
+    "Hikvision - Cong chinh · chưa kiểm tra",
+    "WyreStorm - Phong hop · chưa kiểm tra"
+  ],
+  "sources_after_recognition": [
+    "Camera laptop · đang dùng",
+    "Camera PTZ · chưa kiểm tra",
+    "Hikvision - Cong chinh · chưa kiểm tra",
+    "WyreStorm - Phong hop · chưa kiểm tra"
+  ],
+  "switch_to_network_alias": "CAM03",
+  "switch_back_laptop": "passed",
+  "navigation": {
+    "transitions": 54,
+    "max_ms_with_wait": 250.8,
+    "all_correct": true
+  },
+  "realtime": {
+    "previews": 1,
+    "inFlight": 0,
+    "jobs": 0
+  },
+  "after_leave": {
+    "previews": 0,
+    "inFlight": 0,
+    "jobs": 0
+  },
+  "click_navigation": "passed",
+  "sockets": {
+    "active": 1,
+    "peak": 1
+  },
+  "mobile_drawer": "passed",
+  "support_and_password_toggle": "passed",
+  "viewport_390": {
+    "overflow": false,
+    "formWidth": 358
+  },
+  "viewport_768": {
+    "overflow": false,
+    "formWidth": 352
+  },
+  "viewport_1280": {
+    "overflow": false,
+    "formWidth": 470
+  },
+  "reduced_motion": "none",
+  "setup_mobile_layout": {
+    "scrollable": true,
+    "top": 146,
+    "overflow": false
+  },
+  "errors": [],
+  "http_failures": []
+}

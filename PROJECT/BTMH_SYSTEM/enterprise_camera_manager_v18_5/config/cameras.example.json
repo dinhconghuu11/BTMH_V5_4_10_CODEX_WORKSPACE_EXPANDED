@@ -1,0 +1,15 @@
+[
+  {
+    "name": "A101-IN",
+    "type": "hikvision_rtsp",
+    "ip": "192.168.1.200",
+    "rtsp": "/Streaming/Channels/101",
+    "username": "admin",
+    "password": "CHANGE_ME",
+    "campus": "MAIN",
+    "building": "A",
+    "floor": "1",
+    "room": "A101",
+    "enabled": true
+  }
+]

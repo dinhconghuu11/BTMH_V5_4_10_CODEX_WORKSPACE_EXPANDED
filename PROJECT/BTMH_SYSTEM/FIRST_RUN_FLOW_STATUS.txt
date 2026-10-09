@@ -1,0 +1,1 @@
+5.4.2: first owner setup creates a password session. SMS is optional until verified enrollment. Already enabled TOTP remains protected. See docs/customer/SMS_SETUP.md.

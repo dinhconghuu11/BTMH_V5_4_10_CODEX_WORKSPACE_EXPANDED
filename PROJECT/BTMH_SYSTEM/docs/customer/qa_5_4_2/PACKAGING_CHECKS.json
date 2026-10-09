@@ -1,0 +1,12 @@
+{
+  "source": "5.4.1 -> 5.4.2 incremental SMS RC",
+  "customer_and_development_modified_files_identical": true,
+  "no_packaged_runtime_keys_database_credentials_logs": true,
+  "no_fixed_owner_credential_literal": true,
+  "no_font_files_distributed": true,
+  "pytest_result": "66 passed, 4 deprecation warnings",
+  "release_verify_result": "35 PASS, 0 FAIL",
+  "live_sms_sent": false,
+  "windows_postgresql_hardware_acceptance": "NOT RUN",
+  "external_zip_integrity_report": "BTMH_V5_4_2_SMS_ZIP_CHECKS.json"
+}

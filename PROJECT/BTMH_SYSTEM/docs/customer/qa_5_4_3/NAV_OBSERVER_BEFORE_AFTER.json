@@ -1,0 +1,12 @@
+{
+  "5.4.2": {
+    "observerCallbacks": 1001,
+    "safetyCapReached": true,
+    "open": true
+  },
+  "5.4.3": {
+    "observerCallbacks": 0,
+    "safetyCapReached": false,
+    "open": true
+  }
+}

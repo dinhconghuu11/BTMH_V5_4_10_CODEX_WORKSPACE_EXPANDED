@@ -1,0 +1,16 @@
+{
+  "yunet_sface_load": "PASS",
+  "passive_pad_model_probe": "PASS",
+  "passive_pad": {
+    "enabled": true,
+    "ready": true,
+    "model": "C:\\FACE\\BTMH_V5_4_10_CODEX_WORKSPACE_EXPANDED\\PROJECT\\BTMH_SYSTEM\\.qa_production\\model-runtime\\models\\minifasnet_v2.onnx",
+    "backend": "onnxruntime",
+    "sha256": "b32929adc2d9c34b9486f8c4c7bc97c1b69bc0ea9befefc380e4faae4e463907",
+    "profile": "yakhyo_live1_raw255",
+    "error": ""
+  },
+  "ffmpeg_resolved": true,
+  "python": "3.12.10",
+  "real_face_spoof_camera_gpu_acceptance": "NOT_RUN"
+}

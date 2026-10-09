@@ -1,0 +1,23 @@
+{
+  "folders": [
+    { "name": "BTMH V5.4.10 CODEX", "path": "." }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "PROJECT/BTMH_SYSTEM/logs/**": true,
+      "PROJECT/BTMH_SYSTEM/backups/**": true
+    },
+    "search.exclude": {
+      "PROJECT/BTMH_SYSTEM/vendor_py/**": true,
+      "PROJECT/BTMH_SYSTEM/vendor/**": true,
+      "PROJECT/BTMH_SYSTEM/logs/**": true,
+      "PROJECT/BTMH_SYSTEM/backups/**": true,
+      "PROJECT/BTMH_SYSTEM/tests_legacy/**": true
+    },
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": ["PROJECT/BTMH_SYSTEM/tests_v54"],
+    "editor.formatOnSave": false
+  }
+}

@@ -1,0 +1,106 @@
+/* CampusFace V2.7 - Professional Clean UI
+   Visual goal: operational data first, no tutorial copy, no colliding blocks. */
+html,body{overflow-x:hidden}
+.main,.page,.panel,.table-wrap,.v13-dashboard-main>*{min-width:0}
+.page{padding-bottom:16px}
+
+/* Top bar: keep page title on one line and let controls reflow before collision. */
+.v13-topbar{display:grid!important;grid-template-columns:minmax(190px,.45fr) minmax(0,1.55fr);align-items:center!important;gap:12px!important}
+.v13-page-heading{min-width:0}
+.v13-page-heading h1{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:1.35rem!important}
+.v13-page-heading p{display:none!important}
+.v13-top-actions{min-width:0!important;justify-content:flex-end!important}
+.v13-top-status{min-width:120px;max-width:205px!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.v13-camera-select{min-width:145px;max-width:190px;flex:0 1 190px}
+.v13-camera-select select{min-width:0!important;width:100%;max-width:172px;text-overflow:ellipsis}
+.v23-user-chip{min-width:0;max-width:190px}
+.v23-user-chip>div{min-width:0}.v23-user-chip b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Remove explanatory/tutorial copy while retaining live state, labels and controls. */
+.v13-command-header p,.v13-live-header p,.panel-head p,.office-head p,.camera-control-head p,
+.history-workspace-intro p,.history-workspace-intro small,.prod-history-toolbar-copy p,
+.faceid-v13-simple-help,.faceid-pro-progress-note,.v131-run-hint,.classroom-safety-note,
+.camera-control-note,.office-gate-help{display:none!important}
+#page-history .prod-history-kpi small{display:none!important}
+#page-office .pr-eyebrow,#page-camera-control .pr-eyebrow{display:none!important}
+#page-history .prod-eyebrow{display:none!important}
+
+/* Less decorative copy, tighter cards. */
+.v131-quick-strip small{display:none!important}
+.v131-quick-strip button{min-height:70px!important;padding:11px 13px!important}
+.v131-system-summary small{display:none!important}
+.v131-system-summary{padding:10px 12px!important;align-items:center!important}
+.panel-head{gap:12px;flex-wrap:wrap!important;align-items:center!important}
+.panel-head>div{min-width:0}
+.panel-head h2{margin-bottom:0!important}
+
+/* History becomes compact and data-first. */
+#page-history .history-split-switch{position:relative!important;top:auto!important;z-index:2!important;grid-template-columns:1fr 1fr!important;gap:8px!important;padding:8px!important;margin-bottom:10px!important}
+#page-history .history-split-switch button{grid-template-columns:36px minmax(0,1fr)!important;gap:10px!important;min-height:54px!important;padding:8px 11px!important}
+#page-history .history-split-switch .history-split-icon{width:36px!important;height:36px!important;border-radius:10px!important}
+#page-history .history-split-switch b{font-size:13px!important;margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#page-history .history-split-switch small,#page-history .history-split-switch em{display:none!important}
+#page-history .history-workspace-intro{padding:11px 14px!important;margin-bottom:10px!important;min-height:52px!important}
+#page-history .history-workspace-intro>div:first-child>span{display:none!important}
+#page-history .history-workspace-intro h2{font-size:16px!important;margin:0!important}
+#page-history .history-policy-chip{flex:0 0 auto}
+#page-history .history-hr-overview{grid-template-columns:1fr!important;gap:10px!important;margin:10px 0!important}
+#page-history .history-current-panel{padding:14px 16px!important}
+#page-history .prod-history-kpis{gap:8px!important}
+#page-history .prod-history-kpi{min-height:82px!important;padding:12px 14px!important}
+#page-history .prod-history-kpi b{margin-top:6px!important}
+#page-history .prod-history-toolbar{gap:12px!important}
+#page-history .prod-history-toolbar-copy{min-width:120px}
+#page-history .prod-history-filters{min-width:0;gap:8px!important}
+#page-history .prod-history-filters .field{min-width:0}
+#page-history .prod-history-search{min-width:180px!important}
+#page-history .prod-history-table-wrap{overflow:auto;max-width:100%}
+#page-history .prod-history-table{min-width:840px}
+
+/* Office view: prevent name/action cards and controls from colliding. */
+#page-office .office-head{padding:17px 20px!important;gap:14px!important}
+#page-office .office-head h2{margin:0!important;font-size:21px!important}
+#page-office .office-main-grid>*{min-width:0}
+#page-office .office-camera-card,#page-office .office-gate-card,#page-office .office-people-card,#page-office .office-events-card{padding:16px!important}
+#page-office .office-person{grid-template-columns:38px minmax(0,1fr) auto!important}
+#page-office .office-person>div:nth-child(2){min-width:0}
+#page-office .office-person b,#page-office .office-person small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#page-office .office-person-action{max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#page-office .office-action-strip{gap:7px!important}
+#page-office .office-action-strip div{min-width:0;padding:9px 10px!important}
+#page-office .office-camera-hud{max-width:calc(100% - 24px);flex-wrap:wrap;gap:6px!important}
+#page-office .office-gate-controls{gap:7px!important}
+#page-office .office-gate-card>small{font-size:10px!important;margin-top:7px!important}
+
+/* Camera control and forms: allow clean wrapping instead of overlap. */
+#page-camera-control .camera-control-head{padding:17px 20px!important;gap:14px!important}
+#page-camera-control .camera-control-head h2{margin:0!important}
+#page-camera-control .camera-control-grid>*{min-width:0}
+.toolbar-actions,.office-head-actions,.v13-live-actions,.v13-command-actions{flex-wrap:wrap}
+.field,input,select,textarea{min-width:0}
+.table-wrap{max-width:100%;overflow:auto}
+
+/* Responsive safety: wrap status controls before they touch the page title. */
+@media(max-width:1520px){
+  .v13-topbar{grid-template-columns:1fr!important;align-items:start!important}
+  .v13-top-actions{justify-content:flex-start!important;flex-wrap:wrap!important;width:100%}
+  .v13-top-status{max-width:260px!important}
+}
+@media(max-width:1180px){
+  #page-history .prod-history-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  #page-history .prod-history-insights{grid-template-columns:1fr!important}
+  #page-office .office-main-grid{grid-template-columns:1fr!important}
+  #page-office .office-side-stack{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:820px){
+  .main{padding-left:14px!important;padding-right:14px!important}
+  #page-history .history-split-switch{grid-template-columns:1fr!important}
+  #page-history .prod-history-kpis{grid-template-columns:1fr 1fr!important}
+  #page-office .office-side-stack{grid-template-columns:1fr!important}
+  #page-office .office-kpis{grid-template-columns:1fr 1fr!important}
+  #page-office .office-action-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:560px){
+  #page-history .prod-history-kpis,#page-office .office-kpis{grid-template-columns:1fr!important}
+  .v13-top-actions>*{max-width:100%!important}
+}

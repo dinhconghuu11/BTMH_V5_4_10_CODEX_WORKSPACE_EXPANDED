@@ -1,0 +1,49 @@
+:root { color-scheme: light; --wine: #521a2b; --wine-dark: #37131f; --ivory: #f5f1e9; --paper: #fffdf9; --gold: #b68a38; --line: #dfd7ca; --ink: #29232a; --muted: #6c6162; --danger: #9f2635; --success: #236343; font-family: "Segoe UI", Arial, sans-serif; background: var(--ivory); color: var(--ink); }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+.mobile-enrollment { width: min(600px, 100%); margin: 0 auto; padding: 28px 18px max(24px, env(safe-area-inset-bottom)); }
+.mobile-enrollment-brand { display: flex; gap: 13px; align-items: center; margin: 0 0 23px; }
+.mobile-enrollment-brand img { width: 40px; height: 47px; object-fit: contain; }
+.mobile-enrollment-brand b { display: block; color: var(--wine); font-size: 17px; font-weight: 650; }
+.mobile-enrollment-brand span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
+.mobile-enrollment-card { padding: 25px; border: 1px solid var(--line); border-radius: 17px; background: var(--paper); box-shadow: 0 8px 35px #37131f09; }
+h1 { color: var(--wine); font-size: 25px; line-height: 1.3; margin: 12px 0; letter-spacing: -.025em; }
+.mobile-enrollment-heading p, .mobile-enrollment-hint, footer { color: var(--muted); font-size: 12px; line-height: 1.8; }
+.mobile-enrollment-feedback { padding: 12px 14px; border-radius: 9px; background: var(--ivory); color: var(--muted); font-size: 12px; line-height: 1.8; }
+.mobile-enrollment-feedback.error { color: var(--danger); background: #fff0ee; }
+.mobile-enrollment-feedback.success { color: var(--success); }
+.mobile-enrollment-identity { display: grid; gap: 5px; padding: 17px 0; margin-bottom: 15px; border-bottom: 1px solid var(--line); }
+.mobile-enrollment-identity b { font-size: 16px; overflow-wrap: anywhere; }
+.mobile-enrollment-identity :is(span, small) { color: var(--muted); font-size: 11px; line-height: 1.7; }
+.mobile-enrollment-consent { display: flex; gap: 11px; align-items: start; margin: 17px 0; font-size: 12px; line-height: 1.9; }
+.mobile-enrollment-consent input { width: 18px; height: 18px; margin: 4px 0 0; accent-color: var(--wine); flex: 0 0 auto; }
+.mobile-button { min-height: 46px; padding: 12px 17px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); color: var(--wine); font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+.mobile-button.primary { background: var(--wine); border-color: var(--wine); color: var(--paper); }
+.mobile-button:disabled { opacity: .48; cursor: default; }
+#mobileConsentButton { width: 100%; }
+.mobile-enrollment-camera { position: relative; aspect-ratio: 3 / 4; width: min(100%, 380px); max-height: 460px; margin: 18px auto 0; background: #241b25; border-radius: 14px; overflow: hidden; }
+.mobile-enrollment-camera video { width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); }
+.mobile-enrollment-camera > p { position: absolute; inset: 0; display: grid; place-items: center; padding: 25px; color: #e0d3cd; font-size: 12px; line-height: 1.8; text-align: center; }
+.mobile-enrollment-guide { position: absolute; inset: 15% 18%; border: 1px solid #eadabd99; border-radius: 50%; pointer-events: none; }
+.mobile-enrollment-phases { display: flex; justify-content: space-between; gap: 5px; list-style: none; margin: 16px 0 20px; padding: 0; }
+.mobile-enrollment-phases li { flex: 1; padding: 8px 2px; border-bottom: 2px solid var(--line); color: var(--muted); text-align: center; font-size: 9px; line-height: 1.5; }
+.mobile-enrollment-phases li.active { color: var(--wine); border-color: var(--wine); font-weight: 650; }
+.mobile-enrollment-phases li.complete { color: var(--success); border-color: var(--success); }
+#mobileEnrollmentGuidance { font-size: 17px; color: var(--wine); text-align: center; margin: 0 0 9px; }
+.mobile-enrollment-hint { text-align: center; margin: 0 0 18px; }
+.mobile-enrollment-progress { margin: 18px 0; }
+.mobile-enrollment-progress label { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: 10px; line-height: 1.8; }
+.mobile-enrollment-progress b { color: var(--wine); font-weight: 600; }
+.mobile-enrollment-progress progress { width: 100%; height: 6px; margin-top: 9px; accent-color: var(--wine); border: 0; border-radius: 8px; overflow: hidden; }
+.mobile-enrollment-progress p { font-size: 11px; color: var(--muted); line-height: 1.7; }
+.mobile-enrollment-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+#mobileEnrollmentSubmit { grid-column: 1 / -1; }
+.mobile-enrollment-result { text-align: center; padding: 24px 0; }
+.mobile-enrollment-result h2 { color: var(--wine); font-size: 20px; margin: 0 0 10px; }
+.mobile-enrollment-result p { color: var(--muted); font-size: 12px; line-height: 1.9; }
+.mobile-enrollment-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 15px; margin-top: 20px; }
+.mobile-text-button { background: none; border: none; color: var(--muted); padding: 10px 4px; font: inherit; font-size: 12px; cursor: pointer; }
+footer { padding: 20px 7px 0; text-align: center; font-size: 10px; }
+[hidden] { display: none !important; }
+:is(button, input):focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 390px) { .mobile-enrollment { padding: 20px 12px; } .mobile-enrollment-card { padding: 20px 16px; } h1 { font-size: 23px; } }

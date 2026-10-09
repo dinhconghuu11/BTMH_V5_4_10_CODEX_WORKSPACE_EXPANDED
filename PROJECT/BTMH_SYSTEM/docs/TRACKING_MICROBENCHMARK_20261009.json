@@ -1,0 +1,50 @@
+{
+  "type": "ISOLATED_GEOMETRY_MICROBENCHMARK",
+  "real_camera": false,
+  "model_inference": false,
+  "results": [
+    {
+      "implementation": "archived_greedy",
+      "faces": 2,
+      "samples": 200,
+      "median_ms": 0.0104,
+      "p95_ms": 0.013
+    },
+    {
+      "implementation": "current_global_motion",
+      "faces": 2,
+      "samples": 200,
+      "median_ms": 0.0201,
+      "p95_ms": 0.0261
+    },
+    {
+      "implementation": "archived_greedy",
+      "faces": 4,
+      "samples": 200,
+      "median_ms": 0.0337,
+      "p95_ms": 0.0458
+    },
+    {
+      "implementation": "current_global_motion",
+      "faces": 4,
+      "samples": 200,
+      "median_ms": 0.0629,
+      "p95_ms": 0.0763
+    },
+    {
+      "implementation": "archived_greedy",
+      "faces": 10,
+      "samples": 200,
+      "median_ms": 0.1463,
+      "p95_ms": 0.1604
+    },
+    {
+      "implementation": "current_global_motion",
+      "faces": 10,
+      "samples": 200,
+      "median_ms": 0.3182,
+      "p95_ms": 0.3291
+    }
+  ],
+  "note": "Compares association overhead only. Not real FPS, recognition latency, accuracy or commercial acceptance."
+}

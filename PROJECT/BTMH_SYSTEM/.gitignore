@@ -1,0 +1,5 @@
+# Isolated UI Preview contains local accounts, session keys and test data.
+.btmh-ui-preview/
+# Isolated headless UI QA profiles are browser runtime artifacts, not source.
+frontend/.qa_recognition_console/chrome-profile-*/
+frontend/.qa_evidence_photos/chrome-profile-*/

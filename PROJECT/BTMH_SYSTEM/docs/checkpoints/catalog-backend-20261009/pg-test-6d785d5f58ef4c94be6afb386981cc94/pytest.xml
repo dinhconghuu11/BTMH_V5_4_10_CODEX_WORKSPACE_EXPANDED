@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="10" failures="0" skipped="0" tests="10" time="4.447" timestamp="2026-10-09T15:48:54.013831+07:00" hostname="DESKTOP-D5OAHIS"><testcase classname="tests_v54.test_catalog_backend" name="test_migration_dry_run_schema_only_mapping_and_repeatability" time="0.522"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_mapping_failure_rolls_back_schema_and_does_not_merge_variants" time="0.127"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_store_metadata_status_dependencies_history_and_scope" time="0.147"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_zone_crud_ids_scope_assignment_and_reference_protection" time="0.126"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_audit_failure_rolls_back_camera_store_and_zone" time="0.139"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_camera_name_validation_and_source_free_api[]" time="0.177"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_camera_name_validation_and_source_free_api[rtsp://test:credential@example.test/stream]" time="0.206"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_camera_name_validation_and_source_free_api[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]" time="0.244"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_new_routes_preserve_permission_mapping_and_scope" time="0.295"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase><testcase classname="tests_v54.test_catalog_backend" name="test_primary_auxiliary_rename_preserves_live_state_and_behavior_change_retires" time="0.193"><error message="failed on setup with &quot;RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.&quot;">tests_v54\test_catalog_backend.py:49: in isolated
+    ensure_production_schema(seed_cameras=False)
+module_app\production_ops.py:302: in ensure_production_schema
+    with connection() as conn:
+         ^^^^^^^^^^^^
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+module_app\db.py:88: in connection
+    raise RuntimeError(
+E   RuntimeError: PostgreSQL credential is missing. Run SETUP_POSTGRESQL_WINDOWS.bat or set CAMPUSFACE_POSTGRES_PASSWORD for maintenance/testing.</error></testcase></testsuite></testsuites>

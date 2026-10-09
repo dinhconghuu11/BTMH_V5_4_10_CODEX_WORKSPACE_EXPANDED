@@ -1,0 +1,255 @@
+/* CampusFace Enterprise Release UI
+   Release surface only: concise, management-first, low-noise. */
+:root{
+  --bg:#f5f7fb;
+  --bg-soft:#f8fafc;
+  --surface:#ffffff;
+  --surface-strong:#ffffff;
+  --surface-soft:#f8fafc;
+  --surface-dark:#0f172a;
+  --ink:#172033;
+  --ink-soft:#475569;
+  --muted:#7b8799;
+  --line:#e4e9f1;
+  --line-strong:#d5dce7;
+  --primary:#2563eb;
+  --primary-strong:#1d4ed8;
+  --primary-soft:#eff6ff;
+  --secondary:#0f766e;
+  --secondary-soft:#ecfdf5;
+  --success:#059669;
+  --success-soft:#ecfdf5;
+  --danger:#dc2626;
+  --danger-soft:#fef2f2;
+  --warning:#d97706;
+  --warning-soft:#fff7ed;
+  --radius-sm:8px;
+  --radius-md:12px;
+  --radius-lg:16px;
+  --radius-xl:18px;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.04);
+  --shadow-md:0 8px 24px rgba(15,23,42,.055);
+  --shadow-lg:0 14px 36px rgba(15,23,42,.08);
+  --sidebar-w:232px;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink)}
+*{scrollbar-width:thin;scrollbar-color:#cbd5e1 transparent}
+.sidebar{
+  width:var(--sidebar-w);
+  padding:18px 12px 14px;
+  gap:12px;
+  background:#111b31;
+  border-right:1px solid #1d2942;
+  box-shadow:none;
+}
+.sidebar::after{display:none}
+.brand{padding:4px 8px 14px;gap:10px}
+.brand-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:#2563eb;box-shadow:none;font-size:18px
+}
+.brand strong{font-size:15px;letter-spacing:-.02em}
+.brand small{font-size:11px;margin-top:2px;color:#94a3b8}
+.sidebar nav{gap:3px}
+.nav-item{
+  min-height:42px;padding:10px 11px;border-radius:10px;
+  color:#b5c0d3;font-size:13px;font-weight:650;gap:9px
+}
+.nav-item span{width:20px;font-size:14px}
+.nav-item:hover{background:#172641;color:#fff;box-shadow:none}
+.nav-item.active{background:#1d4ed8;color:#fff;box-shadow:none}
+.nav-item.active::before{display:none}
+.privacy-note{
+  margin-top:auto;padding:10px 12px;border-radius:10px;
+  background:#172641;border:1px solid #22314d;box-shadow:none;
+  align-items:center
+}
+.privacy-note b{font-size:12px;text-transform:none;letter-spacing:0}
+.main{width:calc(100% - var(--sidebar-w));margin-left:var(--sidebar-w);padding:18px 22px 28px}
+.topbar{
+  position:sticky;top:0;z-index:8;margin-bottom:16px;padding:14px 18px;min-height:66px;
+  border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.96);
+  box-shadow:var(--shadow-sm);backdrop-filter:blur(12px)
+}
+.topbar h1{font-size:1.72rem;letter-spacing:-.035em}
+.topbar p{display:none!important}
+.status-pill,.clock{min-height:36px;padding:8px 11px;border-radius:9px;box-shadow:none;background:#fff;font-size:11px}
+.panel,.stat-card,.ops-toolbar,.student-enterprise-table-card,.student-enterprise-toolbar,.student-enterprise-nav,.classops-stats article{
+  background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm)
+}
+.panel{border-radius:14px;padding:18px}
+.panel-head{margin-bottom:14px}
+.panel-head h2{font-size:1rem;letter-spacing:-.015em;margin:0}
+.panel-head p{display:none!important}
+.eyebrow{display:none!important}
+.btn{
+  min-height:38px;border-radius:9px;padding:8px 13px;font-size:12px;font-weight:700;box-shadow:none!important
+}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:#fff}
+.btn.primary:hover{background:var(--primary-strong)}
+.btn.ghost{background:#fff;border:1px solid var(--line-strong);color:#334155}
+.btn.danger{background:#fff;border:1px solid #fecaca;color:#b91c1c}
+input,select,textarea{
+  border:1px solid var(--line-strong)!important;background:#fff!important;border-radius:9px!important;
+  color:var(--ink);box-shadow:none!important;outline:none
+}
+input:focus,select:focus,textarea:focus{border-color:#93b4ff!important;box-shadow:0 0 0 3px rgba(37,99,235,.08)!important}
+.field label,.student-form-grid label,.mona-form-grid label{font-size:11px;font-weight:700;color:#64748b;letter-spacing:.01em}
+.field input,.field select,.student-form-grid input,.student-form-grid select,.mona-form-grid input,.mona-form-grid select{min-height:40px}
+.empty-card{border:1px dashed #d8e0eb;background:#fbfcfe;border-radius:10px;color:#94a3b8}
+.chip,.status-tag,.status-badge,.academic-badge,.gender-badge{border-radius:7px!important}
+.live-badge{font-size:10px;letter-spacing:.02em;text-transform:none}
+
+/* Dashboard */
+.v12-dashboard-stats{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.v12-dashboard-stats .stat-card{border-radius:12px;padding:15px 14px;min-height:116px}
+.stat-label{font-size:10px!important;letter-spacing:.05em;color:#7b8799!important}
+.stat-value{font-size:27px!important;margin-top:8px!important;letter-spacing:-.04em}
+.stat-card small{font-size:10px;color:#94a3b8}
+.v12-dashboard-grid{gap:14px;margin-bottom:14px;grid-template-columns:minmax(0,1.7fr) minmax(300px,.7fr)}
+.v12-dashboard-grid.secondary{grid-template-columns:1fr}
+.v12-chart-panel,.v12-alert-panel{border-radius:14px}
+.v12-chart-wrap{border-radius:10px;background:#fff;border-color:var(--line);padding:6px}
+.v12-action-summary{grid-template-columns:repeat(6,1fr);gap:8px}
+.v12-action-summary div{border-radius:10px;background:#fbfcfe;border-color:var(--line);padding:12px}
+.v12-action-summary b{font-size:20px}
+.v12-alert-item{border-radius:10px;padding:10px;background:#fbfcfe}
+
+/* Registration */
+.enrollment-profile-card,.faceid-setup-panel{max-width:1180px;margin:0 auto}
+.enrollment-stepbar{margin-bottom:16px}
+.enrollment-stepbar .step{font-size:11px}
+.profile-phase-grid{gap:16px}
+.student-form,.existing-student-box{border-radius:12px!important;border:1px solid var(--line)!important;background:#fff!important;box-shadow:none!important;padding:18px!important}
+.existing-student-box{display:flex;flex-direction:column;justify-content:center}
+.existing-student-box h3{font-size:15px;margin:0 0 14px}
+.existing-student-box p,.existing-student-box>small{display:none!important}
+.consent{padding:10px 12px!important;border-radius:9px!important;background:#f8fafc!important;border:1px solid var(--line)!important;color:#334155!important;font-size:12px!important}
+.consent input{width:16px;height:16px;min-height:auto}
+.faceid-layout{gap:14px}
+.faceid-camera-wrap{border-radius:14px!important;overflow:hidden}
+.faceid-guide{border-radius:14px!important;border:1px solid var(--line)!important;box-shadow:none!important;background:#fff!important}
+.faceid-stage-copy h2{font-size:22px!important}
+.faceid-stage-copy p{font-size:12px!important;max-width:420px}
+.faceid-instruction{font-size:12px!important;border-radius:10px!important}
+.faceid-privacy-note{display:none!important}
+.tech-details{font-size:11px}
+
+/* Recognition */
+.recognition-grid{grid-template-columns:minmax(0,1.6fr) minmax(320px,.68fr);gap:14px}
+.camera-panel,.identity-card{border-radius:14px!important}
+.camera-wrap.large{border-radius:12px!important;overflow:hidden}
+.detector-strip{padding-top:10px;gap:14px;font-size:10px;color:#7b8799}
+.identity-card{padding:20px!important}
+.profile-avatar{width:66px!important;height:66px!important;font-size:18px!important}
+.identity-state h2{font-size:19px!important;margin-top:12px!important}
+.identity-state p{min-height:16px;color:#64748b}
+.profile-info{border-radius:10px!important;overflow:hidden;border-color:var(--line)!important}
+.profile-info>div{padding:11px 12px!important}
+.profile-info span{font-size:9px!important;letter-spacing:.04em}
+.profile-info b{font-size:12px!important}
+.recognition-session-field{margin-top:14px}
+.alert-box{border-radius:9px!important;font-size:12px!important}
+
+/* Speaker / classroom */
+.v13-classroom-toolbar{padding:14px!important;border-radius:12px!important;box-shadow:none!important}
+.director-toolbar-main{gap:10px}
+.director-run-box{min-width:210px}
+.director-badges,.speaker-focus-hud,.speaker-status-row{display:none!important}
+.speaker-director-grid{gap:14px;grid-template-columns:minmax(0,1.55fr) minmax(340px,.72fr)}
+.director-overview-panel,.speaker-focus-panel,.speaker-recordings-panel{border-radius:14px!important}
+.v13-overview-camera,.speaker-focus-stage{border-radius:12px!important;overflow:hidden}
+.director-overview-footer{gap:8px!important;margin-top:10px!important}
+.director-overview-footer>div{border:1px solid var(--line)!important;background:#fbfcfe!important;border-radius:9px!important;padding:10px!important}
+.director-overview-footer span{font-size:9px!important;color:#7b8799!important}
+.director-overview-footer b{font-size:17px!important}
+.speaker-focus-empty span{display:none!important}
+.speaker-profile-card{border-radius:10px!important;background:#fbfcfe!important;border:1px solid var(--line)!important}
+.speaker-controls{gap:8px}
+.auto-record-toggle{border-radius:9px!important;background:#f8fafc!important;border:1px solid var(--line)!important}
+.v13-advanced-panel,.v13-log-panel{margin-top:12px!important;border-radius:12px!important}
+.v13-advanced-panel summary,.v13-log-panel summary{font-size:12px!important}
+
+/* Classroom operations */
+.classops-toolbar{padding:14px 16px;border-radius:12px;margin-bottom:12px}
+.classops-toolbar .field{min-width:320px}
+.classops-stats{gap:10px;margin-bottom:12px}
+.classops-stats article{border-radius:11px;padding:13px 14px}
+.classops-stats span{font-size:9px}
+.classops-stats b{font-size:23px;margin-top:5px}
+.classops-grid{gap:12px;grid-template-columns:minmax(0,1fr) 300px}
+.classops-search input{border-radius:9px!important;padding:9px 11px;width:230px}
+.classops-events-panel{padding:16px}
+.classops-event{padding:10px 0}
+
+/* Student management: enterprise dense view */
+.student-enterprise-layout{grid-template-columns:190px minmax(0,1fr);gap:12px}
+.student-enterprise-nav{border-radius:12px;padding:10px 8px;box-shadow:none;top:86px}
+.student-nav-title{font-size:12px!important;font-weight:800!important;color:#334155!important;letter-spacing:0!important;text-transform:none!important;padding:8px 10px!important}
+.student-enterprise-nav .student-menu-item{padding:9px 10px;border-radius:8px;font-size:12px;font-weight:600}
+.student-enterprise-nav .student-menu-item.active{background:#eff6ff;color:#1d4ed8;box-shadow:none}
+.student-breadcrumb{font-size:13px!important;font-weight:750!important;color:#334155!important;margin:0 0 10px!important}
+.student-enterprise-toolbar{border-radius:12px 12px 0 0;padding:10px;box-shadow:none}
+.student-search-box input{height:38px!important;font-size:12px}
+.student-search-button,.student-filter-toggle{border-radius:8px!important}
+.student-enterprise-actions{gap:6px}
+.student-filter-panel{padding:10px!important;background:#fbfcfe!important;border-color:var(--line)!important;gap:8px!important}
+.student-enterprise-table-card{border-radius:0 0 12px 12px;box-shadow:none}
+.student-enterprise-table{font-size:12px}
+.student-enterprise-table thead th{background:#f8fafc!important;color:#64748b!important;font-size:10px!important;letter-spacing:.04em!important;text-transform:none!important;border-bottom:1px solid var(--line)!important;padding:10px 11px!important}
+.student-enterprise-table tbody td{padding:10px 11px!important;border-bottom:1px solid #edf1f5!important}
+.student-enterprise-table tbody tr:hover{background:#f8fbff!important}
+.student-row-actions button{width:30px!important;height:30px!important;border-radius:7px!important}
+.student-table-footer{padding:9px 11px!important;font-size:11px}
+.student-pagination button{border-radius:7px!important}
+.student-profile-cover{height:92px;border-radius:12px 12px 0 0;background:linear-gradient(110deg,#eaf2ff,#eef7ff 55%,#f5f8fc);border-color:var(--line)}
+.student-profile-heading{padding:0 18px 14px;min-height:68px;border-color:var(--line)}
+.student-profile-avatar{width:72px;height:72px;margin-top:-36px;border-width:4px;background:#2563eb;font-size:18px;box-shadow:0 5px 18px rgba(37,99,235,.16)}
+.student-profile-name h2{font-size:19px}
+.student-profile-tabs{border-color:var(--line)!important;background:#fff!important;gap:2px!important;padding:0 10px!important;overflow:auto}
+.student-profile-tabs button{font-size:11px!important;padding:11px 10px!important;white-space:nowrap}
+.student-profile-tabs button.active{color:#1d4ed8!important;border-bottom-color:#2563eb!important}
+.mona-detail-card{border-radius:12px!important;border-color:var(--line)!important;box-shadow:none!important}
+.mona-detail-card h3{font-size:14px!important;margin-bottom:14px!important}
+.mona-form-grid{gap:12px!important}
+.student-mini-kpis{gap:10px!important}
+.student-mini-kpis>div{border-radius:10px!important;border-color:var(--line)!important;box-shadow:none!important}
+.student-modal-card{border-radius:14px!important;box-shadow:var(--shadow-lg)!important}
+
+/* Academic / platform / history */
+.ops-toolbar{border-radius:12px;padding:12px 14px;box-shadow:none}
+.ops-toolbar h2{font-size:1rem;margin:0}
+.ops-card,.ops-wide{border-radius:12px!important}
+.mini-form{gap:8px!important}
+.platform-note{font-size:11px!important;line-height:1.45!important}
+.platform-list>div{border-radius:9px!important;background:#fbfcfe!important;border-color:var(--line)!important}
+.table-wrap{border-radius:10px}
+table{border-collapse:separate;border-spacing:0}
+thead th{background:#f8fafc;color:#64748b;font-size:10px;font-weight:800;letter-spacing:.03em}
+tbody td{font-size:12px;border-color:#edf1f5}
+
+/* Remove development/explanatory copy from release screens. */
+.speaker-demo-note,.v12-data-flow,.v12-security-list{display:none!important}
+
+@media(max-width:1380px){
+  .v12-dashboard-stats{grid-template-columns:repeat(3,1fr)}
+  .v12-action-summary{grid-template-columns:repeat(3,1fr)}
+  .speaker-director-grid,.recognition-grid{grid-template-columns:1fr}
+}
+@media(max-width:1180px){
+  .student-enterprise-layout{grid-template-columns:1fr}
+  .student-enterprise-nav{position:static;display:flex;overflow:auto;gap:4px}
+  .student-nav-title{display:none}
+  .student-enterprise-nav .student-menu-item{white-space:nowrap;width:auto}
+  .classops-grid{grid-template-columns:1fr}
+}
+@media(max-width:820px){
+  :root{--sidebar-w:0px}
+  .sidebar{position:relative;width:100%;height:auto}
+  .app-shell{display:block}.main{width:100%;margin:0;padding:12px}
+  .sidebar nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .privacy-note{display:none}.topbar{top:8px}
+  .v12-dashboard-stats,.v12-action-summary{grid-template-columns:1fr 1fr}
+}
+.ai-profile-card .platform-note{display:none!important}

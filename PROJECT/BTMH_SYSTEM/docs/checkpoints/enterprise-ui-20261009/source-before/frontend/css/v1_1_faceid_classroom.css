@@ -1,0 +1,90 @@
+/* CampusFace Recognition Module V1.1
+   Professional biometric enrollment + shared-camera classroom observer.
+   Loaded last. The recognition page is intentionally not restyled here. */
+
+/* ---------------- FaceID Pro: restrained biometric enrollment ---------------- */
+#page-register .faceid-pro-shell{max-width:1380px;margin:0 auto;border-radius:22px!important;box-shadow:0 18px 46px rgba(25,60,67,.08)!important}
+#page-register .faceid-pro-grid{grid-template-columns:minmax(0,1.62fr) minmax(330px,.64fr);gap:16px;padding:16px}
+#page-register .faceid-pro-camera-wrap{min-height:540px!important;max-height:690px!important;aspect-ratio:16/10!important;border-radius:22px!important;background:#071316!important}
+#page-register .faceid-pro-camera-wrap .module-service-preview{filter:brightness(.86) saturate(.92) contrast(1.05)!important}
+#page-register .faceid-shade{background:radial-gradient(ellipse 27% 40% at 50% 47%,rgba(1,15,17,0) 0 74%,rgba(2,15,18,.16) 80%,rgba(2,13,16,.54) 100%)!important}
+#page-register .faceid-biometric-overlay{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;z-index:7!important;pointer-events:none!important}
+
+/* Remove the “laser scanner” look. Keep a thin progress ring and real landmarks. */
+#page-register .faceid-pro-scanline,
+#page-register .faceid-pro-wave,
+#page-register .v24-scan-glow,
+#page-register .faceid-pro-halo{display:none!important}
+#page-register .faceid-pro-scanner{top:47%!important;width:clamp(250px,35%,345px)!important;aspect-ratio:.79!important;transition:transform .18s ease,opacity .18s ease!important}
+#page-register .faceid-pro-scanner .v24-face-oval{border:1px solid rgba(205,255,245,.58)!important;box-shadow:0 0 0 1px rgba(43,224,189,.10),0 0 34px rgba(30,205,171,.08)!important;background:transparent!important}
+#page-register .faceid-pro-scanner .v24-face-progress{inset:-7px!important;border-radius:inherit!important;background:conic-gradient(from -90deg,#45f1cf 0 var(--scan-angle),rgba(216,255,247,.16) var(--scan-angle) 360deg)!important;-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 4px),#000 calc(100% - 3px));mask:radial-gradient(farthest-side,transparent calc(100% - 4px),#000 calc(100% - 3px));filter:drop-shadow(0 0 5px rgba(52,232,197,.35))!important}
+#page-register .faceid-pro-scanner .v24-face-inner{inset:9px!important;border:1px dashed rgba(215,255,247,.15)!important}
+#page-register .faceid-pro-center-dot{width:7px!important;height:7px!important;border:1px solid rgba(220,255,248,.72)!important;box-shadow:0 0 0 5px rgba(60,225,193,.08)!important}
+#page-register .faceid-pro-scanner.capture-accepted{animation:faceidAccepted .36s ease-out}
+@keyframes faceidAccepted{0%{transform:translate(-50%,-50%) scale(1)}45%{transform:translate(-50%,-50%) scale(1.018);filter:drop-shadow(0 0 13px rgba(55,239,199,.4))}100%{transform:translate(-50%,-50%) scale(1)}}
+#page-register .faceid-pro-scanner.aligning{opacity:.72}
+#page-register .faceid-pro-direction{font-size:27px!important;color:#83ffe5!important}
+#page-register .faceid-pro-copy h2{font-size:24px!important;margin-top:6px!important}
+#page-register .faceid-pro-copy p{font-size:12px!important}
+#page-register .faceid-pro-copy .scan-pass-pill{font-size:10px!important;letter-spacing:.04em;text-transform:uppercase}
+
+#page-register .faceid-lock-chip{position:absolute;top:17px;left:50%;transform:translateX(-50%);z-index:10;display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:rgba(6,25,29,.68);border:1px solid rgba(210,255,247,.13);backdrop-filter:blur(10px);color:#d7e7e5;font-size:10px;font-weight:800;letter-spacing:.02em;transition:.2s ease}
+#page-register .faceid-lock-chip i{width:7px;height:7px;border-radius:50%;background:#f5ad45;box-shadow:0 0 0 4px rgba(245,173,69,.11)}
+#page-register .faceid-lock-chip.locked{color:#dcfff7;border-color:rgba(76,238,202,.28);background:rgba(5,55,48,.64)}
+#page-register .faceid-lock-chip.locked i{background:#35e2bb;box-shadow:0 0 0 4px rgba(53,226,187,.12)}
+#page-register .faceid-lock-chip.captured{animation:lockCaptured .38s ease-out}
+@keyframes lockCaptured{50%{transform:translateX(-50%) scale(1.035);box-shadow:0 0 0 6px rgba(53,226,187,.06)}}
+
+#page-register .faceid-pro-bottom-status{bottom:17px!important;background:rgba(3,24,27,.72)!important;border-color:rgba(135,244,220,.16)!important;padding:8px 13px!important;min-height:34px}
+#page-register .faceid-pro-bottom-status #faceidInstruction{font-size:11px!important}
+#page-register .faceid-pro-quality>div{min-height:61px;display:flex;flex-direction:column;justify-content:center}
+#page-register .faceid-pro-quality b{font-size:13px!important}
+#page-register .pose-chip{grid-template-columns:24px 1fr auto!important;padding:8px 9px!important}
+#page-register .pose-chip i{width:24px!important;height:24px!important;font-size:10px!important}
+#page-register .pose-chip b{min-width:32px;text-align:center}
+#page-register .pose-chip.active{box-shadow:0 0 0 3px rgba(38,201,168,.075)!important}
+#page-register .faceid-pro-progress-card .scan-summary-track i{transition:width .22s cubic-bezier(.2,.8,.2,1)!important}
+#page-register .faceid-pro-steps .v23-pass-card{min-height:58px}
+
+/* ---------------- Classroom observer: same CameraService, no second webcam open ---------------- */
+#page-class-operations{--class-line:#e0ebe8;--class-muted:#75898e}
+.classroom-v11-head{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 18px!important;margin-bottom:12px}
+.classroom-v11-head h2{font-size:22px;margin:3px 0 2px}.classroom-v11-head p{margin:0;color:var(--class-muted);font-size:11.5px}
+.classroom-v11-head-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.classroom-v11-layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(290px,.52fr);gap:12px;margin-bottom:12px;align-items:stretch}
+.classroom-v11-live-card,.classroom-v11-events-card{min-width:0;padding:14px!important}
+.classroom-v11-live-head{margin:0 2px 10px!important;align-items:center}.classroom-v11-live-head h2{font-size:17px;margin-bottom:2px}.classroom-v11-live-head p{font-size:10.5px;color:var(--class-muted);margin:0}
+.classroom-v11-camera{position:relative;isolation:isolate;width:100%;aspect-ratio:16/9;min-height:470px;overflow:hidden;border-radius:15px;background:linear-gradient(145deg,#0d171a,#071013);box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.classroom-v11-camera .classroom-stream-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block;background:#091316}
+.classroom-v11-camera canvas{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none}
+.classroom-v11-camera .camera-empty{position:absolute!important;inset:0!important;z-index:5!important;background:linear-gradient(145deg,#0c171a,#061013)!important;color:#d4e5e4!important;display:grid;place-items:center;text-align:center}
+.classroom-v11-camera .camera-empty .face-icon{font-size:35px;color:#5fdac0}.classroom-v11-camera .camera-empty p{margin-top:6px;font-size:11px;color:#9bb0b2}
+.classroom-v11-camera-label{position:absolute;left:13px;top:13px;z-index:6;display:flex;align-items:center;gap:7px;padding:7px 10px;border-radius:9px;background:rgba(5,25,29,.74);border:1px solid rgba(255,255,255,.07);backdrop-filter:blur(8px);color:#fff;font-size:10px}
+.classroom-v11-hud{position:absolute;left:13px;right:13px;bottom:12px;z-index:6;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.classroom-v11-hud span{padding:6px 9px;border-radius:8px;background:rgba(4,20,24,.72);border:1px solid rgba(255,255,255,.08);color:#cfe0df;font-size:9px;letter-spacing:.03em;backdrop-filter:blur(8px)}
+.classroom-v11-hud b{color:#fff;margin-left:3px;font-size:10px}
+.classroom-v11-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-top:9px}
+.classroom-v11-stats article{padding:9px 10px;border:1px solid var(--class-line);border-radius:10px;background:#f9fbfb;min-width:0}
+.classroom-v11-stats span{display:block;font-size:8.5px;font-weight:850;text-transform:uppercase;letter-spacing:.04em;color:#71858a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.classroom-v11-stats b{display:block;margin:2px 0;font-size:17px;color:#122b33}.classroom-v11-stats small{display:block;font-size:8.5px;color:#95a4a7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.classroom-v11-events-card .panel-head{margin-bottom:10px}.classroom-v11-events-card .panel-head h2{font-size:17px}.classroom-v11-events-card .panel-head p{font-size:10px;color:#839498;margin:2px 0 0}
+.classroom-v11-events{display:flex;flex-direction:column;gap:7px;max-height:570px;overflow:auto;padding-right:2px}
+.classroom-v11-event{display:grid;grid-template-columns:50px minmax(0,1fr) auto;align-items:center;gap:9px;padding:8px;border:1px solid #e3ecea;border-radius:11px;background:#fbfdfd;min-height:66px}
+.classroom-v11-event .event-photo{width:50px;height:50px;border-radius:10px;overflow:hidden;background:#ecf4f2;display:grid;place-items:center;color:#0f8c77;font-weight:900;font-size:11px}
+.classroom-v11-event .event-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.classroom-v11-event .event-main{min-width:0}.classroom-v11-event .event-main b{display:block;font-size:11.5px;color:#172c34;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.classroom-v11-event .event-main span{display:block;font-size:9.5px;color:#7d9195;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.classroom-v11-event .event-main small{display:block;font-size:8.5px;color:#9aa8ab;margin-top:2px}
+.classroom-v11-event .event-score{font-size:11px;font-weight:900;color:#0b9a7f;white-space:nowrap}.classroom-v11-event.is-new{animation:eventIn .34s ease-out}
+@keyframes eventIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+.classroom-v11-roster{margin-bottom:18px}.classroom-v11-roster .panel-head{align-items:center}.classroom-v11-roster .panel-head h2{font-size:16px}.classroom-v11-roster .panel-head p{font-size:10px;color:#819396}.classroom-v11-roster .classops-search input{min-width:230px}
+.classroom-pro-status{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;font-size:9.5px;font-weight:800;background:#eef5f4;color:#687d7e}.classroom-pro-status.ok{background:#e2f8f0;color:#0a8c71}
+
+@media(max-width:1180px){
+  #page-register .faceid-pro-grid{grid-template-columns:1fr}
+  #page-register .faceid-pro-side{display:grid!important;grid-template-columns:1fr 1fr}
+  #page-register .faceid-pro-tip,#page-register .faceid-pro-side>.btn{grid-column:1/-1}
+  .classroom-v11-layout{grid-template-columns:1fr}.classroom-v11-camera{min-height:430px}.classroom-v11-events{max-height:330px}
+}
+@media(max-width:760px){
+  #page-register .faceid-pro-camera-wrap{min-height:430px!important;aspect-ratio:4/5!important}
+  #page-register .faceid-pro-side{display:flex!important}.classroom-v11-head{align-items:flex-start;flex-direction:column}.classroom-v11-head-actions{justify-content:flex-start}.classroom-v11-camera{min-height:300px}.classroom-v11-stats{grid-template-columns:1fr 1fr}.classroom-v11-roster .panel-head{align-items:flex-start;flex-direction:column}.classroom-v11-roster .classops-search,.classroom-v11-roster .classops-search input{width:100%;min-width:0}
+}
+@media(prefers-reduced-motion:reduce){#page-register .faceid-pro-scanner.capture-accepted,.classroom-v11-event.is-new{animation:none!important}}

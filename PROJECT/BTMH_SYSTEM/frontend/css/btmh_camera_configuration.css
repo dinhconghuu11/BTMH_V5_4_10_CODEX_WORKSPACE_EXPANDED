@@ -1,0 +1,51 @@
+.camera-configuration { display: grid; gap: 18px; min-width: 0; padding-bottom: 28px; }
+.camera-config-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 22px; }
+.camera-config-header h2 { margin: 0 0 7px; }
+.camera-config-header p { margin: 0; color: var(--btmh-v550-muted); font-size: 12px; line-height: 1.7; max-width: 620px; }
+.camera-config-workspace { display: grid; grid-template-columns: minmax(220px, 310px) minmax(0, 1fr); gap: 18px; align-items: start; }
+.camera-config-registry, .camera-config-editor { padding: 20px; min-width: 0; }
+.camera-config-registry-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 17px; }
+.camera-config-registry-head h3 { margin: 0; font-size: 15px; }
+.camera-config-list { display: grid; gap: 10px; }
+.camera-config-card { width: 100%; padding: 14px; border: 1px solid var(--btmh-v550-line); border-radius: 10px; background: var(--btmh-v550-paper); color: var(--btmh-v550-ink); text-align: left; font: inherit; cursor: pointer; overflow-wrap: anywhere; }
+.camera-config-card.selected { border-color: var(--btmh-v550-burgundy); box-shadow: 0 0 0 1px var(--btmh-v550-burgundy); background: var(--btmh-v550-ivory); }
+.camera-config-card strong { display: block; font-size: 13px; line-height: 1.6; }
+.camera-config-location { display: block; margin: 5px 0 10px; color: var(--btmh-v550-muted); font-size: 11px; line-height: 1.7; }
+.camera-config-badges { display: flex; flex-wrap: wrap; gap: 5px; }
+.camera-config-badges span { padding: 4px 6px; border-radius: 5px; background: var(--btmh-v550-soft); color: var(--btmh-v550-muted); font-size: 9px; line-height: 1.5; }
+.camera-config-empty, .camera-config-note { color: var(--btmh-v550-muted); font-size: 12px; line-height: 1.8; }
+.camera-config-note { margin: 0; min-height: 22px; }
+.camera-config-note.error { color: var(--btmh-v550-danger); }
+.camera-config-editor h3 { color: var(--btmh-v550-burgundy); margin: 0 0 17px; font-size: 18px; line-height: 1.5; overflow-wrap: anywhere; }
+.camera-config-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+.camera-config-fields label { display: grid; gap: 6px; color: var(--btmh-v550-muted); font-size: 11px; line-height: 1.7; min-width: 0; }
+body.btmh-v550 #page-ops-center .camera-config-fields :is(input, select) { width: 100%; min-width: 0; min-height: 40px; padding: 8px 10px; border: 1px solid var(--btmh-v550-line); border-radius: 8px; color: var(--btmh-v550-ink); background: var(--btmh-v550-paper); font: inherit; font-size: 12px; }
+.camera-config-full { grid-column: 1 / -1; }
+.camera-config-switches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 18px 0; }
+.camera-config-switches label, .camera-config-check { display: flex; align-items: start; gap: 9px; padding: 11px; border: 1px solid var(--btmh-v550-line); border-radius: 8px; font-size: 12px; line-height: 1.7; color: var(--btmh-v550-ink); }
+.camera-config-switches input, .camera-config-check input { width: 16px; height: 16px; margin-top: 3px; accent-color: var(--btmh-v550-burgundy); flex: 0 0 auto; }
+.camera-config-switches small { display: block; margin-top: 3px; color: var(--btmh-v550-muted); font-size: 10px; line-height: 1.7; }
+.camera-config-line { padding-top: 16px; border-top: 1px solid var(--btmh-v550-line); }
+.camera-config-line h4 { margin: 0 0 8px; color: var(--btmh-v550-burgundy); font-size: 14px; }
+.camera-config-line p { color: var(--btmh-v550-muted); font-size: 11px; line-height: 1.8; margin: 0 0 16px; }
+.camera-config-diagram { width: 100%; max-height: 250px; margin: 14px 0; display: block; background: #271d25; border-radius: 10px; }
+.camera-config-roi { margin: 16px 0; }
+.camera-config-roi .camera-config-fields { margin-top: 13px; }
+.camera-config-tuning { margin-top: 16px; padding: 14px; border: 1px solid var(--btmh-v550-line); border-radius: 9px; }
+.camera-config-tuning summary, .camera-config-connection summary { color: var(--btmh-v550-burgundy); font-size: 12px; font-weight: 600; cursor: pointer; line-height: 1.7; }
+.camera-config-tuning .camera-config-fields { margin-top: 13px; }
+.camera-config-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.camera-config-preview-control { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 20px; }
+.camera-config-preview-control span { color: var(--btmh-v550-muted); font-size: 11px; }
+.camera-config-preview { position: relative; aspect-ratio: 16 / 9; min-height: 220px; margin-top: 14px; overflow: hidden; border-radius: 11px; background: #1e1720; }
+.camera-config-preview :is(video, img) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.camera-config-preview svg { position: absolute; pointer-events: none; z-index: 3; }
+.camera-config-preview-empty { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; color: #ddd0c9; font-size: 12px; text-align: center; }
+.camera-config-connection { padding: 18px 22px; }
+.camera-config-connection p { margin: 12px 0; font-size: 11px; color: var(--btmh-v550-muted); line-height: 1.8; }
+.camera-config-connection form { margin-top: 16px; }
+body.btmh-v550 #page-ops-center [hidden] { display: none !important; }
+.camera-configuration :is(button, input, select, summary):focus-visible { outline: 2px solid var(--btmh-v550-gold); outline-offset: 3px; }
+@media (max-width: 1050px) { .camera-config-workspace { grid-template-columns: minmax(190px, 250px) minmax(0, 1fr); } }
+@media (max-width: 800px) { .camera-config-workspace { grid-template-columns: minmax(0, 1fr); } .camera-config-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .camera-config-registry, .camera-config-editor, .camera-config-header { padding: 17px; } }
+@media (max-width: 480px) { .camera-config-list, .camera-config-fields, .camera-config-switches { grid-template-columns: minmax(0, 1fr); } .camera-config-header, .camera-config-preview-control { align-items: start; flex-direction: column; } .camera-config-preview { min-height: 180px; } }

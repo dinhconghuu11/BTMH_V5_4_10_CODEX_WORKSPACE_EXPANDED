@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-07T12:36:30.696146+00:00",
+  "scope": "Source-only standard-library audit against the preserved WebRTC archive; no application imports or runtime writes.",
+  "checks": [
+    {
+      "name": "rollback_archive_sha256",
+      "status": "PASS",
+      "path": "backups/CODEX_WEBRTC_PRE_V550_20261006.zip",
+      "expected_sha256": "8894f11fcaba3caa9bda541d6b0f19b325dc282685c04f84d743b991f9b61fac",
+      "actual_sha256": "8894f11fcaba3caa9bda541d6b0f19b325dc282685c04f84d743b991f9b61fac"
+    },
+    {
+      "name": "rollback_archive_entries_crc",
+      "status": "PASS",
+      "expected_entries": 210,
+      "actual_entries": 210
+    },
+    {
+      "name": "rollback_archive_safe_paths",
+      "status": "PASS",
+      "unsafe_path_count": 0
+    },
+    {
+      "name": "all_checkpoint_paths_retained",
+      "status": "PASS",
+      "checked_paths": 210,
+      "missing_paths": []
+    },
+    {
+      "name": "original_config_assignments",
+      "status": "PASS",
+      "expected_count": 151,
+      "original_count": 151,
+      "current_count": 158,
+      "changed_original_bindings": 0
+    },
+    {
+      "name": "walkby_protected_policy_methods",
+      "status": "PASS",
+      "methods": [
+        "_identity_owner",
+        "_decision",
+        "_recognition_quality_gate",
+        "_fused_identity_vector",
+        "_drop_locked_identity"
+      ],
+      "changed_methods": []
+    },
+    {
+      "name": "protected_auth_database_security_context_sms_modules",
+      "status": "PASS",
+      "checked_count": 14,
+      "checked_paths": [
+        "module_app/auth.py",
+        "module_app/db.py",
+        "module_app/security_hardening_v54.py",
+        "module_app/secret_store.py",
+        "module_app/crypto.py",
+        "module_app/anti_spoof.py",
+        "module_app/device_context.py",
+        "module_app/edge_identity_v5.py",
+        "module_app/gpu_manager.py",
+        "module_app/registry.py",
+        "module_app/otp_service.py",
+        "module_app/sms_auth_v542.py",
+        "module_app/sms_provider_v542.py",
+        "module_app/sms_routes_v542.py"
+      ],
+      "changed_paths": []
+    },
+    {
+      "name": "pad_only_cpu_cuda_dispatch_changes",
+      "status": "PASS",
+      "path": "module_app/passive_pad.py",
+      "allowed_dispatch_methods": [
+        "_probe",
+        "predict"
+      ],
+      "unchanged_scope": "Models, profiles, hashes, preprocessing, classes, scores and all other module AST."
+    },
+    {
+      "name": "face_core_only_model_lock_boundaries",
+      "status": "PASS",
+      "path": "module_app/face_core.py",
+      "allowed_changes": [
+        "Two independent RLocks",
+        "Serialized ensure/_ensure_models wrapper",
+        "detect detector lock",
+        "embedding recognizer lock"
+      ],
+      "unchanged_scope": "Every other module AST, including models, thresholds, preprocessing and inference policy."
+    },
+    {
+      "name": "checkpoint_html_ids_and_main_landmark",
+      "status": "PASS",
+      "checkpoint_id_count": 662,
+      "current_id_count": 665,
+      "missing_ids": [],
+      "duplicate_ids": [],
+      "current_main_count": 1
+    },
+    {
+      "name": "checkpoint_script_order_and_single_load",
+      "status": "PASS",
+      "checkpoint_scripts": [
+        "/static/js/btmh_runtime_v543.js",
+        "/static/js/btmh_media_v5410.js",
+        "/static/js/app.js",
+        "/static/js/btmh_v4.js",
+        "/static/btmh_auth_v54.js",
+        "/static/js/btmh_customer_v541.js",
+        "/static/js/btmh_sms_v542.js",
+        "/static/js/camera_tools_v544.js"
+      ],
+      "current_scripts": [
+        "/static/js/btmh_runtime_v543.js",
+        "/static/js/btmh_media_v5410.js",
+        "/static/js/app.js",
+        "/static/js/btmh_v4.js",
+        "/static/btmh_auth_v54.js",
+        "/static/js/btmh_customer_v541.js",
+        "/static/js/btmh_sms_v542.js",
+        "/static/js/camera_tools_v544.js",
+        "/static/js/btmh_diagnostics_v550.js"
+      ]
+    },
+    {
+      "name": "native_first_media_transport_order",
+      "status": "PASS",
+      "checkpoint_order": [
+        "native",
+        "webrtc",
+        "ws",
+        "mjpeg",
+        "poll"
+      ],
+      "current_order": [
+        "native",
+        "webrtc",
+        "ws",
+        "mjpeg",
+        "poll"
+      ]
+    },
+    {
+      "name": "rbac_permission_helper_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "system_diagnostics_permission_and_route",
+      "status": "PASS",
+      "route": "/api/v1/system/diagnostics",
+      "permission": "system.diagnostics"
+    },
+    {
+      "name": "system_self_test_permission_and_route",
+      "status": "PASS",
+      "route": "/api/v1/system/self-test",
+      "permission": "system.diagnostics"
+    },
+    {
+      "name": "system_performance_diagnostics_permission_and_route",
+      "status": "PASS",
+      "route": "/api/v1/system/diagnostics/performance",
+      "permission": "system.diagnostics"
+    },
+    {
+      "name": "performance_route_authorization_before_cached_collector_no_store",
+      "status": "PASS"
+    },
+    {
+      "name": "self_test_forwards_request",
+      "status": "PASS"
+    },
+    {
+      "name": "credential_source_scan_no_unreviewed_literal_candidates",
+      "status": "PASS",
+      "candidate_count": 6,
+      "reviewed_existing_count": 6,
+      "unreviewed_count": 0,
+      "introduced_candidate_count": 0
+    },
+    {
+      "name": "named_stock_configs_no_fixed_secrets_or_rtsp_userinfo",
+      "status": "PASS",
+      "checked_paths": [
+        "config/cameras.json",
+        "config/hikvision_test_camera.json"
+      ]
+    },
+    {
+      "name": "rollback_archive_sha256_after_audit",
+      "status": "PASS"
+    }
+  ],
+  "excluded_reads": [
+    ".codex_tools",
+    "runtime/customer databases and DataRoots",
+    "isolated pytest DataRoots",
+    "logs",
+    "models",
+    "vendor dependencies"
+  ],
+  "limitations": [
+    "AST equality excludes comments and formatting; it proves the listed definitions and assignments, not every runtime path.",
+    "The archive is a selective source checkpoint and includes bytecode; not-in-archive paths are not proof they were created during this run.",
+    "Credential scanning is a literal-source heuristic; computed values, external configuration, database credentials and encrypted secret stores are outside its scope.",
+    "Frontend media order and API guards are structural checks; lifecycle/security behavior requires the separately executed regression suites.",
+    "Archive bytecode is checked for presence and archive CRC only, not used as an application source baseline."
+  ],
+  "acceptance": {
+    "real_mediamtx_hikvision": {
+      "status": "BLOCKED",
+      "reason": "No hardware acceptance run by this source-only audit."
+    },
+    "real_models_gpu": {
+      "status": "BLOCKED",
+      "reason": "No real model/GPU execution by this audit."
+    },
+    "real_postgresql": {
+      "status": "BLOCKED",
+      "reason": "No PostgreSQL integration environment exercised by this audit."
+    },
+    "rendered_desktop_mobile_ui": {
+      "status": "BLOCKED",
+      "reason": "Source checks do not establish rendered layout, focus, FPS, latency or soak acceptance."
+    },
+    "final_easy_install": {
+      "status": "NOT_CREATED"
+    }
+  },
+  "inventory": {
+    "source_roots": [
+      "module_app",
+      "frontend",
+      "scripts",
+      "docs",
+      "tests",
+      "tests_browser",
+      "tests_integration",
+      "tests_legacy",
+      "tests_v5",
+      "tests_v54"
+    ],
+    "file_count": 461,
+    "generated_report_excluded_from_self_inventory": "docs/SOURCE_AUDIT_V550.json",
+    "groups": {
+      "production": {
+        "modified_from_archive": [
+          "VERIFY_RELEASE.py",
+          "frontend/index.html",
+          "frontend/js/app.js",
+          "frontend/js/btmh_media_v5410.js",
+          "frontend/js/btmh_runtime_v543.js",
+          "frontend/js/btmh_v4.js",
+          "module_app/camera.py",
+          "module_app/camera_fleet_v4.py",
+          "module_app/camera_handover_v544.py",
+          "module_app/camera_profiles.py",
+          "module_app/capture_session_v544.py",
+          "module_app/config.py",
+          "module_app/face_core.py",
+          "module_app/main.py",
+          "module_app/media_gateway_v5410.py",
+          "module_app/passive_pad.py",
+          "module_app/walkby.py"
+        ],
+        "not_in_archive": [
+          "CREATE_OWNER_FIRST_RUN.py",
+          "frontend/css/btmh_design_v550.css",
+          "frontend/js/btmh_diagnostics_v550.js",
+          "module_app/ai_capture_v550.py",
+          "module_app/ai_pipeline_v550.py",
+          "module_app/performance_diagnostics_v550.py",
+          "run_module.py"
+        ],
+        "unchanged_archive_count": 111
+      },
+      "tests": {
+        "modified_from_archive": [
+          "tests_browser/media_lifecycle.test.cjs",
+          "tests_v54/test_native_gateway_runtime.py",
+          "tests_v54/test_realtime_v543.py"
+        ],
+        "not_in_archive": [
+          "tests/test_btmh_v31_rbac_visitor.py",
+          "tests/test_btmh_v4_contract.py",
+          "tests/test_enrollment_two_pass.py",
+          "tests/test_face_enrollment_v2.py",
+          "tests/test_stable_consolidated.py",
+          "tests/test_v133_enrollment_no_98_stall.py",
+          "tests/test_v13_two_circle_enrollment.py",
+          "tests/test_v212_hr_reporting.py",
+          "tests/test_v535_hikvision_handover_release.py",
+          "tests_browser/diagnostics_lifecycle.test.cjs",
+          "tests_browser/preview_ui_v550.py",
+          "tests_browser/runtime_lifecycle.test.cjs",
+          "tests_browser/system_diagnostics_lifecycle.test.cjs",
+          "tests_browser/v4_frontend_lifecycle.test.cjs",
+          "tests_integration/__init__.py",
+          "tests_integration/native_gateway_smoke.py",
+          "tests_integration/rtsp_fixture.py",
+          "tests_integration/test_rtsp_v544.py",
+          "tests_integration/test_rtsp_v545.py",
+          "tests_legacy/run_tests.py",
+          "tests_legacy/test_btmh_v31_rbac_visitor.py",
+          "tests_legacy/test_btmh_v322_python_bootstrap.py",
+          "tests_legacy/test_btmh_v32_windows_deploy.py",
+          "tests_legacy/test_btmh_v33_windows_stable.py",
+          "tests_legacy/test_btmh_v4_contract.py",
+          "tests_legacy/test_camera_hd_v5.py",
+          "tests_legacy/test_camera_recovery.py",
+          "tests_legacy/test_classroom_actions.py",
+          "tests_legacy/test_classroom_resolution_mapping.py",
+          "tests_legacy/test_decision_policy.py",
+          "tests_legacy/test_deleted_student_contract.py",
+          "tests_legacy/test_deployment_contract.py",
+          "tests_legacy/test_easy_deployment_v12.py",
+          "tests_legacy/test_enrollment_two_pass.py",
+          "tests_legacy/test_enterprise_production_v19.py",
+          "tests_legacy/test_enterprise_v1.py",
+          "tests_legacy/test_face_enrollment_v2.py",
+          "tests_legacy/test_facev11_dual_camera.py",
+          "tests_legacy/test_facev12_office_ai.py",
+          "tests_legacy/test_facev131_enrollment_laptop_handover.py",
+          "tests_legacy/test_facev132_laptop_return_stable.py",
+          "tests_legacy/test_farface_yolo_training_contract.py",
+          "tests_legacy/test_offline_frontend.py",
+          "tests_legacy/test_production_ready_v110.py",
+          "tests_legacy/test_professional_v11_camera_control.py",
+          "tests_legacy/test_professional_v12_1_safe_handover.py",
+          "tests_legacy/test_professional_v12_operations.py",
+          "tests_legacy/test_professional_v13_1_operations_ui.py",
+          "tests_legacy/test_professional_v13_performance_operations.py",
+          "tests_legacy/test_professional_v14_2_camera_handover_recovery.py",
+          "tests_legacy/test_professional_v14_offline_core_reliability_action.py",
+          "tests_legacy/test_professional_v6.py",
+          "tests_legacy/test_professional_v7.py",
+          "tests_legacy/test_professional_v8_hero.py",
+          "tests_legacy/test_professional_v9_dynamic_ui.py",
+          "tests_legacy/test_recognition_preserved.py",
+          "tests_legacy/test_reentry_policy.py",
+          "tests_legacy/test_release_clean_guard.py",
+          "tests_legacy/test_student_activity_profile.py",
+          "tests_legacy/test_v1101_tab_stable.py",
+          "tests_legacy/test_v111_passive_classroom.py",
+          "tests_legacy/test_v1122_embedded_postgres.py",
+          "tests_legacy/test_v1124_customer_safe_installer.py",
+          "tests_legacy/test_v112_postgresql_contract.py",
+          "tests_legacy/test_v1131_oneclick_installer.py",
+          "tests_legacy/test_v1132_dotnet_acl_installer.py",
+          "tests_legacy/test_v113_postgresql_production_installer.py",
+          "tests_legacy/test_v114_user_managed_postgres.py",
+          "tests_legacy/test_v115_passive_antispoof_preid.py",
+          "tests_legacy/test_v116_continuous_risk_fusion.py",
+          "tests_legacy/test_v131_smooth_classroom.py",
+          "tests_legacy/test_v133_enrollment_no_98_stall.py",
+          "tests_legacy/test_v136_neutral_calibration.py",
+          "tests_legacy/test_v13_classroom_cleanfix.py",
+          "tests_legacy/test_v13_frontend_runtime_contract.py",
+          "tests_legacy/test_v13_two_circle_enrollment.py",
+          "tests_legacy/test_v14_1_sidebar_ui.py",
+          "tests_legacy/test_v14_static_deployable.py",
+          "tests_legacy/test_v15_db_security_event.py",
+          "tests_legacy/test_v15_security_action.py",
+          "tests_legacy/test_v15_walkby_liveness_gate.py",
+          "tests_legacy/test_v16_tracker_scale.py",
+          "tests_legacy/test_v17_realtime_classroom.py",
+          "tests_legacy/test_v1_2_faceid_scan.py",
+          "tests_legacy/test_v1_face_best_recognition.py",
+          "tests_legacy/test_v1_face_context.py",
+          "tests_legacy/test_v1_face_core_stable.py",
+          "tests_legacy/test_v1_face_pro_r1.py",
+          "tests_legacy/test_v1_face_pro_r2.py",
+          "tests_legacy/test_v1_face_pro_r3_hotfix.py",
+          "tests_legacy/test_v1_face_stable_runtime.py",
+          "tests_legacy/test_v1_stable_ui.py",
+          "tests_legacy/test_v210_production_pilot.py",
+          "tests_legacy/test_v212_hr_reporting.py",
+          "tests_legacy/test_v21_hr_history.py",
+          "tests_legacy/test_v22_history_split_professional.py",
+          "tests_legacy/test_v23_professional_pilot.py",
+          "tests_legacy/test_v24_admin_mobile_viewer.py",
+          "tests_legacy/test_v25_professional_history.py",
+          "tests_legacy/test_v26_realtime_professional.py",
+          "tests_legacy/test_v27_performance_event_aggregator.py",
+          "tests_legacy/test_v28_media_realtime_ui.py",
+          "tests_legacy/test_v291_camera_realtime_hotfix.py",
+          "tests_legacy/test_v29_verification_evidence.py",
+          "tests_v5/test_v532_clean_start_fix.py",
+          "tests_v5/test_v534_camera_otp_hardening.py",
+          "tests_v5/test_v536_enrollment_recognition_v2.py",
+          "tests_v5/test_v537_admin_security_otp_delivery.py",
+          "tests_v5/test_v538_postgres_windows_recovery.py",
+          "tests_v5/test_v539_startup_readiness.py",
+          "tests_v5/test_v53_chain_edge_admin_contract.py",
+          "tests_v5/test_v5_admin_mfa_contract.py",
+          "tests_v5/test_v5_edge_device_auth_contract.py",
+          "tests_v5/test_v5_edge_sync_contract.py",
+          "tests_v5/test_v5_identity_only_contract.py",
+          "tests_v5/test_v5_initial_owner_admin.py",
+          "tests_v5/test_v5_production_contract.py",
+          "tests_v5/test_v5_release_hygiene.py",
+          "tests_v54/test_adaptive_gateway_v550.py",
+          "tests_v54/test_ai_camera_v550.py",
+          "tests_v54/test_ai_capture_v550.py",
+          "tests_v54/test_ai_model_lanes_v550.py",
+          "tests_v54/test_ai_pipeline_v550.py",
+          "tests_v54/test_capture_retirement_v550.py",
+          "tests_v54/test_diagnostics_api_v550.py",
+          "tests_v54/test_fleet_api_v550.py",
+          "tests_v54/test_fleet_reliability_v550.py",
+          "tests_v54/test_gateway_reliability_v550.py",
+          "tests_v54/test_native_quality_api_v550.py",
+          "tests_v54/test_performance_diagnostics_v550.py",
+          "tests_v54/test_primary_reliability_v550.py"
+        ],
+        "unchanged_archive_count": 15
+      },
+      "docs_and_tools": {
+        "modified_from_archive": [],
+        "not_in_archive": [
+          "00_DOC_TRUOC_KHI_PHAT_TRIEN.md",
+          "ARCHITECTURE.md",
+          "ARCHITECTURE_V1_10.md",
+          "BOSS_SCOPE.md",
+          "BOSS_SCOPE_V1_10.md",
+          "CHANGELOG_CAMERA_HD_V4.md",
+          "CHANGELOG_CAMERA_HD_V5.md",
+          "CHANGELOG_ENTERPRISE_V1.md",
+          "CHANGELOG_PROFESSIONAL_V11_CAMERA_CONTROL.md",
+          "CHANGELOG_PROFESSIONAL_V12.md",
+          "CHANGELOG_PROFESSIONAL_V12_1.md",
+          "CHANGELOG_PROFESSIONAL_V13_1_OPERATIONS_UI.md",
+          "CHANGELOG_PROFESSIONAL_V13_PERFORMANCE_OPERATIONS.md",
+          "CHANGELOG_PROFESSIONAL_V14_1_SIDEBAR_UI.md",
+          "CHANGELOG_PROFESSIONAL_V14_2.md",
+          "CHANGELOG_PROFESSIONAL_V14_OFFLINE_CORE_RELIABILITY_ACTION.md",
+          "CHANGELOG_PROFESSIONAL_V6.md",
+          "CHANGELOG_PROFESSIONAL_V7.md",
+          "CHANGELOG_PROFESSIONAL_V8_UI.md",
+          "CHANGELOG_PROFESSIONAL_V9_UI.md",
+          "CHANGELOG_V1_10.md",
+          "CHANGELOG_V1_10_1.md",
+          "CHANGELOG_V1_11.md",
+          "CHANGELOG_V1_12.md",
+          "CHANGELOG_V1_12_1.md",
+          "CHANGELOG_V1_12_2.md",
+          "CHANGELOG_V1_12_3.md",
+          "CHANGELOG_V1_12_4.md",
+          "CHANGELOG_V1_13.md",
+          "CHANGELOG_V1_13_2.md",
+          "CHANGELOG_V1_14.md",
+          "CHANGELOG_V1_14_2.md",
+          "CHANGELOG_V1_14_3.md",
+          "CHANGELOG_V1_15.md",
+          "CHANGELOG_V1_16.md",
+          "CHANGELOG_V1_7.md",
+          "CHANGELOG_V1_9.md",
+          "CHANGELOG_V1_FACE.md",
+          "CHANGELOG_V1_FACE_BEST.md",
+          "CHANGELOG_V1_FACE_CORE_STABLE.md",
+          "CHANGELOG_V1_FACE_PRO_R1.md",
+          "CHANGELOG_V1_FACE_PRO_R2.md",
+          "CHANGELOG_V1_FACE_PRO_R3.md",
+          "CHANGELOG_V5_4_10_NATIVE_VIDEO_GATEWAY.md",
+          "CHANGELOG_V5_4_6_CAMERA_REGISTRY.md",
+          "CHANGELOG_V5_4_7_CAMERA_REGISTRY_REPAIR.md",
+          "CHANGELOG_V5_4_8_REALTIME_PERFORMANCE.md",
+          "CHANGELOG_V5_4_9_TRUE_REALTIME_TRANSPORT.md",
+          "DESIGN.md",
+          "OFFLINE_DEPLOYMENT.md",
+          "POSTGRESQL_DEPLOYMENT.md",
+          "PRODUCT.md",
+          "README.md",
+          "TEST_REPORT_ENTERPRISE_V1.md",
+          "TEST_REPORT_PROFESSIONAL_V12.md",
+          "TEST_REPORT_PROFESSIONAL_V13_PERFORMANCE_OPERATIONS.md",
+          "TEST_REPORT_PROFESSIONAL_V14_OFFLINE_CORE_RELIABILITY_ACTION.md",
+          "TEST_REPORT_PROFESSIONAL_V6.md",
+          "TEST_REPORT_PROFESSIONAL_V7.md",
+          "TEST_REPORT_V1_10.md",
+          "TEST_REPORT_V1_11.md",
+          "TEST_REPORT_V1_12.md",
+          "TEST_REPORT_V1_12_2.md",
+          "TEST_REPORT_V1_12_4.md",
+          "TEST_REPORT_V1_13.md",
+          "TEST_REPORT_V1_14.md",
+          "TEST_REPORT_V1_15.md",
+          "TEST_REPORT_V1_16.md",
+          "TEST_REPORT_V1_7.md",
+          "TEST_REPORT_V1_9.md",
+          "TEST_REPORT_V1_FACE.md",
+          "TEST_REPORT_V1_FACE_CORE_STABLE.md",
+          "TEST_REPORT_V1_FACE_PRO_R1.md",
+          "TEST_REPORT_V1_FACE_PRO_R2.md",
+          "docs/EXECPLAN_BTMH_V550.md",
+          "docs/EXECPLAN_NATIVE_VIDEO_REALTIME.md",
+          "docs/FINAL_QA_V550.md",
+          "docs/LIVE_VIDEO_WEBRTC_WINDOWS_ACCEPTANCE.md",
+          "docs/QA_V550.md",
+          "docs/VERIFY_RELEASE_RESULTS_V550.json",
+          "docs/VERIFY_RELEASE_RESULTS_V550_INITIAL.json",
+          "docs/customer/CAMERA_REGISTRY_REPAIR_5_4_7.md",
+          "docs/customer/CAMERA_SETUP_V5_4_4.md",
+          "docs/customer/CHANGELOG_V5_4_2.md",
+          "docs/customer/CHANGELOG_V5_4_3.md",
+          "docs/customer/CHANGELOG_V5_4_4.md",
+          "docs/customer/CHANGE_SCOPE_V545.json",
+          "docs/customer/HANDOVER_CHECKLIST.md",
+          "docs/customer/NATIVE_VIDEO_GATEWAY_5_4_10.md",
+          "docs/customer/QA_REPORT.md",
+          "docs/customer/QA_V5410.md",
+          "docs/customer/QA_V545.md",
+          "docs/customer/QA_V545_RESULTS.json",
+          "docs/customer/QA_V546.md",
+          "docs/customer/README_V5_4.md",
+          "docs/customer/REALTIME_PERFORMANCE_5_4_8.md",
+          "docs/customer/ROLE_MATRIX.md",
+          "docs/customer/RTSP_V545.md",
+          "docs/customer/SECURITY_AND_PRIVACY.md",
+          "docs/customer/SMS_SETUP.md",
+          "docs/customer/TRUE_REALTIME_5_4_9.md",
+          "docs/customer/qa_5_4_2/BROWSER_QA.json",
+          "docs/customer/qa_5_4_2/BROWSER_RESULTS.txt",
+          "docs/customer/qa_5_4_2/PACKAGING_CHECKS.json",
+          "docs/customer/qa_5_4_2/QA_ENVIRONMENT.json",
+          "docs/customer/qa_5_4_2/SMS_LOGIN_DESKTOP.png",
+          "docs/customer/qa_5_4_2/SMS_LOGIN_MOBILE.png",
+          "docs/customer/qa_5_4_2/SMS_SECURITY_SETTINGS.png",
+          "docs/customer/qa_5_4_2/TEST_RESULTS.txt",
+          "docs/customer/qa_5_4_2/VERIFY_RESULTS.txt",
+          "docs/customer/qa_5_4_3/BROWSER_RESULTS.json",
+          "docs/customer/qa_5_4_3/NAV_OBSERVER_BEFORE_AFTER.json",
+          "docs/customer/qa_5_4_3/RUNTIME_RESULTS.json",
+          "docs/customer/qa_5_4_3/changed_files.json",
+          "docs/customer/qa_5_4_3/input_fingerprints.json",
+          "docs/customer/qa_5_4_4/camera_ui_results.json",
+          "docs/customer/qa_5_4_4/changes.json",
+          "docs/customer/qa_5_4_4/debug_exit2.txt",
+          "docs/customer/qa_5_4_4/debug_rtsp_all.txt",
+          "docs/customer/qa_5_4_4/demo_results.json",
+          "docs/customer/qa_5_4_4/environment.json",
+          "docs/customer/qa_5_4_4/release_regression.txt",
+          "docs/legacy/CHANGELOG_V1_2.md",
+          "docs/legacy/CHANGELOG_V1_2_1.md",
+          "docs/legacy/CHANGELOG_V1_3.md",
+          "docs/legacy/CHANGELOG_V1_3_1.md",
+          "docs/legacy/HUONG_DAN_DEMO_V1_2.md",
+          "docs/legacy/HUONG_DAN_V1_3.txt",
+          "docs/legacy/TEST_REPORT.md",
+          "docs/legacy/TEST_REPORT_V1_2.md",
+          "docs/legacy/TEST_REPORT_V1_3.md",
+          "docs/legacy/TEST_REPORT_V1_3_1.md",
+          "scripts/acl_common.ps1",
+          "scripts/apply_camera_hd_v5_config.py",
+          "scripts/apply_pro_r1_config.py",
+          "scripts/apply_pro_r2_config.py",
+          "scripts/apply_v27_performance_config.py",
+          "scripts/apply_v291_realtime_hotfix.py",
+          "scripts/audit_farface_dataset.py",
+          "scripts/audit_v550_source.py",
+          "scripts/bootstrap_postgres.py",
+          "scripts/check_postgres.py",
+          "scripts/check_ready.py",
+          "scripts/check_release_clean.py",
+          "scripts/check_rtsp_runtime_v545.py",
+          "scripts/check_standard_user.ps1",
+          "scripts/check_v28_media_runtime.py",
+          "scripts/configure_edge_sync.py",
+          "scripts/configure_hikvision.py",
+          "scripts/configure_module.py",
+          "scripts/configure_sms_v542.py",
+          "scripts/diagnose_rtsp_v545.py",
+          "scripts/download_models.py",
+          "scripts/ensure_mediamtx_v5410.ps1",
+          "scripts/ensure_postgres_running.ps1",
+          "scripts/find_python312.ps1",
+          "scripts/list_cameras.py",
+          "scripts/migrate_sqlite_to_postgres.py",
+          "scripts/pg_hba_recovery.py",
+          "scripts/postgres_guard.py",
+          "scripts/prepare_core_models.py",
+          "scripts/repair_postgres_windows_487.bat",
+          "scripts/repair_postgres_windows_487.ps1",
+          "scripts/resolve_data_root.bat",
+          "scripts/runtime_quick_check.py",
+          "scripts/set_postgres_config.py",
+          "scripts/setup_embedded_postgres.ps1",
+          "scripts/stop_stale_campusface.ps1",
+          "scripts/test_dual_camera_runtime.py",
+          "scripts/test_hikvision_to_laptop_handover.py",
+          "scripts/test_office_ai_runtime.py",
+          "scripts/train_farface_yolo.py",
+          "scripts/validate_portable_bundle.py",
+          "scripts/wait_postgres.py"
+        ],
+        "unchanged_archive_count": 3
+      }
+    }
+  },
+  "credential_hygiene": {
+    "status": "PASS",
+    "scope": "module_app Python, frontend JavaScript/HTML and top-level Python product tools; tests/docs/runtime excluded; only two explicitly named stock configs read separately",
+    "scanned_file_count": 74,
+    "candidate_count": 6,
+    "findings": {
+      "literal_rtsp_credentials": {
+        "count": 0,
+        "checkpoint_count": 0,
+        "introduced_count": 0,
+        "reviewed_existing_count": 0,
+        "unreviewed_count": 0,
+        "paths": [],
+        "introduced_paths": [],
+        "reviewed_existing_paths": [],
+        "unreviewed_paths": []
+      },
+      "private_camera_ip_candidates": {
+        "count": 3,
+        "checkpoint_count": 3,
+        "introduced_count": 0,
+        "reviewed_existing_count": 3,
+        "unreviewed_count": 0,
+        "paths": [
+          "module_app/camera_connection_v544.py",
+          "module_app/camera_registry_v547.py"
+        ],
+        "introduced_paths": [],
+        "reviewed_existing_paths": [
+          "module_app/camera_connection_v544.py",
+          "module_app/camera_registry_v547.py"
+        ],
+        "unreviewed_paths": []
+      },
+      "fixed_secret_candidates": {
+        "count": 3,
+        "checkpoint_count": 3,
+        "introduced_count": 0,
+        "reviewed_existing_count": 3,
+        "unreviewed_count": 0,
+        "paths": [
+          "frontend/index.html"
+        ],
+        "introduced_paths": [],
+        "reviewed_existing_paths": [
+          "frontend/index.html"
+        ],
+        "unreviewed_paths": []
+      }
+    },
+    "reviewed_contexts": [
+      {
+        "path": "module_app/camera_connection_v544.py",
+        "kind": "Unchanged historical camera mismatch comparison; not a camera default."
+      },
+      {
+        "path": "module_app/camera_registry_v547.py",
+        "kind": "Unchanged legacy migration sentinel set and migration docstring; not a new camera default."
+      },
+      {
+        "path": "frontend/index.html",
+        "kind": "Unchanged data-toggle-password button references to password input IDs; no password value."
+      }
+    ],
+    "values_redacted": true,
+    "named_stock_configs": [
+      {
+        "path": "config/cameras.json",
+        "nonempty_secret_fields": 0,
+        "literal_rtsp_userinfo": 0
+      },
+      {
+        "path": "config/hikvision_test_camera.json",
+        "nonempty_secret_fields": 0,
+        "literal_rtsp_userinfo": 0
+      }
+    ]
+  },
+  "status": "PASS",
+  "summary": {
+    "passed_checks": 21,
+    "failed_checks": 0
+  }
+}
